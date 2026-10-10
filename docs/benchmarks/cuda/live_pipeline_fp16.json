@@ -1,0 +1,272 @@
+{
+  "model_dir": "<workspace>\\movinet_evaluation\\kard_a0_head_100pct",
+  "video": "<workspace>\\datasets\\KARD\\Walk\\a14_s09_e03.mp4",
+  "target_fps": 5.0,
+  "window_seconds": 4.0,
+  "sampled_frames_per_window": 20,
+  "update_seconds": 1.0,
+  "measurements": 21,
+  "processing_includes": "BGR-to-RGB, stacking, resize-with-pad, normalization, full model and top-three formatting; excludes camera capture/display and cold model loading/trace.",
+  "mean_ms": 103.33381904776962,
+  "median_ms": 103.16949999833014,
+  "p95_ms": 126.27949999296106,
+  "max_ms": 131.664999993518,
+  "p95_within_update_budget": true,
+  "repeat_after_state_reset_max_logit_error": 0.0,
+  "adapter_vs_existing_clip_reader_max_logit_error": 0.0,
+  "bounded_latest_mailbox_verified": true,
+  "predictions": [
+    {
+      "window": 0,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.998345136642456
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.0010315877152606845
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.00029268255457282066
+        }
+      ],
+      "processing_ms": 131.664999993518,
+      "sampled_frames": 20
+    },
+    {
+      "window": 1,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9988008737564087
+        },
+        {
+          "label": "Stand up",
+          "class_id": 17,
+          "score": 0.0004961552913300693
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.00027669183327816427
+        }
+      ],
+      "processing_ms": 92.46890000940766,
+      "sampled_frames": 20
+    },
+    {
+      "window": 2,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9770927429199219
+        },
+        {
+          "label": "Stand up",
+          "class_id": 17,
+          "score": 0.007132485043257475
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.006208925042301416
+        }
+      ],
+      "processing_ms": 78.06290000735316,
+      "sampled_frames": 20
+    },
+    {
+      "window": 3,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9087598919868469
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.030554216355085373
+        },
+        {
+          "label": "Forward Kick",
+          "class_id": 8,
+          "score": 0.021164290606975555
+        }
+      ],
+      "processing_ms": 124.58689999766648,
+      "sampled_frames": 20
+    },
+    {
+      "window": 4,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9770485758781433
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.007879179902374744
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.007007888052612543
+        }
+      ],
+      "processing_ms": 78.06269999127835,
+      "sampled_frames": 20
+    },
+    {
+      "window": 5,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9969702959060669
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.0014302454655990005
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.0006956858560442924
+        }
+      ],
+      "processing_ms": 115.3374999994412,
+      "sampled_frames": 20
+    },
+    {
+      "window": 6,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9985033273696899
+        },
+        {
+          "label": "Forward Kick",
+          "class_id": 8,
+          "score": 0.00047144838026724756
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.00041281396988779306
+        }
+      ],
+      "processing_ms": 93.93070000805892,
+      "sampled_frames": 20
+    }
+  ],
+  "device": "ONNX CUDA FP16",
+  "live_camera_tested": false,
+  "provider_options_requested": {
+    "device_id": 0,
+    "use_tf32": "1",
+    "cudnn_conv_algo_search": "HEURISTIC"
+  },
+  "onnx_artifacts": {
+    "source_saved_model_pb_sha256": "11eda6aa0bdd0235119e4daa370108aeb132099e4ebe684aa391bb496fd41841",
+    "source_variables_sha256": "c9bd9c683c82941f14e7f861a876d333f51a5034c40f407a32021a952ea5251c",
+    "source_experiment": "<workspace>\\movinet_evaluation\\kard_a0_head_100pct",
+    "labels": [
+      "Horizontal arm wave",
+      "High arm wave",
+      "Two hand wave",
+      "Catch Cap",
+      "High throw",
+      "Draw X",
+      "Draw Tick",
+      "Toss Paper",
+      "Forward Kick",
+      "Side Kick",
+      "Take Umbrella",
+      "Bend",
+      "Hand Clap",
+      "Walk",
+      "Phone Call",
+      "Drink",
+      "Sit down",
+      "Stand up"
+    ],
+    "input_shape": [
+      1,
+      20,
+      172,
+      172,
+      3
+    ],
+    "input_name": "image",
+    "output_name": "Identity:0",
+    "input_dtype": "float32",
+    "preprocessing": "RGB float32 [0,1]; bilinear resize with padding to 172x172; fixed 20-sample window at 5 fps.",
+    "window_seconds": 4.0,
+    "fps": 5.0,
+    "states": "fresh initial states on every window",
+    "removed_unused_capture_inputs": [],
+    "fp32": {
+      "file": "movinet-kard-20f-fp32.onnx",
+      "sha256": "1c9e528dea00a24eae144d90c141a99f1de72346cda32350ade92aabe70b1998",
+      "bytes": 8430343
+    },
+    "fp16": {
+      "file": "movinet-kard-20f-fp16.onnx",
+      "sha256": "524addea69fe13abce9feca96bef4be3758e27a0d417af383cbc7c0419e2e9bb",
+      "bytes": 4996744,
+      "keep_io_types": true,
+      "converter": "official onnxruntime.transformers.float16",
+      "min_positive_val": 5.96e-08,
+      "max_finite_val": 65504.0,
+      "deduplicated_equivalent_casts": 0,
+      "op_block_list": [
+        "ArrayFeatureExtractor",
+        "Binarizer",
+        "CastMap",
+        "CategoryMapper",
+        "DictVectorizer",
+        "FeatureVectorizer",
+        "Imputer",
+        "LabelEncoder",
+        "LinearClassifier",
+        "LinearRegressor",
+        "Normalizer",
+        "OneHotEncoder",
+        "RandomUniformLike",
+        "SVMClassifier",
+        "SVMRegressor",
+        "Scaler",
+        "TreeEnsembleClassifier",
+        "TreeEnsembleRegressor",
+        "TreeEnsemble",
+        "ZipMap",
+        "NonMaxSuppression",
+        "TopK",
+        "RoiAlign",
+        "Range",
+        "Upsample"
+      ]
+    },
+    "versions": {
+      "tensorflow": "2.21.0",
+      "tf2onnx": "1.17.0",
+      "onnx": "1.23.2"
+    },
+    "scope": "Inference export only; not gradient/XAI hooks. Runtime and equivalence validation required.",
+    "source_clip_protocol_preprocessing": "RGB float32 [0,1]; bilinear resize with padding to 172x172; entire clip at 5 fps if <=10 sec, centered contiguous 10-second window otherwise."
+  },
+  "model_file_sha256": "11eda6aa0bdd0235119e4daa370108aeb132099e4ebe684aa391bb496fd41841",
+  "limitation": "This measures throughput, not accuracy on continuous webcam actions or calibrated uncertainty."
+}

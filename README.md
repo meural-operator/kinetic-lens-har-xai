@@ -40,6 +40,19 @@ kinetic-lens --config configs/movinet_kard.json benchmark --video /path/to/clip.
 
 For a dependency-light UI smoke test, install `.[dev]` and use `configs/demo.json`. That configuration is explicitly a **synthetic RGB fixture, not a trained HAR model**. Missing trained weights never silently select the fixture.
 
+## CUDA inference and the original desktop camera UI
+
+The selected MoViNet/KARD model also has checked **ONNX CUDA FP16 and FP32** exports, included in `models/kard/onnx/`. Install `.[cuda]` with compatible CUDA/cuDNN libraries, then use:
+
+```sh
+python scripts/desktop/realtime_kard.py --config configs/movinet_kard_cuda_fp16.json
+kinetic-lens --config configs/movinet_kard_cuda_fp16.json serve
+```
+
+The first command opens the original desktop window with predictions overlaid on the feed; the second uses the browser dashboard. Windows `xai` launchers are in `scripts/desktop/`. Change the config to `movinet_kard_cuda_fp32.json` for FP32. The ONNX adapter preserves the original TensorFlow pixel preprocessing and requires a four-second/20-sample window. It supports prediction and temporal perturbations; retain the TensorFlow config for spatial, concept, contrastive and channel explanations.
+
+On RTX 4000 Ada, recorded model invocation medians were 26.69 ms for FP16 and 31.74 ms for FP32; full app processing medians were 103.17 and 91.90 ms in a separate workload. Both exports preserved 18/18 sampled original predictions and were profiled on CUDA. Camera testing of the GPU paths remains user-led. See [CUDA setup, evidence and reproduction](docs/cuda.md).
+
 ## What is implemented?
 
 | Component | Function | Scope |
@@ -52,6 +65,7 @@ For a dependency-light UI smoke test, install `.[dev]` and use `configs/demo.jso
 | Concept attribution | Training-fitted proxy directions and feature deletions | Bundled action-family proxies; semantic validation remains partial |
 | Mechanistic explanation | Removal/retention of training-selected channel groups | MoViNet internal hook; selections for Drink, Two hand wave and Forward Kick |
 | ONNX adapter | Stateless single-input video logits; explicit CPU/CUDA providers | Configure layout, labels, normalization and fixed frame count |
+| MoViNet CUDA adapter | Checked KARD ONNX FP16/FP32 exports, original pixel pipeline, CPU fallback disabled | Fixed 20 samples at 5 fps; prediction/temporal hooks; no gradients |
 | TorchScript adapter | Stateless video logits; explicit CPU/CUDA device | Exported wrapper returning `[1, num_classes]` logits |
 
 Unsupported methods are shown as unavailable. An adapter does not automatically gain gradients, semantic concepts or channel hooks by supplying predictions.
@@ -84,7 +98,7 @@ The selected head was trained on **324 KARD clips**, with subject-disjoint valid
 
 The KARD model has **no trained idle/unknown class**, and displayed softmax scores are uncalibrated. Clip-level KARD accuracy does not establish accuracy on continuous webcam actions. The live window is four seconds by default, while offline inference can use up to ten seconds. This repository provides HAR/XAI tooling; it does not claim differential privacy, encrypted inference, federated training or certified privacy protection.
 
-The server binds to loopback. Camera frames stay in memory and are sent only to this local server. Explanation JSON is saved only when requested through the CLI or dashboard download. Datasets, recordings, full backbone weights and generated outputs are excluded from Git.
+The server binds to loopback. Camera frames stay in memory and are sent only to this local server. Explanation JSON is saved only when requested through the CLI or dashboard download. Datasets, recordings, original TensorFlow backbone downloads and generated outputs are excluded from Git. The checked combined MoViNet/KARD ONNX exports and archived numerical evidence are versioned explicitly.
 
 ## Testing and devices
 

@@ -1,0 +1,196 @@
+{
+  "model": {
+    "name": "MoViNet A0-Stream KARD-18 CUDA FP16",
+    "runtime": "ONNX Runtime CUDA",
+    "precision": "fp16",
+    "onnxruntime_version": "1.31.0",
+    "sha256": "524addea69fe13abce9feca96bef4be3758e27a0d417af383cbc7c0419e2e9bb",
+    "providers": [
+      "CUDAExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "provider_options_requested": {
+      "device_id": 0,
+      "use_tf32": "1",
+      "cudnn_conv_algo_search": "HEURISTIC"
+    },
+    "cpu_execution_fallback": false,
+    "input": {
+      "fps": 5.0,
+      "max_frames": 20,
+      "resolution": 172
+    },
+    "preprocessing": "RGB; original TensorFlow CPU bilinear resize_with_pad; float32 [0,1]",
+    "state_policy": "fresh initial states per independent fixed window",
+    "source_saved_model_pb_sha256": "11eda6aa0bdd0235119e4daa370108aeb132099e4ebe684aa391bb496fd41841",
+    "source_variables_sha256": "c9bd9c683c82941f14e7f861a876d333f51a5034c40f407a32021a952ea5251c",
+    "provider_note": "Registered providers are not a placement audit; saved trial profiles are documented separately"
+  },
+  "target_fps": 5.0,
+  "window_seconds": 4.0,
+  "measurements": 21,
+  "mean_ms": 101.40419523910775,
+  "median_ms": 103.8226999953622,
+  "p95_ms": 124.05899999430403,
+  "max_ms": 124.78249998821411,
+  "repeat_after_state_reset_max_logit_error": 0.0,
+  "bounded_latest_mailbox_verified": true,
+  "predictions": [
+    {
+      "window": 0,
+      "top3": [
+        {
+          "class_id": 13,
+          "label": "Walk",
+          "score": 0.9983451658112202
+        },
+        {
+          "class_id": 10,
+          "label": "Take Umbrella",
+          "score": 0.0010315877023880176
+        },
+        {
+          "class_id": 9,
+          "label": "Side Kick",
+          "score": 0.00029268259491505163
+        }
+      ],
+      "processing_ms": 121.83049999293871,
+      "sampled_frames": 20
+    },
+    {
+      "window": 1,
+      "top3": [
+        {
+          "class_id": 13,
+          "label": "Walk",
+          "score": 0.9988009080649372
+        },
+        {
+          "class_id": 17,
+          "label": "Stand up",
+          "score": 0.0004961552449201757
+        },
+        {
+          "class_id": 10,
+          "label": "Take Umbrella",
+          "score": 0.0002766918678374355
+        }
+      ],
+      "processing_ms": 53.76340000657365,
+      "sampled_frames": 20
+    },
+    {
+      "window": 2,
+      "top3": [
+        {
+          "class_id": 13,
+          "label": "Walk",
+          "score": 0.9770927335010753
+        },
+        {
+          "class_id": 17,
+          "label": "Stand up",
+          "score": 0.0071324849148885995
+        },
+        {
+          "class_id": 10,
+          "label": "Take Umbrella",
+          "score": 0.006208925254882419
+        }
+      ],
+      "processing_ms": 99.56190000229981,
+      "sampled_frames": 20
+    },
+    {
+      "window": 3,
+      "top3": [
+        {
+          "class_id": 13,
+          "label": "Walk",
+          "score": 0.9087597763823572
+        },
+        {
+          "class_id": 10,
+          "label": "Take Umbrella",
+          "score": 0.030554215464548798
+        },
+        {
+          "class_id": 8,
+          "label": "Forward Kick",
+          "score": 0.02116428649483441
+        }
+      ],
+      "processing_ms": 113.96160000003874,
+      "sampled_frames": 20
+    },
+    {
+      "window": 4,
+      "top3": [
+        {
+          "class_id": 13,
+          "label": "Walk",
+          "score": 0.9770485319452324
+        },
+        {
+          "class_id": 9,
+          "label": "Side Kick",
+          "score": 0.007879179903286525
+        },
+        {
+          "class_id": 10,
+          "label": "Take Umbrella",
+          "score": 0.007007887674102293
+        }
+      ],
+      "processing_ms": 106.00490000797436,
+      "sampled_frames": 20
+    },
+    {
+      "window": 5,
+      "top3": [
+        {
+          "class_id": 13,
+          "label": "Walk",
+          "score": 0.9969703623735034
+        },
+        {
+          "class_id": 9,
+          "label": "Side Kick",
+          "score": 0.0014302454068261066
+        },
+        {
+          "class_id": 10,
+          "label": "Take Umbrella",
+          "score": 0.0006956858522255931
+        }
+      ],
+      "processing_ms": 92.96829999948386,
+      "sampled_frames": 20
+    },
+    {
+      "window": 6,
+      "top3": [
+        {
+          "class_id": 13,
+          "label": "Walk",
+          "score": 0.9985033550744513
+        },
+        {
+          "class_id": 8,
+          "label": "Forward Kick",
+          "score": 0.0004714484041610926
+        },
+        {
+          "class_id": 9,
+          "label": "Side Kick",
+          "score": 0.0004128140159453709
+        }
+      ],
+      "processing_ms": 77.4950000050012,
+      "sampled_frames": 20
+    }
+  ],
+  "live_camera_tested": false,
+  "scope": "BGR conversion, stacking, adapter preprocessing, CUDA transfers and prediction formatting; excludes decode, camera/display and cold loading."
+}

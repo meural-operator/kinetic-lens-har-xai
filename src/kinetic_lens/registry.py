@@ -15,6 +15,7 @@ def resolve(name, builtins):
 
 MODELS = {
     "movinet": "kinetic_lens.models.movinet:MoViNetModel",
+    "movinet-onnx": "kinetic_lens.models.movinet_onnx:MoViNetONNXModel",
     "onnx": "kinetic_lens.models.onnx:ONNXModel",
     "torchscript": "kinetic_lens.models.torchscript:TorchScriptModel",
     "demo": "kinetic_lens.models.demo:DemoModel",

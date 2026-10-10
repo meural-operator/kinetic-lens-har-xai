@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "adapter": "movinet-onnx",
+  "name": "MoViNet A0-Stream KARD-18 CUDA FP32",
+  "precision": "fp32",
+  "manifest": "../models/kard/onnx/manifest.json",
+  "labels": "../models/kard/labels.json",
+  "input": {
+    "fps": 5.0,
+    "max_frames": 20,
+    "resolution": 172
+  }
+}

@@ -1,0 +1,19 @@
+% Include with \input{latency_tables.tex}; requires \usepackage{booktabs}.
+\begin{table*}[t]
+\centering
+\small
+\caption{Warm latency (ms) for MoViNet-A0 with the trained KARD-18 head on native Windows (Xeon w7-2595X; RTX 4000 Ada). Model invocation: 18 validation windows, five repeats per backend. App processing: seven rolling windows from one video, three repeats; includes preprocessing and excludes capture/display. Each window contains 20 RGB samples at 5 fps. These are distinct workloads.}
+\label{tab:movinet-kard-cuda}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{Model invocation} & \multicolumn{3}{c}{App processing} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Backend & Mean & Median & P95 & Mean & Median & P95 \\
+\midrule
+TensorFlow CPU FP32 & 121.30 & 119.61 & 139.36 & 283.23 & 287.85 & 314.77 \\
+ONNX CUDA FP32 & 34.61 & 31.74 & 67.58 & 94.66 & 91.90 & 121.27 \\
+ONNX CUDA FP16 & 28.73 & 26.69 & 41.71 & 103.33 & 103.17 & 126.28 \\
+\bottomrule
+\end{tabular}
+\end{table*}

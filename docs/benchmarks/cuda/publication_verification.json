@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-10",
+  "framework_tests": {
+    "passed": 21,
+    "warnings": 5,
+    "environment": "xai; native Windows; host access"
+  },
+  "dashboard_regression": "passed: lifecycle, optional scheduler, matching-frame overlay",
+  "cuda_adapter_migration": {
+    "windows": 18,
+    "fp32_top1_agreement": 18,
+    "fp16_top1_agreement": 18,
+    "pixel_max_abs_error": 0
+  },
+  "desktop_saved_video": {
+    "completed": true,
+    "measurements": 21,
+    "state_reset_max_logit_error": 0,
+    "bounded_mailbox_verified": true
+  },
+  "camera_tested": false,
+  "browser_cuda_performance_measured": false,
+  "wheel_build": {
+    "passed": true,
+    "method": "pip wheel --no-deps --no-build-isolation",
+    "package": "kinetic-lens-har-xai 0.1.0"
+  }
+}

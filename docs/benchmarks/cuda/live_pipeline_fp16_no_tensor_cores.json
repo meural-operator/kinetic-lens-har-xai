@@ -1,0 +1,178 @@
+{
+  "model_dir": "<workspace>\\movinet_evaluation\\kard_a0_head_100pct",
+  "video": "<workspace>\\datasets\\KARD\\Walk\\a14_s09_e03.mp4",
+  "target_fps": 5.0,
+  "window_seconds": 4.0,
+  "sampled_frames_per_window": 20,
+  "update_seconds": 1.0,
+  "measurements": 21,
+  "processing_includes": "BGR-to-RGB, stacking, resize-with-pad, normalization, full model and top-three formatting; excludes camera capture/display and cold model loading/trace.",
+  "mean_ms": 111.52171428659044,
+  "median_ms": 107.885500008706,
+  "p95_ms": 141.63710000866558,
+  "max_ms": 155.24480000021867,
+  "p95_within_update_budget": true,
+  "repeat_after_state_reset_max_logit_error": 0.0,
+  "adapter_vs_existing_clip_reader_max_logit_error": 0.0,
+  "bounded_latest_mailbox_verified": true,
+  "predictions": [
+    {
+      "window": 0,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9983428716659546
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.0010356227867305279
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.00029211080982349813
+        }
+      ],
+      "processing_ms": 155.24480000021867,
+      "sampled_frames": 20
+    },
+    {
+      "window": 1,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9988076686859131
+        },
+        {
+          "label": "Stand up",
+          "class_id": 17,
+          "score": 0.000494224252179265
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.0002750772109720856
+        }
+      ],
+      "processing_ms": 114.5195999997668,
+      "sampled_frames": 20
+    },
+    {
+      "window": 2,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9771527051925659
+        },
+        {
+          "label": "Stand up",
+          "class_id": 17,
+          "score": 0.007105113938450813
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.006197189912199974
+        }
+      ],
+      "processing_ms": 86.93239999411162,
+      "sampled_frames": 20
+    },
+    {
+      "window": 3,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.909012496471405
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.030503077432513237
+        },
+        {
+          "label": "Forward Kick",
+          "class_id": 8,
+          "score": 0.02104649320244789
+        }
+      ],
+      "processing_ms": 122.68859999312554,
+      "sampled_frames": 20
+    },
+    {
+      "window": 4,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.977106511592865
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.0078030722215771675
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.006994628347456455
+        }
+      ],
+      "processing_ms": 101.86819999944419,
+      "sampled_frames": 20
+    },
+    {
+      "window": 5,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.9969905614852905
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.0014191439840942621
+        },
+        {
+          "label": "Take Umbrella",
+          "class_id": 10,
+          "score": 0.0006902859313413501
+        }
+      ],
+      "processing_ms": 141.63710000866558,
+      "sampled_frames": 20
+    },
+    {
+      "window": 6,
+      "top3": [
+        {
+          "label": "Walk",
+          "class_id": 13,
+          "score": 0.998506486415863
+        },
+        {
+          "label": "Forward Kick",
+          "class_id": 8,
+          "score": 0.0004705300088971853
+        },
+        {
+          "label": "Side Kick",
+          "class_id": 9,
+          "score": 0.0004120097728446126
+        }
+      ],
+      "processing_ms": 103.49639999913052,
+      "sampled_frames": 20
+    }
+  ],
+  "device": "ONNX CUDA FP16",
+  "live_camera_tested": false,
+  "model_file_sha256": "11eda6aa0bdd0235119e4daa370108aeb132099e4ebe684aa391bb496fd41841",
+  "limitation": "This measures throughput, not accuracy on continuous webcam actions or calibrated uncertainty."
+}

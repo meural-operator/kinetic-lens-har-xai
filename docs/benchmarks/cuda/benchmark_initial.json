@@ -1,0 +1,974 @@
+{
+  "scope": "Warm model invocation with identical preprocessed CPU tensors; ONNX includes host/device transfers and synchronous CPU output. Excludes video decoding, RGB conversion, resizing and display.",
+  "live_camera_tested": false,
+  "gpu": "NVIDIA RTX 4000 Ada Generation",
+  "onnxruntime": "1.31.0",
+  "tensorflow": "2.21.0",
+  "window_frames": 20,
+  "window_seconds": 4.0,
+  "sample_count": 18,
+  "class_coverage": {
+    "Bend": 1,
+    "Catch Cap": 1,
+    "Draw Tick": 1,
+    "Draw X": 1,
+    "Drink": 1,
+    "Forward Kick": 1,
+    "Hand Clap": 1,
+    "High arm wave": 1,
+    "High throw": 1,
+    "Horizontal arm wave": 1,
+    "Phone Call": 1,
+    "Side Kick": 1,
+    "Sit down": 1,
+    "Stand up": 1,
+    "Take Umbrella": 1,
+    "Toss Paper": 1,
+    "Two hand wave": 1,
+    "Walk": 1
+  },
+  "skipped_short_videos": [
+    {
+      "video": "Bend\\a12_s05_e01.mp4",
+      "samples": 19,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Forward Kick\\a09_s05_e01.mp4",
+      "samples": 19,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Forward Kick\\a09_s05_e02.mp4",
+      "samples": 18,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Hand Clap\\a13_s05_e01.mp4",
+      "samples": 16,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Hand Clap\\a13_s05_e02.mp4",
+      "samples": 19,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "High throw\\a05_s05_e01.mp4",
+      "samples": 10,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "High throw\\a05_s05_e02.mp4",
+      "samples": 18,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "High throw\\a05_s05_e03.mp4",
+      "samples": 17,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "High throw\\a05_s10_e01.mp4",
+      "samples": 19,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Horizontal arm wave\\a01_s05_e01.mp4",
+      "samples": 15,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Side Kick\\a10_s05_e01.mp4",
+      "samples": 9,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Side Kick\\a10_s05_e02.mp4",
+      "samples": 14,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Stand up\\a18_s05_e01.mp4",
+      "samples": 18,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Stand up\\a18_s05_e02.mp4",
+      "samples": 11,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Stand up\\a18_s05_e03.mp4",
+      "samples": 12,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Toss Paper\\a08_s05_e01.mp4",
+      "samples": 15,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Toss Paper\\a08_s05_e02.mp4",
+      "samples": 11,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Toss Paper\\a08_s05_e03.mp4",
+      "samples": 11,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Toss Paper\\a08_s10_e01.mp4",
+      "samples": 16,
+      "reason": "shorter than fixed window; no duplicate padding"
+    },
+    {
+      "video": "Toss Paper\\a08_s10_e02.mp4",
+      "samples": 14,
+      "reason": "shorter than fixed window; no duplicate padding"
+    }
+  ],
+  "timings": {
+    "tensorflow_cpu_fp32": {
+      "n": 90,
+      "mean_ms": 158.82711222220678,
+      "median_ms": 157.84844999870984,
+      "p95_ms": 181.825619997835,
+      "min_ms": 138.03410000400618,
+      "max_ms": 243.8869000034174
+    },
+    "onnx_cuda_fp32": {
+      "n": 90,
+      "mean_ms": 29.90203444529066,
+      "median_ms": 27.540750008483883,
+      "p95_ms": 50.59299500207998,
+      "min_ms": 16.970700002275407,
+      "max_ms": 114.15810001199134
+    },
+    "onnx_cuda_fp16": {
+      "n": 90,
+      "mean_ms": 35.21781889091168,
+      "median_ms": 33.67620000790339,
+      "p95_ms": 50.88738500635372,
+      "min_ms": 20.934700005454943,
+      "max_ms": 64.47060000209603
+    }
+  },
+  "session_initialization_ms": {
+    "fp32": 1277.0350000064354,
+    "fp16": 669.9967000022298
+  },
+  "comparisons": [
+    {
+      "video": "Bend\\a12_s05_e02.mp4",
+      "class": "Bend",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Bend",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 5.602836608886719e-06,
+          "max_abs_probability_error": 1.7881393432617188e-07,
+          "top1_agreement": true,
+          "label": "Bend"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.0553746223449707,
+          "max_abs_probability_error": 0.0061383843421936035,
+          "top1_agreement": true,
+          "label": "Bend"
+        }
+      }
+    },
+    {
+      "video": "Catch Cap\\a04_s05_e01.mp4",
+      "class": "Catch Cap",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Catch Cap",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 7.510185241699219e-06,
+          "max_abs_probability_error": 2.980232238769531e-07,
+          "top1_agreement": true,
+          "label": "Catch Cap"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.030475854873657227,
+          "max_abs_probability_error": 0.0006173849105834961,
+          "top1_agreement": true,
+          "label": "Catch Cap"
+        }
+      }
+    },
+    {
+      "video": "Draw Tick\\a07_s05_e01.mp4",
+      "class": "Draw Tick",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Draw Tick",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 8.58306884765625e-06,
+          "max_abs_probability_error": 6.556510925292969e-07,
+          "top1_agreement": true,
+          "label": "Draw Tick"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.024305343627929688,
+          "max_abs_probability_error": 0.005893588066101074,
+          "top1_agreement": true,
+          "label": "Draw Tick"
+        }
+      }
+    },
+    {
+      "video": "Draw X\\a06_s05_e01.mp4",
+      "class": "Draw X",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Draw X",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 5.245208740234375e-06,
+          "max_abs_probability_error": 8.344650268554688e-07,
+          "top1_agreement": true,
+          "label": "Draw X"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.031301259994506836,
+          "max_abs_probability_error": 0.0013671666383743286,
+          "top1_agreement": true,
+          "label": "Draw X"
+        }
+      }
+    },
+    {
+      "video": "Drink\\a16_s05_e01.mp4",
+      "class": "Drink",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Drink",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 8.58306884765625e-06,
+          "max_abs_probability_error": 2.384185791015625e-07,
+          "top1_agreement": true,
+          "label": "Drink"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.05765581130981445,
+          "max_abs_probability_error": 0.0030937790870666504,
+          "top1_agreement": true,
+          "label": "Drink"
+        }
+      }
+    },
+    {
+      "video": "Forward Kick\\a09_s05_e03.mp4",
+      "class": "Forward Kick",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Forward Kick",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 8.940696716308594e-06,
+          "max_abs_probability_error": 4.76837158203125e-07,
+          "top1_agreement": true,
+          "label": "Forward Kick"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.036920368671417236,
+          "max_abs_probability_error": 0.0007858462631702423,
+          "top1_agreement": true,
+          "label": "Forward Kick"
+        }
+      }
+    },
+    {
+      "video": "Hand Clap\\a13_s05_e03.mp4",
+      "class": "Hand Clap",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Hand Clap",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 5.304813385009766e-06,
+          "max_abs_probability_error": 8.344650268554688e-07,
+          "top1_agreement": true,
+          "label": "Hand Clap"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.037168025970458984,
+          "max_abs_probability_error": 0.0031692981719970703,
+          "top1_agreement": true,
+          "label": "Hand Clap"
+        }
+      }
+    },
+    {
+      "video": "High arm wave\\a02_s05_e01.mp4",
+      "class": "High arm wave",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "High arm wave",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 6.67572021484375e-06,
+          "max_abs_probability_error": 2.384185791015625e-07,
+          "top1_agreement": true,
+          "label": "High arm wave"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.026365280151367188,
+          "max_abs_probability_error": 0.00034084543585777283,
+          "top1_agreement": true,
+          "label": "High arm wave"
+        }
+      }
+    },
+    {
+      "video": "High throw\\a05_s10_e02.mp4",
+      "class": "High throw",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Horizontal arm wave",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 1.4066696166992188e-05,
+          "max_abs_probability_error": 5.066394805908203e-07,
+          "top1_agreement": true,
+          "label": "Horizontal arm wave"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.018718957901000977,
+          "max_abs_probability_error": 0.003966480493545532,
+          "top1_agreement": true,
+          "label": "Horizontal arm wave"
+        }
+      }
+    },
+    {
+      "video": "Horizontal arm wave\\a01_s05_e02.mp4",
+      "class": "Horizontal arm wave",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Horizontal arm wave",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 9.298324584960938e-06,
+          "max_abs_probability_error": 5.075708031654358e-08,
+          "top1_agreement": true,
+          "label": "Horizontal arm wave"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.040918588638305664,
+          "max_abs_probability_error": 0.00012612342834472656,
+          "top1_agreement": true,
+          "label": "Horizontal arm wave"
+        }
+      }
+    },
+    {
+      "video": "Phone Call\\a15_s05_e01.mp4",
+      "class": "Phone Call",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Phone Call",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 4.079192876815796e-06,
+          "max_abs_probability_error": 6.556510925292969e-07,
+          "top1_agreement": true,
+          "label": "Phone Call"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.027349602431058884,
+          "max_abs_probability_error": 0.006374776363372803,
+          "top1_agreement": true,
+          "label": "Phone Call"
+        }
+      }
+    },
+    {
+      "video": "Side Kick\\a10_s05_e03.mp4",
+      "class": "Side Kick",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Side Kick",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 5.543231964111328e-06,
+          "max_abs_probability_error": 3.725290298461914e-08,
+          "top1_agreement": true,
+          "label": "Side Kick"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.03259086608886719,
+          "max_abs_probability_error": 0.002668023109436035,
+          "top1_agreement": true,
+          "label": "Side Kick"
+        }
+      }
+    },
+    {
+      "video": "Sit down\\a17_s05_e01.mp4",
+      "class": "Sit down",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Sit down",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 1.7881393432617188e-05,
+          "max_abs_probability_error": 1.1920928955078125e-07,
+          "top1_agreement": true,
+          "label": "Sit down"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.03867793083190918,
+          "max_abs_probability_error": 0.00026106834411621094,
+          "top1_agreement": true,
+          "label": "Sit down"
+        }
+      }
+    },
+    {
+      "video": "Stand up\\a18_s10_e01.mp4",
+      "class": "Stand up",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Stand up",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 6.67572021484375e-06,
+          "max_abs_probability_error": 2.384185791015625e-07,
+          "top1_agreement": true,
+          "label": "Stand up"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.02839374542236328,
+          "max_abs_probability_error": 0.0009294077754020691,
+          "top1_agreement": true,
+          "label": "Stand up"
+        }
+      }
+    },
+    {
+      "video": "Take Umbrella\\a11_s05_e01.mp4",
+      "class": "Take Umbrella",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Take Umbrella",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 1.0013580322265625e-05,
+          "max_abs_probability_error": 5.960464477539062e-07,
+          "top1_agreement": true,
+          "label": "Take Umbrella"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.02710968255996704,
+          "max_abs_probability_error": 0.0004571676254272461,
+          "top1_agreement": true,
+          "label": "Take Umbrella"
+        }
+      }
+    },
+    {
+      "video": "Toss Paper\\a08_s10_e03.mp4",
+      "class": "Toss Paper",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Toss Paper",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 5.900859832763672e-06,
+          "max_abs_probability_error": 7.152557373046875e-07,
+          "top1_agreement": true,
+          "label": "Toss Paper"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.03391456604003906,
+          "max_abs_probability_error": 0.005575716495513916,
+          "top1_agreement": true,
+          "label": "Toss Paper"
+        }
+      }
+    },
+    {
+      "video": "Two hand wave\\a03_s05_e01.mp4",
+      "class": "Two hand wave",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Two hand wave",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 1.0013580322265625e-05,
+          "max_abs_probability_error": 1.3737007975578308e-08,
+          "top1_agreement": true,
+          "label": "Two hand wave"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.024762392044067383,
+          "max_abs_probability_error": 6.366660818457603e-05,
+          "top1_agreement": true,
+          "label": "Two hand wave"
+        }
+      }
+    },
+    {
+      "video": "Walk\\a14_s05_e01.mp4",
+      "class": "Walk",
+      "frame_indices": [
+        0,
+        5,
+        10,
+        15,
+        20,
+        25,
+        30,
+        35,
+        40,
+        45,
+        50,
+        55,
+        60,
+        65,
+        70,
+        75,
+        80,
+        85,
+        90,
+        95
+      ],
+      "reference_label": "Walk",
+      "backends": {
+        "onnx_cuda_fp32": {
+          "max_abs_logit_error": 6.67572021484375e-06,
+          "max_abs_probability_error": 1.210719347000122e-08,
+          "top1_agreement": true,
+          "label": "Walk"
+        },
+        "onnx_cuda_fp16": {
+          "max_abs_logit_error": 0.030465364456176758,
+          "max_abs_probability_error": 7.37309455871582e-05,
+          "top1_agreement": true,
+          "label": "Walk"
+        }
+      }
+    }
+  ],
+  "placement": {
+    "fp32": {
+      "executed_node_providers": {
+        "CUDAExecutionProvider": 999
+      },
+      "operations_by_provider": {
+        "CUDAExecutionProvider": {
+          "Reshape": 186,
+          "Transpose": 215,
+          "Conv": 92,
+          "BatchNormalization": 62,
+          "Add": 88,
+          "Clip": 58,
+          "Mul": 162,
+          "ReduceMean": 30,
+          "CumSum": 15,
+          "Div": 17,
+          "Concat": 26,
+          "Min": 15,
+          "Max": 15,
+          "AveragePool": 4,
+          "Pad": 11,
+          "ReduceSum": 1,
+          "Sub": 1,
+          "Gemm": 1
+        }
+      }
+    },
+    "fp16": {
+      "executed_node_providers": {
+        "CUDAExecutionProvider": 1091
+      },
+      "operations_by_provider": {
+        "CUDAExecutionProvider": {
+          "Cast": 92,
+          "Reshape": 186,
+          "Transpose": 215,
+          "Conv": 92,
+          "BatchNormalization": 62,
+          "Add": 88,
+          "Clip": 58,
+          "Mul": 162,
+          "ReduceMean": 30,
+          "CumSum": 15,
+          "Div": 17,
+          "Concat": 26,
+          "Min": 15,
+          "Max": 15,
+          "AveragePool": 4,
+          "Pad": 11,
+          "ReduceSum": 1,
+          "Sub": 1,
+          "Gemm": 1
+        }
+      }
+    }
+  },
+  "limitation": "Numerical agreement on validation windows is not a new blind evaluation or live-camera accuracy measurement.",
+  "agreement": {
+    "onnx_cuda_fp32": {
+      "top1_agreement_count": 18,
+      "n": 18,
+      "max_abs_logit_error": 1.7881393432617188e-05,
+      "max_abs_probability_error": 8.344650268554688e-07
+    },
+    "onnx_cuda_fp16": {
+      "top1_agreement_count": 18,
+      "n": 18,
+      "max_abs_logit_error": 0.05765581130981445,
+      "max_abs_probability_error": 0.006374776363372803
+    }
+  }
+}

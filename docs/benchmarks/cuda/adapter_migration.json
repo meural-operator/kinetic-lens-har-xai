@@ -1,0 +1,351 @@
+{
+  "sample_count": 18,
+  "checks": [
+    {
+      "clip": "Bend/a12_s05_e02.mp4",
+      "class": "Bend",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 5.602836608886719e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.0553746223449707,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Catch Cap/a04_s05_e01.mp4",
+      "class": "Catch Cap",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 7.510185241699219e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.030475854873657227,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Draw Tick/a07_s05_e01.mp4",
+      "class": "Draw Tick",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 8.58306884765625e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.028211593627929688,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Draw X/a06_s05_e01.mp4",
+      "class": "Draw X",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 5.245208740234375e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.033254384994506836,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Drink/a16_s05_e01.mp4",
+      "class": "Drink",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 8.58306884765625e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.05765581130981445,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Forward Kick/a09_s05_e03.mp4",
+      "class": "Forward Kick",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 8.940696716308594e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.033990681171417236,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Hand Clap/a13_s05_e03.mp4",
+      "class": "Hand Clap",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 5.304813385009766e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.033261775970458984,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "High arm wave/a02_s05_e01.mp4",
+      "class": "High arm wave",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 6.67572021484375e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.026365280151367188,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "High throw/a05_s10_e02.mp4",
+      "class": "High throw",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 1.4066696166992188e-05,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.020240426063537598,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Horizontal arm wave/a01_s05_e02.mp4",
+      "class": "Horizontal arm wave",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 9.298324584960938e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.042871713638305664,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Phone Call/a15_s05_e01.mp4",
+      "class": "Phone Call",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 4.079192876815796e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.024859905242919922,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Side Kick/a10_s05_e03.mp4",
+      "class": "Side Kick",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 5.543231964111328e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.03600883483886719,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Sit down/a17_s05_e01.mp4",
+      "class": "Sit down",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 1.7881393432617188e-05,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.040259599685668945,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Stand up/a18_s10_e01.mp4",
+      "class": "Stand up",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 6.67572021484375e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.02439151704311371,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Take Umbrella/a11_s05_e01.mp4",
+      "class": "Take Umbrella",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 1.0013580322265625e-05,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.02973419427871704,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Toss Paper/a08_s10_e03.mp4",
+      "class": "Toss Paper",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 5.900859832763672e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.03391456604003906,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Two hand wave/a03_s05_e01.mp4",
+      "class": "Two hand wave",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 1.0013580322265625e-05,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.030621767044067383,
+          "top1_agreement": true
+        }
+      }
+    },
+    {
+      "clip": "Walk/a14_s05_e01.mp4",
+      "class": "Walk",
+      "backends": {
+        "fp32": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 6.67572021484375e-06,
+          "top1_agreement": true
+        },
+        "fp16": {
+          "pixel_max_abs_error": 0.0,
+          "max_abs_logit_error": 0.02973651885986328,
+          "top1_agreement": true
+        }
+      }
+    }
+  ],
+  "live_camera_tested": false,
+  "models": {
+    "fp32": {
+      "name": "MoViNet A0-Stream KARD-18 CUDA FP32",
+      "runtime": "ONNX Runtime CUDA",
+      "precision": "fp32",
+      "onnxruntime_version": "1.31.0",
+      "sha256": "1c9e528dea00a24eae144d90c141a99f1de72346cda32350ade92aabe70b1998",
+      "providers": [
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "provider_options_requested": {
+        "device_id": 0,
+        "use_tf32": "0",
+        "cudnn_conv_algo_search": "HEURISTIC"
+      },
+      "cpu_execution_fallback": false,
+      "input": {
+        "fps": 5.0,
+        "max_frames": 20,
+        "resolution": 172
+      },
+      "preprocessing": "RGB; original TensorFlow CPU bilinear resize_with_pad; float32 [0,1]",
+      "state_policy": "fresh initial states per independent fixed window",
+      "source_saved_model_pb_sha256": "11eda6aa0bdd0235119e4daa370108aeb132099e4ebe684aa391bb496fd41841",
+      "source_variables_sha256": "c9bd9c683c82941f14e7f861a876d333f51a5034c40f407a32021a952ea5251c",
+      "provider_note": "Registered providers are not a placement audit; saved trial profiles are documented separately"
+    },
+    "fp16": {
+      "name": "MoViNet A0-Stream KARD-18 CUDA FP16",
+      "runtime": "ONNX Runtime CUDA",
+      "precision": "fp16",
+      "onnxruntime_version": "1.31.0",
+      "sha256": "524addea69fe13abce9feca96bef4be3758e27a0d417af383cbc7c0419e2e9bb",
+      "providers": [
+        "CUDAExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "provider_options_requested": {
+        "device_id": 0,
+        "use_tf32": "1",
+        "cudnn_conv_algo_search": "HEURISTIC"
+      },
+      "cpu_execution_fallback": false,
+      "input": {
+        "fps": 5.0,
+        "max_frames": 20,
+        "resolution": 172
+      },
+      "preprocessing": "RGB; original TensorFlow CPU bilinear resize_with_pad; float32 [0,1]",
+      "state_policy": "fresh initial states per independent fixed window",
+      "source_saved_model_pb_sha256": "11eda6aa0bdd0235119e4daa370108aeb132099e4ebe684aa391bb496fd41841",
+      "source_variables_sha256": "c9bd9c683c82941f14e7f861a876d333f51a5034c40f407a32021a952ea5251c",
+      "provider_note": "Registered providers are not a placement audit; saved trial profiles are documented separately"
+    }
+  },
+  "scope": "Published adapter/checksum/preprocessing/prediction migration; not a new accuracy evaluation or placement trace."
+}

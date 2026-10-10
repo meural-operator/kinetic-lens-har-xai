@@ -1,0 +1,179 @@
+{
+  "parent_checks_passed": true,
+  "protected_model_hashes_reverified": true,
+  "validation_n": 108,
+  "validation_correct": 96,
+  "by_subject": {
+    "5": {
+      "n": 54,
+      "correct": 53
+    },
+    "10": {
+      "n": 54,
+      "correct": 43
+    }
+  },
+  "concept_vs_temporal_max_logit_error": 5.592188344394344e-06,
+  "concept_vs_contrastive_max_logit_error": 3.2555695987923627e-06,
+  "contrast_margin_reconstruction_max_error": 2.027210257438128e-07,
+  "contrast_term_max_error": 0.0,
+  "contrasts_by_kind": {
+    "predicted_vs_runner_up": 108,
+    "true_vs_predicted_error": 12,
+    "semantic_pair": 36
+  },
+  "temporal_control_counts": {
+    "reverse": {
+      "trials": 108,
+      "true_correct": 85,
+      "original_target_preserved": 93,
+      "mean_original_target_logit_drop": 0.3453053964508904
+    },
+    "static_first": {
+      "trials": 108,
+      "true_correct": 11,
+      "original_target_preserved": 12,
+      "mean_original_target_logit_drop": 4.780975697217165
+    },
+    "static_middle": {
+      "trials": 108,
+      "true_correct": 17,
+      "original_target_preserved": 18,
+      "mean_original_target_logit_drop": 4.1835322534596475
+    },
+    "static_last": {
+      "trials": 108,
+      "true_correct": 10,
+      "original_target_preserved": 12,
+      "mean_original_target_logit_drop": 4.925877078815743
+    },
+    "shuffle": {
+      "trials": 324,
+      "true_correct": 75,
+      "original_target_preserved": 72,
+      "mean_original_target_logit_drop": 1.999476463706405
+    },
+    "affine_appearance": {
+      "trials": 108,
+      "true_correct": 96,
+      "original_target_preserved": 106,
+      "mean_original_target_logit_drop": 0.0038163882714730723
+    }
+  },
+  "concept_deletion_rows": 432,
+  "contrast_reconstruction_reference": "Concept analytical head logits; worker independently checks actual Keras inference.",
+  "note": "Numerical cross-study audit. Does not independently validate semantics or human causal explanations.",
+  "mechanistic_baseline_comparison_n": 108,
+  "concept_vs_mechanistic_max_logit_error": 5.592188344394344e-06,
+  "mechanistic_intervention_n": 3420,
+  "mechanistic_weights_verified_unchanged": true,
+  "mechanistic_retention_followup": {
+    "unique_interventions": 1296,
+    "summary_rows_recomputed": 24,
+    "functional_conditions": [
+      {
+        "target_id": "15",
+        "target": "Drink",
+        "group": "functional_15",
+        "reference": "training_mean",
+        "target_n": "6",
+        "other_n": "102",
+        "target_correct": "4",
+        "off_target_false_positive_n": "0",
+        "specificity": "1.0",
+        "other_correct": "45",
+        "overall_correct": "49",
+        "overall_n": "108",
+        "other_true_margin_drop": "2.947236492353327",
+        "other_target_margin_drop": "-1.5219320334932382",
+        "predicted_target_total": "4"
+      },
+      {
+        "target_id": "15",
+        "target": "Drink",
+        "group": "functional_15",
+        "reference": "zero",
+        "target_n": "6",
+        "other_n": "102",
+        "target_correct": "4",
+        "off_target_false_positive_n": "0",
+        "specificity": "1.0",
+        "other_correct": "75",
+        "overall_correct": "79",
+        "overall_n": "108",
+        "other_true_margin_drop": "1.4725998195947385",
+        "other_target_margin_drop": "-1.4713362375018644",
+        "predicted_target_total": "4"
+      },
+      {
+        "target_id": "2",
+        "target": "Two hand wave",
+        "group": "functional_2",
+        "reference": "training_mean",
+        "target_n": "6",
+        "other_n": "102",
+        "target_correct": "6",
+        "off_target_false_positive_n": "0",
+        "specificity": "1.0",
+        "other_correct": "27",
+        "overall_correct": "33",
+        "overall_n": "108",
+        "other_true_margin_drop": "3.867365657114515",
+        "other_target_margin_drop": "-0.343288728163815",
+        "predicted_target_total": "6"
+      },
+      {
+        "target_id": "2",
+        "target": "Two hand wave",
+        "group": "functional_2",
+        "reference": "zero",
+        "target_n": "6",
+        "other_n": "102",
+        "target_correct": "6",
+        "off_target_false_positive_n": "0",
+        "specificity": "1.0",
+        "other_correct": "54",
+        "overall_correct": "60",
+        "overall_n": "108",
+        "other_true_margin_drop": "2.521563390890757",
+        "other_target_margin_drop": "-0.6762940627614072",
+        "predicted_target_total": "6"
+      },
+      {
+        "target_id": "8",
+        "target": "Forward Kick",
+        "group": "functional_8",
+        "reference": "training_mean",
+        "target_n": "6",
+        "other_n": "102",
+        "target_correct": "4",
+        "off_target_false_positive_n": "0",
+        "specificity": "1.0",
+        "other_correct": "31",
+        "overall_correct": "35",
+        "overall_n": "108",
+        "other_true_margin_drop": "3.572286196783477",
+        "other_target_margin_drop": "-2.256748182014288",
+        "predicted_target_total": "4"
+      },
+      {
+        "target_id": "8",
+        "target": "Forward Kick",
+        "group": "functional_8",
+        "reference": "zero",
+        "target_n": "6",
+        "other_n": "102",
+        "target_correct": "6",
+        "off_target_false_positive_n": "0",
+        "specificity": "1.0",
+        "other_correct": "56",
+        "overall_correct": "62",
+        "overall_n": "108",
+        "other_true_margin_drop": "2.423225192462697",
+        "other_target_margin_drop": "-1.805000451712997",
+        "predicted_target_total": "6"
+      }
+    ],
+    "exploratory_result_triggered": true
+  }
+}

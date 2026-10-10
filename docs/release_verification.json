@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-10",
+  "python": "3.13.0",
+  "environment": "Miniconda xai",
+  "platform": "Windows",
+  "python_tests_passed": 19,
+  "actual_optional_runtimes_tested": ["ONNX Runtime CPU", "PyTorch TorchScript CPU"],
+  "dashboard_lifecycle_test": "passed: delayed camera permissions, cancellation, old-socket reconnect isolation, track cleanup",
+  "javascript_syntax_check": "passed",
+  "wheel_build": "passed; all browser assets and CLI entry point present",
+  "original_kard_equivalence": "108 validation clips; 96 correct; maximum logit error 5.7220458984375e-6",
+  "xai_methods_executed": ["spatial", "temporal", "concept", "contrastive", "mechanistic"],
+  "repeat_after_xai_max_logit_error": 0.0,
+  "actual_live_tcp_protocol": "prediction and contrastive explanation passed against trained MoViNet/KARD model",
+  "browser_ui": "loaded and inspected in Chrome with actual trained-model metadata",
+  "physical_camera_capture_tested_on_new_origin": false,
+  "camera_permission": "Requires browser permission on http://127.0.0.1:8765",
+  "scope": "Framework and deployment verification; no new camera HAR accuracy, semantic validity, privacy certification or GPU placement benchmark"
+}

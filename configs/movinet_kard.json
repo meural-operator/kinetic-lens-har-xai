@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "adapter": "movinet",
+  "name": "MoViNet A0-Stream \u00b7 KARD-18",
+  "backbone": "../models/backbones/a0_stream",
+  "head": "../models/kard/linear_head.npz",
+  "labels": "../models/kard/labels.json",
+  "head_sha256": "0e16e03289e5466984922b6f91a89b3ecfd6bc98ee5d01db182f82e0e4017098",
+  "backbone_sha256": "f35edf9b7b747b7fd5b65f127a34c988bec7c6602b1618af123b970d5847d6d2",
+  "input": {
+    "fps": 5.0,
+    "max_frames": 50,
+    "resolution": 172
+  },
+  "xai_assets": {
+    "probes": "../models/kard/concept_probes.npz",
+    "channels": "../models/kard/channel_groups.json"
+  }
+}

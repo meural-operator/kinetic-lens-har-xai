@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "adapter": "demo",
+  "input": {"fps": 5.0, "max_frames": 20, "resolution": 64}
+}

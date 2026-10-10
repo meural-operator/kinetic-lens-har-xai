@@ -1,0 +1,707 @@
+{
+  "validation_clips": 108,
+  "validation_correct": 96,
+  "max_logit_error_vs_original_head_cache": 5.7220458984375e-06,
+  "repeat_after_explanations_max_logit_error": 0.0,
+  "methods": {
+    "spatial": {
+      "completed": true,
+      "output_bytes": 9064,
+      "target": 2,
+      "replay_error": 9.5367431640625e-07
+    },
+    "temporal": {
+      "completed": true,
+      "output_bytes": 10423,
+      "target": 2
+    },
+    "concept": {
+      "completed": true,
+      "output_bytes": 1221,
+      "target": 2
+    },
+    "contrastive": {
+      "completed": true,
+      "output_bytes": 11335,
+      "target": 2,
+      "reconstruction_error": 3.96794487933505e-06
+    },
+    "mechanistic": {
+      "completed": true,
+      "output_bytes": 2990,
+      "target": 2
+    }
+  },
+  "provenance": {
+    "name": "MoViNet A0-Stream \u00b7 KARD-18",
+    "runtime": "TensorFlow",
+    "tensorflow_version": "2.21.0",
+    "devices": [
+      "/device:CPU:0"
+    ],
+    "hashes": {
+      "linear_head.npz": "0e16e03289e5466984922b6f91a89b3ecfd6bc98ee5d01db182f82e0e4017098",
+      "variables.data-00000-of-00001": "f35edf9b7b747b7fd5b65f127a34c988bec7c6602b1618af123b970d5847d6d2"
+    },
+    "input": {
+      "fps": 5.0,
+      "max_frames": 50,
+      "resolution": 172
+    },
+    "state_policy": "fresh state per independent clip/window",
+    "preprocessing": "RGB; TensorFlow bilinear resize_with_pad; float32 [0,1]",
+    "trained": true,
+    "training_scope": "KARD head; official pretrained backbone frozen"
+  },
+  "checks": [
+    {
+      "clip_id": "a12_s05_e01",
+      "class_id": 11,
+      "predicted": 11,
+      "max_logit_error": 2.86102294921875e-06
+    },
+    {
+      "clip_id": "a12_s05_e02",
+      "class_id": 11,
+      "predicted": 11,
+      "max_logit_error": 1.0728836059570312e-06
+    },
+    {
+      "clip_id": "a12_s05_e03",
+      "class_id": 11,
+      "predicted": 11,
+      "max_logit_error": 1.2516975402832031e-06
+    },
+    {
+      "clip_id": "a12_s10_e01",
+      "class_id": 11,
+      "predicted": 11,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a12_s10_e02",
+      "class_id": 11,
+      "predicted": 11,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a12_s10_e03",
+      "class_id": 11,
+      "predicted": 11,
+      "max_logit_error": 8.344650268554688e-07
+    },
+    {
+      "clip_id": "a04_s05_e01",
+      "class_id": 3,
+      "predicted": 3,
+      "max_logit_error": 1.3113021850585938e-06
+    },
+    {
+      "clip_id": "a04_s05_e02",
+      "class_id": 3,
+      "predicted": 3,
+      "max_logit_error": 8.344650268554688e-07
+    },
+    {
+      "clip_id": "a04_s05_e03",
+      "class_id": 3,
+      "predicted": 3,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a04_s10_e01",
+      "class_id": 3,
+      "predicted": 3,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a04_s10_e02",
+      "class_id": 3,
+      "predicted": 3,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a04_s10_e03",
+      "class_id": 3,
+      "predicted": 3,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a07_s05_e01",
+      "class_id": 6,
+      "predicted": 6,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a07_s05_e02",
+      "class_id": 6,
+      "predicted": 6,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a07_s05_e03",
+      "class_id": 6,
+      "predicted": 6,
+      "max_logit_error": 2.384185791015625e-06
+    },
+    {
+      "clip_id": "a07_s10_e01",
+      "class_id": 6,
+      "predicted": 6,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a07_s10_e02",
+      "class_id": 6,
+      "predicted": 6,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a07_s10_e03",
+      "class_id": 6,
+      "predicted": 6,
+      "max_logit_error": 1.6689300537109375e-06
+    },
+    {
+      "clip_id": "a06_s05_e01",
+      "class_id": 5,
+      "predicted": 5,
+      "max_logit_error": 2.384185791015625e-06
+    },
+    {
+      "clip_id": "a06_s05_e02",
+      "class_id": 5,
+      "predicted": 5,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a06_s05_e03",
+      "class_id": 5,
+      "predicted": 5,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a06_s10_e01",
+      "class_id": 5,
+      "predicted": 6,
+      "max_logit_error": 1.3113021850585938e-06
+    },
+    {
+      "clip_id": "a06_s10_e02",
+      "class_id": 5,
+      "predicted": 5,
+      "max_logit_error": 1.6689300537109375e-06
+    },
+    {
+      "clip_id": "a06_s10_e03",
+      "class_id": 5,
+      "predicted": 6,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a16_s05_e01",
+      "class_id": 15,
+      "predicted": 15,
+      "max_logit_error": 9.5367431640625e-07
+    },
+    {
+      "clip_id": "a16_s05_e02",
+      "class_id": 15,
+      "predicted": 15,
+      "max_logit_error": 2.384185791015625e-06
+    },
+    {
+      "clip_id": "a16_s05_e03",
+      "class_id": 15,
+      "predicted": 15,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a16_s10_e01",
+      "class_id": 15,
+      "predicted": 15,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a16_s10_e02",
+      "class_id": 15,
+      "predicted": 15,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a16_s10_e03",
+      "class_id": 15,
+      "predicted": 15,
+      "max_logit_error": 9.5367431640625e-07
+    },
+    {
+      "clip_id": "a09_s05_e01",
+      "class_id": 8,
+      "predicted": 8,
+      "max_logit_error": 1.7881393432617188e-06
+    },
+    {
+      "clip_id": "a09_s05_e02",
+      "class_id": 8,
+      "predicted": 8,
+      "max_logit_error": 1.6689300537109375e-06
+    },
+    {
+      "clip_id": "a09_s05_e03",
+      "class_id": 8,
+      "predicted": 8,
+      "max_logit_error": 2.0265579223632812e-06
+    },
+    {
+      "clip_id": "a09_s10_e01",
+      "class_id": 8,
+      "predicted": 13,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a09_s10_e02",
+      "class_id": 8,
+      "predicted": 13,
+      "max_logit_error": 1.0728836059570312e-06
+    },
+    {
+      "clip_id": "a09_s10_e03",
+      "class_id": 8,
+      "predicted": 13,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a13_s05_e01",
+      "class_id": 12,
+      "predicted": 12,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a13_s05_e02",
+      "class_id": 12,
+      "predicted": 12,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a13_s05_e03",
+      "class_id": 12,
+      "predicted": 12,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a13_s10_e01",
+      "class_id": 12,
+      "predicted": 5,
+      "max_logit_error": 1.6093254089355469e-06
+    },
+    {
+      "clip_id": "a13_s10_e02",
+      "class_id": 12,
+      "predicted": 0,
+      "max_logit_error": 3.337860107421875e-06
+    },
+    {
+      "clip_id": "a13_s10_e03",
+      "class_id": 12,
+      "predicted": 12,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a02_s05_e01",
+      "class_id": 1,
+      "predicted": 1,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a02_s05_e02",
+      "class_id": 1,
+      "predicted": 1,
+      "max_logit_error": 1.0728836059570312e-06
+    },
+    {
+      "clip_id": "a02_s05_e03",
+      "class_id": 1,
+      "predicted": 1,
+      "max_logit_error": 2.1457672119140625e-06
+    },
+    {
+      "clip_id": "a02_s10_e01",
+      "class_id": 1,
+      "predicted": 6,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a02_s10_e02",
+      "class_id": 1,
+      "predicted": 6,
+      "max_logit_error": 1.8477439880371094e-06
+    },
+    {
+      "clip_id": "a02_s10_e03",
+      "class_id": 1,
+      "predicted": 1,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a05_s05_e01",
+      "class_id": 4,
+      "predicted": 4,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a05_s05_e02",
+      "class_id": 4,
+      "predicted": 4,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a05_s05_e03",
+      "class_id": 4,
+      "predicted": 4,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a05_s10_e01",
+      "class_id": 4,
+      "predicted": 15,
+      "max_logit_error": 2.1457672119140625e-06
+    },
+    {
+      "clip_id": "a05_s10_e02",
+      "class_id": 4,
+      "predicted": 4,
+      "max_logit_error": 1.6689300537109375e-06
+    },
+    {
+      "clip_id": "a05_s10_e03",
+      "class_id": 4,
+      "predicted": 6,
+      "max_logit_error": 1.3709068298339844e-06
+    },
+    {
+      "clip_id": "a01_s05_e01",
+      "class_id": 0,
+      "predicted": 0,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a01_s05_e02",
+      "class_id": 0,
+      "predicted": 0,
+      "max_logit_error": 1.5497207641601562e-06
+    },
+    {
+      "clip_id": "a01_s05_e03",
+      "class_id": 0,
+      "predicted": 0,
+      "max_logit_error": 1.0728836059570312e-06
+    },
+    {
+      "clip_id": "a01_s10_e01",
+      "class_id": 0,
+      "predicted": 0,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a01_s10_e02",
+      "class_id": 0,
+      "predicted": 0,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a01_s10_e03",
+      "class_id": 0,
+      "predicted": 0,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a15_s05_e01",
+      "class_id": 14,
+      "predicted": 14,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a15_s05_e02",
+      "class_id": 14,
+      "predicted": 14,
+      "max_logit_error": 1.4901161193847656e-06
+    },
+    {
+      "clip_id": "a15_s05_e03",
+      "class_id": 14,
+      "predicted": 14,
+      "max_logit_error": 2.1457672119140625e-06
+    },
+    {
+      "clip_id": "a15_s10_e01",
+      "class_id": 14,
+      "predicted": 14,
+      "max_logit_error": 2.384185791015625e-06
+    },
+    {
+      "clip_id": "a15_s10_e02",
+      "class_id": 14,
+      "predicted": 14,
+      "max_logit_error": 3.814697265625e-06
+    },
+    {
+      "clip_id": "a15_s10_e03",
+      "class_id": 14,
+      "predicted": 14,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a10_s05_e01",
+      "class_id": 9,
+      "predicted": 9,
+      "max_logit_error": 1.6689300537109375e-06
+    },
+    {
+      "clip_id": "a10_s05_e02",
+      "class_id": 9,
+      "predicted": 9,
+      "max_logit_error": 2.86102294921875e-06
+    },
+    {
+      "clip_id": "a10_s05_e03",
+      "class_id": 9,
+      "predicted": 9,
+      "max_logit_error": 1.0728836059570312e-06
+    },
+    {
+      "clip_id": "a10_s10_e01",
+      "class_id": 9,
+      "predicted": 9,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a10_s10_e02",
+      "class_id": 9,
+      "predicted": 9,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a10_s10_e03",
+      "class_id": 9,
+      "predicted": 9,
+      "max_logit_error": 3.337860107421875e-06
+    },
+    {
+      "clip_id": "a17_s05_e01",
+      "class_id": 16,
+      "predicted": 16,
+      "max_logit_error": 2.86102294921875e-06
+    },
+    {
+      "clip_id": "a17_s05_e02",
+      "class_id": 16,
+      "predicted": 16,
+      "max_logit_error": 9.5367431640625e-07
+    },
+    {
+      "clip_id": "a17_s05_e03",
+      "class_id": 16,
+      "predicted": 16,
+      "max_logit_error": 9.5367431640625e-07
+    },
+    {
+      "clip_id": "a17_s10_e01",
+      "class_id": 16,
+      "predicted": 16,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a17_s10_e02",
+      "class_id": 16,
+      "predicted": 16,
+      "max_logit_error": 2.205371856689453e-06
+    },
+    {
+      "clip_id": "a17_s10_e03",
+      "class_id": 16,
+      "predicted": 16,
+      "max_logit_error": 2.1457672119140625e-06
+    },
+    {
+      "clip_id": "a18_s05_e01",
+      "class_id": 17,
+      "predicted": 17,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a18_s05_e02",
+      "class_id": 17,
+      "predicted": 16,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a18_s05_e03",
+      "class_id": 17,
+      "predicted": 17,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a18_s10_e01",
+      "class_id": 17,
+      "predicted": 17,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a18_s10_e02",
+      "class_id": 17,
+      "predicted": 17,
+      "max_logit_error": 1.3113021850585938e-06
+    },
+    {
+      "clip_id": "a18_s10_e03",
+      "class_id": 17,
+      "predicted": 17,
+      "max_logit_error": 2.86102294921875e-06
+    },
+    {
+      "clip_id": "a11_s05_e01",
+      "class_id": 10,
+      "predicted": 10,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a11_s05_e02",
+      "class_id": 10,
+      "predicted": 10,
+      "max_logit_error": 2.2649765014648438e-06
+    },
+    {
+      "clip_id": "a11_s05_e03",
+      "class_id": 10,
+      "predicted": 10,
+      "max_logit_error": 2.86102294921875e-06
+    },
+    {
+      "clip_id": "a11_s10_e01",
+      "class_id": 10,
+      "predicted": 10,
+      "max_logit_error": 1.3113021850585938e-06
+    },
+    {
+      "clip_id": "a11_s10_e02",
+      "class_id": 10,
+      "predicted": 10,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a11_s10_e03",
+      "class_id": 10,
+      "predicted": 10,
+      "max_logit_error": 1.6689300537109375e-06
+    },
+    {
+      "clip_id": "a08_s05_e01",
+      "class_id": 7,
+      "predicted": 7,
+      "max_logit_error": 2.384185791015625e-06
+    },
+    {
+      "clip_id": "a08_s05_e02",
+      "class_id": 7,
+      "predicted": 7,
+      "max_logit_error": 9.5367431640625e-07
+    },
+    {
+      "clip_id": "a08_s05_e03",
+      "class_id": 7,
+      "predicted": 7,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a08_s10_e01",
+      "class_id": 7,
+      "predicted": 7,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a08_s10_e02",
+      "class_id": 7,
+      "predicted": 7,
+      "max_logit_error": 1.1920928955078125e-06
+    },
+    {
+      "clip_id": "a08_s10_e03",
+      "class_id": 7,
+      "predicted": 7,
+      "max_logit_error": 2.384185791015625e-06
+    },
+    {
+      "clip_id": "a03_s05_e01",
+      "class_id": 2,
+      "predicted": 2,
+      "max_logit_error": 3.814697265625e-06
+    },
+    {
+      "clip_id": "a03_s05_e02",
+      "class_id": 2,
+      "predicted": 2,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a03_s05_e03",
+      "class_id": 2,
+      "predicted": 2,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a03_s10_e01",
+      "class_id": 2,
+      "predicted": 2,
+      "max_logit_error": 2.86102294921875e-06
+    },
+    {
+      "clip_id": "a03_s10_e02",
+      "class_id": 2,
+      "predicted": 2,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a03_s10_e03",
+      "class_id": 2,
+      "predicted": 2,
+      "max_logit_error": 1.430511474609375e-06
+    },
+    {
+      "clip_id": "a14_s05_e01",
+      "class_id": 13,
+      "predicted": 13,
+      "max_logit_error": 1.9073486328125e-06
+    },
+    {
+      "clip_id": "a14_s05_e02",
+      "class_id": 13,
+      "predicted": 13,
+      "max_logit_error": 5.7220458984375e-06
+    },
+    {
+      "clip_id": "a14_s05_e03",
+      "class_id": 13,
+      "predicted": 13,
+      "max_logit_error": 2.2649765014648438e-06
+    },
+    {
+      "clip_id": "a14_s10_e01",
+      "class_id": 13,
+      "predicted": 13,
+      "max_logit_error": 3.814697265625e-06
+    },
+    {
+      "clip_id": "a14_s10_e02",
+      "class_id": 13,
+      "predicted": 13,
+      "max_logit_error": 1.7881393432617188e-06
+    },
+    {
+      "clip_id": "a14_s10_e03",
+      "class_id": 13,
+      "predicted": 13,
+      "max_logit_error": 1.7881393432617188e-06
+    }
+  ],
+  "scope": "Deployment equivalence and execution; not new semantic/faithfulness validation or a new blind accuracy benchmark"
+}

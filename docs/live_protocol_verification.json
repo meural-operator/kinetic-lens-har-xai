@@ -1,0 +1,10 @@
+{
+  "model": "MoViNet A0-Stream \u00b7 KARD-18",
+  "tcp_websocket_prediction": true,
+  "tcp_websocket_contrastive_explanation": true,
+  "sampled_frames": 20,
+  "processing_ms": 5637.714299999061,
+  "physical_camera_tested": false,
+  "frames_recorded": false,
+  "note": "Synthetic JPEG protocol check against the real model, not HAR accuracy evidence"
+}

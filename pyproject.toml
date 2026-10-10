@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kinetic-lens-har-xai"
+version = "0.1.0"
+description = "Model adapters, reproducible explanations, and a local camera dashboard for video HAR"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "opencv-python-headless>=4.10,<5", "pillow>=10,<13", "fastapi>=0.115,<1", "uvicorn>=0.30,<1", "websockets>=13,<17"]
+
+[project.optional-dependencies]
+movinet = ["tensorflow==2.21.0"]
+onnx = ["onnxruntime>=1.20,<2"]
+onnx-gpu = ["onnxruntime-gpu>=1.20,<2"]
+torch = ["torch>=2.5,<3"]
+dev = ["pytest>=8,<10", "httpx>=0.27,<1", "build>=1,<2"]
+
+[project.scripts]
+kinetic-lens = "kinetic_lens.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+kinetic_lens = ["web/*.html", "web/*.css", "web/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-ra"

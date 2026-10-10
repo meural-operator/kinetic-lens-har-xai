@@ -1,0 +1,40 @@
+{
+  "source_head_sha256": "e2e3bb899d133b1290a891ad0d82e1a6d8205ffb94c2799e6115bb0c99c63a70",
+  "portable_head_sha256": "0e16e03289e5466984922b6f91a89b3ecfd6bc98ee5d01db182f82e0e4017098",
+  "conversion": "Lossless export of normalization, Dense weights and bias; dropout disabled; no retraining or quantization",
+  "backbone_data_sha256": "f35edf9b7b747b7fd5b65f127a34c988bec7c6602b1618af123b970d5847d6d2",
+  "backbone_archive_sha256": "2453a3d224b8afb6503d845a4220373f7972575e23c9681aaded28b5a12f611f",
+  "backbone_handle": "https://tfhub.dev/tensorflow/movinet/a0/stream/kinetics-600/classification/3",
+  "backbone_reference": "https://github.com/tensorflow/models/tree/master/official/projects/movinet",
+  "training_clips": 324,
+  "validation_clips": 108,
+  "test_clips": 108,
+  "train_subjects": [
+    1,
+    3,
+    4,
+    6,
+    7,
+    8
+  ],
+  "validation_subjects": [
+    5,
+    10
+  ],
+  "test_subjects": [
+    2,
+    9
+  ],
+  "validation_correct": 96,
+  "test_correct": 94,
+  "class_count": 18,
+  "limitations": [
+    "Researcher-defined subject split, not an official KARD benchmark",
+    "Two validation and two test subjects",
+    "Validation reused for checkpoint selection and XAI",
+    "No idle/unknown class; uncalibrated scores",
+    "Concept assets are action-label-derived proxies, not independent semantic annotations"
+  ],
+  "concept_probes_sha256": "4b187c0a553006a3e5cec4ad7fce4a9de024edddade5844522861a63e054d8a1",
+  "channel_groups_sha256": "0daa476fb99b079d2d745f57bc33093a4c04c495a3d0e88064cb92f1b39601d3"
+}

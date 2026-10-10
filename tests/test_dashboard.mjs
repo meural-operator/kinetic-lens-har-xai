@@ -68,7 +68,7 @@ vm.runInContext('receive({type:"error",message:"unsupported target"})',context);
 assert.equal(document.getElementById('auto-xai').checked,false);
 // Matching sample, rather than live video, is the overlay's image source.
 const draws=[],fills=[];
-document.getElementById('replay').getContext=()=>({drawImage:im=>draws.push(im.id),fillRect:()=>fills.push(1)});
+document.getElementById('replay').getContext=()=>({clearRect(){},drawImage:im=>draws.push(im.id),fillRect:()=>fills.push(1)});
 document.getElementById('heatmap').checked=true;
 document.getElementById('opacity').value='45';
 vm.runInContext('replayFrames=[{id:"frame-0",width:192,height:192},{id:"frame-1",width:192,height:192}];replayIndex=1;replayResult={target:0,data:{display_scale:1,maps:[[[0]],[[1]]]}};drawReplay()',context);

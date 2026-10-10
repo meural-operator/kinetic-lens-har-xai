@@ -10,6 +10,8 @@ const descriptions = {
 let model, stream, ws, timer, lastResult, lastExplanation, lastSnapshotAge, explaining = false,
   starting = false,
   sessionGeneration = 0;
+let replayTimer, replayFrames, replayResult, replayIndex = 0, renderGeneration = 0,
+  nextAutoAt = 0, lastExplainedWindow;
 const capture = document.createElement("canvas"),
   ctx = capture.getContext("2d");
 
@@ -36,6 +38,9 @@ function options(select, labels) {
 }
 
 function resetResults() {
+  clearReplay();
+  lastExplainedWindow = undefined;
+  nextAutoAt = 0;
   lastResult = lastExplanation = undefined;
   text("winner", "Collect a video window");
   $("scores").replaceChildren();
@@ -76,7 +81,10 @@ async function load() {
     text("connection", "Load failed");
   }
 }
-$("method").onchange = () => text("method-description", descriptions[$("method").value] || "");
+$("method").onchange = () => {
+  text("method-description", descriptions[$("method").value] || "");
+  clearReplay();
+};
 async function start() {
   if (starting || stream) return;
   starting = true;
@@ -176,6 +184,8 @@ function sendFrame() {
 }
 
 function stop(message = "Camera stopped") {
+  clearReplay();
+  $("auto-xai").checked = false;
   sessionGeneration++;
   starting = false;
   clearInterval(timer);
@@ -204,6 +214,7 @@ function receive(data) {
   if (data.type === "error") {
     error(data.message);
     explaining = false;
+    $("auto-xai").checked = false;
     text("lab-status", "Explanation or inference failed; see the message above.");
     return;
   }
@@ -237,8 +248,12 @@ function receive(data) {
     lastExplanation = data;
     explaining = false;
     lastSnapshotAge = (performance.now() - data.window_end_ms) / 1000;
-    renderExplanation(data.result);
-    text("lab-status", `Explained a completed window ending ${lastSnapshotAge.toFixed(1)}s ago · ${data.processing_ms.toFixed(0)} ms processing. These results do not update with later camera frames.`);
+    nextAutoAt = performance.now() + Number($("xai-interval").value || 10) * 1000;
+    renderExplanation(data.result).catch(e => {
+      error(e.message);
+      $("auto-xai").checked = false;
+    });
+    text("lab-status", `${data.result.method}: completed window ending ${lastSnapshotAge.toFixed(1)}s ago · ${data.processing_ms.toFixed(0)} ms processing. Results describe this window until a new explanation completes.`);
     $("download").disabled = false;
   }
 }
@@ -257,6 +272,8 @@ function table(headers, rows) {
   return t;
 }
 async function renderExplanation(r) {
+  clearReplay();
+  const generation = renderGeneration;
   const out = $("explanation");
   out.replaceChildren();
   out.append(node("p", `Target: ${model.labels[r.target]}${r.data.rival!==undefined&&r.data.rival!==null?` versus ${model.labels[r.data.rival]}`:""}`));
@@ -272,14 +289,29 @@ async function renderExplanation(r) {
     grid.className = "map-grid";
     out.append(grid);
     const n = r.data.maps.length;
+    if (!n || r.thumbnails?.length !== n) throw new Error("Spatial replay requires one original sample per attribution map.");
+    const images = await Promise.all(r.thumbnails.map(async jpeg => {
+      const image = new Image();
+      image.src = "data:image/jpeg;base64," + jpeg;
+      await image.decode();
+      return image;
+    }));
+    if (generation !== renderGeneration) return;
+    replayFrames = images;
+    replayResult = r;
+    replayIndex = 0;
+    $("replay-panel").hidden = false;
+    drawReplay();
+    replayTimer = setInterval(() => {
+      replayIndex = (replayIndex + 1) % replayFrames.length;
+      drawReplay();
+    }, 1000 / model.fps);
     const chosen = [...new Set([0, Math.floor(n / 4), Math.floor(n / 2), Math.floor(3 * n / 4), n - 1])];
     for (const i of chosen) {
       const canvas = node("canvas");
       canvas.width = canvas.height = 192;
       grid.append(canvas);
-      const image = new Image();
-      image.src = "data:image/jpeg;base64," + r.thumbnails[i];
-      await image.decode();
+      const image = images[i];
       const c = canvas.getContext("2d");
       c.fillStyle = "#14243b";
       c.fillRect(0, 0, 192, 192);
@@ -312,12 +344,44 @@ async function renderExplanation(r) {
   text("raw", JSON.stringify(copy, null, 2));
   $("raw-result").hidden = false;
 }
-$("explain").onclick = () => {
-  if (!ws || ws.readyState !== 1 || !lastResult) return;
+function clearReplay() {
+  renderGeneration++;
+  clearInterval(replayTimer);
+  replayTimer = replayFrames = replayResult = undefined;
+  $("replay-panel").hidden = true;
+  $("replay").getContext("2d").clearRect(0, 0, 480, 480);
+}
+
+function drawReplay() {
+  if (!replayFrames || !replayResult) return;
+  const image = replayFrames[replayIndex], canvas = $("replay"), c = canvas.getContext("2d");
+  const size = canvas.width, s = Math.min(size / image.width, size / image.height);
+  c.fillStyle = "#14243b";
+  c.fillRect(0, 0, size, size);
+  c.drawImage(image, (size-image.width*s)/2, (size-image.height*s)/2, image.width*s, image.height*s);
+  if ($("heatmap").checked) {
+    const map = replayResult.data.maps[replayIndex], opacity = Number($("opacity").value) / 100;
+    map.forEach((row, y) => row.forEach((value, x) => {
+      const v = value / (replayResult.data.display_scale || 1), a = Math.min(1, Math.abs(v)) * opacity;
+      c.fillStyle = v >= 0 ? `rgba(245,72,53,${a})` : `rgba(48,124,241,${a})`;
+      c.fillRect(x*size/row.length, y*size/map.length, size/row.length, size/map.length);
+    }));
+  }
+  text("replay-caption", `${model.labels[replayResult.target]} · sample ${replayIndex+1}/${replayFrames.length} · ${(replayIndex/model.fps).toFixed(1)}s within window · original sampled preview, resized for display`);
+}
+$("heatmap").onchange = drawReplay;
+$("opacity").oninput = drawReplay;
+
+function requestExplanation(automatic = false) {
+  const age = lastResult ? (performance.now()-lastResult.window_end_ms)/1000 : Infinity;
+  const selected = $("method").selectedOptions[0];
+  if (!stream || !ws || ws.readyState !== 1 || explaining || age >= Math.max(3,model.update_seconds*3) || !selected || selected.disabled) return false;
+  if (automatic && (performance.now() < nextAutoAt || lastResult.window_end_ms === lastExplainedWindow)) return false;
   const opts = {};
   if ($("target").value !== "") opts.target = Number($("target").value);
   if ($("rival").value !== "" && ["contrastive", "spatial"].includes($("method").value)) opts.rival = Number($("rival").value);
   explaining = true;
+  lastExplainedWindow = lastResult.window_end_ms;
   $("explain").disabled = true;
   text("lab-status", "Computing explanation for the last completed window…");
   ws.send(JSON.stringify({
@@ -325,7 +389,9 @@ $("explain").onclick = () => {
     method: $("method").value,
     options: opts
   }));
-};
+  return true;
+}
+$("explain").onclick = () => requestExplanation();
 $("download").onclick = () => {
   if (!lastExplanation) return;
   const result = JSON.parse(JSON.stringify(lastExplanation));
@@ -350,5 +416,7 @@ setInterval(() => {
   text("freshness", fresh ? "Fresh" : lastResult ? "Stale" : "Waiting");
   $("freshness").className = "pill " + (fresh ? "good" : "stale");
   $("explain").disabled = !fresh || explaining || !ws || !$("method").selectedOptions[0] || $("method").selectedOptions[0].disabled;
+  if (lastExplanation && replayResult) text("replay-age", `Window ended ${Math.max(0,(performance.now()-lastExplanation.window_end_ms)/1000).toFixed(1)}s ago`);
+  if ($("auto-xai").checked && fresh) requestExplanation(true);
 }, 400);
 load();

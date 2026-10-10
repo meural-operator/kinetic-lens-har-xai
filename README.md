@@ -16,6 +16,8 @@ kinetic-lens --config configs/movinet_kard.json serve
 
 Open **http://127.0.0.1:8765**, choose **Start camera**, and allow browser camera access. The first prediction appears after a four-second window is collected. Stop releases the camera and clears the session. The setup script downloads and verifies the exact official backbone; the compact trained head, labels, concept proxies and channel selections are already versioned in `models/kard/`.
 
+In the Explanation Lab, choose a **Technique** and either **Explain latest window** once or enable **Automatically explain new windows**. Automatic mode is optional, off by default, and waits 5, 10 or 30 seconds after each completed explanation. Spatial attribution displays an animated replay of the matching original sampled window with an adjustable heatmap; its age is shown separately from the live camera. **Show heatmap** toggles the overlay. Other techniques display their measurements below. Explanations can pause inference, and automatic mode stops on errors. See [runtime explanations](docs/runtime-xai.md) for what each display means.
+
 Windows PowerShell with your Miniconda environment:
 
 ```powershell
@@ -43,7 +45,7 @@ For a dependency-light UI smoke test, install `.[dev]` and use `configs/demo.jso
 | Component | Function | Scope |
 |---|---|---|
 | MoViNet + KARD head | Real clip/window predictions; original-model equivalence checks | A0-Stream, 172² padded RGB, 5 fps, max 50 frames; fresh states per window |
-| Live dashboard | Browser camera, bounded temporal buffer, top-three scores, latency and result age | Local rolling-window inference; no persistent video recording |
+| Live dashboard | Browser camera, bounded temporal buffer, top-three scores, latency and result age; optional automatic XAI and matching spatial heatmap replay | Local rolling-window inference; no persistent video recording |
 | Temporal attribution | Reversal, shuffle, static-frame and multi-reference segment interventions | Any adapter exposing prediction |
 | Spatial attribution | Video Grad-CAM or signed class-pair maps | MoViNet gradient hook; coarse maps need faithfulness controls |
 | Contrastive explanation | Exact feature contributions to a class-pair logit margin | Models exposing an affine head; feature coordinates are not semantic concepts |

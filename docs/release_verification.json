@@ -13,7 +13,10 @@
   "repeat_after_xai_max_logit_error": 0.0,
   "actual_live_tcp_protocol": "prediction and contrastive explanation passed against trained MoViNet/KARD model",
   "browser_ui": "loaded and inspected in Chrome with actual trained-model metadata",
-  "physical_camera_capture_tested_on_new_origin": false,
+  "physical_camera_capture_tested_on_new_origin": true,
+  "physical_camera_observation": "Chrome connected to Logi C270; predictions and a temporal explanation were displayed before the optional runtime-XAI controls were added. No webcam recognition accuracy evaluation.",
+  "runtime_xai_controls": "Implemented optional automatic technique selection, throttling, matched spatial replay, overlay toggle and opacity. No camera or runtime testing of these additions, at the user's request.",
+  "latest_dashboard_regression_checks": "Added regression cases for automatic scheduling and overlay rendering; not executed after these UI additions, at the user's request.",
   "camera_permission": "Requires browser permission on http://127.0.0.1:8765",
   "scope": "Framework and deployment verification; no new camera HAR accuracy, semantic validity, privacy certification or GPU placement benchmark"
 }

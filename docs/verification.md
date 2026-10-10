@@ -10,4 +10,6 @@ The official backbone setup checks the published archive and variable-data hashe
 
 The local server/browser and actual-model checks are documented in the repository release verification record. WebSocket tests send synthetic frames through the actual buffering and inference protocol. These check application behavior, not continuous-action accuracy or physical camera hardware. Webcam accuracy remains unvalidated, even where capture and inference work.
 
+Chrome camera capture, predictions and a temporal explanation were observed on the local trained-model dashboard. The optional automatic-XAI controls and animated matched-window heatmap were added afterward. The user elected to perform their camera/runtime validation; those additions have not been runtime-tested. Earlier passing test counts apply to the preceding framework version, not to an execution of the newly extended browser regression checks.
+
 The original extended XAI reports are preserved in `docs/research/`. These studies reused validation data after checkpoint selection and remain exploratory. They support bounded intervention effects; high proxy AUC or a plausible heatmap alone does not establish independently meaningful semantic concepts or complete circuits.

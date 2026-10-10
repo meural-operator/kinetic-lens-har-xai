@@ -6,9 +6,9 @@ import vm from 'node:vm';
 
 const elements = new Map();
 function element() {
-  return { value: '', disabled: false, hidden: false, selectedOptions: [{disabled:false}],
+  return { value: '', checked:false, disabled: false, hidden: false, width:480, selectedOptions: [{disabled:false}],
     append() {}, replaceChildren() {}, dispatchEvent() {this.onchange?.();},
-    getContext() {return {};}, async play() {}, click() {} };
+    getContext() {return {clearRect(){},fillRect(){},drawImage(){},fillText(){}};}, async play() {}, click() {} };
 }
 const document = {
   getElementById(id) {if (!elements.has(id)) elements.set(id,element());return elements.get(id);},
@@ -20,8 +20,9 @@ class Socket {
   readyState=0;
   constructor() {sockets.push(this);}
   close() {this.readyState=3;}
+  send(message) {this.sent ??=[];this.sent.push(JSON.parse(message));}
 }
-const info={name:'Fixture',fps:5,window_seconds:4,max_frames:20,labels:['a','b'],methods:[{id:'temporal',available:true}],provenance:{runtime:'Fixture'}};
+const info={name:'Fixture',fps:5,window_seconds:4,update_seconds:1,max_frames:20,labels:['a','b'],methods:[{id:'temporal',available:true}],provenance:{runtime:'Fixture'}};
 const context=vm.createContext({document, console, WebSocket:Socket, Image:class{},
   fetch:async()=>({ok:true,json:async()=>info}),
   navigator:{mediaDevices:{getUserMedia:()=>new Promise(resolve=>requests.push(resolve)),enumerateDevices:async()=>[]}},
@@ -51,7 +52,34 @@ requests[2](thirdMedia);await third;
 oldSocket.onclose();
 assert.equal(thirdMedia.track.stops,0);
 assert.equal(document.getElementById('video').srcObject,thirdMedia);
+// Optional scheduler never duplicates a window or queues work while explaining.
+sockets.at(-1).readyState=1;
+document.getElementById('method').value='temporal';
+vm.runInContext('lastResult={window_end_ms:performance.now()};nextAutoAt=0',context);
+assert.equal(vm.runInContext('requestExplanation(true)',context),true);
+assert.equal(vm.runInContext('requestExplanation(true)',context),false);
+assert.equal(sockets.at(-1).sent.length,1);
+vm.runInContext('explaining=false;nextAutoAt=performance.now()+10000;lastResult={window_end_ms:performance.now()+1}',context);
+assert.equal(vm.runInContext('requestExplanation(true)',context),false);
+vm.runInContext('nextAutoAt=0',context);
+assert.equal(vm.runInContext('requestExplanation(true)',context),true);
+document.getElementById('auto-xai').checked=true;
+vm.runInContext('receive({type:"error",message:"unsupported target"})',context);
+assert.equal(document.getElementById('auto-xai').checked,false);
+// Matching sample, rather than live video, is the overlay's image source.
+const draws=[],fills=[];
+document.getElementById('replay').getContext=()=>({drawImage:im=>draws.push(im.id),fillRect:()=>fills.push(1)});
+document.getElementById('heatmap').checked=true;
+document.getElementById('opacity').value='45';
+vm.runInContext('replayFrames=[{id:"frame-0",width:192,height:192},{id:"frame-1",width:192,height:192}];replayIndex=1;replayResult={target:0,data:{display_scale:1,maps:[[[0]],[[1]]]}};drawReplay()',context);
+assert.deepEqual(draws,['frame-1']);
+assert.equal(fills.length,2); // background + one attribution cell
+document.getElementById('heatmap').checked=false;
+vm.runInContext('drawReplay()',context);
+assert.equal(fills.length,3); // only background when heatmap is off
 vm.runInContext('stop()',context);
 assert.ok(thirdMedia.track.stops>0);
 assert.equal(document.getElementById('video').srcObject,null);
-console.log('Dashboard delayed-permission and reconnect lifecycle checks passed.');
+assert.equal(document.getElementById('replay-panel').hidden,true);
+assert.equal(vm.runInContext('replayFrames',context),undefined);
+console.log('Dashboard lifecycle, optional scheduler and matching-frame overlay checks passed.');

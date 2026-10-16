@@ -1,0 +1,7 @@
+{
+  "source_sha256_checks_passed": 540,
+  "parent_head_sha256": "e2e3bb899d133b1290a891ad0d82e1a6d8205ffb94c2799e6115bb0c99c63a70",
+  "parent_manifest_sha256": "bccbac8c3487df4fec89b5a9bf274d21c21d20fbcfb96f051d3c54ec24a22d01",
+  "subject_split_unchanged": true,
+  "test_not_used_for_protocol_or_checkpoint_selection": true
+}

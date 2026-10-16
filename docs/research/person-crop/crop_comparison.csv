@@ -1,0 +1,25 @@
+model,video,condition,top1,probability
+a0_stream,kth-boxing,full_frame,juggling balls,0.21375535428524017
+a0_stream,kth-boxing,person_crop,using a paint roller,0.1611875593662262
+a0_stream,kth-boxing,person_crop_letterbox,punching person (boxing),0.2954144775867462
+a0_stream,kth-running,full_frame,jogging,0.7355142831802368
+a0_stream,kth-running,person_crop,jogging,0.7355142831802368
+a0_stream,kth-running,person_crop_letterbox,jogging,0.7702993154525757
+a0_stream,kard-drink,full_frame,front raises,0.6021286845207214
+a0_stream,kard-drink,person_crop,front raises,0.7053504586219788
+a0_stream,kard-drink,person_crop_letterbox,front raises,0.7679570317268372
+a0_stream,kard-kick,full_frame,stretching leg,0.5955744385719299
+a0_stream,kard-kick,person_crop,stretching leg,0.42974114418029785
+a0_stream,kard-kick,person_crop_letterbox,stretching leg,0.4666089117527008
+a2_stream,kth-boxing,full_frame,tai chi,0.3500699996948242
+a2_stream,kth-boxing,person_crop,tai chi,0.2773998975753784
+a2_stream,kth-boxing,person_crop_letterbox,punching person (boxing),0.49045753479003906
+a2_stream,kth-running,full_frame,jogging,0.9320133924484253
+a2_stream,kth-running,person_crop,jogging,0.9320133924484253
+a2_stream,kth-running,person_crop_letterbox,jogging,0.9844732284545898
+a2_stream,kard-drink,full_frame,front raises,0.5400116443634033
+a2_stream,kard-drink,person_crop,drinking shots,0.3014432489871979
+a2_stream,kard-drink,person_crop_letterbox,front raises,0.6053465604782104
+a2_stream,kard-kick,full_frame,stretching leg,0.5542859435081482
+a2_stream,kard-kick,person_crop,stretching leg,0.6397937536239624
+a2_stream,kard-kick,person_crop_letterbox,stretching leg,0.5806996822357178

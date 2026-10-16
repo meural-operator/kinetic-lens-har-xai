@@ -1,0 +1,18 @@
+{
+  "480": {
+    "reference_sha256": "54724f5d43e4d47579aaa09656da8b0dc0d0e222503a090b3a2054a3d427dfa2",
+    "max_abs_errors": {
+      "mean": 0.0,
+      "scale": 0.0
+    },
+    "bitwise_equal": true
+  },
+  "104": {
+    "reference_sha256": "b7c93a7cc542dcd114bde43d2a79a0bd57dfefac28df2a7df16ab6fc9e12a288",
+    "max_abs_errors": {
+      "mean": 0.0,
+      "scale": 0.0
+    },
+    "bitwise_equal": true
+  }
+}

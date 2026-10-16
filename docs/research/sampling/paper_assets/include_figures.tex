@@ -1,0 +1,22 @@
+% Requires graphicx. Copy these PDFs into figures/kard_sampling_cv/.
+% ICML: figure* for wide assets, figure for cv02. ICLR: use figure for all.
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/kard_sampling_cv/cv01_fold_comparison.pdf}
+\caption{Test accuracy and macro F1 for paired 5- and 10-fps frozen-backbone heads. Points average three training seeds within each subject fold; error bars show sample SD across those seeds, not confidence intervals. All checkpoint, L2 and sampling-policy choices were locked using validation before new-fold test scoring. Training subjects overlap across folds.}
+\label{fig:cv01_fold_comparison}
+\end{figure*}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/kard_sampling_cv/cv02_subject_comparison.pdf}
+\caption{Held-out subject test accuracy at 5 versus 10 fps. Each subject contributes 54 videos and is tested once per seed. Points average three seeds; horizontal bars show seed SD, not uncertainty from independent subject samples. Each subject is predicted by the model trained without that subject.}
+\label{fig:cv02_subject_comparison}
+\end{figure}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/kard_sampling_cv/cv03_subject_protocol.pdf}
+\caption{Prespecified five-fold subject assignment. Every subject is held out for test once and validation once. The remaining six subjects train. Each assignment is run at 5 and 10 fps with seeds 42, 123 and 2026; frame caps of 50 and 100 preserve a centered maximum 10-second window. This is a researcher-defined protocol, not an official KARD benchmark.}
+\label{fig:cv03_subject_protocol}
+\end{figure*}

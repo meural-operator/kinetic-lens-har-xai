@@ -1,0 +1,31 @@
+{
+  "publication_date": "2026-10-16",
+  "scope": "Archived research evidence and documentation; no training, model replacement or camera test.",
+  "evidence_verifier": {
+    "command": "python experiments/report_results.py",
+    "published_files_verified": 252,
+    "sampling_runs": 30,
+    "ablation_selected_runs": 12,
+    "adapter_rows_including_baselines": 12,
+    "selected_checkpoint_hashes_verified": 21,
+    "raw_vit_timing_calls_verified_including_superseded_gpu_session": 2025,
+    "size_latency_forms": 31,
+    "saved_inference_artifact_sizes": 26
+  },
+  "framework_checks": {
+    "core_and_available_runtime_suite": "20 passed, 1 optional ONNX test skipped because onnxruntime was not globally installed in xai.",
+    "optional_onnx_rerun": "1 passed using the existing isolated ONNX dependencies; no package install or environment modification.",
+    "dashboard_javascript": "Lifecycle, optional scheduler and matching-frame overlay checks passed.",
+    "execution_environment": "Miniconda xai. Host-access retry was required after restricted-process pytest temporary-directory access failed.",
+    "warnings": "Existing Starlette/httpx and TorchScript API deprecations; no test failures after host-access retry."
+  },
+  "content_checks": {
+    "local_links": "Checked the README, study/benchmark indexes, model card, reproduction guide and imported Markdown.",
+    "local_links_verified": 64,
+    "imported_json_and_python": "JSON decoded and archived Python parsed successfully.",
+    "scientific_limits": "Fold/seed/call SD definitions, observed-data limitations and checkpoint identity distinctions are stated.",
+    "git_line_endings": "Published text is canonical LF; historical source snapshots preserve original bytes.",
+    "staged_artifact_hashes": "All 252 imported files were verified against their actual staged Git blob bytes.",
+    "deployed_code_config_and_weights": "No runtime source, model configuration or deployed weight changes."
+  }
+}

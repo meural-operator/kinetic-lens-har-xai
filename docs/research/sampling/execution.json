@@ -1,0 +1,9 @@
+{
+  "runs_completed": 30,
+  "candidate_fits": 90,
+  "protocol_sha256": "3be214454fe326d58c2b2ab0ad89303f2a28e2d2163efd01b844e2aa7e39c8e1",
+  "selection_lock_sha256": "f1366b6207305b3f42a2a41bd19b90c8e49017582e18a56436ea43d3dc48c843",
+  "wall_seconds_this_invocation": 449.9629744999984,
+  "all_head_reload_checks_passed": true,
+  "test_score_checks_passed": true
+}

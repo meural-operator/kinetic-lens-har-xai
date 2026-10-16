@@ -1,0 +1,467 @@
+{
+  "model_id": "kth",
+  "checkpoint": "<original-showcase>\\weights\\kth_vit_bilstm.pth",
+  "checkpoint_bytes": 357736462,
+  "input_shape": [
+    1,
+    8,
+    3,
+    224,
+    224
+  ],
+  "stages": {
+    "pytorch_reference": {
+      "status": "PASS",
+      "windows": 9,
+      "parameter_count": 89412230
+    },
+    "fp32_graph": {
+      "status": "PASS",
+      "bytes": 355428277,
+      "operators": {
+        "Constant": 137,
+        "Reshape": 54,
+        "Conv": 1,
+        "Shape": 7,
+        "Slice": 1,
+        "Concat": 8,
+        "Transpose": 54,
+        "ConstantOfShape": 1,
+        "Mul": 37,
+        "Equal": 1,
+        "Where": 1,
+        "Expand": 7,
+        "Add": 111,
+        "LayerNormalization": 26,
+        "MatMul": 97,
+        "Softmax": 12,
+        "Cast": 24,
+        "Div": 12,
+        "Erf": 12,
+        "Gather": 8,
+        "Unsqueeze": 6,
+        "LSTM": 3,
+        "Gemm": 1
+      }
+    },
+    "int8_quantization": {
+      "status": "PASS",
+      "seconds": 8.322
+    },
+    "int8_graph": {
+      "status": "PASS",
+      "bytes": 92177084,
+      "operators": {
+        "Constant": 137,
+        "Reshape": 54,
+        "ConstantOfShape": 1,
+        "Conv": 1,
+        "Mul": 185,
+        "Shape": 7,
+        "Equal": 1,
+        "Slice": 1,
+        "Where": 1,
+        "Concat": 8,
+        "Expand": 7,
+        "Transpose": 54,
+        "Add": 112,
+        "LayerNormalization": 26,
+        "DynamicQuantizeLinear": 50,
+        "MatMulInteger": 74,
+        "Cast": 98,
+        "MatMul": 24,
+        "Softmax": 12,
+        "Div": 12,
+        "Erf": 12,
+        "Gather": 8,
+        "Unsqueeze": 6,
+        "DynamicQuantizeLSTM": 3
+      },
+      "reduction_vs_checkpoint_percent": 74.233
+    },
+    "fp32_runtime": {
+      "status": "PASS",
+      "provider": "CPUExecutionProvider",
+      "threads": 4,
+      "windows": 9,
+      "top1_agreement_count": 9,
+      "max_abs_logit_error": 2.9802322387695312e-06,
+      "max_abs_probability_error": 3.5762786865234375e-07,
+      "cpu_median_ms": 667.893,
+      "results": [
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.384185791015625e-06,
+          "max_abs_probability_error": 6.984919309616089e-10,
+          "softmax_score": 0.9992337226867676,
+          "cpu_median_ms": 707.772
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.0728836059570312e-06,
+          "max_abs_probability_error": 1.30385160446167e-08,
+          "softmax_score": 0.9649463891983032,
+          "cpu_median_ms": 683.666
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 7.450580596923828e-07,
+          "max_abs_probability_error": 4.0745362639427185e-10,
+          "softmax_score": 0.9975314140319824,
+          "cpu_median_ms": 685.56
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "running",
+          "onnx_label": "running",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.9073486328125e-06,
+          "max_abs_probability_error": 1.1920928955078125e-07,
+          "softmax_score": 0.9958487749099731,
+          "cpu_median_ms": 702.873
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "jogging",
+          "onnx_label": "jogging",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.86102294921875e-06,
+          "max_abs_probability_error": 3.5762786865234375e-07,
+          "softmax_score": 0.7804238796234131,
+          "cpu_median_ms": 675.162
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "running",
+          "onnx_label": "running",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.9802322387695312e-06,
+          "max_abs_probability_error": 2.980232238769531e-07,
+          "softmax_score": 0.9286305904388428,
+          "cpu_median_ms": 661.443
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "handclapping",
+          "onnx_label": "handclapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.430511474609375e-06,
+          "max_abs_probability_error": 7.2177499532699585e-09,
+          "softmax_score": 0.9936903715133667,
+          "cpu_median_ms": 653.549
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "handclapping",
+          "onnx_label": "handclapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.86102294921875e-06,
+          "max_abs_probability_error": 2.384185791015625e-07,
+          "softmax_score": 0.9283635020256042,
+          "cpu_median_ms": 638.164
+        },
+        {
+          "video": "kard-kick",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "handclapping",
+          "onnx_label": "handclapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.592802047729492e-06,
+          "max_abs_probability_error": 6.705522537231445e-08,
+          "softmax_score": 0.9026893377304077,
+          "cpu_median_ms": 651.82
+        }
+      ]
+    },
+    "int8_runtime": {
+      "status": "PASS",
+      "provider": "CPUExecutionProvider",
+      "threads": 4,
+      "windows": 9,
+      "top1_agreement_count": 9,
+      "max_abs_logit_error": 0.3302469551563263,
+      "max_abs_probability_error": 0.022360801696777344,
+      "cpu_median_ms": 169.989,
+      "results": [
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.0307769775390625,
+          "max_abs_probability_error": 2.014636993408203e-05,
+          "softmax_score": 0.9992135763168335,
+          "cpu_median_ms": 165.014
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.11365199089050293,
+          "max_abs_probability_error": 0.0019568800926208496,
+          "softmax_score": 0.9669032692909241,
+          "cpu_median_ms": 168.263
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.1232154369354248,
+          "max_abs_probability_error": 0.00014406442642211914,
+          "softmax_score": 0.9976754784584045,
+          "cpu_median_ms": 170.736
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "running",
+          "onnx_label": "running",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.06726980209350586,
+          "max_abs_probability_error": 0.00031810998916625977,
+          "softmax_score": 0.9955307841300964,
+          "cpu_median_ms": 173.429
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "jogging",
+          "onnx_label": "jogging",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.2759253978729248,
+          "max_abs_probability_error": 0.009651988744735718,
+          "softmax_score": 0.7814573645591736,
+          "cpu_median_ms": 158.939
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "running",
+          "onnx_label": "running",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.17186522483825684,
+          "max_abs_probability_error": 0.013951241970062256,
+          "softmax_score": 0.9425815343856812,
+          "cpu_median_ms": 150.047
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "handclapping",
+          "onnx_label": "handclapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.11051177978515625,
+          "max_abs_probability_error": 0.000287473201751709,
+          "softmax_score": 0.993402898311615,
+          "cpu_median_ms": 172.118
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "handclapping",
+          "onnx_label": "handclapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.3302469551563263,
+          "max_abs_probability_error": 0.022360801696777344,
+          "softmax_score": 0.9507240653038025,
+          "cpu_median_ms": 177.641
+        },
+        {
+          "video": "kard-kick",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "handclapping",
+          "onnx_label": "handclapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.2525670528411865,
+          "max_abs_probability_error": 0.0023133959621191025,
+          "softmax_score": 0.9015263319015503,
+          "cpu_median_ms": 163.605
+        }
+      ]
+    }
+  }
+}

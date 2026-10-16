@@ -1,0 +1,433 @@
+variant,seed,split,class_id,class,recall,f1,support
+A,42,validation,0,Horizontal arm wave,0.8333333333333334,0.9090909090909091,6
+A,42,validation,1,High arm wave,0.5,0.6666666666666666,6
+A,42,validation,2,Two hand wave,1.0,1.0,6
+A,42,validation,3,Catch Cap,1.0,1.0,6
+A,42,validation,4,High throw,0.6666666666666666,0.8,6
+A,42,validation,5,Draw X,0.8333333333333334,0.7692307692307692,6
+A,42,validation,6,Draw Tick,1.0,0.6666666666666666,6
+A,42,validation,7,Toss Paper,0.8333333333333334,0.9090909090909091,6
+A,42,validation,8,Forward Kick,1.0,1.0,6
+A,42,validation,9,Side Kick,1.0,1.0,6
+A,42,validation,10,Take Umbrella,1.0,1.0,6
+A,42,validation,11,Bend,1.0,0.923076923076923,6
+A,42,validation,12,Hand Clap,0.6666666666666666,0.8,6
+A,42,validation,13,Walk,1.0,1.0,6
+A,42,validation,14,Phone Call,1.0,1.0,6
+A,42,validation,15,Drink,1.0,0.923076923076923,6
+A,42,validation,16,Sit down,1.0,1.0,6
+A,42,validation,17,Stand up,1.0,1.0,6
+A,42,test,0,Horizontal arm wave,1.0,1.0,6
+A,42,test,1,High arm wave,0.8333333333333334,0.9090909090909091,6
+A,42,test,2,Two hand wave,1.0,1.0,6
+A,42,test,3,Catch Cap,1.0,1.0,6
+A,42,test,4,High throw,0.8333333333333334,0.7142857142857143,6
+A,42,test,5,Draw X,1.0,0.8571428571428571,6
+A,42,test,6,Draw Tick,0.3333333333333333,0.4444444444444444,6
+A,42,test,7,Toss Paper,1.0,1.0,6
+A,42,test,8,Forward Kick,1.0,1.0,6
+A,42,test,9,Side Kick,1.0,1.0,6
+A,42,test,10,Take Umbrella,1.0,1.0,6
+A,42,test,11,Bend,1.0,1.0,6
+A,42,test,12,Hand Clap,0.8333333333333334,0.8333333333333334,6
+A,42,test,13,Walk,1.0,1.0,6
+A,42,test,14,Phone Call,1.0,1.0,6
+A,42,test,15,Drink,1.0,1.0,6
+A,42,test,16,Sit down,1.0,1.0,6
+A,42,test,17,Stand up,1.0,1.0,6
+A,123,validation,0,Horizontal arm wave,0.8333333333333334,0.9090909090909091,6
+A,123,validation,1,High arm wave,0.6666666666666666,0.8,6
+A,123,validation,2,Two hand wave,1.0,1.0,6
+A,123,validation,3,Catch Cap,1.0,1.0,6
+A,123,validation,4,High throw,0.8333333333333334,0.9090909090909091,6
+A,123,validation,5,Draw X,0.6666666666666666,0.7272727272727272,6
+A,123,validation,6,Draw Tick,0.8333333333333334,0.625,6
+A,123,validation,7,Toss Paper,0.8333333333333334,0.9090909090909091,6
+A,123,validation,8,Forward Kick,1.0,1.0,6
+A,123,validation,9,Side Kick,1.0,1.0,6
+A,123,validation,10,Take Umbrella,1.0,1.0,6
+A,123,validation,11,Bend,1.0,0.923076923076923,6
+A,123,validation,12,Hand Clap,0.8333333333333334,0.8333333333333334,6
+A,123,validation,13,Walk,1.0,1.0,6
+A,123,validation,14,Phone Call,1.0,1.0,6
+A,123,validation,15,Drink,1.0,0.923076923076923,6
+A,123,validation,16,Sit down,1.0,1.0,6
+A,123,validation,17,Stand up,1.0,1.0,6
+A,123,test,0,Horizontal arm wave,1.0,0.923076923076923,6
+A,123,test,1,High arm wave,0.5,0.6666666666666666,6
+A,123,test,2,Two hand wave,1.0,1.0,6
+A,123,test,3,Catch Cap,1.0,1.0,6
+A,123,test,4,High throw,1.0,0.7058823529411764,6
+A,123,test,5,Draw X,0.6666666666666666,0.6666666666666666,6
+A,123,test,6,Draw Tick,0.3333333333333333,0.3636363636363636,6
+A,123,test,7,Toss Paper,1.0,1.0,6
+A,123,test,8,Forward Kick,1.0,1.0,6
+A,123,test,9,Side Kick,1.0,1.0,6
+A,123,test,10,Take Umbrella,1.0,1.0,6
+A,123,test,11,Bend,1.0,1.0,6
+A,123,test,12,Hand Clap,0.6666666666666666,0.8,6
+A,123,test,13,Walk,1.0,1.0,6
+A,123,test,14,Phone Call,1.0,1.0,6
+A,123,test,15,Drink,1.0,1.0,6
+A,123,test,16,Sit down,1.0,1.0,6
+A,123,test,17,Stand up,1.0,1.0,6
+A,2026,validation,0,Horizontal arm wave,0.8333333333333334,0.9090909090909091,6
+A,2026,validation,1,High arm wave,0.5,0.6666666666666666,6
+A,2026,validation,2,Two hand wave,1.0,1.0,6
+A,2026,validation,3,Catch Cap,1.0,1.0,6
+A,2026,validation,4,High throw,0.6666666666666666,0.8,6
+A,2026,validation,5,Draw X,0.6666666666666666,0.6666666666666666,6
+A,2026,validation,6,Draw Tick,1.0,0.631578947368421,6
+A,2026,validation,7,Toss Paper,0.8333333333333334,0.9090909090909091,6
+A,2026,validation,8,Forward Kick,1.0,1.0,6
+A,2026,validation,9,Side Kick,1.0,1.0,6
+A,2026,validation,10,Take Umbrella,1.0,1.0,6
+A,2026,validation,11,Bend,1.0,0.923076923076923,6
+A,2026,validation,12,Hand Clap,0.6666666666666666,0.8,6
+A,2026,validation,13,Walk,1.0,1.0,6
+A,2026,validation,14,Phone Call,1.0,1.0,6
+A,2026,validation,15,Drink,1.0,0.923076923076923,6
+A,2026,validation,16,Sit down,1.0,1.0,6
+A,2026,validation,17,Stand up,1.0,1.0,6
+A,2026,test,0,Horizontal arm wave,1.0,1.0,6
+A,2026,test,1,High arm wave,0.8333333333333334,0.9090909090909091,6
+A,2026,test,2,Two hand wave,1.0,1.0,6
+A,2026,test,3,Catch Cap,1.0,1.0,6
+A,2026,test,4,High throw,0.8333333333333334,0.7142857142857143,6
+A,2026,test,5,Draw X,1.0,0.8571428571428571,6
+A,2026,test,6,Draw Tick,0.3333333333333333,0.4444444444444444,6
+A,2026,test,7,Toss Paper,1.0,1.0,6
+A,2026,test,8,Forward Kick,1.0,1.0,6
+A,2026,test,9,Side Kick,1.0,1.0,6
+A,2026,test,10,Take Umbrella,1.0,1.0,6
+A,2026,test,11,Bend,1.0,1.0,6
+A,2026,test,12,Hand Clap,0.8333333333333334,0.8333333333333334,6
+A,2026,test,13,Walk,1.0,1.0,6
+A,2026,test,14,Phone Call,1.0,1.0,6
+A,2026,test,15,Drink,1.0,1.0,6
+A,2026,test,16,Sit down,1.0,1.0,6
+A,2026,test,17,Stand up,1.0,1.0,6
+B,42,validation,0,Horizontal arm wave,0.8333333333333334,0.7692307692307692,6
+B,42,validation,1,High arm wave,1.0,1.0,6
+B,42,validation,2,Two hand wave,1.0,1.0,6
+B,42,validation,3,Catch Cap,1.0,0.923076923076923,6
+B,42,validation,4,High throw,0.6666666666666666,0.8,6
+B,42,validation,5,Draw X,0.5,0.6666666666666666,6
+B,42,validation,6,Draw Tick,1.0,0.7058823529411764,6
+B,42,validation,7,Toss Paper,1.0,1.0,6
+B,42,validation,8,Forward Kick,1.0,1.0,6
+B,42,validation,9,Side Kick,1.0,1.0,6
+B,42,validation,10,Take Umbrella,1.0,0.923076923076923,6
+B,42,validation,11,Bend,1.0,1.0,6
+B,42,validation,12,Hand Clap,0.6666666666666666,0.8,6
+B,42,validation,13,Walk,1.0,1.0,6
+B,42,validation,14,Phone Call,1.0,1.0,6
+B,42,validation,15,Drink,0.6666666666666666,0.7272727272727272,6
+B,42,validation,16,Sit down,0.8333333333333334,0.9090909090909091,6
+B,42,validation,17,Stand up,1.0,0.923076923076923,6
+B,42,test,0,Horizontal arm wave,1.0,0.8571428571428571,6
+B,42,test,1,High arm wave,0.3333333333333333,0.5,6
+B,42,test,2,Two hand wave,1.0,0.923076923076923,6
+B,42,test,3,Catch Cap,1.0,1.0,6
+B,42,test,4,High throw,1.0,0.7499999999999999,6
+B,42,test,5,Draw X,0.6666666666666666,0.7272727272727272,6
+B,42,test,6,Draw Tick,0.6666666666666666,0.8,6
+B,42,test,7,Toss Paper,1.0,0.923076923076923,6
+B,42,test,8,Forward Kick,1.0,0.923076923076923,6
+B,42,test,9,Side Kick,1.0,1.0,6
+B,42,test,10,Take Umbrella,1.0,1.0,6
+B,42,test,11,Bend,1.0,1.0,6
+B,42,test,12,Hand Clap,0.6666666666666666,0.7272727272727272,6
+B,42,test,13,Walk,1.0,1.0,6
+B,42,test,14,Phone Call,1.0,1.0,6
+B,42,test,15,Drink,0.8333333333333334,0.9090909090909091,6
+B,42,test,16,Sit down,0.8333333333333334,0.9090909090909091,6
+B,42,test,17,Stand up,1.0,0.923076923076923,6
+B,123,validation,0,Horizontal arm wave,1.0,0.8571428571428571,6
+B,123,validation,1,High arm wave,0.8333333333333334,0.9090909090909091,6
+B,123,validation,2,Two hand wave,1.0,1.0,6
+B,123,validation,3,Catch Cap,1.0,0.923076923076923,6
+B,123,validation,4,High throw,0.8333333333333334,0.9090909090909091,6
+B,123,validation,5,Draw X,0.6666666666666666,0.8,6
+B,123,validation,6,Draw Tick,1.0,0.7499999999999999,6
+B,123,validation,7,Toss Paper,1.0,1.0,6
+B,123,validation,8,Forward Kick,1.0,1.0,6
+B,123,validation,9,Side Kick,1.0,1.0,6
+B,123,validation,10,Take Umbrella,1.0,1.0,6
+B,123,validation,11,Bend,1.0,1.0,6
+B,123,validation,12,Hand Clap,0.6666666666666666,0.8,6
+B,123,validation,13,Walk,1.0,1.0,6
+B,123,validation,14,Phone Call,1.0,1.0,6
+B,123,validation,15,Drink,0.6666666666666666,0.7272727272727272,6
+B,123,validation,16,Sit down,0.6666666666666666,0.8,6
+B,123,validation,17,Stand up,1.0,0.8571428571428571,6
+B,123,test,0,Horizontal arm wave,0.8333333333333334,0.8333333333333334,6
+B,123,test,1,High arm wave,0.3333333333333333,0.5,6
+B,123,test,2,Two hand wave,1.0,0.923076923076923,6
+B,123,test,3,Catch Cap,1.0,1.0,6
+B,123,test,4,High throw,1.0,0.923076923076923,6
+B,123,test,5,Draw X,0.5,0.6666666666666666,6
+B,123,test,6,Draw Tick,0.8333333333333334,0.7142857142857143,6
+B,123,test,7,Toss Paper,1.0,0.8571428571428571,6
+B,123,test,8,Forward Kick,1.0,0.923076923076923,6
+B,123,test,9,Side Kick,1.0,1.0,6
+B,123,test,10,Take Umbrella,1.0,1.0,6
+B,123,test,11,Bend,1.0,1.0,6
+B,123,test,12,Hand Clap,1.0,1.0,6
+B,123,test,13,Walk,1.0,1.0,6
+B,123,test,14,Phone Call,1.0,1.0,6
+B,123,test,15,Drink,1.0,1.0,6
+B,123,test,16,Sit down,0.6666666666666666,0.8,6
+B,123,test,17,Stand up,1.0,0.8571428571428571,6
+B,2026,validation,0,Horizontal arm wave,1.0,0.8571428571428571,6
+B,2026,validation,1,High arm wave,1.0,1.0,6
+B,2026,validation,2,Two hand wave,1.0,1.0,6
+B,2026,validation,3,Catch Cap,1.0,0.923076923076923,6
+B,2026,validation,4,High throw,1.0,1.0,6
+B,2026,validation,5,Draw X,0.6666666666666666,0.8,6
+B,2026,validation,6,Draw Tick,1.0,0.8,6
+B,2026,validation,7,Toss Paper,1.0,1.0,6
+B,2026,validation,8,Forward Kick,1.0,1.0,6
+B,2026,validation,9,Side Kick,1.0,1.0,6
+B,2026,validation,10,Take Umbrella,1.0,1.0,6
+B,2026,validation,11,Bend,1.0,1.0,6
+B,2026,validation,12,Hand Clap,0.6666666666666666,0.8,6
+B,2026,validation,13,Walk,1.0,1.0,6
+B,2026,validation,14,Phone Call,1.0,1.0,6
+B,2026,validation,15,Drink,0.6666666666666666,0.8,6
+B,2026,validation,16,Sit down,0.8333333333333334,0.9090909090909091,6
+B,2026,validation,17,Stand up,1.0,0.923076923076923,6
+B,2026,test,0,Horizontal arm wave,1.0,0.7058823529411764,6
+B,2026,test,1,High arm wave,0.5,0.6,6
+B,2026,test,2,Two hand wave,1.0,1.0,6
+B,2026,test,3,Catch Cap,1.0,1.0,6
+B,2026,test,4,High throw,0.8333333333333334,0.7142857142857143,6
+B,2026,test,5,Draw X,0.6666666666666666,0.6666666666666666,6
+B,2026,test,6,Draw Tick,0.3333333333333333,0.4444444444444444,6
+B,2026,test,7,Toss Paper,1.0,0.923076923076923,6
+B,2026,test,8,Forward Kick,1.0,1.0,6
+B,2026,test,9,Side Kick,1.0,1.0,6
+B,2026,test,10,Take Umbrella,1.0,1.0,6
+B,2026,test,11,Bend,1.0,1.0,6
+B,2026,test,12,Hand Clap,0.8333333333333334,0.8333333333333334,6
+B,2026,test,13,Walk,1.0,1.0,6
+B,2026,test,14,Phone Call,1.0,1.0,6
+B,2026,test,15,Drink,0.5,0.6666666666666666,6
+B,2026,test,16,Sit down,0.6666666666666666,0.8,6
+B,2026,test,17,Stand up,1.0,0.8571428571428571,6
+C,42,validation,0,Horizontal arm wave,1.0,1.0,6
+C,42,validation,1,High arm wave,1.0,1.0,6
+C,42,validation,2,Two hand wave,1.0,1.0,6
+C,42,validation,3,Catch Cap,1.0,0.923076923076923,6
+C,42,validation,4,High throw,1.0,1.0,6
+C,42,validation,5,Draw X,0.6666666666666666,0.8,6
+C,42,validation,6,Draw Tick,1.0,0.8,6
+C,42,validation,7,Toss Paper,1.0,1.0,6
+C,42,validation,8,Forward Kick,1.0,1.0,6
+C,42,validation,9,Side Kick,1.0,1.0,6
+C,42,validation,10,Take Umbrella,1.0,1.0,6
+C,42,validation,11,Bend,1.0,1.0,6
+C,42,validation,12,Hand Clap,0.6666666666666666,0.8,6
+C,42,validation,13,Walk,1.0,1.0,6
+C,42,validation,14,Phone Call,1.0,1.0,6
+C,42,validation,15,Drink,0.6666666666666666,0.8,6
+C,42,validation,16,Sit down,0.5,0.6666666666666666,6
+C,42,validation,17,Stand up,1.0,0.7058823529411764,6
+C,42,test,0,Horizontal arm wave,1.0,0.923076923076923,6
+C,42,test,1,High arm wave,0.5,0.6666666666666666,6
+C,42,test,2,Two hand wave,1.0,0.923076923076923,6
+C,42,test,3,Catch Cap,1.0,1.0,6
+C,42,test,4,High throw,1.0,0.8571428571428571,6
+C,42,test,5,Draw X,0.8333333333333334,0.7692307692307692,6
+C,42,test,6,Draw Tick,0.5,0.6666666666666666,6
+C,42,test,7,Toss Paper,1.0,0.923076923076923,6
+C,42,test,8,Forward Kick,1.0,0.923076923076923,6
+C,42,test,9,Side Kick,1.0,1.0,6
+C,42,test,10,Take Umbrella,1.0,1.0,6
+C,42,test,11,Bend,1.0,1.0,6
+C,42,test,12,Hand Clap,0.8333333333333334,0.8333333333333334,6
+C,42,test,13,Walk,1.0,1.0,6
+C,42,test,14,Phone Call,1.0,1.0,6
+C,42,test,15,Drink,0.8333333333333334,0.9090909090909091,6
+C,42,test,16,Sit down,0.5,0.6666666666666666,6
+C,42,test,17,Stand up,1.0,0.8,6
+C,123,validation,0,Horizontal arm wave,1.0,0.8571428571428571,6
+C,123,validation,1,High arm wave,1.0,1.0,6
+C,123,validation,2,Two hand wave,1.0,1.0,6
+C,123,validation,3,Catch Cap,1.0,0.8571428571428571,6
+C,123,validation,4,High throw,0.8333333333333334,0.9090909090909091,6
+C,123,validation,5,Draw X,0.6666666666666666,0.8,6
+C,123,validation,6,Draw Tick,1.0,0.8571428571428571,6
+C,123,validation,7,Toss Paper,0.8333333333333334,0.9090909090909091,6
+C,123,validation,8,Forward Kick,1.0,1.0,6
+C,123,validation,9,Side Kick,1.0,1.0,6
+C,123,validation,10,Take Umbrella,1.0,0.923076923076923,6
+C,123,validation,11,Bend,1.0,1.0,6
+C,123,validation,12,Hand Clap,0.6666666666666666,0.8,6
+C,123,validation,13,Walk,1.0,1.0,6
+C,123,validation,14,Phone Call,1.0,1.0,6
+C,123,validation,15,Drink,0.6666666666666666,0.7272727272727272,6
+C,123,validation,16,Sit down,0.8333333333333334,0.9090909090909091,6
+C,123,validation,17,Stand up,1.0,0.923076923076923,6
+C,123,test,0,Horizontal arm wave,0.8333333333333334,0.8333333333333334,6
+C,123,test,1,High arm wave,0.3333333333333333,0.5,6
+C,123,test,2,Two hand wave,1.0,0.923076923076923,6
+C,123,test,3,Catch Cap,1.0,1.0,6
+C,123,test,4,High throw,1.0,0.7499999999999999,6
+C,123,test,5,Draw X,0.6666666666666666,0.7272727272727272,6
+C,123,test,6,Draw Tick,0.8333333333333334,0.8333333333333334,6
+C,123,test,7,Toss Paper,1.0,1.0,6
+C,123,test,8,Forward Kick,1.0,1.0,6
+C,123,test,9,Side Kick,1.0,1.0,6
+C,123,test,10,Take Umbrella,1.0,1.0,6
+C,123,test,11,Bend,1.0,1.0,6
+C,123,test,12,Hand Clap,0.8333333333333334,0.8333333333333334,6
+C,123,test,13,Walk,1.0,1.0,6
+C,123,test,14,Phone Call,1.0,1.0,6
+C,123,test,15,Drink,1.0,1.0,6
+C,123,test,16,Sit down,0.6666666666666666,0.8,6
+C,123,test,17,Stand up,1.0,0.8571428571428571,6
+C,2026,validation,0,Horizontal arm wave,1.0,0.8571428571428571,6
+C,2026,validation,1,High arm wave,1.0,1.0,6
+C,2026,validation,2,Two hand wave,1.0,1.0,6
+C,2026,validation,3,Catch Cap,1.0,0.923076923076923,6
+C,2026,validation,4,High throw,0.8333333333333334,0.9090909090909091,6
+C,2026,validation,5,Draw X,0.5,0.6666666666666666,6
+C,2026,validation,6,Draw Tick,1.0,0.8,6
+C,2026,validation,7,Toss Paper,1.0,1.0,6
+C,2026,validation,8,Forward Kick,1.0,1.0,6
+C,2026,validation,9,Side Kick,1.0,1.0,6
+C,2026,validation,10,Take Umbrella,1.0,0.923076923076923,6
+C,2026,validation,11,Bend,1.0,1.0,6
+C,2026,validation,12,Hand Clap,0.6666666666666666,0.8,6
+C,2026,validation,13,Walk,1.0,1.0,6
+C,2026,validation,14,Phone Call,1.0,1.0,6
+C,2026,validation,15,Drink,0.8333333333333334,0.9090909090909091,6
+C,2026,validation,16,Sit down,0.8333333333333334,0.9090909090909091,6
+C,2026,validation,17,Stand up,1.0,0.923076923076923,6
+C,2026,test,0,Horizontal arm wave,1.0,0.7499999999999999,6
+C,2026,test,1,High arm wave,0.3333333333333333,0.5,6
+C,2026,test,2,Two hand wave,1.0,0.923076923076923,6
+C,2026,test,3,Catch Cap,1.0,1.0,6
+C,2026,test,4,High throw,1.0,0.7499999999999999,6
+C,2026,test,5,Draw X,0.6666666666666666,0.6666666666666666,6
+C,2026,test,6,Draw Tick,0.3333333333333333,0.4444444444444444,6
+C,2026,test,7,Toss Paper,1.0,1.0,6
+C,2026,test,8,Forward Kick,0.6666666666666666,0.8,6
+C,2026,test,9,Side Kick,1.0,1.0,6
+C,2026,test,10,Take Umbrella,1.0,1.0,6
+C,2026,test,11,Bend,1.0,0.923076923076923,6
+C,2026,test,12,Hand Clap,0.8333333333333334,0.6666666666666667,6
+C,2026,test,13,Walk,1.0,1.0,6
+C,2026,test,14,Phone Call,1.0,1.0,6
+C,2026,test,15,Drink,0.5,0.6666666666666666,6
+C,2026,test,16,Sit down,0.5,0.6666666666666666,6
+C,2026,test,17,Stand up,1.0,0.8571428571428571,6
+D,42,validation,0,Horizontal arm wave,1.0,0.7058823529411764,6
+D,42,validation,1,High arm wave,0.6666666666666666,0.8,6
+D,42,validation,2,Two hand wave,1.0,1.0,6
+D,42,validation,3,Catch Cap,1.0,1.0,6
+D,42,validation,4,High throw,1.0,1.0,6
+D,42,validation,5,Draw X,0.5,0.6666666666666666,6
+D,42,validation,6,Draw Tick,0.8333333333333334,0.7142857142857143,6
+D,42,validation,7,Toss Paper,0.8333333333333334,0.9090909090909091,6
+D,42,validation,8,Forward Kick,0.8333333333333334,0.9090909090909091,6
+D,42,validation,9,Side Kick,1.0,1.0,6
+D,42,validation,10,Take Umbrella,1.0,1.0,6
+D,42,validation,11,Bend,1.0,0.923076923076923,6
+D,42,validation,12,Hand Clap,0.8333333333333334,0.9090909090909091,6
+D,42,validation,13,Walk,1.0,0.923076923076923,6
+D,42,validation,14,Phone Call,1.0,1.0,6
+D,42,validation,15,Drink,0.8333333333333334,0.9090909090909091,6
+D,42,validation,16,Sit down,1.0,1.0,6
+D,42,validation,17,Stand up,1.0,1.0,6
+D,42,test,0,Horizontal arm wave,0.8333333333333334,0.7142857142857143,6
+D,42,test,1,High arm wave,0.3333333333333333,0.5,6
+D,42,test,2,Two hand wave,1.0,1.0,6
+D,42,test,3,Catch Cap,1.0,1.0,6
+D,42,test,4,High throw,0.8333333333333334,0.5882352941176471,6
+D,42,test,5,Draw X,0.0,0.0,6
+D,42,test,6,Draw Tick,0.3333333333333333,0.26666666666666666,6
+D,42,test,7,Toss Paper,1.0,0.923076923076923,6
+D,42,test,8,Forward Kick,0.6666666666666666,0.8,6
+D,42,test,9,Side Kick,1.0,1.0,6
+D,42,test,10,Take Umbrella,1.0,1.0,6
+D,42,test,11,Bend,0.8333333333333334,0.9090909090909091,6
+D,42,test,12,Hand Clap,0.6666666666666666,0.7272727272727272,6
+D,42,test,13,Walk,1.0,1.0,6
+D,42,test,14,Phone Call,1.0,1.0,6
+D,42,test,15,Drink,1.0,1.0,6
+D,42,test,16,Sit down,0.8333333333333334,0.7142857142857143,6
+D,42,test,17,Stand up,1.0,0.923076923076923,6
+D,123,validation,0,Horizontal arm wave,0.8333333333333334,0.8333333333333334,6
+D,123,validation,1,High arm wave,0.5,0.6666666666666666,6
+D,123,validation,2,Two hand wave,1.0,1.0,6
+D,123,validation,3,Catch Cap,1.0,1.0,6
+D,123,validation,4,High throw,0.5,0.6666666666666666,6
+D,123,validation,5,Draw X,0.6666666666666666,0.8,6
+D,123,validation,6,Draw Tick,1.0,0.6,6
+D,123,validation,7,Toss Paper,0.6666666666666666,0.8,6
+D,123,validation,8,Forward Kick,1.0,1.0,6
+D,123,validation,9,Side Kick,1.0,1.0,6
+D,123,validation,10,Take Umbrella,1.0,1.0,6
+D,123,validation,11,Bend,1.0,0.8571428571428571,6
+D,123,validation,12,Hand Clap,0.8333333333333334,0.9090909090909091,6
+D,123,validation,13,Walk,1.0,1.0,6
+D,123,validation,14,Phone Call,1.0,1.0,6
+D,123,validation,15,Drink,1.0,0.923076923076923,6
+D,123,validation,16,Sit down,1.0,1.0,6
+D,123,validation,17,Stand up,1.0,1.0,6
+D,123,test,0,Horizontal arm wave,0.5,0.6666666666666666,6
+D,123,test,1,High arm wave,0.16666666666666666,0.2857142857142857,6
+D,123,test,2,Two hand wave,1.0,1.0,6
+D,123,test,3,Catch Cap,1.0,1.0,6
+D,123,test,4,High throw,0.6666666666666666,0.5714285714285715,6
+D,123,test,5,Draw X,0.6666666666666666,0.8,6
+D,123,test,6,Draw Tick,0.5,0.5454545454545454,6
+D,123,test,7,Toss Paper,1.0,0.7058823529411764,6
+D,123,test,8,Forward Kick,0.6666666666666666,0.8,6
+D,123,test,9,Side Kick,1.0,1.0,6
+D,123,test,10,Take Umbrella,0.8333333333333334,0.9090909090909091,6
+D,123,test,11,Bend,1.0,1.0,6
+D,123,test,12,Hand Clap,1.0,0.631578947368421,6
+D,123,test,13,Walk,1.0,1.0,6
+D,123,test,14,Phone Call,1.0,1.0,6
+D,123,test,15,Drink,1.0,1.0,6
+D,123,test,16,Sit down,1.0,1.0,6
+D,123,test,17,Stand up,1.0,1.0,6
+D,2026,validation,0,Horizontal arm wave,1.0,0.7499999999999999,6
+D,2026,validation,1,High arm wave,0.6666666666666666,0.8,6
+D,2026,validation,2,Two hand wave,1.0,1.0,6
+D,2026,validation,3,Catch Cap,1.0,1.0,6
+D,2026,validation,4,High throw,0.6666666666666666,0.8,6
+D,2026,validation,5,Draw X,0.5,0.6666666666666666,6
+D,2026,validation,6,Draw Tick,1.0,0.7499999999999999,6
+D,2026,validation,7,Toss Paper,0.6666666666666666,0.8,6
+D,2026,validation,8,Forward Kick,1.0,1.0,6
+D,2026,validation,9,Side Kick,1.0,1.0,6
+D,2026,validation,10,Take Umbrella,1.0,1.0,6
+D,2026,validation,11,Bend,1.0,0.8571428571428571,6
+D,2026,validation,12,Hand Clap,0.8333333333333334,0.9090909090909091,6
+D,2026,validation,13,Walk,1.0,1.0,6
+D,2026,validation,14,Phone Call,1.0,1.0,6
+D,2026,validation,15,Drink,1.0,1.0,6
+D,2026,validation,16,Sit down,1.0,0.923076923076923,6
+D,2026,validation,17,Stand up,0.8333333333333334,0.9090909090909091,6
+D,2026,test,0,Horizontal arm wave,0.8333333333333334,0.9090909090909091,6
+D,2026,test,1,High arm wave,0.5,0.6666666666666666,6
+D,2026,test,2,Two hand wave,1.0,1.0,6
+D,2026,test,3,Catch Cap,1.0,1.0,6
+D,2026,test,4,High throw,0.8333333333333334,0.625,6
+D,2026,test,5,Draw X,0.3333333333333333,0.5,6
+D,2026,test,6,Draw Tick,0.5,0.4,6
+D,2026,test,7,Toss Paper,1.0,0.923076923076923,6
+D,2026,test,8,Forward Kick,0.8333333333333334,0.9090909090909091,6
+D,2026,test,9,Side Kick,1.0,1.0,6
+D,2026,test,10,Take Umbrella,1.0,1.0,6
+D,2026,test,11,Bend,1.0,1.0,6
+D,2026,test,12,Hand Clap,1.0,0.923076923076923,6
+D,2026,test,13,Walk,1.0,1.0,6
+D,2026,test,14,Phone Call,1.0,1.0,6
+D,2026,test,15,Drink,1.0,1.0,6
+D,2026,test,16,Sit down,1.0,1.0,6
+D,2026,test,17,Stand up,1.0,1.0,6

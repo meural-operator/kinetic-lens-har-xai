@@ -2,3 +2,8 @@
 *.npz binary
 *.onnx binary
 *.svg text diff=none
+*.pt binary
+*.pdf binary
+*.png binary
+# Preserve byte-identical historical source snapshots, including line endings.
+experiments/archive/** -text

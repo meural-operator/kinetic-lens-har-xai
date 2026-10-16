@@ -1,0 +1,33 @@
+{
+  "recommended_fps": 10,
+  "recommended_experiment": "kard_a0_head_100pct_10fps",
+  "selection_rule": "Highest validation macro F1, then lower validation cross entropy.",
+  "test_used_for_sampling_selection": false,
+  "decision_made_before_10fps_test_feature_extraction": true,
+  "validation_macro_f1_change_percentage_points": 0.636835930953572,
+  "candidates": [
+    {
+      "fps": 5,
+      "experiment": "kard_a0_head_100pct",
+      "validation_accuracy": 0.8888888888888888,
+      "validation_macro_f1": 0.8876746347334582,
+      "validation_cross_entropy": 0.37045612931251526,
+      "selected_l2": 0.01,
+      "selected_epoch": 19,
+      "selection_sha256": "58d44ecce50ce7de2b6a8b90721c92b0fda09f9d560fe21a3641ad67c872ee8b",
+      "manifest_sha256": "bccbac8c3487df4fec89b5a9bf274d21c21d20fbcfb96f051d3c54ec24a22d01"
+    },
+    {
+      "fps": 10,
+      "experiment": "kard_a0_head_100pct_10fps",
+      "validation_accuracy": 0.8981481481481481,
+      "validation_macro_f1": 0.8940429940429939,
+      "validation_cross_entropy": 0.39702561497688293,
+      "selected_l2": 0.0001,
+      "selected_epoch": 20,
+      "selection_sha256": "19afc7c7941bcf6c4ac97ed5bf78fe795ae7c2d47c9baa85f46e4c35cb0dd0c6",
+      "manifest_sha256": "f9c0a191166e349ab3355c181861550514753f19feac0e914f9f9968b1bdddfa"
+    }
+  ],
+  "limitation": "One previously observed split and seed; no statistical significance or population-level claim."
+}

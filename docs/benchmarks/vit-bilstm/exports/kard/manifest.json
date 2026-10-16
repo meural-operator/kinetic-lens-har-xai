@@ -1,0 +1,70 @@
+{
+  "model_id": "kard",
+  "dataset": "KARD",
+  "architecture": "ViT-B/16 + additive residual BiLSTM",
+  "labels": [
+    "Bend",
+    "Catch Cap",
+    "Draw Tick",
+    "Draw X",
+    "Drink",
+    "Forward Kick",
+    "Hand Clap",
+    "High arm wave",
+    "High throw",
+    "Horizontal arm wave",
+    "Phone Call",
+    "Side Kick",
+    "Sit down",
+    "Stand up",
+    "Take Umbrella",
+    "Toss Paper",
+    "Two hand wave",
+    "Walk"
+  ],
+  "input_name": "frames",
+  "input_shape": [
+    1,
+    8,
+    3,
+    224,
+    224
+  ],
+  "input_dtype": "float32",
+  "input_layout": "BTCHW",
+  "output_name": "logits",
+  "preprocessing": {
+    "color": "RGB",
+    "resize": [
+      224,
+      224
+    ],
+    "range_before_normalize": [
+      0,
+      1
+    ],
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "sampling": {
+    "target_fps": 4,
+    "sequence_length": 8,
+    "note": "Sampled demonstration protocol; not the reported benchmark protocol."
+  },
+  "onnx_files": {
+    "fp32": "kard-fp32.onnx",
+    "int8": "kard-int8.onnx"
+  },
+  "quantization": "Mixed precision: dynamic INT8 constant MatMul and LSTM weights; other operations remain float.",
+  "runtime": "ONNX Runtime CPU; INT8 LSTM uses com.microsoft.DynamicQuantizeLSTM.",
+  "validation_scope": "Numerical and prediction agreement on supplied demonstrations; not held-out accuracy.",
+  "checkpoint_sha256": "a25b4959624ea0d3c999db96b418b918ba0517d1188a91d528439b958e521fb6"
+}

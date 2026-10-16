@@ -1,0 +1,58 @@
+{
+  "model_id": "kth",
+  "dataset": "KTH",
+  "architecture": "ViT-B/16 + additive residual BiLSTM",
+  "labels": [
+    "boxing",
+    "handclapping",
+    "handwaving",
+    "jogging",
+    "running",
+    "walking"
+  ],
+  "input_name": "frames",
+  "input_shape": [
+    1,
+    8,
+    3,
+    224,
+    224
+  ],
+  "input_dtype": "float32",
+  "input_layout": "BTCHW",
+  "output_name": "logits",
+  "preprocessing": {
+    "color": "RGB",
+    "resize": [
+      224,
+      224
+    ],
+    "range_before_normalize": [
+      0,
+      1
+    ],
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "sampling": {
+    "target_fps": 4,
+    "sequence_length": 8,
+    "note": "Sampled demonstration protocol; not the reported benchmark protocol."
+  },
+  "onnx_files": {
+    "fp32": "kth-fp32.onnx",
+    "int8": "kth-int8.onnx"
+  },
+  "quantization": "Mixed precision: dynamic INT8 constant MatMul and LSTM weights; other operations remain float.",
+  "runtime": "ONNX Runtime CPU; INT8 LSTM uses com.microsoft.DynamicQuantizeLSTM.",
+  "validation_scope": "Numerical and prediction agreement on supplied demonstrations; not held-out accuracy.",
+  "checkpoint_sha256": "79dfd624392fa810674de9b195b57c0cbad4cddf3b7089e66bed6a1d952bcb11"
+}

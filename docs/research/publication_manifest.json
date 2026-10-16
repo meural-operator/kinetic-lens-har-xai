@@ -1,0 +1,2284 @@
+{
+  "schema_version": 1,
+  "purpose": "Completed studies and source snapshots; no model retraining or deployment change.",
+  "normalization": "Published text substitutes local workspace/showcase paths and uses LF. Generated SVG trailing spaces are trimmed without geometry changes. Exact source archive bytes are retained.",
+  "historical_hashes": "Hashes inside copied reports/protocols identify original workspace artifacts, not necessarily normalized published text. Entries below preserve both hashes.",
+  "excluded": [
+    "datasets/videos/images",
+    "activation/feature caches",
+    "installed packages",
+    "launch/status logs",
+    "large ViT weights",
+    "training optimizer checkpoints"
+  ],
+  "records": [
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/REPORT.md",
+      "published": "docs/research/data-efficiency/REPORT.md",
+      "source_sha256": "b1fbd1a93255e5a88bc7072ab658ff340a0db60266c42537f11770e8943adc98",
+      "published_sha256": "c3a06f3db750e7afa6ba9704ae1a04732838839a3dc0cca38c17d6a530f7efd0",
+      "source_bytes": 5064,
+      "published_bytes": 4955,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/comparison.json",
+      "published": "docs/research/data-efficiency/comparison.json",
+      "source_sha256": "0b7c7efaebda5b8887a366e0abf7a51d575eee636071d594c9a25b343ac15678",
+      "published_sha256": "158dc3d792e12ef0eb544a18947bd87a683583e09fd0c83dd5c325e9eae0c7ec",
+      "source_bytes": 1724,
+      "published_bytes": 1671,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/class_comparison.csv",
+      "published": "docs/research/data-efficiency/class_comparison.csv",
+      "source_sha256": "e7634c159ca106fb0404937a32fb01b81c5eccbb4b9644f1a3158c0184535547",
+      "published_sha256": "d3aad3fb685a610ca9af34febd81978d5d8e9e2c3dffba3a5f2f39ea22bad61e",
+      "source_bytes": 1378,
+      "published_bytes": 1359,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/protocol.json",
+      "published": "docs/research/data-efficiency/protocol.json",
+      "source_sha256": "d2141aced6baca7722a66021fda276968e8fd25709a89c830c9f0604d7a687bd",
+      "published_sha256": "33e613171b1fea78a3a57e52aa66ba27bedffe676961332af9d08cbf6384bdcd",
+      "source_bytes": 1776,
+      "published_bytes": 1754,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/selection.json",
+      "published": "docs/research/data-efficiency/selection.json",
+      "source_sha256": "58d44ecce50ce7de2b6a8b90721c92b0fda09f9d560fe21a3641ad67c872ee8b",
+      "published_sha256": "7d23c99de6d16a344a7efb9c47191084874245d73f04591add41c7012bdaf377",
+      "source_bytes": 58722,
+      "published_bytes": 55020,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/split_manifest.csv",
+      "published": "docs/research/data-efficiency/split_manifest.csv",
+      "source_sha256": "389d06178caaa85bcf21aa1d81b8d05dba17fe0b8ba5b077999e071208b429c6",
+      "published_sha256": "27d1eb5bbe173075cff8502472baa492719c53aada9346e85635a01ade726421",
+      "source_bytes": 65605,
+      "published_bytes": 65064,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/fraction_comparison.png",
+      "published": "docs/research/data-efficiency/fraction_comparison.png",
+      "source_sha256": "8e56057cba037cf40c11a80ab4854ee3a792dd4fba3df2a52473595470c56f3b",
+      "published_sha256": "8e56057cba037cf40c11a80ab4854ee3a792dd4fba3df2a52473595470c56f3b",
+      "source_bytes": 49378,
+      "published_bytes": 49378,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct/confusion_matrix.png",
+      "published": "docs/research/data-efficiency/confusion_matrix.png",
+      "source_sha256": "7c40faa3038269c78d00766edeee706cc78a04eca62b397e93b8d09665979a59",
+      "published_sha256": "7c40faa3038269c78d00766edeee706cc78a04eca62b397e93b8d09665979a59",
+      "source_bytes": 133657,
+      "published_bytes": 133657,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_25pct/protocol.json",
+      "published": "docs/research/data-efficiency/25pct_protocol.json",
+      "source_sha256": "3a774929a05b89423a2a859ed61699e47dc82e0be06a6c8f3daf0b25e5bdc336",
+      "published_sha256": "d88b370e6089b1e0acd7a0a1d916c6248e664a5d0003eb35de39085d2b085d62",
+      "source_bytes": 1615,
+      "published_bytes": 1595,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_25pct/selection.json",
+      "published": "docs/research/data-efficiency/25pct_selection.json",
+      "source_sha256": "16557ba04dbc8dc190e5b72a82c78580a220b1858ec74ae2e3adf7e1dacdc42d",
+      "published_sha256": "c2b6ad195bdc5e16a073267528c309633953f5117fc93fce82059cb3fb1fae81",
+      "source_bytes": 58604,
+      "published_bytes": 54902,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_50pct/protocol.json",
+      "published": "docs/research/data-efficiency/50pct_protocol.json",
+      "source_sha256": "6cbf3e37a170c5464524a76f5e541a50c71db19003a5c57911e07e8f4f0c74c9",
+      "published_sha256": "ca7cfd91f44569fdc6ecd2a0c4f8499a145c676ab686dc73d2e4bb0ea9e9e0db",
+      "source_bytes": 1887,
+      "published_bytes": 1865,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_50pct/selection.json",
+      "published": "docs/research/data-efficiency/50pct_selection.json",
+      "source_sha256": "1a98db3a6832db9bc6363bb28fb6fb28465c500b81ea7ed31fafd09d0d5592e4",
+      "published_sha256": "a3cae5bf4f2e7fa1aaf6e97f4e701ae2c5f539ae821f4dc24758b469db04e909",
+      "source_bytes": 58318,
+      "published_bytes": 54616,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/captions.md",
+      "published": "docs/research/data-efficiency/paper_assets/captions.md",
+      "source_sha256": "7832c3c2c4780137f9e3d1b0afe2ea90d3a4514eda8aa754f26f14f0c856f0ae",
+      "published_sha256": "8afd9a79c928e2c5b277ab282b114821af564958ffb940ac5d5ac2c51e7046ba",
+      "source_bytes": 2882,
+      "published_bytes": 2857,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/results.csv",
+      "published": "docs/research/data-efficiency/paper_assets/results.csv",
+      "source_sha256": "0c5f14d3e4aaea695165b7b2d9fb6a81b7fae4df790926b54a5b6ae0c931e3d6",
+      "published_sha256": "6993d1d38d30714bfe1efe54c5e2b2cbdd4d77c485e52ef3dfaefde5d637b8bf",
+      "source_bytes": 650,
+      "published_bytes": 646,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/per_action_results.csv",
+      "published": "docs/research/data-efficiency/paper_assets/per_action_results.csv",
+      "source_sha256": "71b8995636eb4876b59ddf9991b1ab53711cd85077fc4150f15fd96fee0880e4",
+      "published_sha256": "d77a99e06b6f1f49ca5af8e1a012d9ba30f4b476e164014489946bcebf891c57",
+      "source_bytes": 1592,
+      "published_bytes": 1573,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/table_results.tex",
+      "published": "docs/research/data-efficiency/paper_assets/table_results.tex",
+      "source_sha256": "677e1cc75acecf8500e140e998d7f8de67c5c390d2289a3b7775412d06b3d936",
+      "published_sha256": "ebca3ade0f29980944c4c56dc9c244cf753d329dbdccd1c56ef40def14154e94",
+      "source_bytes": 843,
+      "published_bytes": 826,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/table_actions.tex",
+      "published": "docs/research/data-efficiency/paper_assets/table_actions.tex",
+      "source_sha256": "953b6497f55245e018b529ae47b8d41be8b2201adbb10c3193ba200e99b77544",
+      "published_sha256": "6f9d75d747cf96a5fbddb4f5e822d414425a67a87ff286b0776bc697590c23d9",
+      "source_bytes": 837,
+      "published_bytes": 807,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/include_figures.tex",
+      "published": "docs/research/data-efficiency/paper_assets/include_figures.tex",
+      "source_sha256": "cdcf29696841bee085ef64ccdd3ee80d28e4b4ca67b211a53f92bf95e16e939b",
+      "published_sha256": "2affc1b4e869a082988610a5c7fe684dac3bfa51b8d143ec4408428fb1b0eee7",
+      "source_bytes": 3895,
+      "published_bytes": 3850,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/plot_data.json",
+      "published": "docs/research/data-efficiency/paper_assets/plot_data.json",
+      "source_sha256": "00fd6ab597a53915b4de97648c15aa4bca15999d47509c334d224a951147ad74",
+      "published_sha256": "22c3aa4bad905c97400221901332e283479bae0a8f175d2cb48e82a447f75216",
+      "source_bytes": 506354,
+      "published_bytes": 488313,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig01_training_fraction.pdf",
+      "published": "docs/research/data-efficiency/paper_assets/fig01_training_fraction.pdf",
+      "source_sha256": "3eb4fd06c4a1ac09b067e16c39a3cc63103d0bfe4c72bb55e93e06bbbde36a24",
+      "published_sha256": "3eb4fd06c4a1ac09b067e16c39a3cc63103d0bfe4c72bb55e93e06bbbde36a24",
+      "source_bytes": 13871,
+      "published_bytes": 13871,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig01_training_fraction.svg",
+      "published": "docs/research/data-efficiency/paper_assets/fig01_training_fraction.svg",
+      "source_sha256": "9580c3a68b9cfac685e5ffcfbfe298552e08c728fba1fbc67e78f26d87ec56f7",
+      "published_sha256": "557a6f1378dc5280173b574dda919573b9db96984ccba8a459296da42e14d2ea",
+      "source_bytes": 11654,
+      "published_bytes": 11263,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig01_training_fraction.png",
+      "published": "docs/research/data-efficiency/paper_assets/fig01_training_fraction.png",
+      "source_sha256": "4318ce204c48e71185779996b3aa7acaaa9aa17de81f89b647f3fe868c7e3ed0",
+      "published_sha256": "4318ce204c48e71185779996b3aa7acaaa9aa17de81f89b647f3fe868c7e3ed0",
+      "source_bytes": 128189,
+      "published_bytes": 128189,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig02_protocol.pdf",
+      "published": "docs/research/data-efficiency/paper_assets/fig02_protocol.pdf",
+      "source_sha256": "93ee402f1426a3311fdb8b60040cd441dee3ef664b1f18829886e8058e09d25c",
+      "published_sha256": "93ee402f1426a3311fdb8b60040cd441dee3ef664b1f18829886e8058e09d25c",
+      "source_bytes": 28288,
+      "published_bytes": 28288,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig02_protocol.svg",
+      "published": "docs/research/data-efficiency/paper_assets/fig02_protocol.svg",
+      "source_sha256": "72e95483b59c9a0a69631460179c80ab9b257a3a7d4da59c6c4edbe019832474",
+      "published_sha256": "2c0f001944e59007d4f575905914c19f647b2285a1653d0bf6f5e98784754c4a",
+      "source_bytes": 11977,
+      "published_bytes": 11592,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig02_protocol.png",
+      "published": "docs/research/data-efficiency/paper_assets/fig02_protocol.png",
+      "source_sha256": "a5228eb847ee2fc24d43c3b83edf73359af12dc6d9ea46e7dc34ab60821cb926",
+      "published_sha256": "a5228eb847ee2fc24d43c3b83edf73359af12dc6d9ea46e7dc34ab60821cb926",
+      "source_bytes": 293199,
+      "published_bytes": 293199,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig03_action_recall.pdf",
+      "published": "docs/research/data-efficiency/paper_assets/fig03_action_recall.pdf",
+      "source_sha256": "86da56e99c4b69072c0828c6502a3c85c88cbbea9ed894576d7795df5fb445d7",
+      "published_sha256": "86da56e99c4b69072c0828c6502a3c85c88cbbea9ed894576d7795df5fb445d7",
+      "source_bytes": 24455,
+      "published_bytes": 24455,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig03_action_recall.svg",
+      "published": "docs/research/data-efficiency/paper_assets/fig03_action_recall.svg",
+      "source_sha256": "2d25270c0e57bac983f1230af54c006a042ce621cab92c526578a30a1606c9b9",
+      "published_sha256": "194e9e4ba76e33302fa54740a48a1871fb97ce8c356b8ec1c23ef494ee139950",
+      "source_bytes": 63910,
+      "published_bytes": 63248,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig03_action_recall.png",
+      "published": "docs/research/data-efficiency/paper_assets/fig03_action_recall.png",
+      "source_sha256": "39f944e7780216597ebb1a729262b22300841a84c8d4dc03652e94559ebea247",
+      "published_sha256": "39f944e7780216597ebb1a729262b22300841a84c8d4dc03652e94559ebea247",
+      "source_bytes": 348162,
+      "published_bytes": 348162,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig04_confusion_100pct.pdf",
+      "published": "docs/research/data-efficiency/paper_assets/fig04_confusion_100pct.pdf",
+      "source_sha256": "5d25d21e01f647d5fd9289f81bc145a96f63a1770ac22fc3b5ff133eb87b6eba",
+      "published_sha256": "5d25d21e01f647d5fd9289f81bc145a96f63a1770ac22fc3b5ff133eb87b6eba",
+      "source_bytes": 30231,
+      "published_bytes": 30231,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig04_confusion_100pct.svg",
+      "published": "docs/research/data-efficiency/paper_assets/fig04_confusion_100pct.svg",
+      "source_sha256": "7eab056e6bdc8c6598a3e23c967fc7429ed5fd3838481ddad446653cc9d523c2",
+      "published_sha256": "0424d59e2f1ca90d37172f26b99fa693410c852feab02d33797cbba3e353370f",
+      "source_bytes": 64376,
+      "published_bytes": 63444,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig04_confusion_100pct.png",
+      "published": "docs/research/data-efficiency/paper_assets/fig04_confusion_100pct.png",
+      "source_sha256": "16c9f58bdb4be53df5a4c1f1da26058b4a2e4f108dc8b9ac4710255ec37b7ecd",
+      "published_sha256": "16c9f58bdb4be53df5a4c1f1da26058b4a2e4f108dc8b9ac4710255ec37b7ecd",
+      "source_bytes": 307607,
+      "published_bytes": 307607,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig05_training_curves.pdf",
+      "published": "docs/research/data-efficiency/paper_assets/fig05_training_curves.pdf",
+      "source_sha256": "f588e068992fd69fa62be197dcf7415249f9bc7d3f3089a7fbc3ceb0207e4645",
+      "published_sha256": "f588e068992fd69fa62be197dcf7415249f9bc7d3f3089a7fbc3ceb0207e4645",
+      "source_bytes": 15817,
+      "published_bytes": 15817,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig05_training_curves.svg",
+      "published": "docs/research/data-efficiency/paper_assets/fig05_training_curves.svg",
+      "source_sha256": "be5f395a2b52a9ca80a7791c68ec9b76aa1b45b56ebe8f9df69e40305c1ff18d",
+      "published_sha256": "47982a26be612b39f9542f30a3c4b466791767c72e34277f10d4890d29d939c1",
+      "source_bytes": 33705,
+      "published_bytes": 32158,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig05_training_curves.png",
+      "published": "docs/research/data-efficiency/paper_assets/fig05_training_curves.png",
+      "source_sha256": "465432da76ac399366dd8ae20091f51ba309566dbe9df1a77e4ea314e3e0af27",
+      "published_sha256": "465432da76ac399366dd8ae20091f51ba309566dbe9df1a77e4ea314e3e0af27",
+      "source_bytes": 225260,
+      "published_bytes": 225260,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig06_subject_accuracy.pdf",
+      "published": "docs/research/data-efficiency/paper_assets/fig06_subject_accuracy.pdf",
+      "source_sha256": "fe00089e7fd2a09275c443407eeca003649866a8f733a9b793f7da9efcb6e9ed",
+      "published_sha256": "fe00089e7fd2a09275c443407eeca003649866a8f733a9b793f7da9efcb6e9ed",
+      "source_bytes": 12527,
+      "published_bytes": 12527,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig06_subject_accuracy.svg",
+      "published": "docs/research/data-efficiency/paper_assets/fig06_subject_accuracy.svg",
+      "source_sha256": "b32c5c7e3dbfc2b8898e0c2971dcd5093d226dda94a120a35cb16665de92686d",
+      "published_sha256": "b4ed7b9a4778e080a69aa43bb3dd1fd04463f41ecc24c168dd10a76818ed4bf1",
+      "source_bytes": 11352,
+      "published_bytes": 11032,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/paper_assets/kard_a0_frozen_head/fig06_subject_accuracy.png",
+      "published": "docs/research/data-efficiency/paper_assets/fig06_subject_accuracy.png",
+      "source_sha256": "18d1ac8511c58f90508c9bc46fc4b2b90a19b3145808e18d6b371b0017f73aab",
+      "published_sha256": "18d1ac8511c58f90508c9bc46fc4b2b90a19b3145808e18d6b371b0017f73aab",
+      "source_bytes": 113661,
+      "published_bytes": 113661,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/REPORT.md",
+      "published": "docs/research/sampling/REPORT.md",
+      "source_sha256": "e74ad6213c1327ce4c33668797b0f9a664f23f70c5c6485d6dffcd2e0822589c",
+      "published_sha256": "673d94cbe96bb5a828db9767a22b7f5431670951c11ad181cec801f579a8aa35",
+      "source_bytes": 5430,
+      "published_bytes": 5376,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/summary.json",
+      "published": "docs/research/sampling/summary.json",
+      "source_sha256": "ee1c79ed68935c4b07dda4f1f1aafb8caba6cca5b9c4d909e2d03d28e9b2940c",
+      "published_sha256": "e1ad4a498a2b616eb102314e46b9979763681f03e4a27e0e27df8cba01b6e660",
+      "source_bytes": 1890,
+      "published_bytes": 1844,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/summary_results.csv",
+      "published": "docs/research/sampling/summary_results.csv",
+      "source_sha256": "676536ba347fb2b0d67bcb865734d25678e858bbca49f0e65dadb8107aeea8b4",
+      "published_sha256": "7a4e49ba1a9231a0aaebf33dc266d4ac555b579047f4fe76919e16159ba2e3ff",
+      "source_bytes": 544,
+      "published_bytes": 541,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/run_results.csv",
+      "published": "docs/research/sampling/run_results.csv",
+      "source_sha256": "df81338af36af4f4194ce767d1a785d2b7d42ba02b89fee2e791168c2360c5aa",
+      "published_sha256": "e9e080d50ba4359927ec6e6b848d36ee72e35b6c6d56d0ddc7e99b5994fafbc4",
+      "source_bytes": 2920,
+      "published_bytes": 2889,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/fold_results.csv",
+      "published": "docs/research/sampling/fold_results.csv",
+      "source_sha256": "b43387ee6c7965d796627e7ac66d4fe0734b9d58d6f4aa099e5e54099a905127",
+      "published_sha256": "f5c00a65fca6ec520aac6b784d7cf4310d8b53840480e768c380aedf06b3c169",
+      "source_bytes": 1718,
+      "published_bytes": 1707,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/subject_results.csv",
+      "published": "docs/research/sampling/subject_results.csv",
+      "source_sha256": "97a0230453b2fa3a9b81e9b9a0f283c31ea28a47ec0638ffd40b62279138d98c",
+      "published_sha256": "b455c343f98bb723ac3b885dc32fd6a1c6182ed2a5df51d1c3eaa5ac7bc69951",
+      "source_bytes": 1018,
+      "published_bytes": 997,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/seed_results.csv",
+      "published": "docs/research/sampling/seed_results.csv",
+      "source_sha256": "c231ef7ad03b6a8236eb2f75f8d14222edb1e1ff8fe0126061df44c8b1a46d78",
+      "published_sha256": "bdc83df61fe1eece9bbb53e05184ee7e2cef2dd2ba72d24a20cd7337c4d88803",
+      "source_bytes": 361,
+      "published_bytes": 354,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/action_results.csv",
+      "published": "docs/research/sampling/action_results.csv",
+      "source_sha256": "fe1dafa29c8e24f9f51e8b16e37f80661ec54795d9fb481f9f99c2fbb5fa4b1a",
+      "published_sha256": "e1e61c132cfbf5bfce2aa643ae7ce72b4e1b2abfd755fd9171753c106c3b6f85",
+      "source_bytes": 2934,
+      "published_bytes": 2897,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paired_changes.csv",
+      "published": "docs/research/sampling/paired_changes.csv",
+      "source_sha256": "4d5743386e5eb85bcba2b1754588434300cba72835a0150464b5835885726be3",
+      "published_sha256": "5ca65c22b69bebbd5952c69f64eca467cf9e6a506e3a8fc3dbec8d1e2c3225a8",
+      "source_bytes": 1041,
+      "published_bytes": 1025,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/protocol.json",
+      "published": "docs/research/sampling/protocol.json",
+      "source_sha256": "3be214454fe326d58c2b2ab0ad89303f2a28e2d2163efd01b844e2aa7e39c8e1",
+      "published_sha256": "ee2d25b3b7a96057125fef8c12179c0f3887389825865b9b0a0a1a61566b88c9",
+      "source_bytes": 46888,
+      "published_bytes": 43986,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/selection_lock.json",
+      "published": "docs/research/sampling/selection_lock.json",
+      "source_sha256": "f1366b6207305b3f42a2a41bd19b90c8e49017582e18a56436ea43d3dc48c843",
+      "published_sha256": "076820305d5886f35ac1cec56eb244f98179bc10ff4207dbb4b67093fd1e21e8",
+      "source_bytes": 8870,
+      "published_bytes": 8637,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/execution.json",
+      "published": "docs/research/sampling/execution.json",
+      "source_sha256": "b080921d79c8e05ca0fe8b5cf4dfa94f4d99ae00f31a560f5ed735ce87b5d0cd",
+      "published_sha256": "5bdd6624554cdd5b2e6609498730adefd3d980fec34d16c41228fd659fd93dc7",
+      "source_bytes": 372,
+      "published_bytes": 364,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/include_figures.tex",
+      "published": "docs/research/sampling/paper_assets/include_figures.tex",
+      "source_sha256": "967e5107ae6ac1fc98c7f4a125bd450be6906d2c357afac8fbdb33f09238058a",
+      "published_sha256": "273994d437fe8f729b384680f83938f866e788c0bf6acc4e2cb497bb9af09888",
+      "source_bytes": 1691,
+      "published_bytes": 1669,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/table_results.tex",
+      "published": "docs/research/sampling/paper_assets/table_results.tex",
+      "source_sha256": "402d327a73f07ac42338ceb1efc2c60cf9fa6a854142319b2e051c875278dd87",
+      "published_sha256": "e812322d0810b6ef96c2df76d3e6eac3794636ad2fd50af936edf370401d8e16",
+      "source_bytes": 682,
+      "published_bytes": 670,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/plot_data.json",
+      "published": "docs/research/sampling/paper_assets/plot_data.json",
+      "source_sha256": "5bce60f53ffc00fa3381d093221f7638d5063279deda8442be1748f23974e213",
+      "published_sha256": "53fc8ec64fb1ffaad6743e20a5fd211f3238c28da5a9d609a89389e199e1a967",
+      "source_bytes": 13096,
+      "published_bytes": 12642,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv01_fold_comparison.pdf",
+      "published": "docs/research/sampling/paper_assets/cv01_fold_comparison.pdf",
+      "source_sha256": "cdf1ae25758f81fc96015b2485210c1e268958aaf85fbaa95d34a39e1839f477",
+      "published_sha256": "cdf1ae25758f81fc96015b2485210c1e268958aaf85fbaa95d34a39e1839f477",
+      "source_bytes": 14688,
+      "published_bytes": 14688,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv01_fold_comparison.svg",
+      "published": "docs/research/sampling/paper_assets/cv01_fold_comparison.svg",
+      "source_sha256": "81b7f57cef89aeb11f54859d1d694cc532df06627dd198cc6d9ca6edb0605423",
+      "published_sha256": "557070c0fc8fb7056ce1886f7eafe4c0ede3c15fbb6e7c3d8ef29cac7d7e4844",
+      "source_bytes": 31927,
+      "published_bytes": 31061,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv01_fold_comparison.png",
+      "published": "docs/research/sampling/paper_assets/cv01_fold_comparison.png",
+      "source_sha256": "411e1406a54097487b63c79425807a374e761ac0c8c7c67a6a4031b721cebda5",
+      "published_sha256": "411e1406a54097487b63c79425807a374e761ac0c8c7c67a6a4031b721cebda5",
+      "source_bytes": 172395,
+      "published_bytes": 172395,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv02_subject_comparison.pdf",
+      "published": "docs/research/sampling/paper_assets/cv02_subject_comparison.pdf",
+      "source_sha256": "ecc498f54da7510103580268fde7a3fa3bfe4b4e288298f33c435772b3b8d833",
+      "published_sha256": "ecc498f54da7510103580268fde7a3fa3bfe4b4e288298f33c435772b3b8d833",
+      "source_bytes": 14588,
+      "published_bytes": 14588,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv02_subject_comparison.svg",
+      "published": "docs/research/sampling/paper_assets/cv02_subject_comparison.svg",
+      "source_sha256": "ca2f8757d5482acb7279c9690211767313b8f8fd16b506ded138ed940d52fc20",
+      "published_sha256": "438553cc755f606782a1b28fd8dfdbe5e01f82cd2dd158e94682e0e618746a82",
+      "source_bytes": 24732,
+      "published_bytes": 24094,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv02_subject_comparison.png",
+      "published": "docs/research/sampling/paper_assets/cv02_subject_comparison.png",
+      "source_sha256": "86502c92206d00d73845fe6f03de711b7215375c8604a723ea86f418ba57cffb",
+      "published_sha256": "86502c92206d00d73845fe6f03de711b7215375c8604a723ea86f418ba57cffb",
+      "source_bytes": 123599,
+      "published_bytes": 123599,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv03_subject_protocol.pdf",
+      "published": "docs/research/sampling/paper_assets/cv03_subject_protocol.pdf",
+      "source_sha256": "24e8786a55d1ca17024d0949f19d66b8f98da2c51264f42057e8a0c92623ffd3",
+      "published_sha256": "24e8786a55d1ca17024d0949f19d66b8f98da2c51264f42057e8a0c92623ffd3",
+      "source_bytes": 14208,
+      "published_bytes": 14208,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv03_subject_protocol.svg",
+      "published": "docs/research/sampling/paper_assets/cv03_subject_protocol.svg",
+      "source_sha256": "e1beebd39097ec83b069b7ac02178d6109c5a84908fd803224727bdcede99b9b",
+      "published_sha256": "65154ac93b63077d60819d285be0c949d8ec4623430d5e741df35a63b5688850",
+      "source_bytes": 45208,
+      "published_bytes": 44597,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_sampling_cv/paper_assets/cv03_subject_protocol.png",
+      "published": "docs/research/sampling/paper_assets/cv03_subject_protocol.png",
+      "source_sha256": "b704c2a87c6ccb9e92a7a8fa2613b73e24fa426fd7c393a41c0d401b9954002e",
+      "published_sha256": "b704c2a87c6ccb9e92a7a8fa2613b73e24fa426fd7c393a41c0d401b9954002e",
+      "source_bytes": 142925,
+      "published_bytes": 142925,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct_10fps/REPORT.md",
+      "published": "docs/research/sampling/single_split/REPORT.md",
+      "source_sha256": "000efc32418586568c8df85a9b6907367650255f36350f180272ffb84c911615",
+      "published_sha256": "e3c52403917f471d40e06e1ff82776b736873722d741c17bdc3a514e1324d5ad",
+      "source_bytes": 5334,
+      "published_bytes": 5236,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct_10fps/comparison.json",
+      "published": "docs/research/sampling/single_split/comparison.json",
+      "source_sha256": "3c8965cc73f5a079ac52b1103b60aab4b59662f7c92760ada1cabcfd665eb41a",
+      "published_sha256": "5cb56ca5cc370c07be183fe22aa9798b69cad59aba09481acdde23cdf243f8bf",
+      "source_bytes": 1898,
+      "published_bytes": 1841,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct_10fps/sampling_selection.json",
+      "published": "docs/research/sampling/single_split/sampling_selection.json",
+      "source_sha256": "1f2cd69acd7bccda88fd7064c75ddb9a292bfbfb5c3e5ffd995741b51c75c5d0",
+      "published_sha256": "481f8804949ff95dd6ad6b56804319092ff4e5340bf353c7d220236f6c1b19f6",
+      "source_bytes": 1458,
+      "published_bytes": 1426,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_head_100pct_10fps/protocol.json",
+      "published": "docs/research/sampling/single_split/protocol.json",
+      "source_sha256": "66afed9b8d4a1891465333dd4239108a876fc591890986f8fe275d5c02e49199",
+      "published_sha256": "f39070e6fcabfa8b866fdcc8575b93fc4817e49111f9967909d84074e4e518e3",
+      "source_bytes": 2201,
+      "published_bytes": 2176,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/REPORT.md",
+      "published": "docs/research/architecture-ablations/REPORT.md",
+      "source_sha256": "ecb1fd5b154685bb608a09c105da5b805429fac7016087f7efc67272cb1c2f9a",
+      "published_sha256": "268fb78c8023244a6c4b865801ca29da125c066f0889bd5b6477422365fec475",
+      "source_bytes": 6100,
+      "published_bytes": 5995,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/summary.json",
+      "published": "docs/research/architecture-ablations/summary.json",
+      "source_sha256": "5a7b0fbbefd5ed020c7ffea70b827a9e74b0886f8d2b1bc8e6560c896a1ac603",
+      "published_sha256": "b09085eaef84f860857b7d935e29ad51f8c60249e39f223cab103dd9445630d4",
+      "source_bytes": 59509,
+      "published_bytes": 56048,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/summary_metrics.csv",
+      "published": "docs/research/architecture-ablations/summary_metrics.csv",
+      "source_sha256": "37e1f66dc87dd8d82f12db226815eac1890f15e57d307f4fcc7e9c3d0a68f3b3",
+      "published_sha256": "7cf661ec1daf5460598670ee52ee7468003a6c516ee1e0a187a0d2f514771029",
+      "source_bytes": 1503,
+      "published_bytes": 1478,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/per_seed_metrics.csv",
+      "published": "docs/research/architecture-ablations/per_seed_metrics.csv",
+      "source_sha256": "c980ea6126e9d6f6a95ee5d1182b87514e232cebdeca97e9a0f5a0823d672ccc",
+      "published_sha256": "fa96346b2441d963ac5961724d6485dfbab4f5608b009094b920d49975c52860",
+      "source_bytes": 2026,
+      "published_bytes": 2013,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/paired_C_minus_B.csv",
+      "published": "docs/research/architecture-ablations/paired_C_minus_B.csv",
+      "source_sha256": "b3fb86e1e08a8b2ff7e9e2fff9e0a95890c6fd3531d95813a551ad7353815979",
+      "published_sha256": "02cb7c9707d7f70c8b8af190c1d427a114f90b90632af23fca134840ae61dd0b",
+      "source_bytes": 485,
+      "published_bytes": 478,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/per_class_per_seed.csv",
+      "published": "docs/research/architecture-ablations/per_class_per_seed.csv",
+      "source_sha256": "6db2a69f63e51b774d514930378777176fbb6534bd4da168479c77be7d0865c2",
+      "published_sha256": "b13766eab95d2dba360906bffa6cd6bb3c21250544f8d79c84d58e90aedb4d05",
+      "source_bytes": 20727,
+      "published_bytes": 20294,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/per_class_summary.csv",
+      "published": "docs/research/architecture-ablations/per_class_summary.csv",
+      "source_sha256": "b109e3bb1e54dd61b1c28b51191ba66b0e110b1bf295519646ffb113b0db50c0",
+      "published_sha256": "fa32b1735d2d65660d8af2a128c630b8b4fae6ac6f136b702be02fb8e5a18bd2",
+      "source_bytes": 6381,
+      "published_bytes": 6236,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/protocol.json",
+      "published": "docs/research/architecture-ablations/protocol.json",
+      "source_sha256": "a09398e7331675f1653af3b0474ebc73f9b55a09df1be6ff22a43669e428a25d",
+      "published_sha256": "1aab9bd1efa1b504a1b2b9df9a9a4addd3a962ab1c9b20489b1c367a35788753",
+      "source_bytes": 3298,
+      "published_bytes": 3212,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/preflight.json",
+      "published": "docs/research/architecture-ablations/preflight.json",
+      "source_sha256": "af99aefcd09b137d0577c25500772b6c9c2ae3f09b151d597b9ebcb11777c567",
+      "published_sha256": "a45542c78342315554983375327826b5d172ce06c7af99a180bbaefe32983ab0",
+      "source_bytes": 5449,
+      "published_bytes": 5319,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selection_manifest.json",
+      "published": "docs/research/architecture-ablations/selection_manifest.json",
+      "source_sha256": "2e6bb34e87c5227a7e49c8a810920ed93ca7ef416fac27a7b059da688c99f371",
+      "published_sha256": "a9bf1020d16705630e6f516d3c96512829a476c34e192a0b72cf289ef8371056",
+      "source_bytes": 863228,
+      "published_bytes": 819505,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/evaluation.json",
+      "published": "docs/research/architecture-ablations/evaluation.json",
+      "source_sha256": "c5756c236f671cb625b48801f8e47dcdcb2a7ced4a39544beeaab5e76b5ef3e9",
+      "published_sha256": "fa93f17d2f9aba360912791f62c37bfb1fa48c7e7fdcf951c159344a4cdbec31",
+      "source_bytes": 82216,
+      "published_bytes": 76743,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/historical_context.json",
+      "published": "docs/research/architecture-ablations/historical_context.json",
+      "source_sha256": "85d66fb0f3e809eee681f4870d075d3facd1498f54b20924daa0fe8f80eb8e76",
+      "published_sha256": "aa46560232a1d2b31b4c015bfc2e765f29d702a59897ede6c064245eff955994",
+      "source_bytes": 90159,
+      "published_bytes": 85062,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/normalization_verification.json",
+      "published": "docs/research/architecture-ablations/normalization_verification.json",
+      "source_sha256": "46a2e75dfb14795760abfe8cd8cdcd858f88c8f1db0d3ba1dd549b7948dd0e1b",
+      "published_sha256": "afb31f4fbf5aedd5c7c082571114f86a135eb93877739018da495a39c565d3fa",
+      "source_bytes": 425,
+      "published_bytes": 408,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures_for_paper.tex",
+      "published": "docs/research/architecture-ablations/figures_for_paper.tex",
+      "source_sha256": "83af4dea751cb829b1d4f90c69738cee043e880a5fe9ddbd8ef3412daf60425b",
+      "published_sha256": "e8fa4a85f0ce4848e60755d814ad6698f3e0007263e62edc79466fa77f3a8b55",
+      "source_bytes": 877,
+      "published_bytes": 859,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/A_test_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/A_test_mean_confusion.csv",
+      "source_sha256": "ac65ea6a071c3b75d645132b9d569f910e05e2befb1c8bf5526d6b9f8d47250f",
+      "published_sha256": "a6bf458ca7814e0c7081877d14f5c3f18d626e90e62161ebc2e15bf8320d14aa",
+      "source_bytes": 1865,
+      "published_bytes": 1846,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/A_validation_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/A_validation_mean_confusion.csv",
+      "source_sha256": "8a0ecff2c74b26d8c0e861c0485eb382ec99ddea8ce348911b5324bf3c89a338",
+      "published_sha256": "50abc718701a1d04a292ded322cc549dc60715d31483e3e7a755f4d535e4febd",
+      "source_bytes": 1850,
+      "published_bytes": 1831,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/A_seed_42.pt",
+      "published": "docs/research/architecture-ablations/selected/A_seed_42.pt",
+      "source_sha256": "13c5b2ce10e3865a14e757a6f7edbd6343413adfab727336e4766889002ed3da",
+      "published_sha256": "13c5b2ce10e3865a14e757a6f7edbd6343413adfab727336e4766889002ed3da",
+      "source_bytes": 41295,
+      "published_bytes": 41295,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/A_seed_123.pt",
+      "published": "docs/research/architecture-ablations/selected/A_seed_123.pt",
+      "source_sha256": "1f51b9b61f3ea08a0accf1e98217c98a9b3f76441263e52e00e31b085c34040a",
+      "published_sha256": "1f51b9b61f3ea08a0accf1e98217c98a9b3f76441263e52e00e31b085c34040a",
+      "source_bytes": 41305,
+      "published_bytes": 41305,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/A_seed_2026.pt",
+      "published": "docs/research/architecture-ablations/selected/A_seed_2026.pt",
+      "source_sha256": "f9fadc0ec1396d5c937685a54ada217e868a9478c64c942b596180d61074f644",
+      "published_sha256": "f9fadc0ec1396d5c937685a54ada217e868a9478c64c942b596180d61074f644",
+      "source_bytes": 41315,
+      "published_bytes": 41315,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/B_test_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/B_test_mean_confusion.csv",
+      "source_sha256": "1de03d6a6fe917b92302ca044f3de91003712b3ab017af39e66bcf2f397bdb3b",
+      "published_sha256": "66ffe2d3c8a012f46da4d9d28eb0f31fb48a74c6b2f58e83a17dabe106825f0d",
+      "source_bytes": 2030,
+      "published_bytes": 2011,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/B_validation_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/B_validation_mean_confusion.csv",
+      "source_sha256": "11e3f0e8f0e440d2db3f6759965d9dbd7dd6ae121e74bc3f7b4bc79f670a203b",
+      "published_sha256": "b7f28e9e3db821671629cf93f67cf697acd19b85235472cbfcd72c463a18507a",
+      "source_bytes": 1851,
+      "published_bytes": 1832,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/B_seed_42.pt",
+      "published": "docs/research/architecture-ablations/selected/B_seed_42.pt",
+      "source_sha256": "95aa8109c88309553db2f07200b86edf8ccf93d47c36a8a99d636b33c31b1987",
+      "published_sha256": "95aa8109c88309553db2f07200b86edf8ccf93d47c36a8a99d636b33c31b1987",
+      "source_bytes": 68691,
+      "published_bytes": 68691,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/B_seed_123.pt",
+      "published": "docs/research/architecture-ablations/selected/B_seed_123.pt",
+      "source_sha256": "8ada79dff83abeeed2688ab8a5737127740fd5854b1288069f419ae71a9c543a",
+      "published_sha256": "8ada79dff83abeeed2688ab8a5737127740fd5854b1288069f419ae71a9c543a",
+      "source_bytes": 68705,
+      "published_bytes": 68705,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/B_seed_2026.pt",
+      "published": "docs/research/architecture-ablations/selected/B_seed_2026.pt",
+      "source_sha256": "a07e54b014e2f89c3a982a0366cc125efb87e793067031816590b78ef7985339",
+      "published_sha256": "a07e54b014e2f89c3a982a0366cc125efb87e793067031816590b78ef7985339",
+      "source_bytes": 68719,
+      "published_bytes": 68719,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/C_test_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/C_test_mean_confusion.csv",
+      "source_sha256": "eea2bd84dbdbebff3e75d2418082655e5e6942dcf608b9190c728d8ea11c0ce1",
+      "published_sha256": "cfdd291b6aaea8a9c12f2568d676879b48de60dc8973dca2fc661acafaa6e5c6",
+      "source_bytes": 1940,
+      "published_bytes": 1921,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/C_validation_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/C_validation_mean_confusion.csv",
+      "source_sha256": "80d6e20928553cdc7ed8cc3552238900ac859656fd41ec32a2eb288d9bd7416f",
+      "published_sha256": "4e2ab24ff1a91af0340d49e8a996005c0d42e49c72178590fa44f2192b33b0c7",
+      "source_bytes": 1910,
+      "published_bytes": 1891,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/C_seed_42.pt",
+      "published": "docs/research/architecture-ablations/selected/C_seed_42.pt",
+      "source_sha256": "a7de690ff8ff03a303fd5f3cf2f853b626ff9408a71264dc6ad01bf7e0a344e3",
+      "published_sha256": "a7de690ff8ff03a303fd5f3cf2f853b626ff9408a71264dc6ad01bf7e0a344e3",
+      "source_bytes": 70869,
+      "published_bytes": 70869,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/C_seed_123.pt",
+      "published": "docs/research/architecture-ablations/selected/C_seed_123.pt",
+      "source_sha256": "700075092327f9ee4b946e245300afeae56ec168ec55be69cb3bd3a5c1d566f5",
+      "published_sha256": "700075092327f9ee4b946e245300afeae56ec168ec55be69cb3bd3a5c1d566f5",
+      "source_bytes": 70885,
+      "published_bytes": 70885,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/C_seed_2026.pt",
+      "published": "docs/research/architecture-ablations/selected/C_seed_2026.pt",
+      "source_sha256": "7ef3644622adba0313b5823db71f496c54e2c5f596182522b3bfb22f36e45047",
+      "published_sha256": "7ef3644622adba0313b5823db71f496c54e2c5f596182522b3bfb22f36e45047",
+      "source_bytes": 70901,
+      "published_bytes": 70901,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/D_test_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/D_test_mean_confusion.csv",
+      "source_sha256": "df98bd11d82cf6cbaa5258da050b8b811a5f6dae2a8b1e12cc2fd928ff51233e",
+      "published_sha256": "3058830ffc5c47c90576462ecd2f5ee3f8cd3e07b996ed52a5d5aff2a5e4fee2",
+      "source_bytes": 2042,
+      "published_bytes": 2023,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/D_validation_mean_confusion.csv",
+      "published": "docs/research/architecture-ablations/D_validation_mean_confusion.csv",
+      "source_sha256": "55440f9c94be4ff0e77e558b993d1e2a170df0dec5f004fa2d4a898a2d8b9c6f",
+      "published_sha256": "40d9280ef4765b85730f0b5f8636d4c4a2157666cbb36f09d9ad279e43435f77",
+      "source_bytes": 1997,
+      "published_bytes": 1978,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/D_seed_42.pt",
+      "published": "docs/research/architecture-ablations/selected/D_seed_42.pt",
+      "source_sha256": "8bfb9607503e10fa18f993d18af09e9da485d7bc9cbc77374405631925b24d7f",
+      "published_sha256": "8bfb9607503e10fa18f993d18af09e9da485d7bc9cbc77374405631925b24d7f",
+      "source_bytes": 71891,
+      "published_bytes": 71891,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/D_seed_123.pt",
+      "published": "docs/research/architecture-ablations/selected/D_seed_123.pt",
+      "source_sha256": "cf74b1246170e0b8037169a49f5efabe84eace198a84854fff76a3a57a0539aa",
+      "published_sha256": "cf74b1246170e0b8037169a49f5efabe84eace198a84854fff76a3a57a0539aa",
+      "source_bytes": 71905,
+      "published_bytes": 71905,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/D_seed_2026.pt",
+      "published": "docs/research/architecture-ablations/selected/D_seed_2026.pt",
+      "source_sha256": "829645addf564892f49a158fd0c916d82fdbd2ab2acff727e2ef1590a85ce229",
+      "published_sha256": "829645addf564892f49a158fd0c916d82fdbd2ab2acff727e2ef1590a85ce229",
+      "source_bytes": 71919,
+      "published_bytes": 71919,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/macro_f1_comparison.pdf",
+      "published": "docs/research/architecture-ablations/figures/macro_f1_comparison.pdf",
+      "source_sha256": "05f31d1e98c2c2dc4f8fb0bd4ea44d08271b151f7c6ac7d50602159a65dd164f",
+      "published_sha256": "05f31d1e98c2c2dc4f8fb0bd4ea44d08271b151f7c6ac7d50602159a65dd164f",
+      "source_bytes": 26858,
+      "published_bytes": 26858,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/macro_f1_comparison.svg",
+      "published": "docs/research/architecture-ablations/figures/macro_f1_comparison.svg",
+      "source_sha256": "bbd7d89ce37f4f405ba0bd7895c1d21e7c439e08d730ff64d37ce2aaef623d10",
+      "published_sha256": "89f87d9f7b87fa000b93df8a66b862912e2ba8f19c2f314d850ee68279d17c97",
+      "source_bytes": 27251,
+      "published_bytes": 26465,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/macro_f1_comparison.png",
+      "published": "docs/research/architecture-ablations/figures/macro_f1_comparison.png",
+      "source_sha256": "e3c4b556e4594ba1210fbc5908e8ef0904d3c69bbd70a4038397bbb09a7bc229",
+      "published_sha256": "e3c4b556e4594ba1210fbc5908e8ef0904d3c69bbd70a4038397bbb09a7bc229",
+      "source_bytes": 87431,
+      "published_bytes": 87431,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/paired_temporal_delta.pdf",
+      "published": "docs/research/architecture-ablations/figures/paired_temporal_delta.pdf",
+      "source_sha256": "16bd9b1c4b91d2dbeee3bac37acf5e94f6c50658c71f0732f9e7b157029190d6",
+      "published_sha256": "16bd9b1c4b91d2dbeee3bac37acf5e94f6c50658c71f0732f9e7b157029190d6",
+      "source_bytes": 21315,
+      "published_bytes": 21315,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/paired_temporal_delta.svg",
+      "published": "docs/research/architecture-ablations/figures/paired_temporal_delta.svg",
+      "source_sha256": "8186f6bdaa103a94e59a03393030d8d1b126267771b058949617e90318cba8c3",
+      "published_sha256": "d09b0f59fe6414db1aa3168ee02a5006d219977737455989bf3bd37b79f646ac",
+      "source_bytes": 18662,
+      "published_bytes": 18139,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/paired_temporal_delta.png",
+      "published": "docs/research/architecture-ablations/figures/paired_temporal_delta.png",
+      "source_sha256": "8d6bfeacd2de20e03acb10581931e651128b8513afaadb35151768fc08f58d92",
+      "published_sha256": "8d6bfeacd2de20e03acb10581931e651128b8513afaadb35151768fc08f58d92",
+      "source_bytes": 112922,
+      "published_bytes": 112922,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/test_class_recall.pdf",
+      "published": "docs/research/architecture-ablations/figures/test_class_recall.pdf",
+      "source_sha256": "2acf06034518010d793d17d3fd78c1553c57a34b517fa436fd886dd47e751a87",
+      "published_sha256": "2acf06034518010d793d17d3fd78c1553c57a34b517fa436fd886dd47e751a87",
+      "source_bytes": 31091,
+      "published_bytes": 31091,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/test_class_recall.svg",
+      "published": "docs/research/architecture-ablations/figures/test_class_recall.svg",
+      "source_sha256": "77eb195ce85003b2886225203128dbf394494b797747acbe449f10c1c72c3b75",
+      "published_sha256": "45297a2a1906b26bcf692e9b59e0646c4ed376c63c6900306fff29776bafc0ba",
+      "source_bytes": 56009,
+      "published_bytes": 54758,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/test_class_recall.png",
+      "published": "docs/research/architecture-ablations/figures/test_class_recall.png",
+      "source_sha256": "865671442ec47cd11c3dcda389c55e7d33ab4e93ee7ae410ad5bd2f080df06d9",
+      "published_sha256": "865671442ec47cd11c3dcda389c55e7d33ab4e93ee7ae410ad5bd2f080df06d9",
+      "source_bytes": 191000,
+      "published_bytes": 191000,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/test_mean_confusions.pdf",
+      "published": "docs/research/architecture-ablations/figures/test_mean_confusions.pdf",
+      "source_sha256": "da888992510d0dd250914a7084ee3903d2c7214e723fa31d715dfc6c637f0aac",
+      "published_sha256": "da888992510d0dd250914a7084ee3903d2c7214e723fa31d715dfc6c637f0aac",
+      "source_bytes": 44127,
+      "published_bytes": 44127,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/test_mean_confusions.svg",
+      "published": "docs/research/architecture-ablations/figures/test_mean_confusions.svg",
+      "source_sha256": "0f1abd599e1b5df7f30033807bfa3c7cf79963ae2658482291001b50eff135f7",
+      "published_sha256": "4fb3f6315d197b5ee29013982ce88551df7561647aad79ac02027e44d3997454",
+      "source_bytes": 147592,
+      "published_bytes": 145506,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/test_mean_confusions.png",
+      "published": "docs/research/architecture-ablations/figures/test_mean_confusions.png",
+      "source_sha256": "db7c18d87a0246008c5a52f826b28f4dda50235df2436dd774045090fa15af75",
+      "published_sha256": "db7c18d87a0246008c5a52f826b28f4dda50235df2436dd774045090fa15af75",
+      "source_bytes": 341219,
+      "published_bytes": 341219,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/validation_class_recall.pdf",
+      "published": "docs/research/architecture-ablations/figures/validation_class_recall.pdf",
+      "source_sha256": "b2074fcf0ee9923e03fa8185e070426370b0c4f0adf4b7143a9ac50dbaac31f9",
+      "published_sha256": "b2074fcf0ee9923e03fa8185e070426370b0c4f0adf4b7143a9ac50dbaac31f9",
+      "source_bytes": 31350,
+      "published_bytes": 31350,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/validation_class_recall.svg",
+      "published": "docs/research/architecture-ablations/figures/validation_class_recall.svg",
+      "source_sha256": "e555f21fe6b2bc2d816754c8e9162faf05c16e3a0e0274f6cb6bfada08544fd1",
+      "published_sha256": "bbc3c455e94fc1d021f2f9e9157cdfc61e32066a78786edd2a12af42ee2bfb10",
+      "source_bytes": 56009,
+      "published_bytes": 54758,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/validation_class_recall.png",
+      "published": "docs/research/architecture-ablations/figures/validation_class_recall.png",
+      "source_sha256": "e46a1011d706230164ecb5821c11549153a6851c9d7117a95773b173f1550e53",
+      "published_sha256": "e46a1011d706230164ecb5821c11549153a6851c9d7117a95773b173f1550e53",
+      "source_bytes": 192828,
+      "published_bytes": 192828,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_compact_temporal_v1/REPORT.md",
+      "published": "docs/research/architecture-ablations/single_seed_pilot/REPORT.md",
+      "source_sha256": "cc97f8a4e8cdca9ba64930e5fa0ed247e9999fed57ea19cf2b6c191cd2ebccf5",
+      "published_sha256": "74a8edbea44c4d1bc51c709c6c5913b277152593d2000158deb7467769cc986f",
+      "source_bytes": 1923,
+      "published_bytes": 1889,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_compact_temporal_v1/comparison.csv",
+      "published": "docs/research/architecture-ablations/single_seed_pilot/comparison.csv",
+      "source_sha256": "cbb942c6cbfdc7aed2a68b308155ab09c8d6918aaf315e990597cfe8cb7c8fb7",
+      "published_sha256": "adb7bffd68c4de43c69b9eba142eb60191ae850b7379414cf70be34838140855",
+      "source_bytes": 255,
+      "published_bytes": 252,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_compact_temporal_v1/protocol.json",
+      "published": "docs/research/architecture-ablations/single_seed_pilot/protocol.json",
+      "source_sha256": "e52fa84a18b819bc917b07c31b97e7847c2a884c72eae0ed46f7bb869c41ce02",
+      "published_sha256": "aefc2e165d4753eb9ab52003df3b58b5cbe89e13488a180e07fe521764f9e92e",
+      "source_bytes": 2413,
+      "published_bytes": 2349,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_compact_temporal_v1/selection.json",
+      "published": "docs/research/architecture-ablations/single_seed_pilot/selection.json",
+      "source_sha256": "2181952f94f8060caf30731d76bd3423966b6b1c5ccb8b2251a93abbdd65ba0e",
+      "published_sha256": "8dc6ec71e90facca62480ec405be99064229cf912804a3b54075744538c2dd8f",
+      "source_bytes": 57891,
+      "published_bytes": 54260,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_compact_temporal_v1/evaluation.json",
+      "published": "docs/research/architecture-ablations/single_seed_pilot/evaluation.json",
+      "source_sha256": "ff8f90f820193c1bc806514144bfae456a2eaf70c6bef8ca656c02c75b2b0914",
+      "published_sha256": "dd071f4ab2b838cc21c5e2e74d3fcd9ccd80d7a64238c132841e124ff4774120",
+      "source_bytes": 5870,
+      "published_bytes": 5417,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/REPORT.md",
+      "published": "docs/research/projection-adapters/REPORT.md",
+      "source_sha256": "61df74a1cb4aea275e7965107e886e5811abaa4af5645556b658cae6f6a57e9c",
+      "published_sha256": "fef5e70f2d20f78ca63ab78ca085a1da75a717c4e1032aa60f8aee52a8665a5c",
+      "source_bytes": 3950,
+      "published_bytes": 3880,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/summary.json",
+      "published": "docs/research/projection-adapters/summary.json",
+      "source_sha256": "5a955e5023daf1156c1715541b87daaf3b41e32ba5851914786d5ffb9f5e052f",
+      "published_sha256": "ab6d04ffa0267b5083742ddd779e97c6202ada89726c8ec4f583aa178f538cf4",
+      "source_bytes": 6205,
+      "published_bytes": 5960,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/paired_differences.csv",
+      "published": "docs/research/projection-adapters/paired_differences.csv",
+      "source_sha256": "7e0293a5fd2fc9f6128513a356e1615c1e80af782035a322b8d9bd72b5e05a91",
+      "published_sha256": "06d285c17add273fae3b15dea4452628de2fba0f7acafb94c2e8d99148eb874a",
+      "source_bytes": 562,
+      "published_bytes": 546,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/paired_differences.json",
+      "published": "docs/research/projection-adapters/paired_differences.json",
+      "source_sha256": "a7b624679a522678b3523141ec2dc508b75e3fd3d9f82578f8c583d21fb0fab1",
+      "published_sha256": "e837b8e1b61b95a8ccc03991b3bd22119480a2d27c1376d328f6d9fa3c763a21",
+      "source_bytes": 913,
+      "published_bytes": 867,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/per_seed_metrics.csv",
+      "published": "docs/research/projection-adapters/per_seed_metrics.csv",
+      "source_sha256": "dc5138ea1bc7b4c95d984a6191b6805d5716d9a45abd1ac486ab0868d2030c66",
+      "published_sha256": "45ae12a6f512cb74db1ad822622a79560aeb270d288ac297c2593d35b2ac9696",
+      "source_bytes": 1313,
+      "published_bytes": 1300,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/protocol.json",
+      "published": "docs/research/projection-adapters/protocol.json",
+      "source_sha256": "ce74e71730ad7e064c82bb50e277d1cd2730e6b1927fe3e8c8978d7c001adbc8",
+      "published_sha256": "30cb118a3603c3d24f34baaf69963d1ced8dd7d87f10d47e9ee1a1ee7d7ac3a9",
+      "source_bytes": 25690,
+      "published_bytes": 24239,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/preflight.json",
+      "published": "docs/research/projection-adapters/preflight.json",
+      "source_sha256": "9b69430ff7c974f90688c42cebffdc1824a51d4fe01ee7389a6bcc70b318ba73",
+      "published_sha256": "a34517d25083127af0fe40ad7b91c79f4e37329b685a5baf8abbf0c54c885e93",
+      "source_bytes": 48495,
+      "published_bytes": 45654,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selection_manifest.json",
+      "published": "docs/research/projection-adapters/selection_manifest.json",
+      "source_sha256": "58f0dbc0cafda6b115245bbf1c98ceeb58c9bf4cf4b72876f4bd01cf30374f51",
+      "published_sha256": "841885efc51e30073b2d524c3657c4d7716818e89863c6d513aba3f8a7855c85",
+      "source_bytes": 962840,
+      "published_bytes": 913882,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/evaluation.json",
+      "published": "docs/research/projection-adapters/evaluation.json",
+      "source_sha256": "11efe399594d63362b8dcc26451277b603500900315b0eff4158418016c7547e",
+      "published_sha256": "0a49f4c9a64a079c903d37c99847a3915ebf1d4e27ed9d7fb96cbbe20ea86588",
+      "source_bytes": 155543,
+      "published_bytes": 146037,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/lora_seed_42.pt",
+      "published": "docs/research/projection-adapters/selected/lora_seed_42.pt",
+      "source_sha256": "f04fda63736234a7e9970700df17c30a7dab1d21187af9746247da8db39086f7",
+      "published_sha256": "f04fda63736234a7e9970700df17c30a7dab1d21187af9746247da8db39086f7",
+      "source_bytes": 1384025,
+      "published_bytes": 1384025,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/lora_seed_123.pt",
+      "published": "docs/research/projection-adapters/selected/lora_seed_123.pt",
+      "source_sha256": "1a5bf2b8e51267df96770d79230c1e1b387cfac8e14c8067efc9edd08908cbea",
+      "published_sha256": "1a5bf2b8e51267df96770d79230c1e1b387cfac8e14c8067efc9edd08908cbea",
+      "source_bytes": 1384045,
+      "published_bytes": 1384045,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/lora_seed_2026.pt",
+      "published": "docs/research/projection-adapters/selected/lora_seed_2026.pt",
+      "source_sha256": "6d869f3cd6ca7467a1c72d4a4eff3f83beda7a2641f73a9e7eece0219eac960d",
+      "published_sha256": "6d869f3cd6ca7467a1c72d4a4eff3f83beda7a2641f73a9e7eece0219eac960d",
+      "source_bytes": 1384065,
+      "published_bytes": 1384065,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/guided_seed_42.pt",
+      "published": "docs/research/projection-adapters/selected/guided_seed_42.pt",
+      "source_sha256": "4e4bad8d703f04b42caf10d6428bd0695633661087c838bcad052bb353cd6a5b",
+      "published_sha256": "4e4bad8d703f04b42caf10d6428bd0695633661087c838bcad052bb353cd6a5b",
+      "source_bytes": 487681,
+      "published_bytes": 487681,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/guided_seed_123.pt",
+      "published": "docs/research/projection-adapters/selected/guided_seed_123.pt",
+      "source_sha256": "ff561e05f15e79a33e9057ab0ca58fa0d70765f4f1d2b69e8808806d6504e2cf",
+      "published_sha256": "ff561e05f15e79a33e9057ab0ca58fa0d70765f4f1d2b69e8808806d6504e2cf",
+      "source_bytes": 487701,
+      "published_bytes": 487701,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/guided_seed_2026.pt",
+      "published": "docs/research/projection-adapters/selected/guided_seed_2026.pt",
+      "source_sha256": "7cd3ccf922d436a5cbc44f16e3dd04a8fd52837b9e3761f26734695ab0794e73",
+      "published_sha256": "7cd3ccf922d436a5cbc44f16e3dd04a8fd52837b9e3761f26734695ab0794e73",
+      "source_bytes": 487721,
+      "published_bytes": 487721,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/random_seed_42.pt",
+      "published": "docs/research/projection-adapters/selected/random_seed_42.pt",
+      "source_sha256": "ecafe779957d69f6817126d47a7b016572e4e4dbe70a38e2a112c38ade73bdaf",
+      "published_sha256": "ecafe779957d69f6817126d47a7b016572e4e4dbe70a38e2a112c38ade73bdaf",
+      "source_bytes": 487681,
+      "published_bytes": 487681,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/random_seed_123.pt",
+      "published": "docs/research/projection-adapters/selected/random_seed_123.pt",
+      "source_sha256": "af068641211cf6aaf4cf42a5fd916f0598e9cba9e076dd18adbdd1a1cf24f9d3",
+      "published_sha256": "af068641211cf6aaf4cf42a5fd916f0598e9cba9e076dd18adbdd1a1cf24f9d3",
+      "source_bytes": 487701,
+      "published_bytes": 487701,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/random_seed_2026.pt",
+      "published": "docs/research/projection-adapters/selected/random_seed_2026.pt",
+      "source_sha256": "b0c73a06594dc9167a37c83f9c038d153fe2779ac86fc7b21e9c8da1743a8c6e",
+      "published_sha256": "b0c73a06594dc9167a37c83f9c038d153fe2779ac86fc7b21e9c8da1743a8c6e",
+      "source_bytes": 487721,
+      "published_bytes": 487721,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/figures/adapter_comparison.pdf",
+      "published": "docs/research/projection-adapters/figures/adapter_comparison.pdf",
+      "source_sha256": "d82f001f5b0cad852182dc7e85fc50c857be454d5012827fe8d25ac8a56a5b91",
+      "published_sha256": "d82f001f5b0cad852182dc7e85fc50c857be454d5012827fe8d25ac8a56a5b91",
+      "source_bytes": 17773,
+      "published_bytes": 17773,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/figures/adapter_comparison.svg",
+      "published": "docs/research/projection-adapters/figures/adapter_comparison.svg",
+      "source_sha256": "8840daf33da0fd875feec697eafdfc14100fe4d3bf2cf2cde3a9e7d7515f25b9",
+      "published_sha256": "0541d1c54a15cafa1c8069b5c894210fd9e2270e78d06b7c57650020a15321ed",
+      "source_bytes": 50782,
+      "published_bytes": 48231,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_projection_adapter_v1/figures/adapter_comparison.png",
+      "published": "docs/research/projection-adapters/figures/adapter_comparison.png",
+      "source_sha256": "c57bb85bb9838b4732201b1ac5b31552b7d1212b2fa64b165e0f05b25c179cc0",
+      "published_sha256": "c57bb85bb9838b4732201b1ac5b31552b7d1212b2fa64b165e0f05b25c179cc0",
+      "source_bytes": 57772,
+      "published_bytes": 57772,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/architecture_challenge_20261010/REPORT.md",
+      "published": "docs/research/projection-adapters/diagnosis/REPORT.md",
+      "source_sha256": "e6f790c87769e71fc5dd9154b559dd9a3a40c4881a5614635928917ae35ef507",
+      "published_sha256": "e6f790c87769e71fc5dd9154b559dd9a3a40c4881a5614635928917ae35ef507",
+      "source_bytes": 7092,
+      "published_bytes": 7092,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/architecture_challenge_20261010/diagnosis.json",
+      "published": "docs/research/projection-adapters/diagnosis/diagnosis.json",
+      "source_sha256": "c00ea1ad66898cf6f26c4438fa4526d4fe443e08ea77ceca859e387407332cfc",
+      "published_sha256": "99b7a1508c621e5ed10e246a9c4fd31fb5f534c8e4eaa6ed79a2b288ccf12ef8",
+      "source_bytes": 29992,
+      "published_bytes": 28178,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/architecture_challenge_20261010/verification.json",
+      "published": "docs/research/projection-adapters/diagnosis/verification.json",
+      "source_sha256": "9001f20a8c7a13531ec29b3570114d0b92ed61541992799359d886bf64870465",
+      "published_sha256": "f58178299339301ccbfb849fe13eef5902c0b755b29a062c800baab9ec6d668e",
+      "source_bytes": 894,
+      "published_bytes": 872,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/architecture_challenge_20261010/architecture_diagnosis.pdf",
+      "published": "docs/research/projection-adapters/diagnosis/architecture_diagnosis.pdf",
+      "source_sha256": "2e58dbf112ee5113d63510efd3240f95bfa3654a9912a1a0235ee7a44ce4eb91",
+      "published_sha256": "2e58dbf112ee5113d63510efd3240f95bfa3654a9912a1a0235ee7a44ce4eb91",
+      "source_bytes": 20634,
+      "published_bytes": 20634,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/architecture_challenge_20261010/architecture_diagnosis.svg",
+      "published": "docs/research/projection-adapters/diagnosis/architecture_diagnosis.svg",
+      "source_sha256": "b060aed239fb11dfd90e8ad77990178483e98ea0a1ebf686e249a2ff1bb00fd9",
+      "published_sha256": "ff11753f2abc8c67a14898d660eb557ae2fd1d1e158202ae6d5221baf0d086f8",
+      "source_bytes": 75465,
+      "published_bytes": 72255,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/architecture_challenge_20261010/architecture_diagnosis.png",
+      "published": "docs/research/projection-adapters/diagnosis/architecture_diagnosis.png",
+      "source_sha256": "b6002478757ca7e1d77f19ab974da9d249423381e069dc6e2a9987ef033e8d84",
+      "published_sha256": "b6002478757ca7e1d77f19ab974da9d249423381e069dc6e2a9987ef033e8d84",
+      "source_bytes": 118449,
+      "published_bytes": 118449,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/REPORT.md",
+      "published": "docs/research/upper-finetuning/REPORT.md",
+      "source_sha256": "3e60ef8479547c6c935aa5c98953416e6385752ce9c08ec8c693e32ade7f4ff5",
+      "published_sha256": "eba45178a9cf4a7856f2d942f2af4012a38cdbdd91121c96f7829c3537ee6c6c",
+      "source_bytes": 6046,
+      "published_bytes": 5949,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/protocol.json",
+      "published": "docs/research/upper-finetuning/protocol.json",
+      "source_sha256": "b1bf53381a29813b18260d5192f207b03f3e1c2ba2c257a1835029e312c284fb",
+      "published_sha256": "bb60d00ce82ed1e57e60f401ad001e4bd557df12efd085626fd44f05fd3734c6",
+      "source_bytes": 3109,
+      "published_bytes": 3049,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/selection.json",
+      "published": "docs/research/upper-finetuning/selection.json",
+      "source_sha256": "4940f172d67d9bf609c96fe4e248515b0e69233dede33e07b1e361b6eae565b5",
+      "published_sha256": "0898658e7839807efbaee9232927234ab2c9edbadbdff82edb3f8735e2490d3e",
+      "source_bytes": 19214,
+      "published_bytes": 17818,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/results_comparison.csv",
+      "published": "docs/research/upper-finetuning/results_comparison.csv",
+      "source_sha256": "f7c613a34dea78565430ce89b45cc8064181f14eb7343ed10cc6b089c9a27656",
+      "published_sha256": "4d8db647efec111acc14eecbf394b1a107e39d2070e1b5cd50fd0c65a7b849e4",
+      "source_bytes": 380,
+      "published_bytes": 377,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/history.json",
+      "published": "docs/research/upper-finetuning/history.json",
+      "source_sha256": "765281c77797b64d4e9b0b9f5aa8e109183f658f244eae41163a630d75497022",
+      "published_sha256": "589dcb4c3f124280b1f95d83aa6dbf2ea0ff01c0369be32b6165de44b5c1f00b",
+      "source_bytes": 65413,
+      "published_bytes": 60877,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/gradient_verification.json",
+      "published": "docs/research/upper-finetuning/gradient_verification.json",
+      "source_sha256": "51fb68f848e7b2b65393f9fdb5305ec5ea3be3da04b7e45a807c359065f2b9a1",
+      "published_sha256": "743245bda4efe78b47926f46d7e701b5047505ad0f438f9585b127e1f0d7f07a",
+      "source_bytes": 1468,
+      "published_bytes": 1432,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/updated_backbone_verification.json",
+      "published": "docs/research/upper-finetuning/updated_backbone_verification.json",
+      "source_sha256": "b9ac943c8d5540e9beab5916144084bd866d88d1ecacff0f48a3f1d51276349c",
+      "published_sha256": "79c1335ae88b376406ac64e259d520bcd0f600387564fd611b2a6acf16a30600",
+      "source_bytes": 586,
+      "published_bytes": 572,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/comparison.json",
+      "published": "docs/research/upper-finetuning/comparison.json",
+      "source_sha256": "9f820c89dfbcaffac32916255b39c89a133afcba985d64c73b5381e388582ccc",
+      "published_sha256": "e2a9b1bf5ccc42d0754593b8b8bd72c4f16266f4dfbff897f04b7f5fcb7611b7",
+      "source_bytes": 444,
+      "published_bytes": 432,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/source_verification.json",
+      "published": "docs/research/upper-finetuning/source_verification.json",
+      "source_sha256": "24eb563bcff9e0116efefb0b7159eab226bc5a0c540c109a7138f01771b15e46",
+      "published_sha256": "872a1349cf2c8cc2920a82f6c38b3e09ff3994842f68d965db066dd430290f77",
+      "source_bytes": 331,
+      "published_bytes": 325,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/include_figures.tex",
+      "published": "docs/research/upper-finetuning/paper_assets/include_figures.tex",
+      "source_sha256": "8cf9872a495512c85cbff259ce884b256d4d41b3a316b3142a6f632d95c60d47",
+      "published_sha256": "53740ce2e870a28a091b805e7e6f2d89495bf481fa336f4a493acb6ca9c4c715",
+      "source_bytes": 2087,
+      "published_bytes": 2065,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/table_results.tex",
+      "published": "docs/research/upper-finetuning/paper_assets/table_results.tex",
+      "source_sha256": "12327f375505b5ebd88f69b847dfc2251a7ca17773b3a0ee22d5ddccf0f8a183",
+      "published_sha256": "7f3470cc1bdfe171471124c969a134b51a484bb98033bd991800e69c40fa404d",
+      "source_bytes": 582,
+      "published_bytes": 569,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/plot_data.json",
+      "published": "docs/research/upper-finetuning/paper_assets/plot_data.json",
+      "source_sha256": "b3c48b64eaecc51008906060340411fd3e2659612c86409f9624ec700ebe216d",
+      "published_sha256": "e64cd79033b8c10dc9c8e2e3017dc6cf4458931fc15c638c227d186989fa9249",
+      "source_bytes": 92769,
+      "published_bytes": 86837,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune01_comparison.pdf",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune01_comparison.pdf",
+      "source_sha256": "c8f7ee3510903afbf7685d28f03047c76ad3d314828c5030e66551b13d908884",
+      "published_sha256": "c8f7ee3510903afbf7685d28f03047c76ad3d314828c5030e66551b13d908884",
+      "source_bytes": 13431,
+      "published_bytes": 13431,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune01_comparison.svg",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune01_comparison.svg",
+      "source_sha256": "a217da77ce98ea334b15289cfbf1131f83735d8072563af96e80f5849e41bbd1",
+      "published_sha256": "394675c9d6be165f783f3050b8e93f0dfed82f1cdbaea52dcc1852e7e9fd1c23",
+      "source_bytes": 10777,
+      "published_bytes": 10389,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune01_comparison.png",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune01_comparison.png",
+      "source_sha256": "312c92f0834a0f17bf9db938b3add6e1a406cfcaa90f1d2574461ae97bd90162",
+      "published_sha256": "312c92f0834a0f17bf9db938b3add6e1a406cfcaa90f1d2574461ae97bd90162",
+      "source_bytes": 103039,
+      "published_bytes": 103039,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune02_training.pdf",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune02_training.pdf",
+      "source_sha256": "2675296b8a2394659d5e986b69d703180356ec42ec3478a3f8d295db2d69bcc5",
+      "published_sha256": "2675296b8a2394659d5e986b69d703180356ec42ec3478a3f8d295db2d69bcc5",
+      "source_bytes": 13594,
+      "published_bytes": 13594,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune02_training.svg",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune02_training.svg",
+      "source_sha256": "e681087c83f3419820d6a589d88e0503dcfff021afcf1b6612227b8c2fa47dd2",
+      "published_sha256": "968bc8d3bdc87b02dfcf3a0e04cf19b1df1eeb6c687fb41c225999d643c00cb0",
+      "source_bytes": 20976,
+      "published_bytes": 20363,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune02_training.png",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune02_training.png",
+      "source_sha256": "cad016c174ef8889a65313eaad7f5ce045ec7addeae3151df4c75b4e2a09e477",
+      "published_sha256": "cad016c174ef8889a65313eaad7f5ce045ec7addeae3151df4c75b4e2a09e477",
+      "source_bytes": 227495,
+      "published_bytes": 227495,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune03_validation_action_f1.pdf",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune03_validation_action_f1.pdf",
+      "source_sha256": "46083dc2fcb8eb36e7c9e1d387a9f64d5dffd469109d92efe010883588482155",
+      "published_sha256": "46083dc2fcb8eb36e7c9e1d387a9f64d5dffd469109d92efe010883588482155",
+      "source_bytes": 15217,
+      "published_bytes": 15217,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune03_validation_action_f1.svg",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune03_validation_action_f1.svg",
+      "source_sha256": "13f797086e1d8d0945f76665841dcb45371b5a75080e0baa2bec419a76fb37c8",
+      "published_sha256": "84223f71ec1f9c3aec58e1c9f6996148637b72d05a21f795c3c3e5ac13ba45d7",
+      "source_bytes": 21894,
+      "published_bytes": 21317,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_a0_upper_finetune/paper_assets/finetune03_validation_action_f1.png",
+      "published": "docs/research/upper-finetuning/paper_assets/finetune03_validation_action_f1.png",
+      "source_sha256": "a2b8d1efee2a92c27598bbf44fa943037ad06384f96b3031f035d562de5ecf24",
+      "published_sha256": "a2b8d1efee2a92c27598bbf44fa943037ad06384f96b3031f035d562de5ecf24",
+      "source_bytes": 215203,
+      "published_bytes": 215203,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/CROP_REPORT.md",
+      "published": "docs/research/person-crop/REPORT.md",
+      "source_sha256": "d60d8626f8394d8afb2216bf5c36d71c4c01b270528a5389d26fd206fd341c49",
+      "published_sha256": "00b6f80b69303e1b2504dcc8c049a39b6d85655b318e3dc715a0a7de656b872f",
+      "source_bytes": 5394,
+      "published_bytes": 5257,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/crop_comparison.csv",
+      "published": "docs/research/person-crop/crop_comparison.csv",
+      "source_sha256": "ea06f556ce90a940abe132a0d5c031d4e60ac6aca894207c514afdbe9454b823",
+      "published_sha256": "a397dfb422781e8d3d06faf1554f8ad9e7695e9fc7597cd2178200d77cd67db1",
+      "source_bytes": 1707,
+      "published_bytes": 1682,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/REPORT.md",
+      "published": "docs/benchmarks/official-movinet/REPORT.md",
+      "source_sha256": "95650108b90e80e7f3120fd1cbb1cea836409d15eb21412207dc95fd8c8a428f",
+      "published_sha256": "6838011db9d0c20f35ca8eb697ce1cf90267faf2821420540b816a5066d6ea51",
+      "source_bytes": 10544,
+      "published_bytes": 10360,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/latency_table.csv",
+      "published": "docs/benchmarks/official-movinet/latency.csv",
+      "source_sha256": "24ba080c51478de308b5205bf25b3c4245154126417fd62ecebe9142b9b61dad",
+      "published_sha256": "a54d4e79a2d1d972e71655f40c97dff2765925798ebe78d190e27f8848698d8f",
+      "source_bytes": 829,
+      "published_bytes": 821,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/downloads.json",
+      "published": "docs/benchmarks/official-movinet/downloads.json",
+      "source_sha256": "70c301679bbf780b9b266d0fd75dee0a0ceeda5111020b692b3c2b516dbe2790",
+      "published_sha256": "2e5204d13f8f2f1eae2a37b2b41ee1ce8aa21188cdee2f3cee403346f6e444f8",
+      "source_bytes": 2962,
+      "published_bytes": 2844,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/timings.csv",
+      "published": "docs/benchmarks/official-movinet/timings.csv",
+      "source_sha256": "cdf78c00e0d978bd79dc96feb99d4635e2cf42248492f007fef63139a641ec08",
+      "published_sha256": "a79af5b6cdefdcbcf4733e2bd0b998f4fd597fe35e933293958a51085ef836fb",
+      "source_bytes": 9133,
+      "published_bytes": 8922,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/README.md",
+      "published": "docs/benchmarks/size-latency/README.md",
+      "source_sha256": "1617377e435e140b9e6b0b492fd741fb1ce51cfd89b69579247b7f21cacb3c6b",
+      "published_sha256": "08ec9a8f220f431a7b55f375d600d3f01145a7351a20756a9662de74d7f4aa26",
+      "source_bytes": 6164,
+      "published_bytes": 6073,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/model_size_latency.csv",
+      "published": "docs/benchmarks/size-latency/model_size_latency.csv",
+      "source_sha256": "ee1259b4b64d5347156c0969c5ebec3257242955acb5181ebc092ce66e7a568d",
+      "published_sha256": "d6b31d35657ce4cadee89a69c26a5261616c9ee610e60501e1f2a238e422c063",
+      "source_bytes": 9131,
+      "published_bytes": 9099,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/size_latency_audit.json",
+      "published": "docs/benchmarks/size-latency/size_latency_audit.json",
+      "source_sha256": "26c30c0279b7193b0742719c4c84ce4c002b647f08f720ba318a753cb3721fec",
+      "published_sha256": "165caf5b4dfee02735504145b00bae54b7f75f46045eab0f983e471c56765682",
+      "source_bytes": 50479,
+      "published_bytes": 48970,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/article_tables.tex",
+      "published": "docs/benchmarks/size-latency/article_tables.tex",
+      "source_sha256": "02c264ad850a3ceab6c422c5122c48c2e4fa128028b3e74bd90aa68cec2982e9",
+      "published_sha256": "6a45216f44fa4557d9d4888a723e407bde1acd7e1b55d13e8c7cea0f0f19698a",
+      "source_bytes": 8197,
+      "published_bytes": 8086,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/table_vit_size_latency.tex",
+      "published": "docs/benchmarks/size-latency/table_vit_size_latency.tex",
+      "source_sha256": "5da360e7937d8169e913cf6e4ad9c168b8940f7aa9d67067dced09d3bfebeaeb",
+      "published_sha256": "b0731e507606a04b599fd791c9f55e1bf99269987895591e6871c701cc8dd70d",
+      "source_bytes": 3041,
+      "published_bytes": 2995,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/table_movinet_kard_size_latency.tex",
+      "published": "docs/benchmarks/size-latency/table_movinet_kard_size_latency.tex",
+      "source_sha256": "a759ee26ed9e7c19ec343414a5442ea77181b41df001313ed2d0ea5641bae4aa",
+      "published_sha256": "625fd969bce435a9339fb750c24efe9719e7b152e1700f95b2935ddbaf8ae0d4",
+      "source_bytes": 1698,
+      "published_bytes": 1678,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/table_movinet_scale_size_latency.tex",
+      "published": "docs/benchmarks/size-latency/table_movinet_scale_size_latency.tex",
+      "source_sha256": "7d7b2f2f337948fa4c23d4a1b1e88c40e6ef1bff6a59103b8e36a9f50b5a4363",
+      "published_sha256": "2b002fa096250436dd9aadb4cf2b714f4fb2e62a462f79f9f69f1a8bace077eb",
+      "source_bytes": 1529,
+      "published_bytes": 1509,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/table_temporal_sampling.tex",
+      "published": "docs/benchmarks/size-latency/table_temporal_sampling.tex",
+      "source_sha256": "c1f6d46da4012dee83dadd9f2e7fdb149991d717395aac8b72915656a3975c79",
+      "published_sha256": "f1d093f065e3d5ff9b809efad60b64912db8b9df7880fe8462ec7bce3322603a",
+      "source_bytes": 1853,
+      "published_bytes": 1833,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/temporal_sampling.csv",
+      "published": "docs/benchmarks/size-latency/temporal_sampling.csv",
+      "source_sha256": "edb2178a2e1b5cf5ca8d588394277ad7236c3898887ad37f00726a71a0c28a94",
+      "published_sha256": "c9b093e85520b9917686cf7e9d91af741b864fe139c7b2da17123769074c48ab",
+      "source_bytes": 888,
+      "published_bytes": 885,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/temporal_sampling_audit.json",
+      "published": "docs/benchmarks/size-latency/temporal_sampling_audit.json",
+      "source_sha256": "fafd13d742397b01e0cdb92b137a6b72c0703247476594d910604a8c247c7383",
+      "published_sha256": "311ed621b25e54a6f5a87d60a8e96970573cda448efda734f0eb02601332bd91",
+      "source_bytes": 2628,
+      "published_bytes": 2569,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/temporal_sampling.md",
+      "published": "docs/benchmarks/size-latency/temporal_sampling.md",
+      "source_sha256": "635044f2c53fc07d2f91a5223b6a0abb6c3378c4080b5cac210b7e340200590c",
+      "published_sha256": "204be9abc9147a2609be4fe0ddd7fb3ce3f1a3b9d15a80dc43c94e0c9e6e2106",
+      "source_bytes": 2708,
+      "published_bytes": 2676,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/size_latency_tradeoff.pdf",
+      "published": "docs/benchmarks/size-latency/size_latency_tradeoff.pdf",
+      "source_sha256": "ce7d4df246d50bc0228789cdab8501d14b1e0cadc41b647b8d767209d9399c48",
+      "published_sha256": "ce7d4df246d50bc0228789cdab8501d14b1e0cadc41b647b8d767209d9399c48",
+      "source_bytes": 25362,
+      "published_bytes": 25362,
+      "text_normalized": false
+    },
+    {
+      "source": "deliverables/har_size_latency_article/size_latency_tradeoff.svg",
+      "published": "docs/benchmarks/size-latency/size_latency_tradeoff.svg",
+      "source_sha256": "411994c0d912e16948cef04ac8cff65ce9c01acc4583fbe675b0ec2f2851625a",
+      "published_sha256": "41dd35256ea9f0eb6fd2dabcc676a66049bc48b2248b4f283c531bd0fe85d2b3",
+      "source_bytes": 107753,
+      "published_bytes": 103629,
+      "text_normalized": true
+    },
+    {
+      "source": "deliverables/har_size_latency_article/size_latency_tradeoff.png",
+      "published": "docs/benchmarks/size-latency/size_latency_tradeoff.png",
+      "source_sha256": "0ab34bb5bb415e9c834b9b0762c97b9386e35b627d84f49f0597134691fbbb3f",
+      "published_sha256": "0ab34bb5bb415e9c834b9b0762c97b9386e35b627d84f49f0597134691fbbb3f",
+      "source_bytes": 152363,
+      "published_bytes": 152363,
+      "text_normalized": false
+    },
+    {
+      "source": "mindgraph_audit/latency_benchmark/summary.json",
+      "published": "docs/benchmarks/vit-bilstm/latency_benchmark/summary.json",
+      "source_sha256": "e05adcde3b2fca930f0dbbbedc9de98f4adf31081509deb07eeb3d3ecea174a5",
+      "published_sha256": "62e4e6e2077d72998075d472ca4172670da8725b6ca69541b37888c1acff6b5e",
+      "source_bytes": 266056,
+      "published_bytes": 256044,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/latency_benchmark/timings.csv",
+      "published": "docs/benchmarks/vit-bilstm/latency_benchmark/timings.csv",
+      "source_sha256": "82dcc691c9de81ee7969385358c813ad5528146ed5ca5af6dcb48a7d13428eb5",
+      "published_sha256": "a3b3acb6ff7141d5f2437e98f2378ee266b71e2f65d5b91ba938e5a724063989",
+      "source_bytes": 93875,
+      "published_bytes": 92299,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/latency_benchmark_fp16/summary.json",
+      "published": "docs/benchmarks/vit-bilstm/latency_benchmark_fp16/summary.json",
+      "source_sha256": "c75088b4b380d2e7d64aa3d6d05be723917839b57490ac0a292b8efa6a177760",
+      "published_sha256": "79a9d8ef3ca4d0f5a9a10e8d73def405b262843cefef6bc3b0dac9b874094d10",
+      "source_bytes": 273371,
+      "published_bytes": 263463,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/latency_benchmark_fp16/timings.csv",
+      "published": "docs/benchmarks/vit-bilstm/latency_benchmark_fp16/timings.csv",
+      "source_sha256": "50fdaf30521275dfa4c50e48408e9de33e982f47ada5525e6d633d67fabf638a",
+      "published_sha256": "776a7d88421327d93bfc3ba15c446543bcc05551886c5d64a3d0171558c4cde5",
+      "source_bytes": 40233,
+      "published_bytes": 39332,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/latency_benchmark_fp16/REPORT.md",
+      "published": "docs/benchmarks/vit-bilstm/latency_benchmark_fp16/REPORT.md",
+      "source_sha256": "37eda3f223dd096c5b493e4122ffdfd08f1ce8e2729965e0bec3c70f95bf8c27",
+      "published_sha256": "63bc3caefae8af1b0ba4437e4e9b9dd9a1c3f9dcf3e5f8c522a3320e70bb4d28",
+      "source_bytes": 3435,
+      "published_bytes": 3408,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/README.md",
+      "published": "docs/benchmarks/vit-bilstm/EXPORTS.md",
+      "source_sha256": "0b10c27dd615a48b3002e098d7960efa5025c8e23d43c8ced39495508b793ce8",
+      "published_sha256": "bf9fafe9d8bee49be643055c01186fd0125eb1ca2be5602246986c621fd771e2",
+      "source_bytes": 7234,
+      "published_bytes": 7025,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/kth/manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/kth/manifest.json",
+      "source_sha256": "054955154924c4baffa7397e918f5b56f6b53929dd757a410e82d8f793192b65",
+      "published_sha256": "a1f7eefc79e4836cf772c433e656683a1353833ce8139e9165096ccfda711540",
+      "source_bytes": 1325,
+      "published_bytes": 1268,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/kth/fp16_manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/kth/fp16_manifest.json",
+      "source_sha256": "eb2f371844ebbcd7733fabd2c18f91f7b79ab88e45e94f340661bb61a9c58030",
+      "published_sha256": "0d562ada8d8973aa27709d4010b440ee8db2d208b58b19fd909a3f2e4126a59a",
+      "source_bytes": 3503,
+      "published_bytes": 3364,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/kth/validation.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/kth/validation.json",
+      "source_sha256": "2d9965c16a71ca6f005010740fbf10f2e18d28c8ea853db73565f13ab5a251b6",
+      "published_sha256": "89cb9df608a2dd27d9efe83fad5464c51b6937480650e9906be6af8435bb3936",
+      "source_bytes": 12468,
+      "published_bytes": 11971,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/uav/manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/uav/manifest.json",
+      "source_sha256": "d34b325517b09fe42fc3080a77c667e3f52db3169fe5e5c2faabad10d4f4da3b",
+      "published_sha256": "0c972a929dc8b3cf24cb7cb6a16fc04195dc7379739bfa2074cf3a4c6ecbdd54",
+      "source_bytes": 1484,
+      "published_bytes": 1420,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/uav/fp16_manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/uav/fp16_manifest.json",
+      "source_sha256": "6dd1faa64ada0c2b0d3560573f25401c2e6b972234bf81cad8a4d9901701a48a",
+      "published_sha256": "609e269978887c7b12755e542bffa38b691be060c101a2ec7ce81e54806f77ba",
+      "source_bytes": 3654,
+      "published_bytes": 3508,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/uav/validation.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/uav/validation.json",
+      "source_sha256": "bd280af7af4e9d84510558225ed9bf4786bc7cca4017821097302f348e7d20a0",
+      "published_sha256": "2f48be48ad79907e830f7149dbe7dbe5937162dda7b9a7e16cb75584e08e8392",
+      "source_bytes": 12616,
+      "published_bytes": 12115,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/kard/manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/kard/manifest.json",
+      "source_sha256": "747868e00add5de87b72e01aa75c165b80c08ae06900632c67f1026710a0df3a",
+      "published_sha256": "6c0ebcfcc12dd3dc12b288334a1c6b45054b0f5ca372f564781b6afb7d11eca7",
+      "source_bytes": 1559,
+      "published_bytes": 1490,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/kard/fp16_manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/kard/fp16_manifest.json",
+      "source_sha256": "e682447785f13e5888a4fbc2ecd4015db8769aefd126cd01fdb8546fabbf6617",
+      "published_sha256": "0d0a820a860fc1da3dd98ee3cd1dfffd687b2c856ee8368e8876a15c7000888d",
+      "source_bytes": 3738,
+      "published_bytes": 3587,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/kard/validation.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/kard/validation.json",
+      "source_sha256": "0fc2412da4264c6de5b1dff355247f0563baadf89f2498e7b24b2d2102d8bc41",
+      "published_sha256": "b9018eb1898d412903ee147f421f42bce28d7f24727a4bdbfdebedd6408dd06b",
+      "source_bytes": 12443,
+      "published_bytes": 11942,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/hon4d/manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/hon4d/manifest.json",
+      "source_sha256": "8f40138d0f0f2c3263698ef79ddacdca7e1b2709a9a7569b0b1d9ebef40d413f",
+      "published_sha256": "60dda7cdd43d83fb4802c5b1bf5b888135d43ea9a7c440f999732e5b51f42e91",
+      "source_bytes": 1474,
+      "published_bytes": 1411,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/hon4d/fp16_manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/hon4d/fp16_manifest.json",
+      "source_sha256": "aa091f829174cee9e34533e1a975a609f4b2baff8b66b09e485925c18aef2477",
+      "published_sha256": "364e6db226d4717a880072e01c63e5758eca4a700c71cb866e328e40f6cd3929",
+      "source_bytes": 3654,
+      "published_bytes": 3509,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/hon4d/validation.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/hon4d/validation.json",
+      "source_sha256": "3899b006a9159dfac265dd23c5964bd2a09d6f96aa2e1463ee29d322aea7b0f2",
+      "published_sha256": "db3e86f762e14120fdc96b38ff8002cd92debd60b123ecf79a6ded35578e73b2",
+      "source_bytes": 12718,
+      "published_bytes": 12217,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/ucf45/manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/ucf45/manifest.json",
+      "source_sha256": "83a4a8285fd0f594b92b596a9a9e9a517f1b6b64873793111d26bdb06513e2a2",
+      "published_sha256": "807d44e86f6a74cd016c84027b06badc2f6cd4a0b9a20ecabf15da55d85fb375",
+      "source_bytes": 2163,
+      "published_bytes": 2067,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/ucf45/fp16_manifest.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/ucf45/fp16_manifest.json",
+      "source_sha256": "f403d447fb290f932e322b06c5f7f9fcf52e19e5f13da02359e23c7b6883c016",
+      "published_sha256": "255c4b18f44f1d5bed82a3c140484557ba32eee8dedbe86d91c2c2384432684d",
+      "source_bytes": 4340,
+      "published_bytes": 4162,
+      "text_normalized": true
+    },
+    {
+      "source": "mindgraph_audit/edge_exports/ucf45/validation.json",
+      "published": "docs/benchmarks/vit-bilstm/exports/ucf45/validation.json",
+      "source_sha256": "aeb3c4aed1fd99fb95e048c27d1ece87103dac97b5e50d59d23694de0c48ebb1",
+      "published_sha256": "c78bbdc1be6e8b911754532f7649b9c6b9a2a2531fce89cda639f5cee483bbeb",
+      "source_bytes": 12713,
+      "published_bytes": 12212,
+      "text_normalized": true
+    },
+    {
+      "source": "movinet_evaluation/kard_config.py",
+      "published": "experiments/archive/movinet_evaluation/kard_config.py",
+      "source_sha256": "294f0fd1e299059c9f87acaf9befe6174b58b475cb6edb7bd19284a4a0f47a69",
+      "published_sha256": "294f0fd1e299059c9f87acaf9befe6174b58b475cb6edb7bd19284a4a0f47a69",
+      "source_bytes": 5218,
+      "published_bytes": 5218,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_model.py",
+      "published": "experiments/archive/movinet_evaluation/kard_model.py",
+      "source_sha256": "bf23db569763a14af2d316a1bd29ecaa2c8f476704d14ce9d5b45d69de33d641",
+      "published_sha256": "bf23db569763a14af2d316a1bd29ecaa2c8f476704d14ce9d5b45d69de33d641",
+      "source_bytes": 6329,
+      "published_bytes": 6329,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/runtime.py",
+      "published": "experiments/archive/movinet_evaluation/runtime.py",
+      "source_sha256": "fe458221c9e8382be969c0002808a63f54501ba116868d584c17abc5373fc03c",
+      "published_sha256": "fe458221c9e8382be969c0002808a63f54501ba116868d584c17abc5373fc03c",
+      "source_bytes": 4013,
+      "published_bytes": 4013,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/download_models.py",
+      "published": "experiments/archive/movinet_evaluation/download_models.py",
+      "source_sha256": "27feb30c4258607df5c2f5a8d879e7db9cbf53b2dc37f6aa35604e47a3619d1b",
+      "published_sha256": "27feb30c4258607df5c2f5a8d879e7db9cbf53b2dc37f6aa35604e47a3619d1b",
+      "source_bytes": 3025,
+      "published_bytes": 3025,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/prepare_kard.py",
+      "published": "experiments/archive/movinet_evaluation/prepare_kard.py",
+      "source_sha256": "e0f68371bb132f69fc4c0e942fffd13e336b1d66540c7a95857ff671781c8fe9",
+      "published_sha256": "e0f68371bb132f69fc4c0e942fffd13e336b1d66540c7a95857ff671781c8fe9",
+      "source_bytes": 7358,
+      "published_bytes": 7358,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/prepare_kard_50.py",
+      "published": "experiments/archive/movinet_evaluation/prepare_kard_50.py",
+      "source_sha256": "64459e07f6531329f96042857bb0eb64f067ff6256f06202200fc5723698a253",
+      "published_sha256": "64459e07f6531329f96042857bb0eb64f067ff6256f06202200fc5723698a253",
+      "source_bytes": 6356,
+      "published_bytes": 6356,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/prepare_kard_100.py",
+      "published": "experiments/archive/movinet_evaluation/prepare_kard_100.py",
+      "source_sha256": "cdd0d4b3b930b7e12e1cffa63d58781d8c5d2e0db929b8fa1cbf5f775bd9c959",
+      "published_sha256": "cdd0d4b3b930b7e12e1cffa63d58781d8c5d2e0db929b8fa1cbf5f775bd9c959",
+      "source_bytes": 3085,
+      "published_bytes": 3085,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/prepare_kard_10fps.py",
+      "published": "experiments/archive/movinet_evaluation/prepare_kard_10fps.py",
+      "source_sha256": "833da2cedab2c2269bdb248328c01b7a6709872bf6d67b3f05bff08f043aa11e",
+      "published_sha256": "833da2cedab2c2269bdb248328c01b7a6709872bf6d67b3f05bff08f043aa11e",
+      "source_bytes": 2003,
+      "published_bytes": 2003,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/extract_kard_features.py",
+      "published": "experiments/archive/movinet_evaluation/extract_kard_features.py",
+      "source_sha256": "d5801ca57c8b3dc105b28e9a0511b882b8496013b465859a7bf82fa619a35805",
+      "published_sha256": "d5801ca57c8b3dc105b28e9a0511b882b8496013b465859a7bf82fa619a35805",
+      "source_bytes": 4186,
+      "published_bytes": 4186,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/train_kard_head.py",
+      "published": "experiments/archive/movinet_evaluation/train_kard_head.py",
+      "source_sha256": "7ea66bad5feb0f6eba661fdc6e57644b8459a323542dbde2e1067c2cf12ddc9a",
+      "published_sha256": "7ea66bad5feb0f6eba661fdc6e57644b8459a323542dbde2e1067c2cf12ddc9a",
+      "source_bytes": 5650,
+      "published_bytes": 5650,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/evaluate_kard_head.py",
+      "published": "experiments/archive/movinet_evaluation/evaluate_kard_head.py",
+      "source_sha256": "4582fc4de5e46f217f7b3be0f2e1f427b870b900e1a96bf89eb419aa7e1c7e13",
+      "published_sha256": "4582fc4de5e46f217f7b3be0f2e1f427b870b900e1a96bf89eb419aa7e1c7e13",
+      "source_bytes": 4075,
+      "published_bytes": 4075,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/run_kard_sampling_cv.py",
+      "published": "experiments/archive/movinet_evaluation/run_kard_sampling_cv.py",
+      "source_sha256": "7795283476cc06076b4a9ab525f4e5f42c24591125d57c140907416dabe2ae59",
+      "published_sha256": "7795283476cc06076b4a9ab525f4e5f42c24591125d57c140907416dabe2ae59",
+      "source_bytes": 15108,
+      "published_bytes": 15108,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/write_kard_sampling_cv_report.py",
+      "published": "experiments/archive/movinet_evaluation/write_kard_sampling_cv_report.py",
+      "source_sha256": "463fb231221359ebdfe2f194c7401f272fa4881b3852e446ad7030567927e730",
+      "published_sha256": "463fb231221359ebdfe2f194c7401f272fa4881b3852e446ad7030567927e730",
+      "source_bytes": 28599,
+      "published_bytes": 28599,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_ablation_model.py",
+      "published": "experiments/archive/movinet_evaluation/kard_ablation_model.py",
+      "source_sha256": "57dc091aebf885d8932b2d2c37417721681dbb7a863cade3ff78410fec4d686b",
+      "published_sha256": "57dc091aebf885d8932b2d2c37417721681dbb7a863cade3ff78410fec4d686b",
+      "source_bytes": 2999,
+      "published_bytes": 2999,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/run_kard_ablation.py",
+      "published": "experiments/archive/movinet_evaluation/run_kard_ablation.py",
+      "source_sha256": "bd334cebb9f80d1167f565b9b9f8326df5a2c803fb9db472c178695668ace9fe",
+      "published_sha256": "bd334cebb9f80d1167f565b9b9f8326df5a2c803fb9db472c178695668ace9fe",
+      "source_bytes": 33341,
+      "published_bytes": 33341,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/write_kard_ablation_report.py",
+      "published": "experiments/archive/movinet_evaluation/write_kard_ablation_report.py",
+      "source_sha256": "71f451e1d4a783446b9c8eb39062acfee65d5de2443489772fd778e870670157",
+      "published_sha256": "71f451e1d4a783446b9c8eb39062acfee65d5de2443489772fd778e870670157",
+      "source_bytes": 17629,
+      "published_bytes": 17629,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_compact_model.py",
+      "published": "experiments/archive/movinet_evaluation/kard_compact_model.py",
+      "source_sha256": "e1da6e3d0de2ce64723dfa18d773f5f09185f8bafa84eb5c6c4be1764245a7c2",
+      "published_sha256": "e1da6e3d0de2ce64723dfa18d773f5f09185f8bafa84eb5c6c4be1764245a7c2",
+      "source_bytes": 1678,
+      "published_bytes": 1678,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/run_kard_compact_pipeline.py",
+      "published": "experiments/archive/movinet_evaluation/run_kard_compact_pipeline.py",
+      "source_sha256": "ad70da83cd64d7992da16d2076830e9584c04ee52c0eb38a1376de451c27767f",
+      "published_sha256": "ad70da83cd64d7992da16d2076830e9584c04ee52c0eb38a1376de451c27767f",
+      "source_bytes": 25827,
+      "published_bytes": 25827,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/predict_kard_compact.py",
+      "published": "experiments/archive/movinet_evaluation/predict_kard_compact.py",
+      "source_sha256": "7c112b011285d9fa90b9a78acaa7c501ce61d9597feeabd5835917d649196c2e",
+      "published_sha256": "7c112b011285d9fa90b9a78acaa7c501ce61d9597feeabd5835917d649196c2e",
+      "source_bytes": 1289,
+      "published_bytes": 1289,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_projection_adapter.py",
+      "published": "experiments/archive/movinet_evaluation/kard_projection_adapter.py",
+      "source_sha256": "69b8452be7a3020d2766f99383459b9e33bfea0ac9a422bb8d64be498cfa9834",
+      "published_sha256": "69b8452be7a3020d2766f99383459b9e33bfea0ac9a422bb8d64be498cfa9834",
+      "source_bytes": 2361,
+      "published_bytes": 2361,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/run_kard_projection_adapters.py",
+      "published": "experiments/archive/movinet_evaluation/run_kard_projection_adapters.py",
+      "source_sha256": "48dad3e4372a246faae51d51712f2797146241b2fc227827d1de898ef3402168",
+      "published_sha256": "48dad3e4372a246faae51d51712f2797146241b2fc227827d1de898ef3402168",
+      "source_bytes": 26124,
+      "published_bytes": 26124,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/prepare_kard_adapter_cache.py",
+      "published": "experiments/archive/movinet_evaluation/prepare_kard_adapter_cache.py",
+      "source_sha256": "941e4d6ca66d7adc51956d72da0fda5d5de102dad2a74b46b3d9d75932d4014a",
+      "published_sha256": "941e4d6ca66d7adc51956d72da0fda5d5de102dad2a74b46b3d9d75932d4014a",
+      "source_bytes": 6092,
+      "published_bytes": 6092,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/write_kard_adapter_report.py",
+      "published": "experiments/archive/movinet_evaluation/write_kard_adapter_report.py",
+      "source_sha256": "acd87de13b8e7d6438c2380ece478c6f30c4c393116ef5069a22336f16ba427a",
+      "published_sha256": "acd87de13b8e7d6438c2380ece478c6f30c4c393116ef5069a22336f16ba427a",
+      "source_bytes": 7357,
+      "published_bytes": 7357,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_evidence_pool.py",
+      "published": "experiments/archive/movinet_evaluation/kard_evidence_pool.py",
+      "source_sha256": "fe8d7abbfd17b7e33f61246ed5b975a85286c4bb94838d06ddb8013b7f3aeb06",
+      "published_sha256": "fe8d7abbfd17b7e33f61246ed5b975a85286c4bb94838d06ddb8013b7f3aeb06",
+      "source_bytes": 2004,
+      "published_bytes": 2004,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/verify_projection_adapter.py",
+      "published": "experiments/archive/movinet_evaluation/verify_projection_adapter.py",
+      "source_sha256": "2ab956f8645578b9302e8526b7c5d5de2b31a25a617d24cf185fb3e954e9106f",
+      "published_sha256": "2ab956f8645578b9302e8526b7c5d5de2b31a25a617d24cf185fb3e954e9106f",
+      "source_bytes": 5972,
+      "published_bytes": 5972,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/diagnose_architecture_challenge.py",
+      "published": "experiments/archive/movinet_evaluation/diagnose_architecture_challenge.py",
+      "source_sha256": "6f19f7b556f368f01ac3c98821de10437edf9080c4bfb68da2e617770a595a4e",
+      "published_sha256": "6f19f7b556f368f01ac3c98821de10437edf9080c4bfb68da2e617770a595a4e",
+      "source_bytes": 4699,
+      "published_bytes": 4699,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/plot_architecture_diagnosis.py",
+      "published": "experiments/archive/movinet_evaluation/plot_architecture_diagnosis.py",
+      "source_sha256": "250a5bd6e306d6b45f29c3e30053c793247f846092a6939b138918925ff196a4",
+      "published_sha256": "250a5bd6e306d6b45f29c3e30053c793247f846092a6939b138918925ff196a4",
+      "source_bytes": 2167,
+      "published_bytes": 2167,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/kard_finetune.py",
+      "published": "experiments/archive/movinet_evaluation/kard_finetune.py",
+      "source_sha256": "e77dc731779f774ebbb9c3516b58744f6d128665085d1b841e4bb0114c654249",
+      "published_sha256": "e77dc731779f774ebbb9c3516b58744f6d128665085d1b841e4bb0114c654249",
+      "source_bytes": 3420,
+      "published_bytes": 3420,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/prepare_kard_finetune.py",
+      "published": "experiments/archive/movinet_evaluation/prepare_kard_finetune.py",
+      "source_sha256": "cf0c7a5de98515e1b650682599ea0364399be0b4259bd1a96bbf8c7ac1586f96",
+      "published_sha256": "cf0c7a5de98515e1b650682599ea0364399be0b4259bd1a96bbf8c7ac1586f96",
+      "source_bytes": 3829,
+      "published_bytes": 3829,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/cache_kard_upper_inputs.py",
+      "published": "experiments/archive/movinet_evaluation/cache_kard_upper_inputs.py",
+      "source_sha256": "59e3ea1022126d66e239669f83681b7f09feb97f2c0ce16323b53eaba2731201",
+      "published_sha256": "59e3ea1022126d66e239669f83681b7f09feb97f2c0ce16323b53eaba2731201",
+      "source_bytes": 3339,
+      "published_bytes": 3339,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/check_kard_upper_gradients.py",
+      "published": "experiments/archive/movinet_evaluation/check_kard_upper_gradients.py",
+      "source_sha256": "101e531a8be84f74aca39d0ff8fca95b8f7923b527764e880d7771632caa06c3",
+      "published_sha256": "101e531a8be84f74aca39d0ff8fca95b8f7923b527764e880d7771632caa06c3",
+      "source_bytes": 1957,
+      "published_bytes": 1957,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/train_kard_upper.py",
+      "published": "experiments/archive/movinet_evaluation/train_kard_upper.py",
+      "source_sha256": "2c7c4ff996066cb5dd99cfcb1dc481905d2029073b7252f3bd6e6858efa8c718",
+      "published_sha256": "2c7c4ff996066cb5dd99cfcb1dc481905d2029073b7252f3bd6e6858efa8c718",
+      "source_bytes": 7781,
+      "published_bytes": 7781,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/evaluate_kard_upper.py",
+      "published": "experiments/archive/movinet_evaluation/evaluate_kard_upper.py",
+      "source_sha256": "3611a033931d611dc5c344078f58ca6b4b41effa72dab61a789372db637e64c7",
+      "published_sha256": "3611a033931d611dc5c344078f58ca6b4b41effa72dab61a789372db637e64c7",
+      "source_bytes": 4797,
+      "published_bytes": 4797,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/verify_kard_updated_backbone.py",
+      "published": "experiments/archive/movinet_evaluation/verify_kard_updated_backbone.py",
+      "source_sha256": "24d79ff9487688775731bcd9c3a238f88efdb2b2b74154f83f9b04ed9f271aa9",
+      "published_sha256": "24d79ff9487688775731bcd9c3a238f88efdb2b2b74154f83f9b04ed9f271aa9",
+      "source_bytes": 1637,
+      "published_bytes": 1637,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/write_kard_upper_report.py",
+      "published": "experiments/archive/movinet_evaluation/write_kard_upper_report.py",
+      "source_sha256": "c46ea7e30dc5f21dd61bbbdae1f85f876081c9ec0a54e721a1c94b2078a4b2c8",
+      "published_sha256": "c46ea7e30dc5f21dd61bbbdae1f85f876081c9ec0a54e721a1c94b2078a4b2c8",
+      "source_bytes": 22869,
+      "published_bytes": 22869,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/launch_kard_ablation_background.ps1",
+      "published": "experiments/archive/movinet_evaluation/launch_kard_ablation_background.ps1",
+      "source_sha256": "ec7793d7ab8df1b78275d664f5ca784aecc7cb9eef1fd0d246599fabc609e1d6",
+      "published_sha256": "ec7793d7ab8df1b78275d664f5ca784aecc7cb9eef1fd0d246599fabc609e1d6",
+      "source_bytes": 2214,
+      "published_bytes": 2214,
+      "text_normalized": false
+    },
+    {
+      "source": "movinet_evaluation/launch_kard_adapters_background.ps1",
+      "published": "experiments/archive/movinet_evaluation/launch_kard_adapters_background.ps1",
+      "source_sha256": "7a25e8bc31a09cc2254df3cc6c9f73240539d19ce6c3428ec27fea2900ee08f7",
+      "published_sha256": "7a25e8bc31a09cc2254df3cc6c9f73240539d19ce6c3428ec27fea2900ee08f7",
+      "source_bytes": 1695,
+      "published_bytes": 1695,
+      "text_normalized": false
+    },
+    {
+      "source": "deliverables/har_size_latency_article/build_size_latency_tables.py",
+      "published": "experiments/archive/article/build_size_latency_tables.py",
+      "source_sha256": "35945440c043ca08a2626b6a2b8dfc14c4872df0eb0e786b7897b59031c9205d",
+      "published_sha256": "35945440c043ca08a2626b6a2b8dfc14c4872df0eb0e786b7897b59031c9205d",
+      "source_bytes": 31496,
+      "published_bytes": 31496,
+      "text_normalized": false
+    },
+    {
+      "source": "deliverables/har_size_latency_article/add_temporal_sampling_table.py",
+      "published": "experiments/archive/article/add_temporal_sampling_table.py",
+      "source_sha256": "9e6bf63cebe1592095b311dcd6a0a70b9050a3afd77b806582e74bf9714188ae",
+      "published_sha256": "9e6bf63cebe1592095b311dcd6a0a70b9050a3afd77b806582e74bf9714188ae",
+      "source_bytes": 10682,
+      "published_bytes": 10682,
+      "text_normalized": false
+    },
+    {
+      "source": "mindgraph_audit/benchmark_har_devices.py",
+      "published": "experiments/archive/mindgraph_audit/benchmark_har_devices.py",
+      "source_sha256": "3df5ec12cf6f4f876b47d6e7aa55aca1ace9835e127fa38530ca1faa12e633b2",
+      "published_sha256": "3df5ec12cf6f4f876b47d6e7aa55aca1ace9835e127fa38530ca1faa12e633b2",
+      "source_bytes": 13080,
+      "published_bytes": 13080,
+      "text_normalized": false
+    },
+    {
+      "source": "mindgraph_audit/benchmark_har_fp16.py",
+      "published": "experiments/archive/mindgraph_audit/benchmark_har_fp16.py",
+      "source_sha256": "75ced662f1843b14ef02eaea0db3dc815e824154e8a06a7c10db6e62dc1c9dd0",
+      "published_sha256": "75ced662f1843b14ef02eaea0db3dc815e824154e8a06a7c10db6e62dc1c9dd0",
+      "source_bytes": 13913,
+      "published_bytes": 13913,
+      "text_normalized": false
+    },
+    {
+      "source": "mindgraph_audit/export_har_onnx.py",
+      "published": "experiments/archive/mindgraph_audit/export_har_onnx.py",
+      "source_sha256": "4663a0f70dc26bf679b1d8655df0fb2d8b871b3f902d382b6c5f9ffaf7ca1e63",
+      "published_sha256": "4663a0f70dc26bf679b1d8655df0fb2d8b871b3f902d382b6c5f9ffaf7ca1e63",
+      "source_bytes": 10800,
+      "published_bytes": 10800,
+      "text_normalized": false
+    },
+    {
+      "source": "mindgraph_audit/format_latency_table.py",
+      "published": "experiments/archive/mindgraph_audit/format_latency_table.py",
+      "source_sha256": "1dfc1504575d7387c563fbb02a822bcffe79ce1cbe565a6615c6d719c78aeb82",
+      "published_sha256": "1dfc1504575d7387c563fbb02a822bcffe79ce1cbe565a6615c6d719c78aeb82",
+      "source_bytes": 10133,
+      "published_bytes": 10133,
+      "text_normalized": false
+    },
+    {
+      "source": "mindgraph_audit/format_fp16_results.py",
+      "published": "experiments/archive/mindgraph_audit/format_fp16_results.py",
+      "source_sha256": "5fbcbecd369ace2b334fcabe1432bb6468d9d4fb72d53730265bd69b0b943543",
+      "published_sha256": "5fbcbecd369ace2b334fcabe1432bb6468d9d4fb72d53730265bd69b0b943543",
+      "source_bytes": 10021,
+      "published_bytes": 10021,
+      "text_normalized": false
+    }
+  ]
+}

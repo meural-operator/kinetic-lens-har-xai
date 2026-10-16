@@ -1,0 +1,54 @@
+{
+  "runs": [
+    {
+      "training_fraction": 0.25,
+      "training_clips": 81,
+      "validation_accuracy": 0.8518518518518519,
+      "validation_macro_f1": 0.8514176856282121,
+      "test_accuracy": 0.75,
+      "test_macro_f1": 0.7403661153661153,
+      "selected_l2": 0.0001,
+      "selected_epoch": 60
+    },
+    {
+      "training_fraction": 0.5,
+      "training_clips": 162,
+      "validation_accuracy": 0.8981481481481481,
+      "validation_macro_f1": 0.8955942205942206,
+      "test_accuracy": 0.8148148148148148,
+      "test_macro_f1": 0.8182854182854183,
+      "selected_l2": 0.01,
+      "selected_epoch": 63
+    },
+    {
+      "training_fraction": 1.0,
+      "training_clips": 324,
+      "validation_accuracy": 0.8888888888888888,
+      "validation_macro_f1": 0.8876746347334582,
+      "test_accuracy": 0.8703703703703703,
+      "test_macro_f1": 0.8680264180264181,
+      "selected_l2": 0.01,
+      "selected_epoch": 19
+    }
+  ],
+  "test_accuracy_change_vs_50_percentage_points": 5.555555555555558,
+  "test_accuracy_change_vs_25_percentage_points": 12.037037037037035,
+  "corrected_50pct_errors": [
+    "Draw Tick\\a07_s09_e01.mp4",
+    "Draw Tick\\a07_s09_e02.mp4",
+    "Draw X\\a06_s02_e02.mp4",
+    "Drink\\a16_s09_e01.mp4",
+    "Hand Clap\\a13_s09_e03.mp4",
+    "High arm wave\\a02_s02_e01.mp4",
+    "High arm wave\\a02_s02_e02.mp4",
+    "High arm wave\\a02_s09_e01.mp4"
+  ],
+  "new_errors_vs_50pct": [
+    "High throw\\a05_s02_e01.mp4",
+    "Horizontal arm wave\\a01_s09_e01.mp4"
+  ],
+  "nested_training_subsets": true,
+  "identical_test_subjects_and_clips": true,
+  "previous_test_results_already_observed": true,
+  "post_test_tuning_performed": false
+}

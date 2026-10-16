@@ -1,0 +1,541 @@
+relative_path,class_id,class_name,subject_id,repetition,split,selected,sha256
+Bend\a12_s01_e01.mp4,11,Bend,1,1,train,True,6729d55fa97f9f95461a0a94c52ac3086357dfde5fba019d64632798c3949ff4
+Bend\a12_s01_e02.mp4,11,Bend,1,2,train,True,8590392ca0680b3af4dfdd063274d074b12599a2944564a4f1d3f5c8a3b3ccb7
+Bend\a12_s01_e03.mp4,11,Bend,1,3,train,True,25268ba65a469ffa6e15b6f0ca4a7a3f4e5411d2f1551a9d6c6db9a94bc805ba
+Bend\a12_s02_e01.mp4,11,Bend,2,1,test,True,4a3b7e7f8a41c96b782821b934d1fc058c2c0a38ea66cd4cc88ec8055014240a
+Bend\a12_s02_e02.mp4,11,Bend,2,2,test,True,59f1ddffd8273743821a8942296d18f4671e5818dec09c376be263f853975263
+Bend\a12_s02_e03.mp4,11,Bend,2,3,test,True,69e2b65f4cf5be912a3f9d6d63e367fb4dd87e857fa22b7df0abaa7c0b731495
+Bend\a12_s03_e01.mp4,11,Bend,3,1,train,True,bf173fdc90a8984e86ff33e176870244e25650ea8d1a6e9a49d04a8846d22ef5
+Bend\a12_s03_e02.mp4,11,Bend,3,2,train,True,05701d32d8d79aa66a83c8c20138bdd884b62bd37b4a86e7ecd6dfa3d11005c7
+Bend\a12_s03_e03.mp4,11,Bend,3,3,train,True,273c51f75c3df6ee20085213d7ac1298103da1705949da344770df44e3c886dc
+Bend\a12_s04_e01.mp4,11,Bend,4,1,train,True,fe68a1385aa0cfd77543fc72079a6bbb176dcb522c7c2319313151b08c584a60
+Bend\a12_s04_e02.mp4,11,Bend,4,2,train,True,18e7fe56b0ebc356ca25cedf31e6f0a9e806181a6da67e3bb0bd449fc7ef89e3
+Bend\a12_s04_e03.mp4,11,Bend,4,3,train,True,370f2e7a8b9d3d9c9fc47a1b0b4507dd6281fac8a069b0522617ad750bf2a3aa
+Bend\a12_s05_e01.mp4,11,Bend,5,1,validation,True,31640944154b3b847ee49c79cd46c2ce7468b81dc316ad4be9b731f26971af29
+Bend\a12_s05_e02.mp4,11,Bend,5,2,validation,True,d86d85a0f84918fa91f93d66210e1ae4a0af2aca77acab10480738c91c9900b6
+Bend\a12_s05_e03.mp4,11,Bend,5,3,validation,True,ea063d5c4c48afeecb3c2f8ce0d494d08e8242cf0dd3e38c0c21846e38150669
+Bend\a12_s06_e01.mp4,11,Bend,6,1,train,True,168f5816965eb60cccfc25a36a6d16c698818fc39f23fcb8bfe1e9f6a748a94d
+Bend\a12_s06_e02.mp4,11,Bend,6,2,train,True,1052240379f18a2bca3526a28adca22aaab81d0e86869e7ab906ee9d3a76b778
+Bend\a12_s06_e03.mp4,11,Bend,6,3,train,True,5c8e7d3127a55d5daf023d84e7c04e755b968bc85b3a105d302320b4277ea0a4
+Bend\a12_s07_e01.mp4,11,Bend,7,1,train,True,9506469708bed25fe99d77712a1980e391ba7e457684629f17d49d0673d7db95
+Bend\a12_s07_e02.mp4,11,Bend,7,2,train,True,0e5cc5cbf7fddd9bfdbb1068314a836b2b9c1c5eb9a61c2fb3e66db5b4ff2353
+Bend\a12_s07_e03.mp4,11,Bend,7,3,train,True,c47266c374b689c70e69bd9536c0f0e7805661eb0768acfb8aac44cca198c886
+Bend\a12_s08_e01.mp4,11,Bend,8,1,train,True,63e68408e1f6aabc26ae957616fcf9501bd1f7c6e50a68c4f7c5239f4535e27a
+Bend\a12_s08_e02.mp4,11,Bend,8,2,train,True,c1705aeaed77bad44fc48cafe775c08c20fba32b6ca2375d517b83cb074566b0
+Bend\a12_s08_e03.mp4,11,Bend,8,3,train,True,7d9215a89922986504b98fdd66a715661168bbf49fe22ea57592d53c9f3f7fe5
+Bend\a12_s09_e01.mp4,11,Bend,9,1,test,True,270f1349741f22f07e7e0ed45fabe824be9d11de1136dc763aa6503cc0c4d97b
+Bend\a12_s09_e02.mp4,11,Bend,9,2,test,True,f8b86e885327044d576c61791c384a7e860784648d1def21bca49da240e2d27f
+Bend\a12_s09_e03.mp4,11,Bend,9,3,test,True,9d463fb7a0b24005f6501e445f2fbf1956fd67e227831215899911e2e9158335
+Bend\a12_s10_e01.mp4,11,Bend,10,1,validation,True,b72332f0282e3580191815ff0199b401e4265d0224556ee0f3737feeac93d296
+Bend\a12_s10_e02.mp4,11,Bend,10,2,validation,True,56d3c7d4cb3362ab1b4b8921ca86dd3d9a675ef1488b6f2cc907fe9cbe3d8944
+Bend\a12_s10_e03.mp4,11,Bend,10,3,validation,True,4790a410e9080bc96ea647269f0a617a44ddee48c758ab012d95254b5e375705
+Catch Cap\a04_s01_e01.mp4,3,Catch Cap,1,1,train,True,fcbba765997c70d42f9b1ff577f31c4e68927803518906c6ecaa4bf97361f054
+Catch Cap\a04_s01_e02.mp4,3,Catch Cap,1,2,train,True,1da6686194c12e7277fb099c62d0f98f6a7efe55976c7d1b26ea06c1494337e1
+Catch Cap\a04_s01_e03.mp4,3,Catch Cap,1,3,train,True,65caaf2dcb4d06d27ea2625acc727e65fec0c36656c016094fe02bea3464cff3
+Catch Cap\a04_s02_e01.mp4,3,Catch Cap,2,1,test,True,68b35e1ac3c693f6abaf4f219f253f0e42a76945054e79d14ec741ca0e4f30d9
+Catch Cap\a04_s02_e02.mp4,3,Catch Cap,2,2,test,True,db09b46d9881acc52f1f8214868cd0703f7ff91179264968194ce42a0fb3fd9c
+Catch Cap\a04_s02_e03.mp4,3,Catch Cap,2,3,test,True,e60d49aa007ab4615ce9b6427e74f2c68491958cdc93a5a0da287c00c518302b
+Catch Cap\a04_s03_e01.mp4,3,Catch Cap,3,1,train,True,ea5a3d2ba78a712bb4d264eb23f4b3a2a9097f3017adef6101f0209f35489b88
+Catch Cap\a04_s03_e02.mp4,3,Catch Cap,3,2,train,True,a3b46334588a2241d9b2aedf4b124d6994951f7bb8599898d3f48506d19099fd
+Catch Cap\a04_s03_e03.mp4,3,Catch Cap,3,3,train,True,3811b73312fd6b0cc7486e6ce5be98af42ca15f4f649216570fb76ec563b7210
+Catch Cap\a04_s04_e01.mp4,3,Catch Cap,4,1,train,True,d37ed800846727b43a5b061776e16171cffbeb76cd9dda8e069371ceedba7d23
+Catch Cap\a04_s04_e02.mp4,3,Catch Cap,4,2,train,True,d3576eef4ec639a2efd0719e9edeec48dc3603d543f15513cec8f503fbc8a94b
+Catch Cap\a04_s04_e03.mp4,3,Catch Cap,4,3,train,True,84731b3ecf1b6d70bb4e043141d999ed2ae7315aeec07efd47143dc364508808
+Catch Cap\a04_s05_e01.mp4,3,Catch Cap,5,1,validation,True,d71a14b101ce306082f3bc758d65e3549453336511fbe1bf7e7807ad68c06ed0
+Catch Cap\a04_s05_e02.mp4,3,Catch Cap,5,2,validation,True,aaadb7fcfb5a1b9d2bbad17a28caa57ecc3962e7de8d995afc9c6038e8a8a93f
+Catch Cap\a04_s05_e03.mp4,3,Catch Cap,5,3,validation,True,fdd2b71b746b3be284d45da8d44cbf36312a2229de0b79363c1a886a63b2ee8d
+Catch Cap\a04_s06_e01.mp4,3,Catch Cap,6,1,train,True,d9f124c204081d9db00a0776e151f671c2993bf17e61573f33c4c5eacc80f3f4
+Catch Cap\a04_s06_e02.mp4,3,Catch Cap,6,2,train,True,bd431352bd50ce2d4f99c9deb5e719c1ce84bb8295decc4a4a8b9fdc764a19ce
+Catch Cap\a04_s06_e03.mp4,3,Catch Cap,6,3,train,True,ddd973c0619a8e6843d01c00653a5e7133c4615973de267b0a815f0a6c75bfa2
+Catch Cap\a04_s07_e01.mp4,3,Catch Cap,7,1,train,True,6d578e9d06e0d77f6efc000925b59ac40ef805c242ba0aa899611d9cfcc45419
+Catch Cap\a04_s07_e02.mp4,3,Catch Cap,7,2,train,True,7a4816d693daf1d5ca459b554435820aa69dc37f77dd33ac55c84ccf8d1a48d4
+Catch Cap\a04_s07_e03.mp4,3,Catch Cap,7,3,train,True,bf618ad7c7a49a094dd84f92d43323c5336edd144ba6510569fe7f7c58103447
+Catch Cap\a04_s08_e01.mp4,3,Catch Cap,8,1,train,True,1d16be0160f7c07e3ffe55f779be4c4c3006f2c3cb376fd9e4dd1daf7bf590c6
+Catch Cap\a04_s08_e02.mp4,3,Catch Cap,8,2,train,True,e0e17cd21f174c1b80282d4533a117c9060271b31c8226d5f83de33147a0d3a5
+Catch Cap\a04_s08_e03.mp4,3,Catch Cap,8,3,train,True,7e05c4c12d421def5616ac27db8b439a6348c5475ea1ce8de686d197e5e2f3e0
+Catch Cap\a04_s09_e01.mp4,3,Catch Cap,9,1,test,True,e123b495aa7dc8b44b3e84eb8e7cf560461fc999e8f61fa41fb9f62f96391a57
+Catch Cap\a04_s09_e02.mp4,3,Catch Cap,9,2,test,True,35cf24d810d7475689e978b84353783c1f70ec251d6f213a29e191433ac07111
+Catch Cap\a04_s09_e03.mp4,3,Catch Cap,9,3,test,True,1b69635f7e3986d8b413c46f4083a038da9ae4c7ec3e12b07ea9f86e2ddfdee0
+Catch Cap\a04_s10_e01.mp4,3,Catch Cap,10,1,validation,True,c31ed74fa959cdc8a676180d85539e8b60c108e6360837463643fc04dd1f7e8a
+Catch Cap\a04_s10_e02.mp4,3,Catch Cap,10,2,validation,True,260413976557172c77327318024f59be0df2e36ea1c8eb7e0a8878db6b5779de
+Catch Cap\a04_s10_e03.mp4,3,Catch Cap,10,3,validation,True,25e62e402f0c22880134f863a41f48a33d41e1031d60f8f087ad4379def3c380
+Draw Tick\a07_s01_e01.mp4,6,Draw Tick,1,1,train,True,51889822e234929da56cbe5f20d6d12cb55d0f2aa8bb110d52df956a9d649f6f
+Draw Tick\a07_s01_e02.mp4,6,Draw Tick,1,2,train,True,b299b46968d0131660ff10485f5b27916c6188516fd5e29fbe72e8882f083e54
+Draw Tick\a07_s01_e03.mp4,6,Draw Tick,1,3,train,True,ba32318d90299d03fb736451d1de62adde62e1b7e3fe9d0aa8bc9cc61419b364
+Draw Tick\a07_s02_e01.mp4,6,Draw Tick,2,1,test,True,7f39be1e74e0f9aeeb6ac6fc5837fb25074b77ffa0c8e7bcb1ea5d4a4d9c2180
+Draw Tick\a07_s02_e02.mp4,6,Draw Tick,2,2,test,True,65cf77f1bab35583d0e7c8404224b5af64ac664bebdc958ba972f5a25d2615dd
+Draw Tick\a07_s02_e03.mp4,6,Draw Tick,2,3,test,True,819d02da892ec4f424a0476fdab91cf1c9c17c87260d73ace848eec9b2258734
+Draw Tick\a07_s03_e01.mp4,6,Draw Tick,3,1,train,True,7c9bc9e43aaa3a3b2f8cecce3e0394d9a5035a1e59772e27a05a7bee7c05a4b2
+Draw Tick\a07_s03_e02.mp4,6,Draw Tick,3,2,train,True,6be11c5988dcf1bf99151894b78814106de8963d836306986211e70ed1578953
+Draw Tick\a07_s03_e03.mp4,6,Draw Tick,3,3,train,True,7375db2b1dd6bdce69ac94ab924f8a9cadcdbf4744d33b354f46e86e0fdb7748
+Draw Tick\a07_s04_e01.mp4,6,Draw Tick,4,1,train,True,bd38376984ccea1089fec1a2a94055d7d7ae5935d8e8daab7654f1549a07f3ef
+Draw Tick\a07_s04_e02.mp4,6,Draw Tick,4,2,train,True,b7e30324b6a400d95b9ee071b147b5c9737e7666623f53b4a577a78ab45eb04a
+Draw Tick\a07_s04_e03.mp4,6,Draw Tick,4,3,train,True,014af1ad406614db37d6ef74c44ea53f2bda6e9b34c8c7e37c9fe553da35ea2e
+Draw Tick\a07_s05_e01.mp4,6,Draw Tick,5,1,validation,True,0e6906f07b5271bccc7a6e26f35cd64b1373577020dcd52ac7a7a928b4776174
+Draw Tick\a07_s05_e02.mp4,6,Draw Tick,5,2,validation,True,3277be7f7917a387cc0d1c382acf24c645a4d90019801d2b6bf061f1d136df1c
+Draw Tick\a07_s05_e03.mp4,6,Draw Tick,5,3,validation,True,4ec2a45435557d42bfdb87a89f9b8e7f52d0503eb602784a47c3ae989039f11e
+Draw Tick\a07_s06_e01.mp4,6,Draw Tick,6,1,train,True,2a90df2ca7cfb1e408ee043a58411f3dc44536ea2cc0e5ce386884fe59753785
+Draw Tick\a07_s06_e02.mp4,6,Draw Tick,6,2,train,True,995a70283d304c1e68e692f2dd105d9f36e296151ca1885a43d6376256cbeced
+Draw Tick\a07_s06_e03.mp4,6,Draw Tick,6,3,train,True,68716d3ffe4bb75ee61be8457bff628f98a7923090351b5bfb12cce107a617cd
+Draw Tick\a07_s07_e01.mp4,6,Draw Tick,7,1,train,True,9f92370510136aaf9fe3ab5abb1604e8eea5a60ee8281c16b0271daf7e909f24
+Draw Tick\a07_s07_e02.mp4,6,Draw Tick,7,2,train,True,415d11eb556adf39110a3d22f820a3aafb3625d7172e46390960f67d21149d5f
+Draw Tick\a07_s07_e03.mp4,6,Draw Tick,7,3,train,True,88a7b6c99b1eb63067ad20df8675959955f86a97f64a6dc3dd1b321efb6edcc5
+Draw Tick\a07_s08_e01.mp4,6,Draw Tick,8,1,train,True,071d4c54d6f125ef2997164794aba067a280c7bb7823d6eb09c65d0d08442f17
+Draw Tick\a07_s08_e02.mp4,6,Draw Tick,8,2,train,True,72f4ddd5d5db82267c9960b619d03f4a58bc2505660b087b336f441d679c3210
+Draw Tick\a07_s08_e03.mp4,6,Draw Tick,8,3,train,True,2d9092532b8b3941ac44e6174c7d2c1db81766298a3c464e897cc727738e1744
+Draw Tick\a07_s09_e01.mp4,6,Draw Tick,9,1,test,True,2b28b5e687345e0be92e93bb744c16485463139763822195f268ace1f0693253
+Draw Tick\a07_s09_e02.mp4,6,Draw Tick,9,2,test,True,ffafce740ce074319f734d470a909cf646bd10f15b297e623a319b91e4a02b76
+Draw Tick\a07_s09_e03.mp4,6,Draw Tick,9,3,test,True,c1fdea2b6805097a4fc9d92d6dbd9d0e9fd71268ce5b03a3a5e53a1215d38d0f
+Draw Tick\a07_s10_e01.mp4,6,Draw Tick,10,1,validation,True,caec269109908affd1d7f1dadd4997fcaa761ee140d59d7455ea81ee13f2f104
+Draw Tick\a07_s10_e02.mp4,6,Draw Tick,10,2,validation,True,0fce6a7b2619ca1a64a7faa27c59bdb0343800dbca9f83e6c67f5c7f3c2d5289
+Draw Tick\a07_s10_e03.mp4,6,Draw Tick,10,3,validation,True,46f57e62e4c56ce07c3176f3873bb09ba5971c8f88922b9187a3a71780a38fdd
+Draw X\a06_s01_e01.mp4,5,Draw X,1,1,train,True,1f090e665e462529162df93ec66dc104597b7eb64760ab21205d7d1f9bad7418
+Draw X\a06_s01_e02.mp4,5,Draw X,1,2,train,True,57362a1232298939d3b8f8527e100f7d5446c30040dc7a9ea24d44c09088c0e8
+Draw X\a06_s01_e03.mp4,5,Draw X,1,3,train,True,0d55cd7dcf3ce2ee60d5560d32a94805e70a296e6c0b0d0bf1e08b07d955246b
+Draw X\a06_s02_e01.mp4,5,Draw X,2,1,test,True,699c53abb623ad4eb456dd703e9db644418251ec725e372804be81d2234421fa
+Draw X\a06_s02_e02.mp4,5,Draw X,2,2,test,True,e8c08a1f5fa66d7e072ff0c40cbac15edcb9d88f86fdda6969b70e4e12ccf464
+Draw X\a06_s02_e03.mp4,5,Draw X,2,3,test,True,cd41213dc34bb2a2e0116556c572a2a27c7fa1acaec97f3548c02ed83e9fc538
+Draw X\a06_s03_e01.mp4,5,Draw X,3,1,train,True,69e265ae26e780c264178521d3501a1b5cb46f65cee3d811669a012018b9793e
+Draw X\a06_s03_e02.mp4,5,Draw X,3,2,train,True,a5b175612f88ea1a0bbff5ce37bef0a80a21e5e7c20d9087a0cf2fbcc305788e
+Draw X\a06_s03_e03.mp4,5,Draw X,3,3,train,True,4a4782ebb4600948088ba44feff7b4596e83933ecd8195435b2697bdf7f8ceb1
+Draw X\a06_s04_e01.mp4,5,Draw X,4,1,train,True,7154f3bd950aebb208d96596d95862a440c804cde3e435df3e5bfe0f8cf682c0
+Draw X\a06_s04_e02.mp4,5,Draw X,4,2,train,True,7d968db72d94ed149183ba8f1e61443455448134b4b0fca7721b4b8725991e66
+Draw X\a06_s04_e03.mp4,5,Draw X,4,3,train,True,336cfcc7f8408208d3df6555b048a77f64729b1ada948ff31d9f69c07d5161b1
+Draw X\a06_s05_e01.mp4,5,Draw X,5,1,validation,True,507f789573a52ffca5ae312f95511b66f99b8e7f783143347c34fb7afb36ea6d
+Draw X\a06_s05_e02.mp4,5,Draw X,5,2,validation,True,dafd8ea22636301af391c6661c60355812780f022f6be3cae2147dc363745cdc
+Draw X\a06_s05_e03.mp4,5,Draw X,5,3,validation,True,2b9e3fce3b97f7d2ad95260a7afdcad88828875a92d0bdf664d744c26ca8e44f
+Draw X\a06_s06_e01.mp4,5,Draw X,6,1,train,True,2cf5a5af5d180b8f7bb5b860e45e985bf28cce38d5f900be314d126996c1d322
+Draw X\a06_s06_e02.mp4,5,Draw X,6,2,train,True,1e418b52a51cf4d0a8067e0332187e8ff40e7a97e1ab5f79a6aa2d9252ad767e
+Draw X\a06_s06_e03.mp4,5,Draw X,6,3,train,True,e7d3cbe3e74298b3cef03d72cac10e076ea4a1581d8d9781ec676b629284e2a3
+Draw X\a06_s07_e01.mp4,5,Draw X,7,1,train,True,d6d0dbcd50d770e182d270a0b8302b67ea7af8900d6cbee0f2fa83a2baa83ad9
+Draw X\a06_s07_e02.mp4,5,Draw X,7,2,train,True,66b31f5215e7c5f46052c1b80e20b393b5443e8b7943c071f9f64e2851867dde
+Draw X\a06_s07_e03.mp4,5,Draw X,7,3,train,True,9ea6adbaef90f75b8f44eb630438cb71755a3baaa9f6f869c7b5957ec1dc7fd8
+Draw X\a06_s08_e01.mp4,5,Draw X,8,1,train,True,1667ee83803e8d5ed49783b04eb36e5d36eb518f9b9224667bb0af0ef1ab5d72
+Draw X\a06_s08_e02.mp4,5,Draw X,8,2,train,True,c1b1e0be44654a8abf333d22932d1be97de09ea8fbdd4a7cf197799ff0a68fa2
+Draw X\a06_s08_e03.mp4,5,Draw X,8,3,train,True,21e2f297f6e82fabbe3081364e8f7d1407e2463787f504a25bd51009d32f8001
+Draw X\a06_s09_e01.mp4,5,Draw X,9,1,test,True,80759ca4625fb13d1b2d96e0df82ef585e91e2ba469879499c49245de8d99151
+Draw X\a06_s09_e02.mp4,5,Draw X,9,2,test,True,bc9d86a106c4087236540d53cfbd7df96d57ca79ad5bdc7214f6d8ba2ec9ce4c
+Draw X\a06_s09_e03.mp4,5,Draw X,9,3,test,True,c113cdf365d52eee8c0f59f46809d375c688771ac57416a527c449e853ccd78e
+Draw X\a06_s10_e01.mp4,5,Draw X,10,1,validation,True,1b028903d7b222218ce812aa252f15f656c40e6c4bf4f8b4c9aa94644ee4b575
+Draw X\a06_s10_e02.mp4,5,Draw X,10,2,validation,True,2d9b79e1e424c2da5b0d105238cee57eba2ebca09a0739d9defed794f65a7d09
+Draw X\a06_s10_e03.mp4,5,Draw X,10,3,validation,True,c50901e36a478dd61a582ec49c5f8e24b42c989e9554780df14c513099d256aa
+Drink\a16_s01_e01.mp4,15,Drink,1,1,train,True,5c827218f5c6037cd2c3744501c207b1831d3934464ad2dacf59adb3b2576121
+Drink\a16_s01_e02.mp4,15,Drink,1,2,train,True,d5bf1fc4c3a0101811e006ffa97bf53c3eec8852277755ab5f880d0b6e4e9487
+Drink\a16_s01_e03.mp4,15,Drink,1,3,train,True,d3f90a76b66475c0a171ced953ef2f8a3b900a06e5f783ef15cfa6f5c9b23e37
+Drink\a16_s02_e01.mp4,15,Drink,2,1,test,True,4e946c42308ea42d5ac85ac877f5c58b807c32e9f2761281b10b5a7c932345bf
+Drink\a16_s02_e02.mp4,15,Drink,2,2,test,True,412f110205c596f9ddc26846752c3a8acc9050d79f37d6c0b7df7bf3d2c19432
+Drink\a16_s02_e03.mp4,15,Drink,2,3,test,True,f8665e1f524ec4101a901c5a07b89a7c0c8726fe0438dc062742c104dd9873f6
+Drink\a16_s03_e01.mp4,15,Drink,3,1,train,True,dd9ec9fcdfe2338a26e45b544cba6a6544ac9ca123980f30bedacf458b84e9c8
+Drink\a16_s03_e02.mp4,15,Drink,3,2,train,True,92f8e296caa3a1f1d875facd5c5ebe0682d0ef453377c1c8fed638f2803d98dd
+Drink\a16_s03_e03.mp4,15,Drink,3,3,train,True,5bec83783b6d2059696c24c683f5cef74e5aef90c8901a24ac91d11998917179
+Drink\a16_s04_e01.mp4,15,Drink,4,1,train,True,797b0d4678a4cbdc471a24f7b4e512691e58bac5c324423d0b254f41146ffd9e
+Drink\a16_s04_e02.mp4,15,Drink,4,2,train,True,b8d5831db6c419f1887a82569912b80a41ecb4d21a71e195f9f81fd93f52c13d
+Drink\a16_s04_e03.mp4,15,Drink,4,3,train,True,ee9379d2972852de0a32a758fe1ba88b7499e1c5fb76a791c28fe438e6ee43f8
+Drink\a16_s05_e01.mp4,15,Drink,5,1,validation,True,18e0d05365871bdc6adb0f2149fb1131d4778f663e5fb98339e0f16640689c9c
+Drink\a16_s05_e02.mp4,15,Drink,5,2,validation,True,51408df556125fc9fefeaead60c2e328493d2ebc2f100a0f8bcef8528105a591
+Drink\a16_s05_e03.mp4,15,Drink,5,3,validation,True,378059da66104da20c372c64d6c982367f633fad7eddea3fd2ea101a3b61cdd3
+Drink\a16_s06_e01.mp4,15,Drink,6,1,train,True,0b12caea41dd48c814334d99dab56b1fc3d8d92e073a855914b607c1bc6f8f8c
+Drink\a16_s06_e02.mp4,15,Drink,6,2,train,True,2608f0fb07d323ac89c5601894a4f8471ef7b463fc5050f48e3cb70fc7125c91
+Drink\a16_s06_e03.mp4,15,Drink,6,3,train,True,4237373070d33f3d151c15807988ccea153821e97494bba8ea59583ce47632ff
+Drink\a16_s07_e01.mp4,15,Drink,7,1,train,True,8920edd1bfdc08672f94a73a0a9f7c634aafa48e0bbeb20a821b7c242e338d82
+Drink\a16_s07_e02.mp4,15,Drink,7,2,train,True,87ab9c64f59532ffdcd785d455cd2531bd00100a29ac20cdcc40f0188811740e
+Drink\a16_s07_e03.mp4,15,Drink,7,3,train,True,2b35c1ee3829dfac6cdd29c58949f748071a46c1c5261d678bf679df786caca9
+Drink\a16_s08_e01.mp4,15,Drink,8,1,train,True,27939e52666fb3428c0da91909a05a779514d217fa79ca4cbbeb6621006d4b9e
+Drink\a16_s08_e02.mp4,15,Drink,8,2,train,True,d81c998df68001964e427b72ca633277620c20ca5064af857e60e2c96b29a3ed
+Drink\a16_s08_e03.mp4,15,Drink,8,3,train,True,42378db9a4bedd322a86ab807d7a4e14a3ae233a1b519e00c2083dd151007a4c
+Drink\a16_s09_e01.mp4,15,Drink,9,1,test,True,4df3a9ac84d47726e2ecf80d5cbdeb9d2b158750bdbf7c594868e87e42b0ce99
+Drink\a16_s09_e02.mp4,15,Drink,9,2,test,True,77e853673691a394c6eecc1412d8c54e70cdc4bced81e57ced99d34752e69e2d
+Drink\a16_s09_e03.mp4,15,Drink,9,3,test,True,2737a36a676cba3e8b4e066f7a6fa80486154b3ba4ba09417054170ae0d78e8e
+Drink\a16_s10_e01.mp4,15,Drink,10,1,validation,True,29a701ef605e189238a1f802d60b5cf2d2c2ed4954931a525dad6b94dcfbd540
+Drink\a16_s10_e02.mp4,15,Drink,10,2,validation,True,0289089842008e40603b2ba72e0f378648c53b1794b06b7459b3b8b305e34d26
+Drink\a16_s10_e03.mp4,15,Drink,10,3,validation,True,b5d5e59b4e70c5a5caac375f126bef0f5adc0e1892d9e3a9783c08f0ce550fb4
+Forward Kick\a09_s01_e01.mp4,8,Forward Kick,1,1,train,True,70847b5e1835fca660fce79110a0c339265b377f2ed6539110b75fd32bc11576
+Forward Kick\a09_s01_e02.mp4,8,Forward Kick,1,2,train,True,5e6391f3e464a055ab8db3fff6af00590226e923458f20879d18a2e3e16e2a79
+Forward Kick\a09_s01_e03.mp4,8,Forward Kick,1,3,train,True,7a578d3e6f068aaa8c393f72b1ab774b836fbbef18dce76cb0eee1f12667d5a9
+Forward Kick\a09_s02_e01.mp4,8,Forward Kick,2,1,test,True,5e1bfd7159b76f9a4577dc48a2508358b341c2a464d6fe3c9e6e4e2deb08d20b
+Forward Kick\a09_s02_e02.mp4,8,Forward Kick,2,2,test,True,948ea542ae81e5ff9be0a3563d41fe3c77eadbedb5327d9c980a0dcbc197b74a
+Forward Kick\a09_s02_e03.mp4,8,Forward Kick,2,3,test,True,c51159e48a2bb406503b5dc06298f21fe56a4bf310d76745127987a9d37fb3b3
+Forward Kick\a09_s03_e01.mp4,8,Forward Kick,3,1,train,True,b24fd5aa13d76c652a3c325b901314eb3c7b0fd1748522bcee107bb3185b8589
+Forward Kick\a09_s03_e02.mp4,8,Forward Kick,3,2,train,True,5c4b48b288d836b3570a7d66ecb7dea30b10777886566aaefe91792ff411fe07
+Forward Kick\a09_s03_e03.mp4,8,Forward Kick,3,3,train,True,cb54083ddbc599838acc6d9102f3cd3b5bf1da863fc64aa11032fbefc18cb874
+Forward Kick\a09_s04_e01.mp4,8,Forward Kick,4,1,train,True,fea4612e8b171760e9e927e974fcebbe48fa248934419829bf16f81f82d7513b
+Forward Kick\a09_s04_e02.mp4,8,Forward Kick,4,2,train,True,b378eed845f78ee464d9b375945295ec1880c0b283236d6702ae51d050fd51d0
+Forward Kick\a09_s04_e03.mp4,8,Forward Kick,4,3,train,True,791f820a8cd4199f8d9193b621c8ca5c50ce95b422c3cc08244fcf1c6231a64e
+Forward Kick\a09_s05_e01.mp4,8,Forward Kick,5,1,validation,True,2205ac2d6cb55b9cad873cd53a197a6d958e935991c6875f48f43bbcfab44d7c
+Forward Kick\a09_s05_e02.mp4,8,Forward Kick,5,2,validation,True,bc4020dbcbd210156efe5bca2fefc75eae408da18afad130248e6a8763a30982
+Forward Kick\a09_s05_e03.mp4,8,Forward Kick,5,3,validation,True,1b9ebdcc837d596123806aeb6ae05d1aa43a29b41428131134271c6b347de4ea
+Forward Kick\a09_s06_e01.mp4,8,Forward Kick,6,1,train,True,e22129be918c1c490a6ba2465a15dc5e320fe28ee0fc48bcdc43300799bbfedb
+Forward Kick\a09_s06_e02.mp4,8,Forward Kick,6,2,train,True,a50a3cef1fc8b55ea40baebb64ca761c9eb4fad8f08787e748ad219851e23f9c
+Forward Kick\a09_s06_e03.mp4,8,Forward Kick,6,3,train,True,240f2596c65918ebd8c0251f74b433010c65993fb520448940259043ce77a3f1
+Forward Kick\a09_s07_e01.mp4,8,Forward Kick,7,1,train,True,d06a824b3dc75ec20ae7f35e050b80a494a7da0181b9808cf38e6f4243159bc5
+Forward Kick\a09_s07_e02.mp4,8,Forward Kick,7,2,train,True,09fe78fdc628ec7de564fbd84fb61fa2185a9f2124e5e6f352fcdad6d7302990
+Forward Kick\a09_s07_e03.mp4,8,Forward Kick,7,3,train,True,be756e7a84e5ef4a52f6f3eb7bad9fc091231d88426c62592d91525576735f1d
+Forward Kick\a09_s08_e01.mp4,8,Forward Kick,8,1,train,True,d434886280df28d7155f4529f05018afc2006e40f00b66bcc56576c54a47bb65
+Forward Kick\a09_s08_e02.mp4,8,Forward Kick,8,2,train,True,c02e14fa623fb3d77cbad6ab5e81dc78dc41ca75f8d371b06b3ab2d6e7ff4e59
+Forward Kick\a09_s08_e03.mp4,8,Forward Kick,8,3,train,True,3ef5d0b49c7edf11d92cdd6078c710d99b7373a476d26e1abc4bc9fb7fd28ab6
+Forward Kick\a09_s09_e01.mp4,8,Forward Kick,9,1,test,True,09226e2804b5150e466251b99d7fc0684af8c7331fa1fa1829bce9fc95550816
+Forward Kick\a09_s09_e02.mp4,8,Forward Kick,9,2,test,True,fc70b1034b5dc7913b8623ab8e066a7a994f257001a8f54d3de70b6508ea1e34
+Forward Kick\a09_s09_e03.mp4,8,Forward Kick,9,3,test,True,d2993035b296e0235c7b5a2ca43c9fb53ea88c36893b25147d2b4bad8450ce63
+Forward Kick\a09_s10_e01.mp4,8,Forward Kick,10,1,validation,True,72124995907db7b503d52362b468819e1f4cdd189d352ba2ca17ccc3aa276efc
+Forward Kick\a09_s10_e02.mp4,8,Forward Kick,10,2,validation,True,a31d291e23ea0b8874a6cc1d5116b9dee30608372851f623e91d6f9e6860e86a
+Forward Kick\a09_s10_e03.mp4,8,Forward Kick,10,3,validation,True,81fc22e785846ac5aaaa53e6b4eac1e24ed920b72b368093326a45a7c00ef91e
+Hand Clap\a13_s01_e01.mp4,12,Hand Clap,1,1,train,True,e66b9a95efbb05a229b64793192773021f4caa3e9f17d175487c5ab1e907fb6e
+Hand Clap\a13_s01_e02.mp4,12,Hand Clap,1,2,train,True,c7e8e7c0c413f3f664027fc401442388afbb9b5021628e21fd8e4e2ed06cb681
+Hand Clap\a13_s01_e03.mp4,12,Hand Clap,1,3,train,True,9577fd10a8d30e0ccf9385d2b2bc95549da2884adf4e0716cecf082e40e9a589
+Hand Clap\a13_s02_e01.mp4,12,Hand Clap,2,1,test,True,64155ca2eeea635598c307811fa0e94f4c367c303dfcdcd5a4af77f11345606d
+Hand Clap\a13_s02_e02.mp4,12,Hand Clap,2,2,test,True,8462d0dca727d31424bd7ee51c77ef8b300cddb8d421131b05943eb2fcffde4f
+Hand Clap\a13_s02_e03.mp4,12,Hand Clap,2,3,test,True,372af41bd7babb2c5fac3c517dc8b4a281f83881d55acd5abbba8827b3be74a4
+Hand Clap\a13_s03_e01.mp4,12,Hand Clap,3,1,train,True,98a8df664f77d092534c8c0a19f8914d9a62e171b470941e1f955f971ebaf8a8
+Hand Clap\a13_s03_e02.mp4,12,Hand Clap,3,2,train,True,d9bea468e16ef2ece971a616097b252b80524a4ca852b6fcbf6066a0f5b8d7d5
+Hand Clap\a13_s03_e03.mp4,12,Hand Clap,3,3,train,True,fe23d8e97a2fb3524ad8931c0056845e077227bfea2a6333b79e6938c611b39a
+Hand Clap\a13_s04_e01.mp4,12,Hand Clap,4,1,train,True,4d92c8b3e222abd0a3d8dafdda05ce169f922c18b579cf85dbd889f07ae7cc18
+Hand Clap\a13_s04_e02.mp4,12,Hand Clap,4,2,train,True,4a137630c1224d8fd818954225d693a81f220b6ea714407fd62176b6917e7d6f
+Hand Clap\a13_s04_e03.mp4,12,Hand Clap,4,3,train,True,95fba42f205cce64390ac86a657bc55814c88f1efa5497d1522196dfeaae9849
+Hand Clap\a13_s05_e01.mp4,12,Hand Clap,5,1,validation,True,9907d66bbcfca12eb111c04d1c41d3035bb6e4fe33ba9d2d513671457f41c08d
+Hand Clap\a13_s05_e02.mp4,12,Hand Clap,5,2,validation,True,2dfa55863c96b8b0315a037e972a2d68aeaeda2add88ef1d8582bd58a7fa361d
+Hand Clap\a13_s05_e03.mp4,12,Hand Clap,5,3,validation,True,0f3158e2a8a663b1c01d6ab7945ac9b58ac2b0808dbec92bc1b84b13262f70ee
+Hand Clap\a13_s06_e01.mp4,12,Hand Clap,6,1,train,True,390da67af6703015c73ef50d2725355f235ce7c20e1dfea6eb17208a80359982
+Hand Clap\a13_s06_e02.mp4,12,Hand Clap,6,2,train,True,a44f45e72fba82f248d71299f1a475f642adc28bd66c58f46114f66ee7e7d7ac
+Hand Clap\a13_s06_e03.mp4,12,Hand Clap,6,3,train,True,16ea2390a57989cc640cf89244c427a36e8f65613c2256f26c3ce14f7885441a
+Hand Clap\a13_s07_e01.mp4,12,Hand Clap,7,1,train,True,f0f4bd418fbb61a9fd080db301cdd468004caa1870f9f6522f644e27ba1c5912
+Hand Clap\a13_s07_e02.mp4,12,Hand Clap,7,2,train,True,4aacdfaa91fd49fb5a0046644602aa0fd4b6863b7b48b862dc18458f660bc22a
+Hand Clap\a13_s07_e03.mp4,12,Hand Clap,7,3,train,True,b416c3123a9f8ed7b6a17284120535858bd23b7c1065fce29386efb2191841ec
+Hand Clap\a13_s08_e01.mp4,12,Hand Clap,8,1,train,True,1f1ab2de3bf8a82aa2713ce5ef46df29958bbddd399179c3c72832feeae4342e
+Hand Clap\a13_s08_e02.mp4,12,Hand Clap,8,2,train,True,feb80b5d0566d269ed20728075dcdf468b63090985511a99fdbbc3411d7888ff
+Hand Clap\a13_s08_e03.mp4,12,Hand Clap,8,3,train,True,0229ccc544f2f12420a9d6170c5efd74dff9c92037b20bb65fd07c401021faba
+Hand Clap\a13_s09_e01.mp4,12,Hand Clap,9,1,test,True,8e26f73c322fdd8f43c3272fceb8fb099753c99919480cf5eb56f61efb132a5c
+Hand Clap\a13_s09_e02.mp4,12,Hand Clap,9,2,test,True,229dc9e95fa166e0d03576b64571a094b4f748d59cfe9c6dd0fe6978cf8fa6b3
+Hand Clap\a13_s09_e03.mp4,12,Hand Clap,9,3,test,True,3a512571ca41c6eb04fed8d46de15ed8163d4e808c495e6082f22ff632056ff3
+Hand Clap\a13_s10_e01.mp4,12,Hand Clap,10,1,validation,True,54fff32e1b733cabaa9dd786a034a1d8ec019b88fe46130ee8590f50a6460ac5
+Hand Clap\a13_s10_e02.mp4,12,Hand Clap,10,2,validation,True,b13c4fd911b9ce5d8a7c5621b29008e6378e32ed271f008ed10608ba5305f44d
+Hand Clap\a13_s10_e03.mp4,12,Hand Clap,10,3,validation,True,98d3bc6d6fdd93b88ab4494de72f4205d04810d58bacf8a60b14d5886382c6fb
+High arm wave\a02_s01_e01.mp4,1,High arm wave,1,1,train,True,fcf337cdef451d729239019f05e836bacf1e054d3c88f6492428b4ddb61ba5bf
+High arm wave\a02_s01_e02.mp4,1,High arm wave,1,2,train,True,ddc29704017c8af68b7dffde364e9037469eb8789ba3e6dca4c014bf00400551
+High arm wave\a02_s01_e03.mp4,1,High arm wave,1,3,train,True,b8794fae13566851bdbec65b805ee61b357fcf79db6d1f89113440e98b845e91
+High arm wave\a02_s02_e01.mp4,1,High arm wave,2,1,test,True,3b562f3316b7c2bce6cb7cd2c90e852a65ffaaafc5ff42bd2edf0b6450a91f8a
+High arm wave\a02_s02_e02.mp4,1,High arm wave,2,2,test,True,80556c2d4f78746a5c012b05ee0ac2b3f147ddb8f5610f056d0bcab1e8825644
+High arm wave\a02_s02_e03.mp4,1,High arm wave,2,3,test,True,843d7bad5b9d7e8ae7f86e35f48e2fc48039e9d951afe720ef8863b9fd2594ee
+High arm wave\a02_s03_e01.mp4,1,High arm wave,3,1,train,True,7610e121629027d53e6cd7f1ac2d9eeff0a80c7decfe8b7db784bb7565474af6
+High arm wave\a02_s03_e02.mp4,1,High arm wave,3,2,train,True,16a2492e9480cd8a21600a3cbf78733b2d12aadf4ca088efa6110b08a02ad853
+High arm wave\a02_s03_e03.mp4,1,High arm wave,3,3,train,True,b7c0e97bee462f98df124d39868bafd04ca67b29232ec667bf4d5de80b1a3d25
+High arm wave\a02_s04_e01.mp4,1,High arm wave,4,1,train,True,9b649a5eec71bae3cf40fa10e35ba9e5cf4c97a64167d4b6411a48b3eff2d690
+High arm wave\a02_s04_e02.mp4,1,High arm wave,4,2,train,True,062d7af966b7f3363a6da025581ff3e7ee9fc1acd8e033163631cf686226846a
+High arm wave\a02_s04_e03.mp4,1,High arm wave,4,3,train,True,85d7414eb9d6618f72c6b8fc7d41f117e7e17b659be030def50daf153c0a3dce
+High arm wave\a02_s05_e01.mp4,1,High arm wave,5,1,validation,True,5bd59607657f0513cb3c4e5fbaa65180d02ce8d96defab99b223f3ef694c914f
+High arm wave\a02_s05_e02.mp4,1,High arm wave,5,2,validation,True,7cb9447e9c29df4c72498f021850d1b17dce8eccce5e7c63689b8e4829b6ace1
+High arm wave\a02_s05_e03.mp4,1,High arm wave,5,3,validation,True,497dc2bfd9fe684394f91debd0f1bb69f9d2d0f0b417c14c400618fd93017476
+High arm wave\a02_s06_e01.mp4,1,High arm wave,6,1,train,True,33e7372b9bbc76a13ed9b4021f8a4903f244796e6687a468554b5de927ac2da7
+High arm wave\a02_s06_e02.mp4,1,High arm wave,6,2,train,True,146df6cfb342a7815832731281db010032ebba9071aa2143cf175e08e84d466f
+High arm wave\a02_s06_e03.mp4,1,High arm wave,6,3,train,True,818471b3f984bc367dbaf01218626f49b9d6de8be09635669ce18e4417658eef
+High arm wave\a02_s07_e01.mp4,1,High arm wave,7,1,train,True,861f919927537c67f0fc7276f2eb3a22f63f24034eea811b2d42cf448518edd9
+High arm wave\a02_s07_e02.mp4,1,High arm wave,7,2,train,True,7f7a0e616803d30cb1718b6e6cf27669a25425fe4cfcb93d3e6016bd3323662c
+High arm wave\a02_s07_e03.mp4,1,High arm wave,7,3,train,True,e04d2779659fc5440958ac55569b1b8d95b003df7398d2bbc290605008eea736
+High arm wave\a02_s08_e01.mp4,1,High arm wave,8,1,train,True,fc778cf69e0c527bb1ac2acaf426081972e8c62c32696bd56aa159f6b54c4a74
+High arm wave\a02_s08_e02.mp4,1,High arm wave,8,2,train,True,9b7c63586d094d0d43ac17f27e931efd7cfc4fe21fa052c319376888b825a497
+High arm wave\a02_s08_e03.mp4,1,High arm wave,8,3,train,True,ddbd8bba475c79cb41615bbbc87e54b60ba9f485a9729b6544058f4ddcdc689a
+High arm wave\a02_s09_e01.mp4,1,High arm wave,9,1,test,True,1e682d0f71bf00469dd7acd95ebb6e5e985ec1a03ac4d17257bcbd79eef10b54
+High arm wave\a02_s09_e02.mp4,1,High arm wave,9,2,test,True,29974f6191592cc6b2a1ce4d4a5438c360136e5695b1a4b27be972e2275ab708
+High arm wave\a02_s09_e03.mp4,1,High arm wave,9,3,test,True,f22db0b39119b342a7f656fcdfb0788f8707cc7833b26bdeef6272f0992d2373
+High arm wave\a02_s10_e01.mp4,1,High arm wave,10,1,validation,True,4e7dfcdcc6f3cea39c4c022609d44f253e0ecb3ce74ff3a0c8af71abdd13cf3a
+High arm wave\a02_s10_e02.mp4,1,High arm wave,10,2,validation,True,b5e1e58ec564a4e15d23ba64aef303b5b3955df2bed5c351a6155e3cdff92e7b
+High arm wave\a02_s10_e03.mp4,1,High arm wave,10,3,validation,True,6ae4f2baf31993cf3eb6015d48122e42bdaa427c4982fad414ac5ad88002f557
+High throw\a05_s01_e01.mp4,4,High throw,1,1,train,True,60f8a7a29f5f559fb145b5ac6db923d33ad46a583a6a05503351082657a7683e
+High throw\a05_s01_e02.mp4,4,High throw,1,2,train,True,bfa0153588fa7c45b9ccc393180009bd5034b6c0d5c0774a5efe109e908ab779
+High throw\a05_s01_e03.mp4,4,High throw,1,3,train,True,852d54fe2c247f1c7e0a96fabb8232764df68c066ebf43a3e84bee45ddcda32e
+High throw\a05_s02_e01.mp4,4,High throw,2,1,test,True,54691bc6d5b9e222ad5a4b6b23abb57552080bade1134f2a53ff78c4d1fa15a5
+High throw\a05_s02_e02.mp4,4,High throw,2,2,test,True,368bd24e851f555d59e82ee50bad6538e8f3d92887661cca0b8182a7deb5bb6c
+High throw\a05_s02_e03.mp4,4,High throw,2,3,test,True,ad14beddeaf0b483b4c4d959923626d6501a3763b8b91e748b94aaaa3e61f4cf
+High throw\a05_s03_e01.mp4,4,High throw,3,1,train,True,c9f09bcfa9b63c77ec75357778d0172202857835646a3a64d09f71205af8b46e
+High throw\a05_s03_e02.mp4,4,High throw,3,2,train,True,c657f47da336ecc667fe93245c6d87dbddf96798b0aaae32fd4c834499c4198a
+High throw\a05_s03_e03.mp4,4,High throw,3,3,train,True,df2930205f071f3a723c7520df995037492306d715f9ec06e73ce45f102dbc9c
+High throw\a05_s04_e01.mp4,4,High throw,4,1,train,True,f0d76b11583a98bad5085f30c76c5191cf14ca01bfea5aa1a1d2b8ee780f0d97
+High throw\a05_s04_e02.mp4,4,High throw,4,2,train,True,83944b7d58bcdebe6bfb11f038b7bd79fec48f3c49e9ef808ca8b18277365451
+High throw\a05_s04_e03.mp4,4,High throw,4,3,train,True,029c4ac61a1376dcfee24953840f17c2034a4017f12d212f9bea28adde47794d
+High throw\a05_s05_e01.mp4,4,High throw,5,1,validation,True,1e22b628b9a09a802b8e35f560ff231180e8f75a549fda5fe6e681b626ce7303
+High throw\a05_s05_e02.mp4,4,High throw,5,2,validation,True,babf9df09975b8f5b2ae4eb043c6b87852e67ef2d5233a4b041c46c22d1770b2
+High throw\a05_s05_e03.mp4,4,High throw,5,3,validation,True,58e9144c6eb7a3873e98082edb55ff2ca4ee181ef1c7d4534e461ea1edf380b3
+High throw\a05_s06_e01.mp4,4,High throw,6,1,train,True,8d58f4d6a14adcf0cbb5f3b1ddc928d32a45d08a1afcdafd475ae49f0cd2a7c1
+High throw\a05_s06_e02.mp4,4,High throw,6,2,train,True,d791c88ce5adbdfd1a4029641284576dd9490792264abd3edefcdb903140c2ec
+High throw\a05_s06_e03.mp4,4,High throw,6,3,train,True,234c1c23d698340706f7909f10f440c7faef7c6a97c2ac10689f0650c393c8db
+High throw\a05_s07_e01.mp4,4,High throw,7,1,train,True,3c8b2e03771e2298b4631cfce06cbf442d74db67944af5c3973d51c69c4905f7
+High throw\a05_s07_e02.mp4,4,High throw,7,2,train,True,cab68acee08ea9220f9b651aba06386e7487d3600f25f9f6c77d796389b9ccca
+High throw\a05_s07_e03.mp4,4,High throw,7,3,train,True,28a2570c3acf56c555e611090a2955ce8d8b0da5c6580ea0430bcf2e8dc0a6a4
+High throw\a05_s08_e01.mp4,4,High throw,8,1,train,True,c56a80ef6d75dc0578c14cafac60e2c6f2283037a27922ec1a9f2650c6b5baa5
+High throw\a05_s08_e02.mp4,4,High throw,8,2,train,True,3df67c828c2b7deffeea93c4784ef9b431481a1ef6a8e14a35eef3158e37752e
+High throw\a05_s08_e03.mp4,4,High throw,8,3,train,True,7ed40f8d03d45a87a55b7186bf969e4393fefb672bb7117d2b0b11dcb941b9d1
+High throw\a05_s09_e01.mp4,4,High throw,9,1,test,True,e010a221b03eae82277542ab6e0d4450f3c0b9a47f2b76a7bd6089910be40012
+High throw\a05_s09_e02.mp4,4,High throw,9,2,test,True,29cd4ac24ec5f00573a933c41a04947f411ea7b5846785209b4a6a03b7e719ea
+High throw\a05_s09_e03.mp4,4,High throw,9,3,test,True,41332896a43a831c3a406a76dc4955e35a88352d59f3850151181aad6f8e9487
+High throw\a05_s10_e01.mp4,4,High throw,10,1,validation,True,cef26207a31e02b26784334c5ad846dda99eb002fc0bc57b3a3389d4eea2671a
+High throw\a05_s10_e02.mp4,4,High throw,10,2,validation,True,edb94dcbd5e80a84b6dc5c778179728c2b4c7267e5440346cb6fd1d51bf3927d
+High throw\a05_s10_e03.mp4,4,High throw,10,3,validation,True,105274a63f1db560bb636d57bb481abdfc0dbc300b60f2ce1f7db2363b46c7fb
+Horizontal arm wave\a01_s01_e01.mp4,0,Horizontal arm wave,1,1,train,True,2a5b7b974b95cf8ea7798ed10b561255673939e1939855b82d9e83bcc625bbcf
+Horizontal arm wave\a01_s01_e02.mp4,0,Horizontal arm wave,1,2,train,True,949200307a07b0c75981f6724f42602390e98c45ecd21e597e9466b2357a09bd
+Horizontal arm wave\a01_s01_e03.mp4,0,Horizontal arm wave,1,3,train,True,ddf77a028ecfdceae37dcdb7050c24e6b1cd80c5fcfd08688903eacef5e198a3
+Horizontal arm wave\a01_s02_e01.mp4,0,Horizontal arm wave,2,1,test,True,d029245b33cfde0cbd6d475fe303bae020fbb70406a277230e1ae5d59e2d625d
+Horizontal arm wave\a01_s02_e02.mp4,0,Horizontal arm wave,2,2,test,True,8a9a4efac4414d2522dd77769e095ef2b785c49ac5a64c6c416be068b3e6d228
+Horizontal arm wave\a01_s02_e03.mp4,0,Horizontal arm wave,2,3,test,True,6a569580730a4324780b3cc76b79154b5f5f462a7aea2bdf3aa54f99f97ea856
+Horizontal arm wave\a01_s03_e01.mp4,0,Horizontal arm wave,3,1,train,True,16ce909887fd62ce540df0d90d60176fb2c0a3dfa6f9f8d6a45b9fe06c662e86
+Horizontal arm wave\a01_s03_e02.mp4,0,Horizontal arm wave,3,2,train,True,298e0612e9a9113527e9a4b9dd0d80ba265b2f0de294095d8d6fd4c595b0a5c3
+Horizontal arm wave\a01_s03_e03.mp4,0,Horizontal arm wave,3,3,train,True,615d1913ddae1d20618ac03bd0fe0b975e4f21c885e9e24d2923c9fb7be74461
+Horizontal arm wave\a01_s04_e01.mp4,0,Horizontal arm wave,4,1,train,True,79690df48d3df900f5c9e67b0bd24de0cec2b68c0aa9176c737441a2144dcfc6
+Horizontal arm wave\a01_s04_e02.mp4,0,Horizontal arm wave,4,2,train,True,f0d598904696030385bcb61164462b195b40a6a176072c79c4af8ac6aa16946a
+Horizontal arm wave\a01_s04_e03.mp4,0,Horizontal arm wave,4,3,train,True,24a7e86bfd24f69b65b697c3e8b17ffe994bb3f4203d2b256892e4753e28270e
+Horizontal arm wave\a01_s05_e01.mp4,0,Horizontal arm wave,5,1,validation,True,ede1f32af5d63e87adb04db294977fee49dd0997e7cc7bb697d2db363eb48aa6
+Horizontal arm wave\a01_s05_e02.mp4,0,Horizontal arm wave,5,2,validation,True,68643b8cfbf61f960b6ca17aefca39a25376ffeba67332a3ac773c3cb8271e07
+Horizontal arm wave\a01_s05_e03.mp4,0,Horizontal arm wave,5,3,validation,True,b669a8d5dba1635e43a5bed7e0069100878e54cee37431ad860e1db07c5a0460
+Horizontal arm wave\a01_s06_e01.mp4,0,Horizontal arm wave,6,1,train,True,e317d272012943b94e3e9fdbc6dba968013373390eb46be1b01d273c4811e111
+Horizontal arm wave\a01_s06_e02.mp4,0,Horizontal arm wave,6,2,train,True,fdf18514379e7253c7781173ec45e02878e1073b65b00a345216879357f33d9c
+Horizontal arm wave\a01_s06_e03.mp4,0,Horizontal arm wave,6,3,train,True,a7e78a95df44e31669a7e8ff6a8f4c1b248ae613fd3c53a474697f3838fc9734
+Horizontal arm wave\a01_s07_e01.mp4,0,Horizontal arm wave,7,1,train,True,a5574e4e24021ab02f2eeb3e5f4eefd8df112830f42be3dc9636dc0411ad7962
+Horizontal arm wave\a01_s07_e02.mp4,0,Horizontal arm wave,7,2,train,True,0763d29164bbaf9770f9be7b11d2473b897756fd9492d421a13ba539915ca9d9
+Horizontal arm wave\a01_s07_e03.mp4,0,Horizontal arm wave,7,3,train,True,f5f089cc4206af0facefa290e55c8f484071c8f3c55f1059586916bc7428aa06
+Horizontal arm wave\a01_s08_e01.mp4,0,Horizontal arm wave,8,1,train,True,1586721a16665f03524d1830d5582643a136100d115d10b489f6f7f24b2d5073
+Horizontal arm wave\a01_s08_e02.mp4,0,Horizontal arm wave,8,2,train,True,5053cc31ac7f55738a001a1e0b4170bd305269d1dcf69d7c96f87d874c03031e
+Horizontal arm wave\a01_s08_e03.mp4,0,Horizontal arm wave,8,3,train,True,d24a1983e1b0b229ffe21cf17102c777c60ce706a66670724ce27418ee94a7d8
+Horizontal arm wave\a01_s09_e01.mp4,0,Horizontal arm wave,9,1,test,True,1b8e11d5e2dd51fb007dbfd226afebc28671f53d8283278ea63c2a079ce11deb
+Horizontal arm wave\a01_s09_e02.mp4,0,Horizontal arm wave,9,2,test,True,edd0cd5331ca7d812a1c7e0c389879e2cc8ae87d51a543115f6ecd85539411ae
+Horizontal arm wave\a01_s09_e03.mp4,0,Horizontal arm wave,9,3,test,True,227958667a3991a25fa724aa18d87b23800bbe33f989a942edbf3bcb1bf87a2d
+Horizontal arm wave\a01_s10_e01.mp4,0,Horizontal arm wave,10,1,validation,True,fab64d44c98d29f31f4afd3868ae18524b237d35f601d9dc749c0d4a51121546
+Horizontal arm wave\a01_s10_e02.mp4,0,Horizontal arm wave,10,2,validation,True,199b5e4c9e31d45f4ae854bee4241c0157c38a9bec6cb94c796e3437323e6866
+Horizontal arm wave\a01_s10_e03.mp4,0,Horizontal arm wave,10,3,validation,True,9f76905f1905b4cf4a0c66476dd7a2b38066750c8114091d5ac9e42d636dfe82
+Phone Call\a15_s01_e01.mp4,14,Phone Call,1,1,train,True,72308dd2d2d31f4a7ed76a337e9e09d44913c4345ad38c420757408c45971c40
+Phone Call\a15_s01_e02.mp4,14,Phone Call,1,2,train,True,12a883db494e06a44f830552b72ba67a9183927576d89e7b786ac96cb9502e08
+Phone Call\a15_s01_e03.mp4,14,Phone Call,1,3,train,True,4a0a167b37526dfb32b4123160bdcbf2819938f4ed8e8dd8a70904363ff99f35
+Phone Call\a15_s02_e01.mp4,14,Phone Call,2,1,test,True,a40cc3f9c36bc1ee4a7da5cf120b7c0ce218d7cae2290951019d8053a8b2c937
+Phone Call\a15_s02_e02.mp4,14,Phone Call,2,2,test,True,cbc9957dac4584d8ef9bf7b1c3d3d181a2b1b6b7cc00609bde92f05b73ba7683
+Phone Call\a15_s02_e03.mp4,14,Phone Call,2,3,test,True,666a8ed0354f7a158ca2f4ea1939c5c657b86e6e102c80ed17620e57e8f1552b
+Phone Call\a15_s03_e01.mp4,14,Phone Call,3,1,train,True,d5fb8bf860d58b6bed597f7d30095c6591b31aef09f4ddcaa3927c6e94d8f196
+Phone Call\a15_s03_e02.mp4,14,Phone Call,3,2,train,True,b90248835794a1c11889fe12c62e15685217e1a75dbe3f5ea864757156a58398
+Phone Call\a15_s03_e03.mp4,14,Phone Call,3,3,train,True,a037b24160d77916644fd4329448bdafc4a9b2716acd43c710f40f3185faed72
+Phone Call\a15_s04_e01.mp4,14,Phone Call,4,1,train,True,4a9ff4d31f0a9e16332c0e708a1fb291b0ba7beeeb16bb01e6fbfb42fed5a20d
+Phone Call\a15_s04_e02.mp4,14,Phone Call,4,2,train,True,6d3453db1b6f4c05a1a6d14a746fa34b6646662bc7989bf2dccd46ab5746bc5f
+Phone Call\a15_s04_e03.mp4,14,Phone Call,4,3,train,True,4535a2094391a4b312b6a840439554280d5f1c6ff153695e27728eaf3fed2202
+Phone Call\a15_s05_e01.mp4,14,Phone Call,5,1,validation,True,501afd979747623b40aaf6d255df79c1e836c8f794e56eb20683e16c40990dff
+Phone Call\a15_s05_e02.mp4,14,Phone Call,5,2,validation,True,6613fbb6ee835421bd0da9128f3e14bcc8a4df47fe0abda4da872756e6c94af9
+Phone Call\a15_s05_e03.mp4,14,Phone Call,5,3,validation,True,7cfffb4009d649966510cdfe5067c0faeab6fdacbc3be9a47cada79c9cfa402a
+Phone Call\a15_s06_e01.mp4,14,Phone Call,6,1,train,True,7ef20ea979f191bb6afab0255d774992ecc0e428961c6c4a257b5d47a6d6e2e2
+Phone Call\a15_s06_e02.mp4,14,Phone Call,6,2,train,True,750393ea6e8c3a9f62f275ab69aabb97e918edc5f7d23f50ce13e2691f990bdc
+Phone Call\a15_s06_e03.mp4,14,Phone Call,6,3,train,True,de72201efef70b6fe9f46123386460a26e27f34e7fd1ac1c1fcd796355beeec8
+Phone Call\a15_s07_e01.mp4,14,Phone Call,7,1,train,True,b81a0c7367fadd274cc20f0d4bab137b195f13574a3741b8201e0fa3b8d64787
+Phone Call\a15_s07_e02.mp4,14,Phone Call,7,2,train,True,2cf670edfcefc3fea9b9ba6c1475d4b3321f8c47db431d8c2f5f5962d7469a3c
+Phone Call\a15_s07_e03.mp4,14,Phone Call,7,3,train,True,8736dd882dccbd0f1b6b105051f32ba447ef2ca5e7038236e22a319718c8f661
+Phone Call\a15_s08_e01.mp4,14,Phone Call,8,1,train,True,35d0a9ff12a73f1eac231c5b652e96e66b864c3ca9439195ef8f4ae191633bc7
+Phone Call\a15_s08_e02.mp4,14,Phone Call,8,2,train,True,13b2597461bfb41cbf37bfa57e8c14645176d679f93426f7277ab471c488745f
+Phone Call\a15_s08_e03.mp4,14,Phone Call,8,3,train,True,a4668f3d60eee3dc8f7b6c3eee8bedc98c7154bba4a5a9fc44a8afe6548897e8
+Phone Call\a15_s09_e01.mp4,14,Phone Call,9,1,test,True,e60ff365aa77a6a788a277523a915c9faa74948dfc6c43df1f8c0cdb0e383da5
+Phone Call\a15_s09_e02.mp4,14,Phone Call,9,2,test,True,5b4962321cbd4a0b73e3011c7585433dfeea6ee38c3b2a95501aa368a9657942
+Phone Call\a15_s09_e03.mp4,14,Phone Call,9,3,test,True,0c0e3fd5e7499351e9167903d468d6775b8c273644c1c41801a265792df66383
+Phone Call\a15_s10_e01.mp4,14,Phone Call,10,1,validation,True,972aec8e85806e71029613cfac998d75c3feb49ca0d632dc4081f56f0121a12a
+Phone Call\a15_s10_e02.mp4,14,Phone Call,10,2,validation,True,785149ab90ff8b3a7cb9d650443996ef8a636ad05348cc396b898fb15beb8de2
+Phone Call\a15_s10_e03.mp4,14,Phone Call,10,3,validation,True,e8700bf61614561798d6434e8fc82c666fbe25e857231425536c970ca7fe7e51
+Side Kick\a10_s01_e01.mp4,9,Side Kick,1,1,train,True,9bfd4c18f388cecb51c8f392c6f2d76d4efa8e98560bab6362c7ef04de315dc4
+Side Kick\a10_s01_e02.mp4,9,Side Kick,1,2,train,True,cab6303b80e65b8ac118f0ca0e4d15c713cee05b4dd5448583e7f4789d26ffbd
+Side Kick\a10_s01_e03.mp4,9,Side Kick,1,3,train,True,fdc9360c1ce678670bb540571f03261832bccc7922ee388903d16ed776f6ac91
+Side Kick\a10_s02_e01.mp4,9,Side Kick,2,1,test,True,d474e07081b3415fd516acd19411a14ff2a17736ab454ac398696249f94da069
+Side Kick\a10_s02_e02.mp4,9,Side Kick,2,2,test,True,0a25a2279dbd3e8b38c145c47b3b4eabf12f8e0ed10c117dd7ed5ef5ae98eb36
+Side Kick\a10_s02_e03.mp4,9,Side Kick,2,3,test,True,a666c85c35b589363a649dc9bd83b2a2b27c215554da97516c192621a782e53e
+Side Kick\a10_s03_e01.mp4,9,Side Kick,3,1,train,True,c8f02a9fa60144c7796e2869ebde8676fbff613b44fe4eccd7c1c34b070db77c
+Side Kick\a10_s03_e02.mp4,9,Side Kick,3,2,train,True,578af150bcdfcb6ff4c38e47ab7e4371acd73682bfe5d7b75b41340ab3093000
+Side Kick\a10_s03_e03.mp4,9,Side Kick,3,3,train,True,1ab0ab1a964c0c6320308b671fe6e4f4b65fee4114b8da42720968b90019ac68
+Side Kick\a10_s04_e01.mp4,9,Side Kick,4,1,train,True,234b3d832de484c57d06d2f4ad0e58e0099fe73aa7a73cf13139ae2de47eec22
+Side Kick\a10_s04_e02.mp4,9,Side Kick,4,2,train,True,3b9a410979068550986a825f5010d7d18f73726b13f633b3da2023b6f1b49afb
+Side Kick\a10_s04_e03.mp4,9,Side Kick,4,3,train,True,9c80ab6fc427399d5b4c4e952b3039c617ef701b23690de7c264d9df16a6fcdb
+Side Kick\a10_s05_e01.mp4,9,Side Kick,5,1,validation,True,ff2c6307d2f8071426e177c41bb1c2cc6e3ce61792c240cc5349dc84f630501a
+Side Kick\a10_s05_e02.mp4,9,Side Kick,5,2,validation,True,235ff88fa1f9f80872b4327ca24f630ea3e6fe8126d65b66ddb322e70e165a60
+Side Kick\a10_s05_e03.mp4,9,Side Kick,5,3,validation,True,ebc8e0aaf5f379ada8e4347e7708c850626d385c3dc5b040aa347f450677ec1f
+Side Kick\a10_s06_e01.mp4,9,Side Kick,6,1,train,True,41e1d317f6f347bd58c32e988bda2418a430345c43ed8bcfc455f3cfda7f05ec
+Side Kick\a10_s06_e02.mp4,9,Side Kick,6,2,train,True,2157579783e5299826286d0849f402ac3ddf1c57ae1f9eefce88b930633f40fe
+Side Kick\a10_s06_e03.mp4,9,Side Kick,6,3,train,True,58b478ba609085aa326320a5cf6bff1124f580155867e80cc7719d09ddcf9ecc
+Side Kick\a10_s07_e01.mp4,9,Side Kick,7,1,train,True,dc0411050ab702a83709d25c4983bcb8a8b38af676ff3a2886c5c9e4e0bc5251
+Side Kick\a10_s07_e02.mp4,9,Side Kick,7,2,train,True,3d068d98a5b2558becfb99e8bd24620cdf274df0dd7609704860a3a6b4501f83
+Side Kick\a10_s07_e03.mp4,9,Side Kick,7,3,train,True,27b8ab0d02585f65e69c65923698dc90383fbdcf97b5a0149e010721cda4b356
+Side Kick\a10_s08_e01.mp4,9,Side Kick,8,1,train,True,359438452a6d0b92478d34c04f4bfee458df82a3518db96e6ac0ede1e2bd4092
+Side Kick\a10_s08_e02.mp4,9,Side Kick,8,2,train,True,437911d0e50bb150490afcbc0eb4f8f3d99ead91a7d431cc7fd1eb88225ac1bf
+Side Kick\a10_s08_e03.mp4,9,Side Kick,8,3,train,True,42394adfa0777569e95ec5251cd011f7135a92816542b78603e8d707a37a7f35
+Side Kick\a10_s09_e01.mp4,9,Side Kick,9,1,test,True,0567dd46108d16c1327138c274f82f0428005d8ba9fadf1dfcf5e81518231674
+Side Kick\a10_s09_e02.mp4,9,Side Kick,9,2,test,True,7c620bceff93f277958d11ffbe991ba2dde53f1d4de5d76bf1b784e11f947a9c
+Side Kick\a10_s09_e03.mp4,9,Side Kick,9,3,test,True,e630aac480e53c17979fa18bc93692760cbc31c7891955dcd9713a72f37b18d2
+Side Kick\a10_s10_e01.mp4,9,Side Kick,10,1,validation,True,aabdf41b9733b3d986fd567c053f022e0292e6eed8f42081f3a930907fbd2a4e
+Side Kick\a10_s10_e02.mp4,9,Side Kick,10,2,validation,True,03ba634b144fc2bff6d18f1030ad9815476e7bed38b1271f021b69c7e6bd005d
+Side Kick\a10_s10_e03.mp4,9,Side Kick,10,3,validation,True,808e1a21a556b3c6eaedda7bade0c5106d4ab8a0e634898d9f73359fc2e4060c
+Sit down\a17_s01_e01.mp4,16,Sit down,1,1,train,True,a25ce6bf4c37ee26038b25a8c6edcb8802272b65b447fbfcd193b1c4697460bb
+Sit down\a17_s01_e02.mp4,16,Sit down,1,2,train,True,0896e4d3559904512e74ed4965304dd0414fe4d60bd7de1f5dc6f6345125be3c
+Sit down\a17_s01_e03.mp4,16,Sit down,1,3,train,True,05383bad6e22d1568c8aa3f0464e5980089420f34af47713c2e6f10cab25d10a
+Sit down\a17_s02_e01.mp4,16,Sit down,2,1,test,True,8fa08b29d96f4595e7e8668cf4f70479f5a6a480d2aaa70fc46d2512fc0e16ff
+Sit down\a17_s02_e02.mp4,16,Sit down,2,2,test,True,cefc89058555f2eb3bd7837af991dfe288061afc607e2731a3846c3e72274068
+Sit down\a17_s02_e03.mp4,16,Sit down,2,3,test,True,df32ff61aa1d8104876a40c010b17e5b8dd7b26153b39a9b48af05eeb9da0645
+Sit down\a17_s03_e01.mp4,16,Sit down,3,1,train,True,ca425f121832a1f4206357c6bdf28d4363c0d6372c87ee9f7ea8d4b58f4a1ae6
+Sit down\a17_s03_e02.mp4,16,Sit down,3,2,train,True,33b77df29a5c5ea8b6af7b8649addda068b0067623de10c073c7e956908a4cef
+Sit down\a17_s03_e03.mp4,16,Sit down,3,3,train,True,9cd25d6bae961849d9f9d55c9c227dcefb608d0f06abf7089ce53551ab22eead
+Sit down\a17_s04_e01.mp4,16,Sit down,4,1,train,True,6556be2dfcbf3fc76423936758eeebd6e2b65f611bb7288f85c088486db0d893
+Sit down\a17_s04_e02.mp4,16,Sit down,4,2,train,True,534a1b1564bff1ac60f1caf8d75e64130b9a5933db67f7b33ee3bef7fb63e235
+Sit down\a17_s04_e03.mp4,16,Sit down,4,3,train,True,8878983581926d9c873fdfd290832addf0a0010d68d7449cf42e4af6d66f9ee0
+Sit down\a17_s05_e01.mp4,16,Sit down,5,1,validation,True,c574838413343b9e3868b7fc41096e984c74e9893d8dea5f82a7684e468fae23
+Sit down\a17_s05_e02.mp4,16,Sit down,5,2,validation,True,3bb6dffd9e46be347ac818130b8c7955a19427d8c3248223e6fb26f44f06fcb7
+Sit down\a17_s05_e03.mp4,16,Sit down,5,3,validation,True,039d08e87cdfc006416b656de124f74629136d2d06465f0b466e159c6c73e6f5
+Sit down\a17_s06_e01.mp4,16,Sit down,6,1,train,True,f44888f5c4205ff337fb98bc95d2a4826ce84ef2fda16b5952e293804113409d
+Sit down\a17_s06_e02.mp4,16,Sit down,6,2,train,True,b1ad1dae791832b08f4e75adfa1e5d6169f70d7541825a1af5d52918abbbc0b7
+Sit down\a17_s06_e03.mp4,16,Sit down,6,3,train,True,3643a4377ee8b411effb11675d9ff1960d061f14ec02ac87e8dec7e428d0ef33
+Sit down\a17_s07_e01.mp4,16,Sit down,7,1,train,True,d1e900778769dbef2d708145d0aea151dc94672a5fe5e8b2242a4e9f05f97db4
+Sit down\a17_s07_e02.mp4,16,Sit down,7,2,train,True,00649c97d0da99903248277140f321a68a1f6aa942c32b79edf3fb1d89a81ce6
+Sit down\a17_s07_e03.mp4,16,Sit down,7,3,train,True,21c4fa090343ad0ec1774c06c2b0d52653b2333941d24f14221e21b016ca4af5
+Sit down\a17_s08_e01.mp4,16,Sit down,8,1,train,True,fdfa7064093626922a346da2188a485a8a95c0325fba5c606e50fda80e5bea2b
+Sit down\a17_s08_e02.mp4,16,Sit down,8,2,train,True,5e228b9014c60b7fa7e552c63bec3e343a42bdd1f2175fc72ccaa269825831f5
+Sit down\a17_s08_e03.mp4,16,Sit down,8,3,train,True,70b26c7742ecb1002ea1d5a815c854566dab9177bdc5588a12d8d285cef77aaa
+Sit down\a17_s09_e01.mp4,16,Sit down,9,1,test,True,1a17ae1094fffc800af6d13ccdfc2eb2ee106814dd6856d41ea2ead265ca1a0b
+Sit down\a17_s09_e02.mp4,16,Sit down,9,2,test,True,f69d8e9104a4f2bdd2a65cf6b6a102a8371457cf42b4c5e870a5bcaa1e9b9e41
+Sit down\a17_s09_e03.mp4,16,Sit down,9,3,test,True,1fcef42d4bc4516262a137df4f0ef91c8a3a51dbc0328f328250a18798729724
+Sit down\a17_s10_e01.mp4,16,Sit down,10,1,validation,True,8dac842eb28b0baa576324eeef8d325fe4a5c7faae720adbd62989c4a44f0758
+Sit down\a17_s10_e02.mp4,16,Sit down,10,2,validation,True,2ac9487072cc8d3aeeb23bbec653af0f49f82619f6c839bc73d8d4dbeca02fca
+Sit down\a17_s10_e03.mp4,16,Sit down,10,3,validation,True,49e94e852b4b19111f493555103f316826bcf4b5c86603281a08b766f7eef960
+Stand up\a18_s01_e01.mp4,17,Stand up,1,1,train,True,39d2b2b7c8e27c5a8de54c99c9532b0b2114e6d84739eeef8ef7426163b3c261
+Stand up\a18_s01_e02.mp4,17,Stand up,1,2,train,True,a3d75c8f937d853dd4d4b8b5697686e33db6fa5a567ad0c4f07f08b6e7fb5afa
+Stand up\a18_s01_e03.mp4,17,Stand up,1,3,train,True,1dcac810753bc1c7ab5ad4e191348f39192f84c01ee768c31dd692b8505ec813
+Stand up\a18_s02_e01.mp4,17,Stand up,2,1,test,True,6fb19f177f84e107798db7f271df9a831349dd1da63bae396ee4ae2aabb0d3d1
+Stand up\a18_s02_e02.mp4,17,Stand up,2,2,test,True,81ea581a91bfd66d07e1a77e25cc6b98f4e25a76c76216f9982f67fef9c36e3c
+Stand up\a18_s02_e03.mp4,17,Stand up,2,3,test,True,c7c41b209317e54bc831378ae96ebd9a07e1a2d2e803e4ac3a131319b0ca5b89
+Stand up\a18_s03_e01.mp4,17,Stand up,3,1,train,True,da9b8819745ec97f6a1234a09519f37cb4cc1229af0607e8a723eb6dd7ff67ef
+Stand up\a18_s03_e02.mp4,17,Stand up,3,2,train,True,760802f5d6ebcb8226c848a1113210d0a50ecc94a17ede0e3a983495b3c7d9e2
+Stand up\a18_s03_e03.mp4,17,Stand up,3,3,train,True,aa006a3f6c0dcea086c29fc0851c89410801eb17bef7950e9a1af0a2dd638490
+Stand up\a18_s04_e01.mp4,17,Stand up,4,1,train,True,744a27e643acb94b9b6219feb956e0842a43aaa97910779ce4a473641f8fd33d
+Stand up\a18_s04_e02.mp4,17,Stand up,4,2,train,True,7a4458ddf81ad1947536ad0c761914fc89ad31e97fd284d5a6f3685f086f0c37
+Stand up\a18_s04_e03.mp4,17,Stand up,4,3,train,True,cccee6dfd3f94108f4c24ba1f885ac6e2759997b4a7dcc60984341f848ce1d4f
+Stand up\a18_s05_e01.mp4,17,Stand up,5,1,validation,True,a970d0f91b19efdcf3847d2f33a4d7eee912979e0762e0468c4f1fb56ff87f0d
+Stand up\a18_s05_e02.mp4,17,Stand up,5,2,validation,True,b6e2e2b29296af56968ae415e91836c12baa8ecc3b92377b8c16a75d151cbc46
+Stand up\a18_s05_e03.mp4,17,Stand up,5,3,validation,True,5fe1880823f56691065368a051dd710ed3d26033295bc150113f44e7fb6bb5ee
+Stand up\a18_s06_e01.mp4,17,Stand up,6,1,train,True,fda4b24d56b6cf02603fcb0b44b6e7a673def54638d0ba5b551ce5fd51684e00
+Stand up\a18_s06_e02.mp4,17,Stand up,6,2,train,True,e7ffed8223e15df358b8ecc576e14416f2baab915eb99354a8b65de91eb504f6
+Stand up\a18_s06_e03.mp4,17,Stand up,6,3,train,True,fb0a9b93c0794ea9506ae9db406bc59e8115ae2b4f70ad2d9655478c87012589
+Stand up\a18_s07_e01.mp4,17,Stand up,7,1,train,True,e4a4579b9bbe4a23cd5f519342635598220b395016358bcbec929419fcca888d
+Stand up\a18_s07_e02.mp4,17,Stand up,7,2,train,True,5bd8dd8faa93ce7f537013d49e9ca44790f781a31ac31b58527b016e8269c190
+Stand up\a18_s07_e03.mp4,17,Stand up,7,3,train,True,cf6fac5b31003a6ac722b6294b0620f577366464a20124cbd4d92b39bf534ac2
+Stand up\a18_s08_e01.mp4,17,Stand up,8,1,train,True,f37325f415e24324fa64dab3ae00e9427a17750152fa3cc3b643fd498ffe365d
+Stand up\a18_s08_e02.mp4,17,Stand up,8,2,train,True,77c819e4ad0004b3964727a92e93221229d92206c713b3857805de6f89c7a3ab
+Stand up\a18_s08_e03.mp4,17,Stand up,8,3,train,True,7fac2c7d015fa3b0d6d4dbdd5200d326d9ddf449efe4a714633de524f26b0509
+Stand up\a18_s09_e01.mp4,17,Stand up,9,1,test,True,fd5b5cfef022512343d839113a6bf7aaabc7a43ede0cb3783417b8548cb84800
+Stand up\a18_s09_e02.mp4,17,Stand up,9,2,test,True,7360899af3232656afd06b77bba6a9934d5f0fb2bf83ebfb91356f4a8dd8b22c
+Stand up\a18_s09_e03.mp4,17,Stand up,9,3,test,True,6c9f61592d58806e4695020218426c86d822de6d21baf0b1c40e5a25a86f3220
+Stand up\a18_s10_e01.mp4,17,Stand up,10,1,validation,True,8d61bc5c5d23bf2da481a1906f9daac1eaa700a97203dbbacccc0174dcade632
+Stand up\a18_s10_e02.mp4,17,Stand up,10,2,validation,True,2b9b20b6d6bc9476dd11069af409abeb439074414af03fdde6e49274eab5f702
+Stand up\a18_s10_e03.mp4,17,Stand up,10,3,validation,True,5394d30d6d9279960798a95396d9d732ea8c226b9c45b8fda66f205b06b6071d
+Take Umbrella\a11_s01_e01.mp4,10,Take Umbrella,1,1,train,True,586543ddfabb3121647a34511649aaeabad678109d9a934ccf900e202d9db67c
+Take Umbrella\a11_s01_e02.mp4,10,Take Umbrella,1,2,train,True,127ea9fb0d9d5bf5e53c7dbaa001baecec820f7d9ba26803bfdd47e6cf76eb1f
+Take Umbrella\a11_s01_e03.mp4,10,Take Umbrella,1,3,train,True,99736463cd9ba890384c08b752a13d6ca4f9f231b78afc2f39dbcc49fb6432f6
+Take Umbrella\a11_s02_e01.mp4,10,Take Umbrella,2,1,test,True,d3a8d5df10fd45e676dc0a00141315443325241203db52c9ce6395c7b1d2cb5b
+Take Umbrella\a11_s02_e02.mp4,10,Take Umbrella,2,2,test,True,b934fe997a831259a79b3bf1a8b5cc9fedcba9318367c8ba47cc3af8fe068ec6
+Take Umbrella\a11_s02_e03.mp4,10,Take Umbrella,2,3,test,True,bf30856ca4c5365a6fc83344afbe853fe9ae44e47abbbc9c984be667b83fc1c2
+Take Umbrella\a11_s03_e01.mp4,10,Take Umbrella,3,1,train,True,6d07965a7539ad09df5bad40303c9ffb5f3dcc6c8dfa986e2fb5e43dbacc0a19
+Take Umbrella\a11_s03_e02.mp4,10,Take Umbrella,3,2,train,True,c8261bb65a6835e8851bb2f447549090ab8c2d46e746e5dbaa063177f603ff4d
+Take Umbrella\a11_s03_e03.mp4,10,Take Umbrella,3,3,train,True,9b51d2843b4592d98e565c9fc4d2ef79320b901515b5677958d0937811a042c1
+Take Umbrella\a11_s04_e01.mp4,10,Take Umbrella,4,1,train,True,6680f8bd12fc3517f59d383f6e482538b667e28bfe326fcefbbed50e99106c7b
+Take Umbrella\a11_s04_e02.mp4,10,Take Umbrella,4,2,train,True,217f966f995b233865397f4a61ac3cfc8ca781283dc23f6dc97f79bc4395c78a
+Take Umbrella\a11_s04_e03.mp4,10,Take Umbrella,4,3,train,True,89fbeb5f49c59e64039f28ae947c603db8371e5924aa94649aa47bc486f1864c
+Take Umbrella\a11_s05_e01.mp4,10,Take Umbrella,5,1,validation,True,739f4a66c3f9b4436cfac0da8d37e0f4d82949cea9cca499bf5cc23c3faa1ea7
+Take Umbrella\a11_s05_e02.mp4,10,Take Umbrella,5,2,validation,True,9f2b6ceedd6e129292fbf6ff2528c2471c7e1c5098e58055c83183216a077741
+Take Umbrella\a11_s05_e03.mp4,10,Take Umbrella,5,3,validation,True,471c1f162a5b7e77757a889536c78763c9dfee2393789109d220cf151dea36d1
+Take Umbrella\a11_s06_e01.mp4,10,Take Umbrella,6,1,train,True,64248c10784913eb02554d18e88edbe77f7383670b151e590695927d8c446078
+Take Umbrella\a11_s06_e02.mp4,10,Take Umbrella,6,2,train,True,7ddf8edf860dbc0d5caebd3d55d1deb18da16957171320e75dc1211a10c5368d
+Take Umbrella\a11_s06_e03.mp4,10,Take Umbrella,6,3,train,True,a50fdaf3a1cd83774e6409d7bc42905f43ea9d9a1763bfac753716139d190aef
+Take Umbrella\a11_s07_e01.mp4,10,Take Umbrella,7,1,train,True,081b931a1069169001dd7df953dfa0ef67c788520f3805e78b0688926f4aaccc
+Take Umbrella\a11_s07_e02.mp4,10,Take Umbrella,7,2,train,True,c97694d4e7f1e1330f9c831a2a471162473d2e5413ede1dc7d5342b2c6c07f49
+Take Umbrella\a11_s07_e03.mp4,10,Take Umbrella,7,3,train,True,88322710a1390563b8c395b6e0f8d0aac97bc3ca5d4097909517ec015ef6dc7a
+Take Umbrella\a11_s08_e01.mp4,10,Take Umbrella,8,1,train,True,4323d8e29814e22073e473dc3ebad340782c415ba94e86b2f871bdc9288206e0
+Take Umbrella\a11_s08_e02.mp4,10,Take Umbrella,8,2,train,True,745bfb7ec52108e142e567e7b2349e1798350e783bf6470f44da44f732838783
+Take Umbrella\a11_s08_e03.mp4,10,Take Umbrella,8,3,train,True,0107a3631178cea793aa9942f2d20e00df424a71286bdb5781ef7f496323a138
+Take Umbrella\a11_s09_e01.mp4,10,Take Umbrella,9,1,test,True,0b1d34493b0f727f08df67cc39b08102bbfdde0128e27220f62045808a38b570
+Take Umbrella\a11_s09_e02.mp4,10,Take Umbrella,9,2,test,True,b053437528570e3920212f07e2bdd6acfe5b2720b742dd1ba79ce59df1b7615d
+Take Umbrella\a11_s09_e03.mp4,10,Take Umbrella,9,3,test,True,b6c8c1f3c6ec82a3849c3c9f7b85975c0f8bee62311d9a9c33dd23998affa9b1
+Take Umbrella\a11_s10_e01.mp4,10,Take Umbrella,10,1,validation,True,2415636eb852f892823b6466d3462de3c445c3a864f3e9dcecbe7bfb677191c9
+Take Umbrella\a11_s10_e02.mp4,10,Take Umbrella,10,2,validation,True,6367e823d13a546a3a2a65f85f1995191eb9a280112b8212ba1c7b51061394cf
+Take Umbrella\a11_s10_e03.mp4,10,Take Umbrella,10,3,validation,True,e670c6db02a5e0d073620e1d6b7721e9927495f114274bef71248da4ad371787
+Toss Paper\a08_s01_e01.mp4,7,Toss Paper,1,1,train,True,bb932c44bf062e8d3b838e372a8db72c54ab70a8d2bbc989fed96b2cb5a6db74
+Toss Paper\a08_s01_e02.mp4,7,Toss Paper,1,2,train,True,2c49418ae245be4271de9a010b7ab726afc9c852a93a888e0dd66bf7668cb929
+Toss Paper\a08_s01_e03.mp4,7,Toss Paper,1,3,train,True,c51a22fd72e00d317be32caa4f3d0adc3c46922ee5a2e66c9b49c40edaead946
+Toss Paper\a08_s02_e01.mp4,7,Toss Paper,2,1,test,True,2b8c12976f2ab546c6f774eab1afddc99d5a84a5e869e4220523905dc502a9de
+Toss Paper\a08_s02_e02.mp4,7,Toss Paper,2,2,test,True,cd9241ffd0477e540db27b02cabe05ee07a27d9063400a5b947a21d5e966aaa2
+Toss Paper\a08_s02_e03.mp4,7,Toss Paper,2,3,test,True,5ab63a06dd78273ed3956ee46beaaea7fb4cce22291d8255c70d2f116a62092f
+Toss Paper\a08_s03_e01.mp4,7,Toss Paper,3,1,train,True,4e2096370279fe330f49c425b351c1f42b9c6599b345843671bfbdac2588abbf
+Toss Paper\a08_s03_e02.mp4,7,Toss Paper,3,2,train,True,118826e6af022540bc55dc43dd3bfc93dbf9c0f8897dd11b6d4a8f2bd44f28d1
+Toss Paper\a08_s03_e03.mp4,7,Toss Paper,3,3,train,True,eebd36b9f42d3e63fb7e1c1a98f246b9ee4538b2a9117d0b6f92a9b54c5b5db5
+Toss Paper\a08_s04_e01.mp4,7,Toss Paper,4,1,train,True,eff6ce20972979f0684f0449b19a846dd617fa253066a97bdbb531b1d395cce4
+Toss Paper\a08_s04_e02.mp4,7,Toss Paper,4,2,train,True,242e0938dee6feab3398d7b4f577cf5bb50b20c30ecd35a1d8f771114a278f93
+Toss Paper\a08_s04_e03.mp4,7,Toss Paper,4,3,train,True,cb3f2f73e99dbdd8af190b7e8cfabf6c31ff24b774e768cf3ddb3f93a98d02cc
+Toss Paper\a08_s05_e01.mp4,7,Toss Paper,5,1,validation,True,f68900a2c5087162ddfa942cb768337425789ba6626d36ba11541b50f24f3f0a
+Toss Paper\a08_s05_e02.mp4,7,Toss Paper,5,2,validation,True,27f916a16ab9c41441a1d486dde988561c8e98ea3d371ef494f9603bf8f2ab8c
+Toss Paper\a08_s05_e03.mp4,7,Toss Paper,5,3,validation,True,e9ec3c87084f3a4c01a1ba07f04504a21c7073949b069db0257ce52e29c290bd
+Toss Paper\a08_s06_e01.mp4,7,Toss Paper,6,1,train,True,8db8df1ccd5a8af08864572fe500a645497cd91c8ce7915fc1a89f22a5af9c81
+Toss Paper\a08_s06_e02.mp4,7,Toss Paper,6,2,train,True,f06ddbf38e2848f30ab7d6edb7ad8a9361d24b65a4140f55d358a607c1f33e4f
+Toss Paper\a08_s06_e03.mp4,7,Toss Paper,6,3,train,True,226c6f1fae764cfca72f8bb26841aabc0bd3fe960d6a4cd55848aca414a1fc8e
+Toss Paper\a08_s07_e01.mp4,7,Toss Paper,7,1,train,True,97ae2639a0ae589723e9fe9aeaf4e8e3404baed5d09867c1a78214840ac3e0df
+Toss Paper\a08_s07_e02.mp4,7,Toss Paper,7,2,train,True,851c49c0fd097c4adfa3099f061ad743b5357a75640cb6c765227c3078b37e47
+Toss Paper\a08_s07_e03.mp4,7,Toss Paper,7,3,train,True,3ef934f6212f2db7d4886246f53259f1a3e9d0e5e095b05b7b03e27b829ed16b
+Toss Paper\a08_s08_e01.mp4,7,Toss Paper,8,1,train,True,0ad982bccc2cf1827851a702355184077251368cc9018939af45d23de06e65ba
+Toss Paper\a08_s08_e02.mp4,7,Toss Paper,8,2,train,True,f0ced823ade7ee014e61e112d61a9905f54dac7962107c3f3109ef177a676be6
+Toss Paper\a08_s08_e03.mp4,7,Toss Paper,8,3,train,True,1ad2e637994f0147f39298b341064c1148e1018daf5ed7099d1b01398677e5d2
+Toss Paper\a08_s09_e01.mp4,7,Toss Paper,9,1,test,True,412a232b4bbd3fcb093414127ce29228e204ad8f56f8e5822171e02f266a9e63
+Toss Paper\a08_s09_e02.mp4,7,Toss Paper,9,2,test,True,e52333b0a31550e2e60c3073e7cfa3831e13683002e2bcf617a230dfdf75e79f
+Toss Paper\a08_s09_e03.mp4,7,Toss Paper,9,3,test,True,d1104bf4631b812fc550c757bd9b03827bb1778eec157828f75b6a8ca64bfddd
+Toss Paper\a08_s10_e01.mp4,7,Toss Paper,10,1,validation,True,fd02ad18d2555acd63ff22ea83c3d81d2f17fd68f486540b44a01f7799121b6f
+Toss Paper\a08_s10_e02.mp4,7,Toss Paper,10,2,validation,True,7b3e31ebe3a7befd091eb666133386b4b76df287b037fcd14aeed19a7cb707d6
+Toss Paper\a08_s10_e03.mp4,7,Toss Paper,10,3,validation,True,aa55c20913b9add3d6e514fa65a07e533f06ae2ef2d5ac071ab7bc330c6799e7
+Two hand wave\a03_s01_e01.mp4,2,Two hand wave,1,1,train,True,c0903e6726b3ccb405604445c665e23d32f8d5e630b660b49ca6309809d7dd63
+Two hand wave\a03_s01_e02.mp4,2,Two hand wave,1,2,train,True,5bfcd12210a6d9c07c155f95bf75fb4cc8db7399160be6c1398634fc076875b9
+Two hand wave\a03_s01_e03.mp4,2,Two hand wave,1,3,train,True,80fe49b2c7fb2240ae15c8a353dd785850e3d50b1ee0cda5aeaeff8470205eea
+Two hand wave\a03_s02_e01.mp4,2,Two hand wave,2,1,test,True,7f94ab81b869f1cbd39e71b76ba2adae22a475cf9cd2d9f9d9cfeb7167b49637
+Two hand wave\a03_s02_e02.mp4,2,Two hand wave,2,2,test,True,377ede014e55a71c9c4eacad11c5b742499ea1eaefb41207b685e2bb3ce1ef3e
+Two hand wave\a03_s02_e03.mp4,2,Two hand wave,2,3,test,True,82eb23f585cf4d607db5b9c554674e9e42e56d690d767e2f2e31e4170fe67142
+Two hand wave\a03_s03_e01.mp4,2,Two hand wave,3,1,train,True,e3fe3eefdd3ed994ef61f3a3b3e1f2210e7640db33780942049587a69fdfaabb
+Two hand wave\a03_s03_e02.mp4,2,Two hand wave,3,2,train,True,0fd76e081a0313c3bb3bc473edb743a0948b4ee4f9eaaae9bc05f574f1679794
+Two hand wave\a03_s03_e03.mp4,2,Two hand wave,3,3,train,True,c941f76532a251941f96326ea994a7e4c576d34a63bb797467fad5bf740fb3cb
+Two hand wave\a03_s04_e01.mp4,2,Two hand wave,4,1,train,True,aa6a1abd75354b99ace5d0983419739ab568132ed051446f64e5fc21fedd2779
+Two hand wave\a03_s04_e02.mp4,2,Two hand wave,4,2,train,True,ca0a5d548844ca40ecee472fc5b98d0345460d6e6d787b08553ca40e099c035f
+Two hand wave\a03_s04_e03.mp4,2,Two hand wave,4,3,train,True,d0b05901cc8d83015c24a9d9d0721956288aaaa4dc113d3a74e6cac724007ec0
+Two hand wave\a03_s05_e01.mp4,2,Two hand wave,5,1,validation,True,447909b9184b89c167593ee6dee9bd2aac4e92e0237766d6f522b4d52f478b6e
+Two hand wave\a03_s05_e02.mp4,2,Two hand wave,5,2,validation,True,ca24e1a5a7a6220c3351299544f5d510dfea54bfd0711cb67d24e1a04c36a5d4
+Two hand wave\a03_s05_e03.mp4,2,Two hand wave,5,3,validation,True,23933732ed7d582434bc0f6fea0f41f69399eb188348b6c5eee7fa95c0800192
+Two hand wave\a03_s06_e01.mp4,2,Two hand wave,6,1,train,True,0588ad674a5a4a871280f310929441d24795ba015b9a384647c49f6929e4507f
+Two hand wave\a03_s06_e02.mp4,2,Two hand wave,6,2,train,True,388dcfefb5a90ccfd07c20da05e3dacfe0d5b0f728b7932bbda8895a2fe5de97
+Two hand wave\a03_s06_e03.mp4,2,Two hand wave,6,3,train,True,515405eb48967e35a5b518a425b695daf585f435065b469715b3e42dc8d80028
+Two hand wave\a03_s07_e01.mp4,2,Two hand wave,7,1,train,True,ba39142b2f4c4fc61c1c74307cc255935be92f5995d91976f2bb3ecaa8140402
+Two hand wave\a03_s07_e02.mp4,2,Two hand wave,7,2,train,True,e41934942483608d33652ce8ff58334fabdad494cb3a6cad9a400bf643a28341
+Two hand wave\a03_s07_e03.mp4,2,Two hand wave,7,3,train,True,54e46d296209ea6548b4f5546251304c0b27636ea65fad21ab2c38ea2a52958b
+Two hand wave\a03_s08_e01.mp4,2,Two hand wave,8,1,train,True,d676f650927a69b3bbfca1b2ae31cd3fa14a2828676217e6cb04dc1f257af926
+Two hand wave\a03_s08_e02.mp4,2,Two hand wave,8,2,train,True,e536bc321051aeb8582c3b4e835751530095e303dcc0f952507aeea4562dc09d
+Two hand wave\a03_s08_e03.mp4,2,Two hand wave,8,3,train,True,e65db947ea4f4ec649ea6325a4ec2e7fcd33c0c8a37eb49f05236a86a1db8212
+Two hand wave\a03_s09_e01.mp4,2,Two hand wave,9,1,test,True,336ba354712ed0c7ef4ae1acdeedec8f2678f6220d58f3db0cb5bab6464c08d2
+Two hand wave\a03_s09_e02.mp4,2,Two hand wave,9,2,test,True,a7e980509d2be2a194454f04b02a10dd8eec819fd233c87da6e30f06232183ee
+Two hand wave\a03_s09_e03.mp4,2,Two hand wave,9,3,test,True,125e4276558ea0189c6e557a49a6efeac5f0ebbbd850c1959edc1f0dda488f82
+Two hand wave\a03_s10_e01.mp4,2,Two hand wave,10,1,validation,True,da8e4edf237e93852e85faf749e18178d3926348016f357e8ac3847e1c8db04c
+Two hand wave\a03_s10_e02.mp4,2,Two hand wave,10,2,validation,True,90cc8d532504518edd12cbc222f5a7a204c824bde9260ad7ae83d6b4e988c149
+Two hand wave\a03_s10_e03.mp4,2,Two hand wave,10,3,validation,True,aa7995bb27b6d3dbc4532130b9610bcb84160bd5c6b0a8a1b665d063997c3443
+Walk\a14_s01_e01.mp4,13,Walk,1,1,train,True,0a5185fa90ac1a46de6665281bdb60a762db5d7d891bf870b4bfb8b618239873
+Walk\a14_s01_e02.mp4,13,Walk,1,2,train,True,b7f154daf23180e5b65c5f3a8d70f22cfc5b84d642dcad77613a47fa119820ef
+Walk\a14_s01_e03.mp4,13,Walk,1,3,train,True,c7c9013e01c91a251c7c41fb2a829a51179a7bdf05c06a1885a5b399c54f14ff
+Walk\a14_s02_e01.mp4,13,Walk,2,1,test,True,823f8861bdef718afdaf357d49315b6796ef8f48828d4a758902ac00efaeddd8
+Walk\a14_s02_e02.mp4,13,Walk,2,2,test,True,02995ac0b1136ecb0a4c3b45ad1908151d7d3244e1ded35ffead6a5c444e9cf0
+Walk\a14_s02_e03.mp4,13,Walk,2,3,test,True,7eb8ca119a91996d25d42dd1a76fef762fdff03edb756a22e573c3a9aa7fc1cd
+Walk\a14_s03_e01.mp4,13,Walk,3,1,train,True,571d3ec45f4c080cad0c70d5013c7c893f750e483a48b925aeb40f0f5848fd3f
+Walk\a14_s03_e02.mp4,13,Walk,3,2,train,True,412ad341ccf8094339e7fce05ff05388f5240e47570e6456638b003628b10b45
+Walk\a14_s03_e03.mp4,13,Walk,3,3,train,True,f78624bdfaf28f3f19f0f6a31d59f4fb4bde10a9b3b33a052f22cb7a57791a60
+Walk\a14_s04_e01.mp4,13,Walk,4,1,train,True,f633d93cc293153cf8f0e62ed0ad188711faf51106ed658262524565e12f5b05
+Walk\a14_s04_e02.mp4,13,Walk,4,2,train,True,17599be5b039a0b3c44e7a9abbaeff6295a790a37848b4548e6b505521025e21
+Walk\a14_s04_e03.mp4,13,Walk,4,3,train,True,8b4d87c2dbc0ff16a604afbe46a2bbe9c2b778cc91f77d30f51d54e24e5fe4ad
+Walk\a14_s05_e01.mp4,13,Walk,5,1,validation,True,dda7dc7c1153a2df8a07138fafd0964046a531b3577ec8ce1e806b5a86701435
+Walk\a14_s05_e02.mp4,13,Walk,5,2,validation,True,f90b158de752dd22d1aee6c139b65f403c875818c6ff6c43780f8fc8a0c10cd7
+Walk\a14_s05_e03.mp4,13,Walk,5,3,validation,True,ef1276512da0b26031c25235786c990f45aef4f6792e947931e46c7490158928
+Walk\a14_s06_e01.mp4,13,Walk,6,1,train,True,468bf19926f762f57cc5a53bbbe6a6d73c67a08f08ba84f8080e1c9702beb02d
+Walk\a14_s06_e02.mp4,13,Walk,6,2,train,True,f29879fe6a1e2d07258a66bda6432e011bd02539a990f319ed40cadda33a2220
+Walk\a14_s06_e03.mp4,13,Walk,6,3,train,True,4282a4efd55a379d65ae580742b69de3e7d35ccf8817088d9a5335f04e01f41a
+Walk\a14_s07_e01.mp4,13,Walk,7,1,train,True,53e894a483068f650d563ce6fa282531dac612757a7d7b52a970d2f2636a577b
+Walk\a14_s07_e02.mp4,13,Walk,7,2,train,True,57318761497011d3a7f2d5e63b0a82cf48e1da34f2862fccc8e85f8532590e33
+Walk\a14_s07_e03.mp4,13,Walk,7,3,train,True,43d2f9481fc6e945c31f625acb29cabada0c0b4d7507da614f0776156284b24d
+Walk\a14_s08_e01.mp4,13,Walk,8,1,train,True,0409be65a965fbe97f3ae0057292111a9990a59255f01f3814a983f62b0ebd9f
+Walk\a14_s08_e02.mp4,13,Walk,8,2,train,True,37d01230d3f968b33d5455a48ad4b82b350057e00ec3b0a965226c69f47b68b0
+Walk\a14_s08_e03.mp4,13,Walk,8,3,train,True,6122e09a573765a6581cbd11af85971f21744494485736c699feac6d6e920cb4
+Walk\a14_s09_e01.mp4,13,Walk,9,1,test,True,bc9668483201483756db350024997a2e60068ffeff762a8bd876ef9c6a510fbe
+Walk\a14_s09_e02.mp4,13,Walk,9,2,test,True,ca7e434e1b320e1d24c1015ea8e7d7f6ef0ef8bc892a6dfda440f071d0833f78
+Walk\a14_s09_e03.mp4,13,Walk,9,3,test,True,de9c6176392c7a726654d8f5c6769d885e0be2042bb2dd4be89eb1daaeb29576
+Walk\a14_s10_e01.mp4,13,Walk,10,1,validation,True,94438a788cf9e05d4ece71fd2e87f645626af6cffb3e73894091c8e55f265bd9
+Walk\a14_s10_e02.mp4,13,Walk,10,2,validation,True,0744215c36b56f2b0703777e4545202e6303d3a6206699c3b568030ab18a44e2
+Walk\a14_s10_e03.mp4,13,Walk,10,3,validation,True,ad9f17d65d7949d7bcaa80c6e8f86677a5082cf8a59870873f2091d558a827d7

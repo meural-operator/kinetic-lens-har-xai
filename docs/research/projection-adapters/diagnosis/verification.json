@@ -1,0 +1,23 @@
+{
+  "test_accessed": false,
+  "real_train_clip": "Bend\\a12_s01_e01.mp4",
+  "classifier_basis_dimension": 17,
+  "projection_adapter_trainable_parameters": 484,
+  "standard_rank4_LoRA_parameters": 2336,
+  "frozen_projection_vs_original_max_error": 4.76837158203125e-07,
+  "identity_kernel_bitwise": true,
+  "identity_output_bitwise": true,
+  "factor_out_gradient_at_initialization": 0.053822893649339676,
+  "factor_in_gradient_at_initialization": 0.0,
+  "factor_in_gradient_after_nonzero_update": 2.9416122436523438,
+  "synthetic_nonzero_update_merge_max_error": 6.866455078125e-05,
+  "synthetic_merged_kernel_vs_real_saved_graph_feature_max_error": 2.384185791015625e-07,
+  "merged_kernel_shape": [
+    104,
+    480
+  ],
+  "backbone_unchanged": true,
+  "evidence_pool_identity_clips": 432,
+  "evidence_pool_identity_bitwise": true,
+  "accuracy_improvement_tested": false
+}

@@ -1,0 +1,471 @@
+{
+  "model_id": "kard",
+  "checkpoint": "<original-showcase>\\weights\\kard_vit_gru_model.pth",
+  "checkpoint_bytes": 357742670,
+  "input_shape": [
+    1,
+    8,
+    3,
+    224,
+    224
+  ],
+  "stages": {
+    "pytorch_reference": {
+      "status": "PASS",
+      "windows": 9,
+      "parameter_count": 89413778
+    },
+    "fp32_export": {
+      "status": "PASS",
+      "seconds": 3.716
+    },
+    "fp32_graph": {
+      "status": "PASS",
+      "bytes": 355434469,
+      "operators": {
+        "Constant": 137,
+        "Reshape": 54,
+        "Conv": 1,
+        "Shape": 7,
+        "Slice": 1,
+        "Concat": 8,
+        "Transpose": 54,
+        "ConstantOfShape": 1,
+        "Mul": 37,
+        "Equal": 1,
+        "Where": 1,
+        "Expand": 7,
+        "Add": 111,
+        "LayerNormalization": 26,
+        "MatMul": 97,
+        "Softmax": 12,
+        "Cast": 24,
+        "Div": 12,
+        "Erf": 12,
+        "Gather": 8,
+        "Unsqueeze": 6,
+        "LSTM": 3,
+        "Gemm": 1
+      }
+    },
+    "int8_quantization": {
+      "status": "PASS",
+      "seconds": 8.061
+    },
+    "int8_graph": {
+      "status": "PASS",
+      "bytes": 92178728,
+      "operators": {
+        "Constant": 137,
+        "Reshape": 54,
+        "ConstantOfShape": 1,
+        "Conv": 1,
+        "Mul": 185,
+        "Shape": 7,
+        "Equal": 1,
+        "Slice": 1,
+        "Where": 1,
+        "Concat": 8,
+        "Expand": 7,
+        "Transpose": 54,
+        "Add": 112,
+        "LayerNormalization": 26,
+        "DynamicQuantizeLinear": 50,
+        "MatMulInteger": 74,
+        "Cast": 98,
+        "MatMul": 24,
+        "Softmax": 12,
+        "Div": 12,
+        "Erf": 12,
+        "Gather": 8,
+        "Unsqueeze": 6,
+        "DynamicQuantizeLSTM": 3
+      },
+      "reduction_vs_checkpoint_percent": 74.233
+    },
+    "fp32_runtime": {
+      "status": "PASS",
+      "provider": "CPUExecutionProvider",
+      "threads": 4,
+      "windows": 9,
+      "top1_agreement_count": 9,
+      "max_abs_logit_error": 4.291534423828125e-06,
+      "max_abs_probability_error": 7.152557373046875e-07,
+      "cpu_median_ms": 661.879,
+      "results": [
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.3113021850585938e-06,
+          "max_abs_probability_error": 8.940696716308594e-08,
+          "softmax_score": 0.5038756728172302,
+          "cpu_median_ms": 694.909
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.7418136596679688e-06,
+          "max_abs_probability_error": 4.76837158203125e-07,
+          "softmax_score": 0.6066278219223022,
+          "cpu_median_ms": 661.879
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.384185791015625e-06,
+          "max_abs_probability_error": 7.152557373046875e-07,
+          "softmax_score": 0.5095360279083252,
+          "cpu_median_ms": 666.263
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 3.4570693969726562e-06,
+          "max_abs_probability_error": 1.2665987014770508e-07,
+          "softmax_score": 0.32209792733192444,
+          "cpu_median_ms": 677.174
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "Drink",
+          "onnx_label": "Drink",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.384185791015625e-06,
+          "max_abs_probability_error": 2.5331974029541016e-07,
+          "softmax_score": 0.31908491253852844,
+          "cpu_median_ms": 657.692
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "Stand up",
+          "onnx_label": "Stand up",
+          "top1_agreement": true,
+          "max_abs_logit_error": 3.4570693969726562e-06,
+          "max_abs_probability_error": 5.662441253662109e-07,
+          "softmax_score": 0.15870679914951324,
+          "cpu_median_ms": 654.922
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Drink",
+          "onnx_label": "Drink",
+          "top1_agreement": true,
+          "max_abs_logit_error": 4.291534423828125e-06,
+          "max_abs_probability_error": 1.7881393432617188e-07,
+          "softmax_score": 0.9413469433784485,
+          "cpu_median_ms": 662.361
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "Drink",
+          "onnx_label": "Drink",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.3709068298339844e-06,
+          "max_abs_probability_error": 5.529727786779404e-10,
+          "softmax_score": 0.9943280816078186,
+          "cpu_median_ms": 664.163
+        },
+        {
+          "video": "kard-kick",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Side Kick",
+          "onnx_label": "Side Kick",
+          "top1_agreement": true,
+          "max_abs_logit_error": 3.4868717193603516e-06,
+          "max_abs_probability_error": 4.423782229423523e-09,
+          "softmax_score": 0.975314199924469,
+          "cpu_median_ms": 648.744
+        }
+      ]
+    },
+    "int8_runtime": {
+      "status": "PASS",
+      "provider": "CPUExecutionProvider",
+      "threads": 4,
+      "windows": 9,
+      "top1_agreement_count": 8,
+      "max_abs_logit_error": 0.43553200364112854,
+      "max_abs_probability_error": 0.08213990926742554,
+      "cpu_median_ms": 167.716,
+      "results": [
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.2892775535583496,
+          "max_abs_probability_error": 0.037628352642059326,
+          "softmax_score": 0.5053028464317322,
+          "cpu_median_ms": 172.661
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.21299396455287933,
+          "max_abs_probability_error": 0.02035580575466156,
+          "softmax_score": 0.6133685111999512,
+          "cpu_median_ms": 183.059
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.2585490345954895,
+          "max_abs_probability_error": 0.03651800751686096,
+          "softmax_score": 0.5299009680747986,
+          "cpu_median_ms": 184.684
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Walk",
+          "onnx_label": "Walk",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.3317534923553467,
+          "max_abs_probability_error": 0.08213990926742554,
+          "softmax_score": 0.2399580478668213,
+          "cpu_median_ms": 166.445
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "Drink",
+          "onnx_label": "Drink",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.16478708386421204,
+          "max_abs_probability_error": 0.014112591743469238,
+          "softmax_score": 0.33319735527038574,
+          "cpu_median_ms": 153.341
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "Stand up",
+          "onnx_label": "Walk",
+          "top1_agreement": false,
+          "max_abs_logit_error": 0.43553200364112854,
+          "max_abs_probability_error": 0.03193444013595581,
+          "softmax_score": 0.1395380049943924,
+          "cpu_median_ms": 156.376
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Drink",
+          "onnx_label": "Drink",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.3203638195991516,
+          "max_abs_probability_error": 0.010993778705596924,
+          "softmax_score": 0.9523409008979797,
+          "cpu_median_ms": 167.716
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "Drink",
+          "onnx_label": "Drink",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.33186623454093933,
+          "max_abs_probability_error": 0.0008223056793212891,
+          "softmax_score": 0.9951503872871399,
+          "cpu_median_ms": 158.639
+        },
+        {
+          "video": "kard-kick",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "Side Kick",
+          "onnx_label": "Side Kick",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.2541006803512573,
+          "max_abs_probability_error": 0.0009432435035705566,
+          "softmax_score": 0.9743709564208984,
+          "cpu_median_ms": 163.382
+        }
+      ]
+    }
+  }
+}

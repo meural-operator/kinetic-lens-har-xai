@@ -1,0 +1,124 @@
+{
+  "model_id": "hon4d",
+  "source_fp32": "<local-workspace>\\mindgraph_audit\\edge_exports\\hon4d\\hon4d-fp32.onnx",
+  "export_fp16": "<local-workspace>\\mindgraph_audit\\edge_exports\\hon4d\\hon4d-fp16.onnx",
+  "source_checkpoint_sha256": "9a6b0b6298c4129db00ec1bda3795f916b5cbd81727acdce67f09baaefb8776a",
+  "fp16_sha256": "e6f00528cf75070de228ade502a336c213faea416c1719bdc180241b1b4b7122",
+  "fp32_bytes": 355431373,
+  "fp16_bytes": 177833984,
+  "initializer_types": {
+    "FLOAT16": 213
+  },
+  "input_dtype": "float16",
+  "output_dtype": "float16",
+  "input_shape": [
+    1,
+    8,
+    3,
+    224,
+    224
+  ],
+  "labels": [
+    "lift box",
+    "pick up box",
+    "place box",
+    "pull chair",
+    "push chair",
+    "put down box",
+    "put off backpack",
+    "put on backpack",
+    "remove poster",
+    "stick poster",
+    "take off hat",
+    "wear hat"
+  ],
+  "preprocessing": {
+    "color": "RGB",
+    "resize": [
+      224,
+      224
+    ],
+    "range_before_normalize": [
+      0,
+      1
+    ],
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "sampling": {
+    "target_fps": 4,
+    "sequence_length": 8,
+    "note": "Sampled demonstration protocol; not the reported benchmark protocol."
+  },
+  "conversion": {
+    "tool": "onnxconverter_common.float16",
+    "keep_io_types": false,
+    "min_positive_val": 0.0,
+    "max_finite_val": 65504.0,
+    "cast_target_type_repairs": [
+      "/vit/encoder/layer.0/attention/attention/Cast",
+      "/vit/encoder/layer.0/attention/attention/Cast_1",
+      "/vit/encoder/layer.1/attention/attention/Cast",
+      "/vit/encoder/layer.1/attention/attention/Cast_1",
+      "/vit/encoder/layer.2/attention/attention/Cast",
+      "/vit/encoder/layer.2/attention/attention/Cast_1",
+      "/vit/encoder/layer.3/attention/attention/Cast",
+      "/vit/encoder/layer.3/attention/attention/Cast_1",
+      "/vit/encoder/layer.4/attention/attention/Cast",
+      "/vit/encoder/layer.4/attention/attention/Cast_1",
+      "/vit/encoder/layer.5/attention/attention/Cast",
+      "/vit/encoder/layer.5/attention/attention/Cast_1",
+      "/vit/encoder/layer.6/attention/attention/Cast",
+      "/vit/encoder/layer.6/attention/attention/Cast_1",
+      "/vit/encoder/layer.7/attention/attention/Cast",
+      "/vit/encoder/layer.7/attention/attention/Cast_1",
+      "/vit/encoder/layer.8/attention/attention/Cast",
+      "/vit/encoder/layer.8/attention/attention/Cast_1",
+      "/vit/encoder/layer.9/attention/attention/Cast",
+      "/vit/encoder/layer.9/attention/attention/Cast_1",
+      "/vit/encoder/layer.10/attention/attention/Cast",
+      "/vit/encoder/layer.10/attention/attention/Cast_1",
+      "/vit/encoder/layer.11/attention/attention/Cast",
+      "/vit/encoder/layer.11/attention/attention/Cast_1"
+    ],
+    "op_block_list": [
+      "ArrayFeatureExtractor",
+      "Binarizer",
+      "CastMap",
+      "CategoryMapper",
+      "DictVectorizer",
+      "FeatureVectorizer",
+      "Imputer",
+      "LabelEncoder",
+      "LinearClassifier",
+      "LinearRegressor",
+      "Normalizer",
+      "OneHotEncoder",
+      "RandomUniformLike",
+      "SVMClassifier",
+      "SVMRegressor",
+      "Scaler",
+      "TreeEnsembleClassifier",
+      "TreeEnsembleRegressor",
+      "ZipMap",
+      "NonMaxSuppression",
+      "TopK",
+      "RoiAlign",
+      "Resize",
+      "Range",
+      "CumSum",
+      "Min",
+      "Max",
+      "Upsample"
+    ]
+  },
+  "scope": "Inference logits only; no retraining, calibration or XAI export."
+}

@@ -21,3 +21,23 @@ The original selected SavedModel was exported to fixed 20-frame ONNX FP32 and FP
 The published `movinet-onnx` adapter retains the checked artifact hashes, CUDA provider options, and exact TensorFlow CPU pixel transforms. `scripts/verify_cuda_migration.py` checks its migration on the original 18 saved windows. The desktop runner reuses the original bounded camera/display loop and accepts framework configurations. The CUDA paths have no physical camera validation in this update, per user preference; browser CUDA/XAI performance is not claimed from the saved-video checks.
 
 Publication checks: 21 Python tests passed, including the actual ONNX/TorchScript fixture runtimes and two artifact-integrity checks. The JavaScript dashboard regression checks passed, and a wheel build succeeded. The packaged CUDA adapter preserved both original pixel tensors exactly and top-one predictions on all 18 migration windows. The packaged desktop runner completed 21 saved-video measurements with stable reset-state output and a verified bounded mailbox. [Publication record](benchmarks/cuda/publication_verification.json), [adapter migration](benchmarks/cuda/adapter_migration.json), and [desktop smoke check](benchmarks/cuda/desktop_publication_smoke.json) preserve the evidence. The first restricted-process API test stalled; rerunning under host access passed the full suite.
+
+## Research-evidence publication
+
+The later documentation publication adds sampling, data-efficiency, controlled
+architecture, projection-adapter and negative fine-tuning results. It does not
+retrain, replace the deployed weights, rerun camera capture or establish fresh
+hardware timings. [The study index](research/README.md) separates those model
+identities and protocols.
+
+`python experiments/report_results.py` verifies the imported publication-file
+hashes and all 21 selected experimental-head hashes, recomputes fold/seed
+aggregates from the per-run CSVs, and checks raw ViT timing means/SDs and model
+byte-to-MB conversion. [The generated summary](research/VERIFIED_SUMMARY.md)
+records those checks. This is evidence reconciliation, not independent
+reproduction of training or new scientific validation.
+
+[The reproduction guide](../experiments/README.md) explicitly separates
+self-contained report reproduction from historical training snapshots that
+need an external dataset and the original workspace artifacts. Original
+source hashes and normalized-publication hashes are recorded separately.

@@ -1,0 +1,3 @@
+model,train_clips,validation_clips,test_clips,train_accuracy_pct,validation_accuracy_pct,validation_macro_f1_pct,test_correct,test_accuracy_pct,test_macro_f1_pct
+Frozen head,324,108,108,100.0,88.88888888888889,88.76746347334581,94,87.03703703703704,86.80264180264182
+Epoch-0 fallback,324,108,108,100.0,88.88888888888889,88.76746347334581,94,87.03703703703704,86.80264180264182

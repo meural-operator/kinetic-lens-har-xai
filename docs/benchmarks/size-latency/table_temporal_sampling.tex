@@ -1,0 +1,20 @@
+% Requires \usepackage{booktabs}. Standalone include snippet.
+\begin{table*}[t]
+\centering
+\small
+\caption{Temporal sampling density versus recognition quality for frozen MoViNet-A0-Stream with a freshly trained KARD-18 affine head. Both policies retain a centered maximum ten-second context and $172\times172$ RGB inputs. Results are percentages: mean $\pm$ sample SD across five subject-fold means after averaging three training seeds within each fold.}
+\label{tab:kard-temporal-sampling}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}rrrrrrr@{}}
+\toprule
+FPS & Frame cap & Context (s) & Val.\ accuracy & Val.\ macro F1 & Test accuracy & Test macro F1 \\
+\midrule
+5 & 50 & $\leq10$ & $91.73 \pm 2.89$ & $91.56 \pm 2.67$ & $87.78 \pm 4.90$ & $87.02 \pm 5.35$ \\
+10 & 100 & $\leq10$ & $90.06 \pm 3.16$ & $89.73 \pm 3.22$ & $85.43 \pm 4.41$ & $85.03 \pm 4.39$ \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize
+Five researcher-defined subject-held-out folds; seeds 42, 123 and 2026; 324/108/108 train/validation/test clips per fold. Each fold/rate uses fresh training-only normalization and a fresh 8,658-parameter head. Epoch and regularization choices use validation only. Thirty selected heads and 90 candidate fits were completed, with all selections locked before new-fold test scoring. Frame counts are upper limits, not fixed lengths; shorter videos contribute fewer distinct real frames without repeated-frame padding. Higher fps changes sampling density and the physical temporal receptive field, not parameter count. No inference latency was measured in this sampling study. This exploratory evaluation followed earlier observed KARD results; folds have overlapping training sets. SD is descriptive, not a confidence interval.
+\end{minipage}
+\end{table*}

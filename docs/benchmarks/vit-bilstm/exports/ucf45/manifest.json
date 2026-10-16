@@ -1,0 +1,97 @@
+{
+  "model_id": "ucf45",
+  "dataset": "UCF45-DS",
+  "architecture": "ViT-B/16 + additive residual BiLSTM",
+  "labels": [
+    "ApplyEyeMakeup",
+    "ApplyLipstick",
+    "Archery",
+    "BabyCrawling",
+    "BalanceBeam",
+    "BandMarching",
+    "BaseballPitch",
+    "BasketballDunk",
+    "BasketballShooting",
+    "BenchPress",
+    "Biking",
+    "BilliardsShot",
+    "BlowDryHair",
+    "BlowingCandles",
+    "BodyWeightSquats",
+    "Bowling",
+    "BoxingPunchingBag",
+    "BoxingSpeedBag",
+    "Breaststroke",
+    "BrushingTeeth",
+    "CleanandJerk",
+    "CliffDiving",
+    "CricketBowling",
+    "CricketShot",
+    "CuttingInKitchen",
+    "Diving",
+    "Drumming",
+    "Fencing",
+    "FieldHockeyPenalty",
+    "FloorGymnastics",
+    "FrisbeeCatch",
+    "FrontCrawl",
+    "GolfSwing",
+    "HammerThrow",
+    "Hammering",
+    "HandstandPushups",
+    "HandstandWalking",
+    "HighJump",
+    "HorseRace",
+    "HorseRiding",
+    "HulaHoop",
+    "IceDancing",
+    "JavelinThrow",
+    "JumpRope",
+    "JumpingJack"
+  ],
+  "input_name": "frames",
+  "input_shape": [
+    1,
+    8,
+    3,
+    224,
+    224
+  ],
+  "input_dtype": "float32",
+  "input_layout": "BTCHW",
+  "output_name": "logits",
+  "preprocessing": {
+    "color": "RGB",
+    "resize": [
+      224,
+      224
+    ],
+    "range_before_normalize": [
+      0,
+      1
+    ],
+    "mean": [
+      0.5,
+      0.5,
+      0.5
+    ],
+    "std": [
+      0.5,
+      0.5,
+      0.5
+    ]
+  },
+  "sampling": {
+    "target_fps": 4,
+    "sequence_length": 8,
+    "note": "Sampled demonstration protocol; not the reported benchmark protocol."
+  },
+  "onnx_files": {
+    "fp32": "ucf45-fp32.onnx",
+    "int8": "ucf45-int8.onnx"
+  },
+  "quantization": "Mixed precision: dynamic INT8 constant MatMul and LSTM weights; other operations remain float.",
+  "runtime": "ONNX Runtime CPU; INT8 LSTM uses com.microsoft.DynamicQuantizeLSTM.",
+  "validation_scope": "Numerical and prediction agreement on supplied demonstrations; not held-out accuracy.",
+  "checkpoint_sha256": "8b7ae23028e8f6b8c92631580cbfafff9a074e49d8755d5eba8360b25978f2d7"
+}

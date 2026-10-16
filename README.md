@@ -94,7 +94,58 @@ The dashboard depends on the model contract, not MoViNet internals. Add a model 
 
 ## Evidence and limits
 
-The selected head was trained on **324 KARD clips**, with subject-disjoint validation/test partitions of 108 clips each. Saved results are **96/108 validation** and **94/108 test**. This is a researcher-defined split with two subjects per held-out partition, not an official benchmark or a new blind evaluation. The [XAI interpretations](docs/research/INTERPRETATION.md) distinguish executed effects from semantic and circuit claims.
+The deployed head was trained on **324 KARD clips**, with subject-disjoint validation/test partitions of 108 clips each. Saved results are **96/108 validation (88.89%)** and **94/108 test (87.04%)**. The [model card](models/kard/MODEL_CARD.md) and [provenance](models/kard/provenance.json) identify that checkpoint. This is a researcher-defined split with two subjects per held-out partition, not an official benchmark or a new blind evaluation. The [XAI interpretations](docs/research/INTERPRETATION.md) distinguish executed effects from semantic and circuit claims.
+
+### Recorded deployment measurements
+
+The same historical KARD checkpoint has the following warm model-invocation
+results on a Xeon w7-2595X / RTX 4000 Ada workstation:
+
+| Runtime | Serialized size (MB) | Mean inference (ms) |
+|---|---:|---:|
+| TensorFlow CPU FP32 | 26.363 | 121.30 |
+| ONNX CUDA FP32 | 8.430 | 34.61 |
+| ONNX CUDA FP16 | 4.997 | 28.73 |
+
+Batch 1, 20 RGB samples at 172², fresh states, 90 timed calls per backend.
+ONNX timing includes transfers and synchronous CPU output; decoding,
+preprocessing, camera/display and XAI are excluded. TensorFlow size is the full
+SavedModel package, while ONNX size is a graph file; MB means 1,000,000 bytes,
+not runtime memory. The [benchmark index](docs/benchmarks/README.md) separates
+model invocation from the slower full app-processing workload and provides the
+[complete size/precision tables](docs/benchmarks/size-latency/README.md), including
+the five ViT–BiLSTM checkpoints and three official MoViNet scales.
+
+### Completed research comparisons
+
+- **Sampling density:** five subject folds and three seeds per fold gave
+  87.78 ± 4.90% test accuracy at 5 fps, versus 85.43 ± 4.41% at 10 fps.
+  SD is across fold means after averaging seeds. Frame caps are 50/100 over
+  at most ten seconds; this study did not benchmark latency.
+- **Architecture ablations:** the fresh three-seed affine control achieved
+  91.93 ± 2.03% test macro F1; the compact temporal variant achieved
+  86.17 ± 4.35%. The initial promising single-seed pilot is retained alongside
+  the subsequent controlled negative result.
+- **Projection adapters:** ordinary LoRA, classifier-guided and random-subspace
+  adapters achieved mean test macro F1 of 92.52%, 92.19% and 92.46% respectively,
+  versus 91.93% for their matched control. Gains were concentrated in one seed;
+  classifier guidance did not beat the equal-budget random-subspace control.
+- **Data efficiency and fine-tuning:** nested 81/162/324-clip training subsets
+  and the unsuccessful upper-backbone fine-tuning run are also reported.
+  The latter selected its unchanged epoch-zero fallback.
+
+These later controls/adapters are **different experimental heads, not the
+deployed dashboard/XAI checkpoint**. Their seed-averaged scores must not be
+paired with the deployed model's latency as one model result. See the
+[study index](docs/research/README.md), [article-ready tables](docs/benchmarks/size-latency/article_tables.tex)
+and [reproduction guide](experiments/README.md). Protocols, per-run CSVs,
+selection records, selected compact experimental heads, negative results and
+PDF/SVG/PNG figures are included. Recompute the bundled aggregate tables and
+verify artifact hashes without videos or a GPU:
+
+```sh
+python experiments/report_results.py
+```
 
 The KARD model has **no trained idle/unknown class**, and displayed softmax scores are uncalibrated. Clip-level KARD accuracy does not establish accuracy on continuous webcam actions. The live window is four seconds by default, while offline inference can use up to ten seconds. This repository provides HAR/XAI tooling; it does not claim differential privacy, encrypted inference, federated training or certified privacy protection.
 

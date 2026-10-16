@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Model scale and CPU latency for the three downloaded official Kinetics-600 MoViNet variants, using TensorFlow FP32. This is a separate fixed-input experiment.}
+\label{tab:har-size-latency-stock}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}llrrrr@{}}
+\toprule
+Variant & Resolution & Package (MB) & Weights (MB) & 8-frame clip (ms) & Stream step (ms) \\
+\midrule
+A0-Stream & $172\times172$ & 44.17 & 15.32 & $75.85 \pm 8.51$ & $31.69 \pm 6.21$ \\
+A2-Stream & $224\times224$ & 80.90 & 29.90 & $247.51 \pm 21.67$ & $100.63 \pm 22.89$ \\
+A2-Base & $224\times224$ & 35.36 & 21.46 & $7021.61 \pm 1456.17$ & \textemdash \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize
+Mean $\pm$ sample SD, 30 timed calls after five warm-ups. Eight-frame clips start from fresh states; stream-step timings retain states and process one frame. The latter cycle the 13 reference frames and are not latency per independent action decision. A2-Base has no retained-state benchmark. Package size includes graph metadata; weights means checkpoint data shards, excluding their index, including auxiliary stored tensors, and is not a parameter count. Models use 600-class pretrained heads, unlike the KARD-18 head. Loading, state initialization/reset, decoding, preprocessing and top-five formatting are excluded. These native TensorFlow CPU results do not establish mini-PC or GPU performance.
+\end{minipage}
+\end{table*}

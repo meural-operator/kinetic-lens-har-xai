@@ -1,0 +1,17 @@
+% Requires booktabs. Use table (not table*) in a single-column ICLR template.
+\begin{table*}[t]
+\centering
+\caption{Frozen-backbone adaptation on KARD. Fractions refer to the 324-clip training pool. Validation and test each contain 108 clips from two disjoint subjects. Each row is one seed on one fixed split; earlier test results were already observed. All values except counts are percentages; mF1 denotes macro-averaged F1.}
+\label{tab:kard-frozen-head}
+\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{crrrrrr}
+\toprule
+Pool used & Train clips & Train acc. & Val. acc. & Val. mF1 & Test acc. & Test mF1 \\
+\midrule
+25\% & 81 & 100.00 & 85.19 & 85.14 & 75.00 & 74.04 \\
+50\% & 162 & 100.00 & 89.81 & 89.56 & 81.48 & 81.83 \\
+100\% & 324 & 100.00 & 88.89 & 88.77 & 87.04 & 86.80 \\
+\bottomrule
+\end{tabular}
+\end{table*}

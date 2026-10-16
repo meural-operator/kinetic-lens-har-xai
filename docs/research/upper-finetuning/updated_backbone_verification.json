@@ -1,0 +1,15 @@
+{
+  "video": "Bend\\a12_s01_e01.mp4",
+  "split": "train",
+  "checkpoint": "last_weights.npz",
+  "actual_trained_upper_vs_full_max_logit_error": 0.0,
+  "changed_full_model_logits_vs_initial_max_difference": 2.407768487930298,
+  "actual_trained_weight_changes_by_group": {
+    "b4/l2/": 0.0015434511005878448,
+    "b4/l3/": 0.0018275883048772812,
+    "head/": 0.0015093609690666199
+  },
+  "frozen_lower_and_bn_unchanged": true,
+  "test_used": false,
+  "purpose": "Verify that training changes the complete backbone inference, even when validation rejects that checkpoint."
+}

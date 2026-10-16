@@ -1,0 +1,471 @@
+{
+  "model_id": "uav",
+  "checkpoint": "<original-showcase>\\weights\\UAV_actionsvit_gru_model.pth",
+  "checkpoint_bytes": 357740046,
+  "input_shape": [
+    1,
+    8,
+    3,
+    224,
+    224
+  ],
+  "stages": {
+    "pytorch_reference": {
+      "status": "PASS",
+      "windows": 9,
+      "parameter_count": 89413133
+    },
+    "fp32_export": {
+      "status": "PASS",
+      "seconds": 4.048
+    },
+    "fp32_graph": {
+      "status": "PASS",
+      "bytes": 355431889,
+      "operators": {
+        "Constant": 137,
+        "Reshape": 54,
+        "Conv": 1,
+        "Shape": 7,
+        "Slice": 1,
+        "Concat": 8,
+        "Transpose": 54,
+        "ConstantOfShape": 1,
+        "Mul": 37,
+        "Equal": 1,
+        "Where": 1,
+        "Expand": 7,
+        "Add": 111,
+        "LayerNormalization": 26,
+        "MatMul": 97,
+        "Softmax": 12,
+        "Cast": 24,
+        "Div": 12,
+        "Erf": 12,
+        "Gather": 8,
+        "Unsqueeze": 6,
+        "LSTM": 3,
+        "Gemm": 1
+      }
+    },
+    "int8_quantization": {
+      "status": "PASS",
+      "seconds": 7.977
+    },
+    "int8_graph": {
+      "status": "PASS",
+      "bytes": 92178043,
+      "operators": {
+        "Constant": 137,
+        "Reshape": 54,
+        "ConstantOfShape": 1,
+        "Conv": 1,
+        "Mul": 185,
+        "Shape": 7,
+        "Equal": 1,
+        "Slice": 1,
+        "Where": 1,
+        "Concat": 8,
+        "Expand": 7,
+        "Transpose": 54,
+        "Add": 112,
+        "LayerNormalization": 26,
+        "DynamicQuantizeLinear": 50,
+        "MatMulInteger": 74,
+        "Cast": 98,
+        "MatMul": 24,
+        "Softmax": 12,
+        "Div": 12,
+        "Erf": 12,
+        "Gather": 8,
+        "Unsqueeze": 6,
+        "DynamicQuantizeLSTM": 3
+      },
+      "reduction_vs_checkpoint_percent": 74.233
+    },
+    "fp32_runtime": {
+      "status": "PASS",
+      "provider": "CPUExecutionProvider",
+      "threads": 4,
+      "windows": 9,
+      "top1_agreement_count": 9,
+      "max_abs_logit_error": 2.7418136596679688e-06,
+      "max_abs_probability_error": 4.6193599700927734e-07,
+      "cpu_median_ms": 645.406,
+      "results": [
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "hitting_bottle",
+          "onnx_label": "hitting_bottle",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.428889274597168e-06,
+          "max_abs_probability_error": 2.8312206268310547e-07,
+          "softmax_score": 0.2106577306985855,
+          "cpu_median_ms": 681.963
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "clapping",
+          "onnx_label": "clapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.562999725341797e-06,
+          "max_abs_probability_error": 4.6193599700927734e-07,
+          "softmax_score": 0.24495255947113037,
+          "cpu_median_ms": 687.991
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "hitting_bottle",
+          "onnx_label": "hitting_bottle",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.3245811462402344e-06,
+          "max_abs_probability_error": 8.940696716308594e-08,
+          "softmax_score": 0.18322455883026123,
+          "cpu_median_ms": 661.464
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "kicking",
+          "onnx_label": "kicking",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.7418136596679688e-06,
+          "max_abs_probability_error": 3.5762786865234375e-07,
+          "softmax_score": 0.6271336674690247,
+          "cpu_median_ms": 665.914
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "kicking",
+          "onnx_label": "kicking",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.3113021850585938e-06,
+          "max_abs_probability_error": 6.332993507385254e-08,
+          "softmax_score": 0.21568357944488525,
+          "cpu_median_ms": 645.406
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "running_side",
+          "onnx_label": "running_side",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.6226043701171875e-06,
+          "max_abs_probability_error": 2.086162567138672e-07,
+          "softmax_score": 0.33385831117630005,
+          "cpu_median_ms": 625.712
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "clapping",
+          "onnx_label": "clapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.7881393432617188e-06,
+          "max_abs_probability_error": 7.450580596923828e-08,
+          "softmax_score": 0.2217121124267578,
+          "cpu_median_ms": 614.111
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 2.384185791015625e-06,
+          "max_abs_probability_error": 4.470348358154297e-07,
+          "softmax_score": 0.19763009250164032,
+          "cpu_median_ms": 574.569
+        },
+        {
+          "video": "kard-kick",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "walking_side",
+          "onnx_label": "walking_side",
+          "top1_agreement": true,
+          "max_abs_logit_error": 1.4603137969970703e-06,
+          "max_abs_probability_error": 2.682209014892578e-07,
+          "softmax_score": 0.22076766192913055,
+          "cpu_median_ms": 587.145
+        }
+      ]
+    },
+    "int8_runtime": {
+      "status": "PASS",
+      "provider": "CPUExecutionProvider",
+      "threads": 4,
+      "windows": 9,
+      "top1_agreement_count": 8,
+      "max_abs_logit_error": 0.24072374403476715,
+      "max_abs_probability_error": 0.026587173342704773,
+      "cpu_median_ms": 159.441,
+      "results": [
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "hitting_bottle",
+          "onnx_label": "kicking",
+          "top1_agreement": false,
+          "max_abs_logit_error": 0.12665331363677979,
+          "max_abs_probability_error": 0.026587173342704773,
+          "softmax_score": 0.2306714653968811,
+          "cpu_median_ms": 159.262
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "clapping",
+          "onnx_label": "clapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.16862642765045166,
+          "max_abs_probability_error": 0.011747926473617554,
+          "softmax_score": 0.23679564893245697,
+          "cpu_median_ms": 181.732
+        },
+        {
+          "video": "kth-boxing",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "hitting_bottle",
+          "onnx_label": "hitting_bottle",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.19288033246994019,
+          "max_abs_probability_error": 0.01897341012954712,
+          "softmax_score": 0.19149938225746155,
+          "cpu_median_ms": 158.881
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "kicking",
+          "onnx_label": "kicking",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.09397256374359131,
+          "max_abs_probability_error": 0.011770904064178467,
+          "softmax_score": 0.6389042139053345,
+          "cpu_median_ms": 158.271
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "kicking",
+          "onnx_label": "kicking",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.2251303493976593,
+          "max_abs_probability_error": 0.009096518158912659,
+          "softmax_score": 0.2065870314836502,
+          "cpu_median_ms": 158.448
+        },
+        {
+          "video": "kth-running",
+          "frame_indices": [
+            96,
+            102,
+            108,
+            114,
+            120,
+            126,
+            132,
+            138
+          ],
+          "pytorch_label": "running_side",
+          "onnx_label": "running_side",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.13625425100326538,
+          "max_abs_probability_error": 0.026396185159683228,
+          "softmax_score": 0.36025470495224,
+          "cpu_median_ms": 165.514
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "clapping",
+          "onnx_label": "clapping",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.14315173029899597,
+          "max_abs_probability_error": 0.013654842972755432,
+          "softmax_score": 0.23536700010299683,
+          "cpu_median_ms": 178.125
+        },
+        {
+          "video": "kard-drink",
+          "frame_indices": [
+            48,
+            54,
+            60,
+            66,
+            72,
+            78,
+            84,
+            90
+          ],
+          "pytorch_label": "boxing",
+          "onnx_label": "boxing",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.24072374403476715,
+          "max_abs_probability_error": 0.02613791823387146,
+          "softmax_score": 0.2237684577703476,
+          "cpu_median_ms": 164.257
+        },
+        {
+          "video": "kard-kick",
+          "frame_indices": [
+            0,
+            6,
+            12,
+            18,
+            24,
+            30,
+            36,
+            42
+          ],
+          "pytorch_label": "walking_side",
+          "onnx_label": "walking_side",
+          "top1_agreement": true,
+          "max_abs_logit_error": 0.14360201358795166,
+          "max_abs_probability_error": 0.02407802641391754,
+          "softmax_score": 0.1966899037361145,
+          "cpu_median_ms": 147.984
+        }
+      ]
+    }
+  }
+}

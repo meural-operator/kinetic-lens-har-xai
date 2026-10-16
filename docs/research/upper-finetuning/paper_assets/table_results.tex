@@ -1,0 +1,14 @@
+\begin{table*}[t]
+\centering
+\caption{KARD frozen-head versus partial-backbone fine-tuning. Both use 324 training clips and the same validation/test split (108 clips each). Values are percentages; mF1 denotes macro F1. One seed and one previously evaluated split.}
+\label{tab:kard-upper-finetune}
+\small
+\begin{tabular}{lrrrrr}
+\toprule
+Model & Train acc. & Val. acc. & Val. mF1 & Test acc. & Test mF1 \\
+\midrule
+Frozen head & 100.00 & 88.89 & 88.77 & 87.04 & 86.80 \\
+Epoch-0 fallback & 100.00 & 88.89 & 88.77 & 87.04 & 86.80 \\
+\bottomrule
+\end{tabular}
+\end{table*}

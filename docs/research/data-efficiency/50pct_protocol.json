@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "seed": 42,
+  "model": "a0_stream",
+  "resolution": 172,
+  "target_fps": 5.0,
+  "max_frames": 50,
+  "stream_chunk_frames": 8,
+  "preprocessing": "RGB float32 [0,1]; bilinear resize with padding to 172x172; entire clip at 5 fps if <=10 sec, centered contiguous 10-second window otherwise.",
+  "train_fraction_of_training_pool": 0.5,
+  "subject_counts": {
+    "train": 6,
+    "validation": 2,
+    "test": 2
+  },
+  "selection": "Nested extension of the original 81 training clips to 162/324. Integer min-cost flow balances exactly 9 per class, 27 per training subject, 54 per repetition, and 1 or 2 clips per class/subject pair. Seeded costs; no prediction-based selection.",
+  "head": "Frozen official 480-dimensional pooled A0 backbone endpoint; train-only feature standardization; dropout(0.25); Dense(18) logits with L2 regularization. No training of backbone or original Kinetics classifier.",
+  "training": "Adam(learning_rate=0.001), batch size 16, maximum 200 epochs, patience 25; three prespecified L2 strengths [0.0001,0.001,0.01]; checkpoint and candidate selection by validation macro F1, then validation cross entropy. Test evaluated once for selected candidate.",
+  "augmentation": "No video augmentation in this first frozen-feature baseline. Head dropout during training only.",
+  "limitations": "One fixed researcher-defined subject split; test results from the 25% baseline were already observed. This is a planned comparison on the same test set, not a newly blind test. No backbone fine-tuning or cross-validation.",
+  "previous_test_results_already_observed": true,
+  "comparison": "Prespecified next experiment increases training fraction only. Same split, input policy, head, seed, optimizer and validation-only model-selection rule. Retrain head from initialization; recompute normalization on the larger training subset."
+}

@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "architecture": "compact_temporal_v1",
+  "seed": 42,
+  "dataset": "KARD",
+  "parent_manifest_sha256": "bccbac8c3487df4fec89b5a9bf274d21c21d20fbcfb96f051d3c54ec24a22d01",
+  "original_backbone_sha256": "f35edf9b7b747b7fd5b65f127a34c988bec7c6602b1618af123b970d5847d6d2",
+  "labels": [
+    "Horizontal arm wave",
+    "High arm wave",
+    "Two hand wave",
+    "Catch Cap",
+    "High throw",
+    "Draw X",
+    "Draw Tick",
+    "Toss Paper",
+    "Forward Kick",
+    "Side Kick",
+    "Take Umbrella",
+    "Bend",
+    "Hand Clap",
+    "Walk",
+    "Phone Call",
+    "Drink",
+    "Sit down",
+    "Stand up"
+  ],
+  "subject_split": {
+    "train": [
+      1,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    "validation": [
+      5,
+      10
+    ],
+    "test": [
+      2,
+      9
+    ]
+  },
+  "train_clips": 324,
+  "validation_clips": 108,
+  "test_clips": 108,
+  "input": "RGB float32 [0,1]; bilinear resize with padding to 172x172; entire clip at 5 fps if <=10 sec, centered contiguous 10-second window otherwise.",
+  "feature_endpoint": "b4/l3 spatial mean, [T,104]",
+  "frozen": "Original official stem and blocks b0-b4, including BN; no original projection/classifier is trained.",
+  "new_module": "Causal depthwise Conv1d(104,104,kernel=3), hard-swish residual; masked time mean; Linear(104,128), LayerNorm, hard-swish, dropout(.25), Linear(128,18).",
+  "normalization": "Training clips only, equal clip weights for per-frame channel mean and variance.",
+  "optimizer": "Adam lr=.001, explicit kernel L2 candidates [.0001,.001,.01], global gradient norm clip 1.",
+  "batching": "16 clips nominal, causal computation and masked pooling exclude right padding; no duplicated frames.",
+  "max_epochs": 200,
+  "patience": 25,
+  "selection": "Validation macro F1, then validation cross entropy.",
+  "augmentation": "No video augmentation; dropout during training only.",
+  "test_policy": "Access test sequence caches only after selection.json. Evaluate selected checkpoint only; no post-test tuning.",
+  "previous_test_results_already_observed": true,
+  "training_device": "NVIDIA RTX 4000 Ada Generation",
+  "feature_extraction_device": "TensorFlow CPU; replay verified immutable existing b4/l1 activations.",
+  "limitations": "One seed, previously observed subject split, two subjects per held-out partition; no novelty/speed claim."
+}

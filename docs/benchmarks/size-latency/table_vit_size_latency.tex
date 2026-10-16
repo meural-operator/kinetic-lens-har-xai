@@ -1,0 +1,46 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Serialized model size and warm inference latency for five dataset-specific ViT-B/16 plus residual BiLSTM checkpoints. All inputs contain eight RGB frames at $224\times224$, batch size~1. CPU and GPU results use separate measurement sessions.}
+\label{tab:har-size-latency-vit}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllrrr@{}}
+\toprule
+Checkpoint & Runtime & Precision & Size (MB) & CPU (ms) & GPU (ms) \\
+\midrule
+KTH & PyTorch & FP32 & 357.74 & $876.17 \pm 41.08$ & $33.10 \pm 2.52$ \\
+ & ONNX & FP32 & 355.43 & $699.14 \pm 35.23$ & $32.23 \pm 1.76$ \\
+ & PyTorch & FP16 & \textemdash & \textemdash & $23.89 \pm 10.91$ \\
+ & ONNX & FP16 & 177.83 & \textemdash & $14.08 \pm 2.63$ \\
+ & ONNX & Mixed INT8 & 92.18 & $216.66 \pm 14.85$ & \textemdash \\
+\addlinespace[3pt]
+UAV-Actions & PyTorch & FP32 & 357.74 & $892.58 \pm 41.09$ & $32.93 \pm 1.41$ \\
+ & ONNX & FP32 & 355.43 & $687.27 \pm 37.06$ & $33.36 \pm 1.73$ \\
+ & PyTorch & FP16 & \textemdash & \textemdash & $19.08 \pm 8.80$ \\
+ & ONNX & FP16 & 177.83 & \textemdash & $13.98 \pm 3.56$ \\
+ & ONNX & Mixed INT8 & 92.18 & $205.86 \pm 12.70$ & \textemdash \\
+\addlinespace[3pt]
+KARD & PyTorch & FP32 & 357.74 & $858.29 \pm 39.39$ & $33.50 \pm 1.48$ \\
+ & ONNX & FP32 & 355.43 & $669.12 \pm 26.14$ & $32.61 \pm 1.43$ \\
+ & PyTorch & FP16 & \textemdash & \textemdash & $18.18 \pm 7.68$ \\
+ & ONNX & FP16 & 177.84 & \textemdash & $13.68 \pm 3.12$ \\
+ & ONNX & Mixed INT8 & 92.18 & $206.48 \pm 11.31$ & \textemdash \\
+\addlinespace[3pt]
+HON4D & PyTorch & FP32 & 357.74 & $907.31 \pm 34.83$ & $33.73 \pm 1.62$ \\
+ & ONNX & FP32 & 355.43 & $711.69 \pm 28.76$ & $32.81 \pm 1.38$ \\
+ & PyTorch & FP16 & \textemdash & \textemdash & $18.82 \pm 7.72$ \\
+ & ONNX & FP16 & 177.83 & \textemdash & $13.78 \pm 2.67$ \\
+ & ONNX & Mixed INT8 & 92.18 & $197.18 \pm 10.16$ & \textemdash \\
+\addlinespace[3pt]
+UCF45-DS & PyTorch & FP32 & 357.76 & $895.78 \pm 30.68$ & $33.44 \pm 0.89$ \\
+ & ONNX & FP32 & 355.45 & $707.81 \pm 20.49$ & $33.74 \pm 1.42$ \\
+ & PyTorch & FP16 & \textemdash & \textemdash & $12.77 \pm 2.41$ \\
+ & ONNX & FP16 & 177.84 & \textemdash & $12.47 \pm 0.79$ \\
+ & ONNX & Mixed INT8 & 92.18 & $201.60 \pm 16.42$ & \textemdash \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize
+Values are mean $\pm$ sample SD over 45 calls (nine fixed windows, five repeats). Size uses decimal MB. A dash means unmeasured or, for PyTorch FP16 size, not serialized: that model was converted in memory. Mixed INT8 dynamically quantizes constant MatMul/LSTM weights; other operators remain floating point. No GPU INT8 result is available. FP16 is reduced floating-point precision, not integer quantization. CPU/GPU timing excludes loading, decoding, preprocessing, XAI and host--device transfers; GPU tensors were resident through I/O binding. Precision conversion agreement is not held-out recognition accuracy.
+\end{minipage}
+\end{table*}

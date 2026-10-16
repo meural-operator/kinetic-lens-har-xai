@@ -1,0 +1,22 @@
+% Requires graphicx. Copy PDFs into figures/kard_finetune/.
+% Use figure rather than figure* for wide assets in ICLR; width=3.25in for the small asset.
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/kard_finetune/finetune01_comparison.pdf}
+\caption{Frozen-head model versus the checkpoint retained after the partial-fine-tuning experiment, both using 324 training clips and the same 108 validation and 108 test clips. The final two residual layers and projection were optimized at 1e-5 with the initialized head. All normalization and lower layers stayed fixed. One seed and one previously evaluated split; no uncertainty intervals or significance claim. Validation selected the epoch-zero fallback, so the second set of scores repeats the starting model; these are not test scores of a fine-tuned checkpoint.}
+\label{fig:kard-finetune-1}
+\end{figure}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/kard_finetune/finetune02_training.pdf}
+\caption{Unsmoothed partial-fine-tuning trajectories, including the initialized frozen-head model at epoch zero. The macro F1 axis starts at 80\% to show the small validation changes. The dotted line marks the checkpoint selected by validation macro F1, with lower validation cross entropy as the tie breaker. Test scores are not used for stopping or checkpoint selection. The starting model remains an eligible fallback.}
+\label{fig:kard-finetune-2}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figures/kard_finetune/finetune03_validation_action_f1.pdf}
+\caption{Per-action validation F1 for the initialized model and the best actually trained epoch, chosen among epochs one onward by validation macro F1 and cross entropy. The overall selection also permits epoch zero, which may outperform this best trained epoch. Each action has six validation clips from two subjects; the comparison is descriptive and does not establish statistical significance. This figure uses validation results only.}
+\label{fig:kard-finetune-3}
+\end{figure*}

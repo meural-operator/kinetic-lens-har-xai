@@ -1,0 +1,53 @@
+[
+  {
+    "name": "a0_stream",
+    "provider": "Google/TensorFlow Model Garden",
+    "requested_handle": "https://tfhub.dev/tensorflow/movinet/a0/stream/kinetics-600/classification/3",
+    "resolved_archive": "https://storage.googleapis.com/kaggle-models-data/320/442/bundle/archive.tar.gz",
+    "archive_path": "<local-workspace>\\movinet_evaluation\\a0_stream.tar.gz",
+    "archive_bytes": 16316864,
+    "archive_sha256": "2453a3d224b8afb6503d845a4220373f7972575e23c9681aaded28b5a12f611f",
+    "saved_model_directory": "<local-workspace>\\movinet_evaluation\\models\\a0_stream",
+    "unpacked_bytes": 44168390,
+    "variable_bytes": 15324223,
+    "variables_sha256": {
+      "variables.data-00000-of-00001": "f35edf9b7b747b7fd5b65f127a34c988bec7c6602b1618af123b970d5847d6d2"
+    },
+    "pretraining_dataset": "Kinetics-600",
+    "license_reference": "https://github.com/tensorflow/models/blob/master/official/projects/movinet/README.md#license"
+  },
+  {
+    "name": "a2_stream",
+    "provider": "Google/TensorFlow Model Garden",
+    "requested_handle": "https://tfhub.dev/tensorflow/movinet/a2/stream/kinetics-600/classification/3",
+    "resolved_archive": "https://storage.googleapis.com/kaggle-models-data/311/426/bundle/archive.tar.gz",
+    "archive_path": "<local-workspace>\\movinet_evaluation\\a2_stream.tar.gz",
+    "archive_bytes": 31520641,
+    "archive_sha256": "d1d4c21a4a2c36ce534e1add11413cfb3d313e28566ac2f68de39f4886287974",
+    "saved_model_directory": "<local-workspace>\\movinet_evaluation\\models\\a2_stream",
+    "unpacked_bytes": 80897616,
+    "variable_bytes": 29902949,
+    "variables_sha256": {
+      "variables.data-00000-of-00001": "9afa9125f1aace684a39ed92f23aa22efe72acc4183a1859f660f927d0bc17a1"
+    },
+    "pretraining_dataset": "Kinetics-600",
+    "license_reference": "https://github.com/tensorflow/models/blob/master/official/projects/movinet/README.md#license"
+  },
+  {
+    "name": "a2_base",
+    "provider": "Google/TensorFlow Model Garden",
+    "requested_handle": "https://tfhub.dev/tensorflow/movinet/a2/base/kinetics-600/classification/3",
+    "resolved_archive": "https://storage.googleapis.com/kaggle-models-data/308/418/bundle/archive.tar.gz",
+    "archive_path": "<local-workspace>\\movinet_evaluation\\a2_base.tar.gz",
+    "archive_bytes": 20860255,
+    "archive_sha256": "37e6d3ce1c589f4ff3aabbbc2f85118891d27a1c9a1954360b8be77e8c5da083",
+    "saved_model_directory": "<local-workspace>\\movinet_evaluation\\models\\a2_base",
+    "unpacked_bytes": 35360870,
+    "variable_bytes": 21455177,
+    "variables_sha256": {
+      "variables.data-00000-of-00001": "e8020cc04aa93bd70be7bfdc762fecda0ce70beaa05e2bbe1de974d8533ea52f"
+    },
+    "pretraining_dataset": "Kinetics-600",
+    "license_reference": "https://github.com/tensorflow/models/blob/master/official/projects/movinet/README.md#license"
+  }
+]

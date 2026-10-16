@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Serialized size and warm model-invocation latency for MoViNet-A0-Stream with the historical trained KARD-18 affine head. Each invocation uses 20 RGB samples at $172\times172$, batch size~1, sampled at 5~fps, with fresh states.}
+\label{tab:har-size-latency-kard}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lllrrrr@{}}
+\toprule
+Runtime & Precision & Device & Size (MB) & Mean (ms) & Median (ms) & P95 (ms) \\
+\midrule
+TensorFlow & FP32 & CPU & 26.363 & 121.30 & 119.61 & 139.36 \\
+ONNX & FP32 & GPU & 8.430 & 34.61 & 31.74 & 67.58 \\
+ONNX & FP16 & GPU & 4.997 & 28.73 & 26.69 & 41.71 \\
+\bottomrule
+\end{tabular*}
+\par\smallskip
+\begin{minipage}{\textwidth}\footnotesize
+Ninety calls per backend: 18 validation windows, five repeats, three warm-up calls; randomized sample/backend order. Timing includes host--device transfer and synchronous CPU output for ONNX. It excludes decoding, resize, preprocessing, capture/display and XAI. Only aggregate timing statistics were retained, so SD is not reconstructed. TensorFlow size is the complete SavedModel directory (graph plus variables); ONNX size is one graph file. Differences across formats include graph serialization/optimization. FP16 ONNX retains FP32 input/output and eligible mixed internal precision. The matched ONNX FP16 export is 40.73\% smaller and 1.20$\times$ faster than ONNX FP32 by mean latency in this session. Neither this table nor Table~\ref{tab:har-size-latency-vit} is an end-to-end camera benchmark. Their different window lengths and transfer policies preclude a controlled cross-family speedup.
+\end{minipage}
+\end{table*}

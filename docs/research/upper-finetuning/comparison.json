@@ -1,0 +1,13 @@
+{
+  "baseline_test_accuracy": 0.8703703703703703,
+  "finetune_test_accuracy": 0.8703703703703703,
+  "baseline_test_macro_f1": 0.8680264180264181,
+  "finetune_test_macro_f1": 0.8680264180264181,
+  "test_accuracy_change_percentage_points": 0.0,
+  "selected_epoch": 0,
+  "corrected_baseline_errors": [],
+  "introduced_errors": [],
+  "selected_by_validation_only": true,
+  "test_previously_observed": true,
+  "post_test_tuning": false
+}

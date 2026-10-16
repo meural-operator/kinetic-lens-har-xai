@@ -1,0 +1,16 @@
+comparison,seed,test_macro_f1_difference_pp
+lora_minus_baseline,42,0.0
+lora_minus_baseline,123,1.759475092808438
+lora_minus_baseline,2026,0.0
+guided_minus_baseline,42,0.0
+guided_minus_baseline,123,0.7838185779362461
+guided_minus_baseline,2026,0.0
+random_minus_baseline,42,0.0
+random_minus_baseline,123,1.6005327279837278
+random_minus_baseline,2026,0.0
+guided_minus_random,42,0.0
+guided_minus_random,123,-0.8167141500474817
+guided_minus_random,2026,0.0
+guided_minus_lora,42,0.0
+guided_minus_lora,123,-0.9756565148721918
+guided_minus_lora,2026,0.0

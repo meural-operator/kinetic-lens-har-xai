@@ -1,0 +1,60 @@
+{
+  "sources": {
+    "movinet_evaluation\\kard_sampling_cv\\summary.json": "ee1c79ed68935c4b07dda4f1f1aafb8caba6cca5b9c4d909e2d03d28e9b2940c",
+    "movinet_evaluation\\kard_sampling_cv\\run_results.csv": "df81338af36af4f4194ce767d1a785d2b7d42ba02b89fee2e791168c2360c5aa",
+    "movinet_evaluation\\kard_a0_head_100pct_10fps\\sampling_reader_verification.json": "243dd6e0c1bb90c59311f09a23a47ff858f653a933c2496b4db4f980d30f8dd9"
+  },
+  "fold_statistics_independently_recomputed_from_30_run_rows": true,
+  "new_training_or_inference_benchmark_performed": false,
+  "latency_for_5_vs_10fps": "Not measured",
+  "no_same_model_precision_checkpoint_fixed_length_latency_sweep_available": true,
+  "actual_frame_statistics_scope": "All 540 clips; same raw-feature inputs reused by the fold study.",
+  "rows": [
+    {
+      "fps": 5,
+      "maximum_frames": 50,
+      "maximum_context_seconds": 10,
+      "backbone": "Frozen official MoViNet A0-Stream",
+      "resolution": 172,
+      "head_trainable_parameters": 8658,
+      "folds": 5,
+      "seeds_per_fold": 3,
+      "inference_latency_ms": null,
+      "actual_frames_min": 9,
+      "actual_frames_median": 23.0,
+      "actual_frames_max": 50,
+      "actual_frames_mean": 23.914814814814815,
+      "validation_accuracy_mean_pct": 91.72839506172839,
+      "validation_accuracy_fold_sd_pp": 2.8903789551711463,
+      "validation_macro_f1_mean_pct": 91.55740980534583,
+      "validation_macro_f1_fold_sd_pp": 2.6747905034399238,
+      "test_accuracy_mean_pct": 87.77777777777779,
+      "test_accuracy_fold_sd_pp": 4.902454990015376,
+      "test_macro_f1_mean_pct": 87.01820506797998,
+      "test_macro_f1_fold_sd_pp": 5.351372897601869
+    },
+    {
+      "fps": 10,
+      "maximum_frames": 100,
+      "maximum_context_seconds": 10,
+      "backbone": "Frozen official MoViNet A0-Stream",
+      "resolution": 172,
+      "head_trainable_parameters": 8658,
+      "folds": 5,
+      "seeds_per_fold": 3,
+      "inference_latency_ms": null,
+      "actual_frames_min": 17,
+      "actual_frames_median": 45.0,
+      "actual_frames_max": 100,
+      "actual_frames_mean": 47.20925925925926,
+      "validation_accuracy_mean_pct": 90.06172839506172,
+      "validation_accuracy_fold_sd_pp": 3.158117837601601,
+      "validation_macro_f1_mean_pct": 89.72947195754213,
+      "validation_macro_f1_fold_sd_pp": 3.219432984934183,
+      "test_accuracy_mean_pct": 85.4320987654321,
+      "test_accuracy_fold_sd_pp": 4.405046571773906,
+      "test_macro_f1_mean_pct": 85.03262850208004,
+      "test_macro_f1_fold_sd_pp": 4.393589516701423
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "rates": [
+    {
+      "fps": 5,
+      "folds": 5,
+      "seeds_per_fold": 3,
+      "validation_accuracy_mean_pct": 91.72839506172839,
+      "validation_accuracy_fold_sd_pp": 2.8903789551711463,
+      "validation_macro_f1_mean_pct": 91.55740980534583,
+      "validation_macro_f1_fold_sd_pp": 2.674790503439928,
+      "test_accuracy_mean_pct": 87.77777777777776,
+      "test_accuracy_fold_sd_pp": 4.90245499001537,
+      "test_macro_f1_mean_pct": 87.01820506797996,
+      "test_macro_f1_fold_sd_pp": 5.35137289760187
+    },
+    {
+      "fps": 10,
+      "folds": 5,
+      "seeds_per_fold": 3,
+      "validation_accuracy_mean_pct": 90.06172839506173,
+      "validation_accuracy_fold_sd_pp": 3.1581178376015964,
+      "validation_macro_f1_mean_pct": 89.72947195754213,
+      "validation_macro_f1_fold_sd_pp": 3.219432984934183,
+      "test_accuracy_mean_pct": 85.4320987654321,
+      "test_accuracy_fold_sd_pp": 4.405046571773903,
+      "test_macro_f1_mean_pct": 85.03262850208004,
+      "test_macro_f1_fold_sd_pp": 4.393589516701425
+    }
+  ],
+  "mean_definition": "Mean over five folds after averaging three seeds within each fold.",
+  "sd_definition": "Sample SD across the five fold means; descriptive, not confidence intervals.",
+  "test_accuracy_change_10_minus_5_pp": -2.3456790123456557,
+  "test_macro_f1_change_10_minus_5_pp": -1.985576565899919,
+  "paired_run_macro_f1_wins_10fps": 4,
+  "paired_run_macro_f1_ties": 0,
+  "fold_mean_macro_f1_wins_10fps": 1,
+  "validation_choices_10fps": 5,
+  "validation_choices_5fps": 10,
+  "validation_selected_procedure": {
+    "test_accuracy_mean_pct": 87.90123456790124,
+    "test_macro_f1_mean_pct": 87.32107547026558
+  },
+  "prior_results_observed": true,
+  "new_test_used_for_checkpoint_or_sampling_selection": false,
+  "no_post_test_tuning": true,
+  "no_inferential_significance_claim": true
+}

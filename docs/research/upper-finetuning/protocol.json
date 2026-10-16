@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "seed": 42,
+  "model": "official MoViNet A0-Stream",
+  "initialization": "Original pretrained backbone and the validation-selected full-training-pool KARD head (L2 0.01, epoch 19).",
+  "parent_manifest_sha256": "bccbac8c3487df4fec89b5a9bf274d21c21d20fbcfb96f051d3c54ec24a22d01",
+  "initial_head_sha256": "e2e3bb899d133b1290a891ad0d82e1a6d8205ffb94c2799e6115bb0c99c63a70",
+  "original_backbone_file_sha256": "f35edf9b7b747b7fd5b65f127a34c988bec7c6602b1618af123b970d5847d6d2",
+  "train_clips": 324,
+  "validation_clips": 108,
+  "test_clips": 108,
+  "split_subjects": {
+    "train": [
+      1,
+      3,
+      4,
+      6,
+      7,
+      8
+    ],
+    "validation": [
+      5,
+      10
+    ],
+    "test": [
+      2,
+      9
+    ]
+  },
+  "input_policy": "RGB float32 [0,1]; bilinear resize with padding to 172x172; entire clip at 5 fps if <=10 sec, centered contiguous 10-second window otherwise.",
+  "target_fps": 5,
+  "resolution": 172,
+  "max_frames": 50,
+  "trainable_backbone_prefixes": [
+    "b4/l2/",
+    "b4/l3/",
+    "head/"
+  ],
+  "excluded_from_training": "All batch-normalization variables, including gamma/beta and moving statistics; all earlier backbone layers; fixed head normalization statistics.",
+  "backbone_call_mode": "Inference mode for normalization and stochastic depth; GradientTape updates only the explicitly selected upper variables. Head dropout remains active during optimization.",
+  "upper_backbone_trainable_parameters": 498850,
+  "head_trainable_parameters": 8658,
+  "optimizer": "Adam",
+  "learning_rate": 1e-05,
+  "gradient_global_norm_clip": 1.0,
+  "batching": "Seeded shuffled exact-length buckets, maximum batch size 8; variable batch sizes; no frame padding, repetition or truncation beyond the existing input policy.",
+  "head_l2": 0.01,
+  "additional_backbone_l2": 0,
+  "maximum_epochs": 20,
+  "early_stopping_patience": 5,
+  "checkpoint_selection": "Highest validation macro F1, tie broken by lower validation cross entropy; include the starting epoch-0 model as a fallback. No learning-rate or layer-scope search in this experiment.",
+  "activation_cache": "Cache the frozen b4/l1 endpoint in float32 for train/validation only before model selection. Re-run b4/l2, b4/l3 and pooled head with real gradients each step. Verify equivalence to the full original model and after updating weights.",
+  "augmentation": "No video augmentation or person cropping; classifier dropout 0.25 only.",
+  "test_access": "Create new test activations and evaluate the selected checkpoint only after writing selection.json.",
+  "device": "Native Windows TensorFlow CPU in Miniconda xai; same runtime as head-only baselines.",
+  "limitations": "One previously evaluated researcher-defined subject split and seed; only two test subjects. Earlier test results already observed. Validation-only selection; no post-test tuning or significance claim.",
+  "sources": [
+    "https://www.tensorflow.org/guide/keras/transfer_learning",
+    "https://www.tensorflow.org/tutorials/video/transfer_learning_with_movinet"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "device": "cuda:0",
+  "gpu": "NVIDIA RTX 4000 Ada Generation",
+  "torch_version": "2.13.0+cu130",
+  "test_cache_accesses": 0,
+  "variants": {
+    "A": {
+      "parameters": 8658,
+      "padding_max_error": 0.0,
+      "causal_prefix_max_error": 0.0,
+      "reload_max_error": 0.0,
+      "resume_state_max_error": 0.0,
+      "resume_loss_exact": true,
+      "gradient_norms": {
+        "classifier.weight": 0.9986549019813538,
+        "classifier.bias": 0.05185023322701454
+      },
+      "maximum_parameter_changes": {
+        "classifier.weight": 0.0010000001639127731,
+        "classifier.bias": 0.0010000001639127731
+      }
+    },
+    "B": {
+      "parameters": 16018,
+      "padding_max_error": 1.7881393432617188e-07,
+      "causal_prefix_max_error": 0.0,
+      "reload_max_error": 0.0,
+      "resume_state_max_error": 0.0,
+      "resume_loss_exact": true,
+      "gradient_norms": {
+        "project.weight": 0.6673212647438049,
+        "project.bias": 0.12979470193386078,
+        "norm.weight": 0.042462725192308426,
+        "norm.bias": 0.039819564670324326,
+        "classifier.weight": 0.7223149538040161,
+        "classifier.bias": 0.11272822320461273
+      },
+      "maximum_parameter_changes": {
+        "project.weight": 0.0010000020265579224,
+        "project.bias": 0.0010000020265579224,
+        "norm.weight": 0.001000046730041504,
+        "norm.bias": 0.0009999991161748767,
+        "classifier.weight": 0.0010000020265579224,
+        "classifier.bias": 0.0010000020265579224
+      }
+    },
+    "C": {
+      "parameters": 16434,
+      "padding_max_error": 1.7881393432617188e-07,
+      "causal_prefix_max_error": 0.0,
+      "reload_max_error": 0.0,
+      "resume_state_max_error": 0.0,
+      "resume_loss_exact": true,
+      "gradient_norms": {
+        "project.weight": 0.6879237294197083,
+        "project.bias": 0.11993342638015747,
+        "norm.weight": 0.042362287640571594,
+        "norm.bias": 0.04141337424516678,
+        "classifier.weight": 0.7026465535163879,
+        "classifier.bias": 0.1146509125828743,
+        "temporal.weight": 0.029494794085621834,
+        "temporal.bias": 0.03376203402876854
+      },
+      "maximum_parameter_changes": {
+        "project.weight": 0.0010000020265579224,
+        "project.bias": 0.0010000020265579224,
+        "norm.weight": 0.001000046730041504,
+        "norm.bias": 0.0009999992325901985,
+        "classifier.weight": 0.0010000020265579224,
+        "classifier.bias": 0.0010000020265579224,
+        "temporal.weight": 0.0010000020265579224,
+        "temporal.bias": 0.0010000020265579224
+      }
+    },
+    "D": {
+      "parameters": 16050,
+      "padding_max_error": 0.0,
+      "causal_prefix_max_error": 0.0,
+      "reload_max_error": 0.0,
+      "resume_state_max_error": 0.0,
+      "resume_loss_exact": true,
+      "gradient_norms": {
+        "project.weight": 0.9760651588439941,
+        "project.bias": 0.06090559810400009,
+        "norm.weight": 0.023653339594602585,
+        "norm.bias": 0.022302772849798203,
+        "classifier.weight": 0.1980007141828537,
+        "classifier.bias": 0.05767061188817024
+      },
+      "maximum_parameter_changes": {
+        "project.weight": 0.0010000001639127731,
+        "project.bias": 0.0010000001639127731,
+        "norm.weight": 0.001000046730041504,
+        "norm.bias": 0.000999998883344233,
+        "classifier.weight": 0.0010000020265579224,
+        "classifier.bias": 0.0010000020265579224
+      }
+    }
+  },
+  "common_initialization": {
+    "42": {
+      "B_sha256": "a4d0dc9d07be5a7d722adfe36ea67e09a2a160a1cadd2e3902661c604664fb5f",
+      "C_common_sha256": "a4d0dc9d07be5a7d722adfe36ea67e09a2a160a1cadd2e3902661c604664fb5f",
+      "exact_equal": true,
+      "temporal_sha256": "e84d0d9deab0b95d08b561c8bf0c896f7d79dc22b7736ff38d4c8287b572ac1c",
+      "initialization_preserves_cpu_cuda_rng": true,
+      "training_start_dropout_rng_sha256": "2ddfb0faae4ace90dfbcce19e447e28b2b95834719acc9f6c935a9512f3a2995"
+    },
+    "123": {
+      "B_sha256": "c64377065fc890bf73136c7520a447e9afccc11e3dbf906253ee23444d6f752d",
+      "C_common_sha256": "c64377065fc890bf73136c7520a447e9afccc11e3dbf906253ee23444d6f752d",
+      "exact_equal": true,
+      "temporal_sha256": "0ba77b44dd91894515d0c6f96b45db7bfb5cab52bd0abba9136270012dd79477",
+      "initialization_preserves_cpu_cuda_rng": true,
+      "training_start_dropout_rng_sha256": "010a97a52e4e2b2f000ee91d05db7bfe3ef337376070c5618685641a0e20a8c6"
+    },
+    "2026": {
+      "B_sha256": "3859e9ff3a9cd2a17ada7635365ba12d361874141620c38d54cb443aec342728",
+      "C_common_sha256": "3859e9ff3a9cd2a17ada7635365ba12d361874141620c38d54cb443aec342728",
+      "exact_equal": true,
+      "temporal_sha256": "e9c6d273cd1329a52ce9075723b36fdc6f16f0b12b9af8b9301fa49fd344f492",
+      "initialization_preserves_cpu_cuda_rng": true,
+      "training_start_dropout_rng_sha256": "b453ba923efff52b311accb3298b2a5e055c94161b8c3f7efdf2b9226c22674a"
+    }
+  },
+  "test_gate_rejection_verified": true,
+  "runner_sha256": "bd334cebb9f80d1167f565b9b9f8326df5a2c803fb9db472c178695668ace9fe",
+  "model_code_sha256": "57dc091aebf885d8932b2d2c37417721681dbb7a863cade3ff78410fec4d686b",
+  "report_code_sha256": "71f451e1d4a783446b9c8eb39062acfee65d5de2443489772fd778e870670157",
+  "protocol_sha256": "a09398e7331675f1653af3b0474ebc73f9b55a09df1be6ff22a43669e428a25d"
+}

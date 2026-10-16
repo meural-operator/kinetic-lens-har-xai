@@ -8,3 +8,12 @@
 - NumPy, TensorFlow, OpenCV, Pillow, FastAPI, Uvicorn, PyTorch and ONNX Runtime retain their respective licenses. They are installed as dependencies, not vendored into this repository.
 
 Method references and interpretation limits are preserved in `docs/research/` and linked extension guides.
+
+The research publication additionally retains selected compact experimental
+heads/adapters derived from the same official MoViNet features. These are
+identified by selection hashes under their research reports; they do not replace
+the default model or change the backbone/dataset terms. Large original ViT
+checkpoints and converted ViT model binaries are not redistributed in this
+update; only benchmark records, conversion manifests and original source
+snapshots are included. The historical source archive can reference an external
+showcase checkout and is not a bundled training-data or dependency distribution.

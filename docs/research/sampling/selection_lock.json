@@ -1,0 +1,234 @@
+{
+  "protocol_sha256": "3be214454fe326d58c2b2ab0ad89303f2a28e2d2163efd01b844e2aa7e39c8e1",
+  "heads": [
+    {
+      "folder": "fold_1_seed_42_fps_5",
+      "selection_sha256": "9223f0fe67045729e9693a93849d474c01b4ccd25885560b2801b125dd5a0af8",
+      "head_sha256": "4d3f6dbe79a2c5176596a402eb8d5016bbd0b1b58437eaae0bde8ca82ac8a301"
+    },
+    {
+      "folder": "fold_1_seed_42_fps_10",
+      "selection_sha256": "7cdca00341cd5c1c361dbfd181bb091437d794f7ef4e302f327c06d25f707127",
+      "head_sha256": "ab31c33e073ab5c6d7b4a847d5e83b07625ca6b9ff79af15ab94189a170e34a4"
+    },
+    {
+      "folder": "fold_1_seed_123_fps_5",
+      "selection_sha256": "bc787e22e88ee57aa743be78d3520b5b5219e2f9cd7a311bfcae2d1ea8f0594e",
+      "head_sha256": "d43942d77246a6253e6eee0d90e3f3344c8e33f203259cb382d31c3bbb3a0adc"
+    },
+    {
+      "folder": "fold_1_seed_123_fps_10",
+      "selection_sha256": "e3d862376a8b7d05b89b12319e115d3f479be2250335f874d4ca73e7721dbc53",
+      "head_sha256": "ad647619491ec7b0bf76b1a93bcdd9d4cc6c61322b5d5d39e3a920a6c925940c"
+    },
+    {
+      "folder": "fold_1_seed_2026_fps_5",
+      "selection_sha256": "6c1443426aa212bcf0057bffb7e5b35689dff451d1ee1d0eca12f427cc3ed404",
+      "head_sha256": "4f7319324106079ea0d7fe3ccf33a697c491130fb865df3c0c50d337a1b095d9"
+    },
+    {
+      "folder": "fold_1_seed_2026_fps_10",
+      "selection_sha256": "f422f7ef83f9751e78d530819d16673fe95fdcddab4ff363adae4da100500fb9",
+      "head_sha256": "d1e43114323d8af84b78ba695cb5a36fdfe4d6e8c352dc6fb39bacaaf380931d"
+    },
+    {
+      "folder": "fold_2_seed_42_fps_5",
+      "selection_sha256": "81c56dc8df01c65c3474a2d336c0b20d4503d3e55bc24a88882c9f6b49dd7b9c",
+      "head_sha256": "89e15fd6fa5e30b8fc04dc2c69f0b9934372bde1e97606655843df8b47ae72c1"
+    },
+    {
+      "folder": "fold_2_seed_42_fps_10",
+      "selection_sha256": "56667b985158657eb264a19b528f9e6e50e468c11a39f53da97ae454829dbe14",
+      "head_sha256": "e1bb5ddfbf37dc651e45c4f0ea0906d2a01dea26380b5c69fd5497611d60d8a1"
+    },
+    {
+      "folder": "fold_2_seed_123_fps_5",
+      "selection_sha256": "7998826e82364a5784aadbf8564f3d2bde3dd5d925a69b911c6e52909bf526d0",
+      "head_sha256": "880da9d69ce363a3e4a0b3ffdb5e98a2b5aec9650c2f5a565a51b2addc0d8728"
+    },
+    {
+      "folder": "fold_2_seed_123_fps_10",
+      "selection_sha256": "30355b53e6abcb200712ce4cc48a4c3d908f82b3160c0b3f31f8485d661f9633",
+      "head_sha256": "734bfb89b03c0d85e9f4892d1f74db64f3dfdd958798ac4d9343732a3fa84cf6"
+    },
+    {
+      "folder": "fold_2_seed_2026_fps_5",
+      "selection_sha256": "571706b73caff6577475733854dfa5bc3b1c7ec68232978381d7ce52b055bb8a",
+      "head_sha256": "4f95ac3e4228f90ad258d05bb974b6477fcc7a6be35f292701bb0fb434eda3f6"
+    },
+    {
+      "folder": "fold_2_seed_2026_fps_10",
+      "selection_sha256": "9cda44d6dd9146984891e3e0bf1f0c204eb41079305b3310f2cb1c61686b6b87",
+      "head_sha256": "e094f5a46c7cbe08dc4de93fd7c39d9edc44f6f6ef6aeb0dde14b8b13095d70f"
+    },
+    {
+      "folder": "fold_3_seed_42_fps_5",
+      "selection_sha256": "a3d95d0844f52636e0ad3fa2132c55be5b49717f97e39f7955db40c1203486a1",
+      "head_sha256": "a4cae6bcab9f36587b2f49d2a2ad713b5968b9b75440d5f05155668f8c3a6073"
+    },
+    {
+      "folder": "fold_3_seed_42_fps_10",
+      "selection_sha256": "7cb482587a6aa0839d2b3b83c23481c50fb6244881396fdad7cb455c5f3672f5",
+      "head_sha256": "2fee9f4f3e4190be74c829082bae32ae00b611cde504996d463b3e6da4ddf645"
+    },
+    {
+      "folder": "fold_3_seed_123_fps_5",
+      "selection_sha256": "5dc5a31ac34fa65de14b793eb0607b70843f87c533b0636941803c74f7744a79",
+      "head_sha256": "beb226e192f36210e04599599c096b935964f7b14137e93382f34c50b1719666"
+    },
+    {
+      "folder": "fold_3_seed_123_fps_10",
+      "selection_sha256": "17686c9c8c94d79279ea57744ca04e27baa95a1743b2d5d16ebfb189db72a3a8",
+      "head_sha256": "4dfa7ca69283fc7b8780ade2d12bb9078d2ab852bd3d3565a889b915dd0143dc"
+    },
+    {
+      "folder": "fold_3_seed_2026_fps_5",
+      "selection_sha256": "d86152049159a5f5c61580c7d83ccbaab9d81a9e08821640e3c88ca54cd5231b",
+      "head_sha256": "f59a1263693aa0c9ded0dd0666f78b0bd1b141a2db2004bc452163a903a4e925"
+    },
+    {
+      "folder": "fold_3_seed_2026_fps_10",
+      "selection_sha256": "6dbf525782b15bf5f923250aa7f24958300fab432040a7c0cac22b4b3cafc7a8",
+      "head_sha256": "392f29032e38280ab6f224e05e3b11df8d4897132dd703b9295bc84cf9a3d999"
+    },
+    {
+      "folder": "fold_4_seed_42_fps_5",
+      "selection_sha256": "0e49a7317b5e1bdb14eb766b45f8609e328acc36f9190acd40864ae95028aaa2",
+      "head_sha256": "4456c6c23e22c87af56c80b5e4053893503b1d62e7b234451078280393be03fb"
+    },
+    {
+      "folder": "fold_4_seed_42_fps_10",
+      "selection_sha256": "c8963505b4b2b7d0fd2247599077d40b138547b449e968e9041830402b004568",
+      "head_sha256": "dedfcf47044faecefece8721e42569a37746f91151386fd569fc5d88a54c70b6"
+    },
+    {
+      "folder": "fold_4_seed_123_fps_5",
+      "selection_sha256": "c2e7533a1ba838e97cddadf12a23f0f8a99fa09f9d3db3cc8309b507cd327962",
+      "head_sha256": "7d8329b34b09b74cbfbaf3bcf2ea81170f9c586b6e9555a189e884f7db1c935a"
+    },
+    {
+      "folder": "fold_4_seed_123_fps_10",
+      "selection_sha256": "246c88c09c9d2ce6917928dbfc0674ab7bc18fd2f561dc07478e74659ea385eb",
+      "head_sha256": "310fe0e4ae28dca929da99b0f439676775e6d8ce11fd700c2aa91df0f6f8d842"
+    },
+    {
+      "folder": "fold_4_seed_2026_fps_5",
+      "selection_sha256": "60e7d5e29a1f71ad9ebf551265bb6ad1cfbd98115d067b5bb78da9d91c088352",
+      "head_sha256": "92b58c46ad0df6c29a99831fe91a0c1b04edb5b597705670d10d5299e7d5bb10"
+    },
+    {
+      "folder": "fold_4_seed_2026_fps_10",
+      "selection_sha256": "46859d8739de113c8d879f4b78cf652a39ecb09642541aa92365b9d69aa78778",
+      "head_sha256": "e18ec30191403d6265489546fcd3111b740b9cec30a6ac9bc3b2e9a0bb942d30"
+    },
+    {
+      "folder": "fold_5_seed_42_fps_5",
+      "selection_sha256": "be0b86ce6b966008ee42c1699d31d9dd2b6086f96c158957f68410c876a18a19",
+      "head_sha256": "eebd5333212fcd13d743fee1d8a4eaf29b84bcb1a3fd495e841c744730a0a13c"
+    },
+    {
+      "folder": "fold_5_seed_42_fps_10",
+      "selection_sha256": "1cd07edfaaf0f64014eebd6c93f6f00d9c50e0aa437b118621411eda2bed195e",
+      "head_sha256": "9ed0691de796e8898fc009d4110bed69418a863c875f15159c32cf91c5daffb9"
+    },
+    {
+      "folder": "fold_5_seed_123_fps_5",
+      "selection_sha256": "55c9521ba288bbcedf8918e6a7072fe43ff086fb155cd543bfd2489cb7535cfd",
+      "head_sha256": "8762243e93d7ca182d256632a50af71aeb67494b64cd45ac68e0a207442918cb"
+    },
+    {
+      "folder": "fold_5_seed_123_fps_10",
+      "selection_sha256": "6cef5135904168fb2ce6c99e7aa538233a153814201d2ec5e904f4cd76c1f09e",
+      "head_sha256": "ed7c2dbbd6d682174d502bdc9a749aa8c865f5d5c96aa6458e3ad5511d2c67e0"
+    },
+    {
+      "folder": "fold_5_seed_2026_fps_5",
+      "selection_sha256": "f33ec96f007496cb68897aa725af13732e0db6a0296420c5ec086d2a6dd6bcef",
+      "head_sha256": "97dd8195edfea5311758b7bf73b269a99f2f3e785d8d2f73cc5813d57bac1157"
+    },
+    {
+      "folder": "fold_5_seed_2026_fps_10",
+      "selection_sha256": "4f60de34c9e3937f2582d998a844ee2661c96f3c895d9616e0208d8fb7b4c291",
+      "head_sha256": "bbb617099b0060c0529033c6bb028e5b39bc4bdcbd5f26e99975a3407175b903"
+    }
+  ],
+  "sampling_choices": [
+    {
+      "fold": 1,
+      "seed": 42,
+      "validation_recommended_fps": 10
+    },
+    {
+      "fold": 1,
+      "seed": 123,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 1,
+      "seed": 2026,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 2,
+      "seed": 42,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 2,
+      "seed": 123,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 2,
+      "seed": 2026,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 3,
+      "seed": 42,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 3,
+      "seed": 123,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 3,
+      "seed": 2026,
+      "validation_recommended_fps": 10
+    },
+    {
+      "fold": 4,
+      "seed": 42,
+      "validation_recommended_fps": 10
+    },
+    {
+      "fold": 4,
+      "seed": 123,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 4,
+      "seed": 2026,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 5,
+      "seed": 42,
+      "validation_recommended_fps": 10
+    },
+    {
+      "fold": 5,
+      "seed": 123,
+      "validation_recommended_fps": 5
+    },
+    {
+      "fold": 5,
+      "seed": 2026,
+      "validation_recommended_fps": 10
+    }
+  ],
+  "test_used_for_selection": false,
+  "all_selections_completed_before_new_test_scoring": true
+}

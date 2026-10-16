@@ -1,0 +1,37 @@
+{
+  "video": "Bend\\a12_s01_e01.mp4",
+  "activation_shape": [
+    1,
+    25,
+    6,
+    6,
+    104
+  ],
+  "cached_upper_vs_full_max_feature_error": 0.0,
+  "all_upper_gradients_finite_and_nonzero": true,
+  "equal_length_batch_equivalence_passed": true,
+  "frozen_and_bn_hash_checks_passed": true,
+  "upper_trainable_variables": 17,
+  "upper_trainable_parameters": 498850,
+  "gradient_check_seconds": 2.570569499999692,
+  "upper_variables": [
+    "b4/l2/bneck/expansion/conv2d/conv2d/kernel:0",
+    "b4/l2/bneck/feature/conv2d/depthwise_conv2d/depthwise_kernel:0",
+    "b4/l2/bneck/projection/conv2d/conv2d_3/kernel:0",
+    "b4/l2/bneck/se/se_reduce/conv2d/conv2d_1/kernel:0",
+    "b4/l2/bneck/se/se_reduce/conv2d/conv2d_1/bias:0",
+    "b4/l2/bneck/se/se_expand/conv2d/conv2d_2/kernel:0",
+    "b4/l2/bneck/se/se_expand/conv2d/conv2d_2/bias:0",
+    "b4/l2/scale:0",
+    "b4/l3/bneck/expansion/conv2d/conv2d/kernel:0",
+    "b4/l3/bneck/feature/conv2d/depthwise_conv2d/depthwise_kernel:0",
+    "b4/l3/bneck/projection/conv2d/conv2d_3/kernel:0",
+    "b4/l3/bneck/se/se_reduce/conv2d/conv2d_1/kernel:0",
+    "b4/l3/bneck/se/se_reduce/conv2d/conv2d_1/bias:0",
+    "b4/l3/bneck/se/se_expand/conv2d/conv2d_2/kernel:0",
+    "b4/l3/bneck/se/se_expand/conv2d/conv2d_2/bias:0",
+    "b4/l3/scale:0",
+    "head/project/conv2d/conv2d/kernel:0"
+  ],
+  "bn_policy": "All batch-normalization variables frozen; backbone layer calls in inference mode."
+}

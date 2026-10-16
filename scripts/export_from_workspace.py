@@ -1,7 +1,8 @@
 """Reproduce the portable trained head/XAI assets from an audited local workspace.
 
 Requires TensorFlow and the previous research artifacts. Normal users only need
-setup_models.py: exported compact assets are versioned in this repository.
+authenticated setup_models.py. Generated learned files are ignored by Git and
+must be uploaded privately with a reviewed revision/hash manifest when updated.
 """
 import argparse
 import hashlib

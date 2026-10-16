@@ -1,0 +1,29 @@
+{
+  "repo_id": "meural-operator/xai-weights",
+  "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+  "private": true,
+  "files_uploaded_and_download_verified": 26,
+  "anonymous_access_status": 401,
+  "existing_remote_files_preserved": true,
+  "local_originals_and_backups_preserved": true,
+  "migration_date": "2026-10-16",
+  "github_history_cleanup": "Pending explicit owner approval; ordinary file removal does not purge history.",
+  "learned_files_in_current_git_source": "Removed from tracking; local verified copies preserved.",
+  "setup_client_smoke": {
+    "authenticated_default_files_downloaded_and_verified": 3,
+    "isolated_folder": true,
+    "token_exposed": false
+  },
+  "regression_checks": {
+    "framework_and_private_downloader": "30 passed, 1 optional ONNX skipped in the standard xai test run",
+    "optional_onnx": "1 passed using existing isolated runtime",
+    "dashboard_javascript": "passed",
+    "public_evidence_files_verified": 231,
+    "private_model_files_verified": 26
+  },
+  "public_checkout_without_any_private_files": {
+    "aggregate_verifier": "passed without credentials or model bytes",
+    "dashboard_javascript": "passed",
+    "pytest": "28 passed, 3 expected skips (two private ONNX artifacts and one optional ONNX runtime)"
+  }
+}

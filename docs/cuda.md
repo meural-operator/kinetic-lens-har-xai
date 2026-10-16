@@ -1,6 +1,6 @@
 # MoViNet KARD on CUDA: FP16 and FP32
 
-The checked ONNX exports include the official pretrained MoViNet-A0 backbone and our selected trained KARD-18 head. They are inference conversions; no retraining was performed. Both artifacts and their SHA-256 provenance are versioned in `models/kard/onnx/`.
+The checked ONNX exports include the official pretrained MoViNet-A0 backbone and our selected trained KARD-18 head. They are inference conversions; no retraining was performed. Their SHA-256 provenance is public; the artifact bytes are retrieved from [private Hugging Face storage](private-weights.md) into the Git-ignored local `models/kard/onnx/` folder.
 
 ## Install and launch
 
@@ -8,6 +8,8 @@ Use an environment with a compatible NVIDIA driver and CUDA/cuDNN runtime. Run f
 
 ```sh
 python -m pip install -e ".[cuda]"
+hf auth login
+python scripts/setup_models.py --group cuda --skip-backbone
 ```
 
 Install one ONNX Runtime distribution per environment. The CUDA extra installs `onnxruntime-gpu`; do not also install the CPU `onnxruntime` wheel. Compatible PyTorch CUDA installations can supply runtime libraries. Alternatively, ONNX Runtime documents installing its CUDA/cuDNN extras:
@@ -25,7 +27,7 @@ python scripts/desktop/realtime_kard.py --config configs/movinet_kard_cuda_fp16.
 python scripts/desktop/realtime_kard.py --config configs/movinet_kard_cuda_fp32.json
 ```
 
-Windows launchers are in `scripts/desktop/`: `launch_live_har_gpu.bat` (FP16), `launch_live_har_gpu_fp32.bat` (FP32) and `launch_live_har_cpu.bat` (the TensorFlow model). They use the Miniconda environment named `xai`; run from a terminal where `conda` is available after installing the required dependencies there. For the CPU config, first run `python scripts/setup_models.py` to obtain the original backbone. GPU configs already include their complete ONNX graphs and do not require that download. Q, Escape or closing the desktop window releases the camera.
+Windows launchers are in `scripts/desktop/`: `launch_live_har_gpu.bat` (FP16), `launch_live_har_gpu_fp32.bat` (FP32) and `launch_live_har_cpu.bat` (the TensorFlow model). They use the Miniconda environment named `xai`; run from a terminal where `conda` is available after installing the required dependencies there. For the CPU config, authenticated `python scripts/setup_models.py` retrieves the private head/XAI files and original public backbone. GPU configs need the private complete ONNX graphs via the command above and do not need the separate backbone. Q, Escape or closing the desktop window releases the camera.
 
 **Browser dashboard**, using the same CUDA model adapter:
 

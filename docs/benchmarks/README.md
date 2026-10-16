@@ -35,6 +35,8 @@ speed does not imply faster full app processing in this recorded trial.
 The artifacts here use the [historical model-card checkpoint](../../models/kard/MODEL_CARD.md).
 Do not combine these latencies with the later ablation/LoRA accuracy as though
 they described one deployed checkpoint.
+The table reports the same measured files; their bytes are now obtained through
+[authenticated private setup](../private-weights.md), rather than public Git.
 
 ## Coverage and missing measurements
 

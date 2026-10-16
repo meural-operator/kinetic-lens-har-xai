@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "purpose": "Completed studies and source snapshots; no model retraining or deployment change.",
+  "purpose": "Public completed studies and source snapshots; learned files are metadata-only references to private Hugging Face storage.",
   "normalization": "Published text substitutes local workspace/showcase paths and uses LF. Generated SVG trailing spaces are trimmed without geometry changes. Exact source archive bytes are retained.",
   "historical_hashes": "Hashes inside copied reports/protocols identify original workspace artifacts, not necessarily normalized published text. Entries below preserve both hashes.",
   "excluded": [
@@ -8,6 +8,7 @@
     "activation/feature caches",
     "installed packages",
     "launch/status logs",
+    "all learned weight binaries and model-specific channel groups",
     "large ViT weights",
     "training optimizer checkpoints"
   ],
@@ -748,7 +749,14 @@
       "published_sha256": "13c5b2ce10e3865a14e757a6f7edbd6343413adfab727336e4766889002ed3da",
       "source_bytes": 41295,
       "published_bytes": 41295,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/A_seed_42.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/A_seed_123.pt",
@@ -757,7 +765,14 @@
       "published_sha256": "1f51b9b61f3ea08a0accf1e98217c98a9b3f76441263e52e00e31b085c34040a",
       "source_bytes": 41305,
       "published_bytes": 41305,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/A_seed_123.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/A_seed_2026.pt",
@@ -766,7 +781,14 @@
       "published_sha256": "f9fadc0ec1396d5c937685a54ada217e868a9478c64c942b596180d61074f644",
       "source_bytes": 41315,
       "published_bytes": 41315,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/A_seed_2026.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/B_test_mean_confusion.csv",
@@ -793,7 +815,14 @@
       "published_sha256": "95aa8109c88309553db2f07200b86edf8ccf93d47c36a8a99d636b33c31b1987",
       "source_bytes": 68691,
       "published_bytes": 68691,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/B_seed_42.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/B_seed_123.pt",
@@ -802,7 +831,14 @@
       "published_sha256": "8ada79dff83abeeed2688ab8a5737127740fd5854b1288069f419ae71a9c543a",
       "source_bytes": 68705,
       "published_bytes": 68705,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/B_seed_123.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/B_seed_2026.pt",
@@ -811,7 +847,14 @@
       "published_sha256": "a07e54b014e2f89c3a982a0366cc125efb87e793067031816590b78ef7985339",
       "source_bytes": 68719,
       "published_bytes": 68719,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/B_seed_2026.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/C_test_mean_confusion.csv",
@@ -838,7 +881,14 @@
       "published_sha256": "a7de690ff8ff03a303fd5f3cf2f853b626ff9408a71264dc6ad01bf7e0a344e3",
       "source_bytes": 70869,
       "published_bytes": 70869,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/C_seed_42.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/C_seed_123.pt",
@@ -847,7 +897,14 @@
       "published_sha256": "700075092327f9ee4b946e245300afeae56ec168ec55be69cb3bd3a5c1d566f5",
       "source_bytes": 70885,
       "published_bytes": 70885,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/C_seed_123.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/C_seed_2026.pt",
@@ -856,7 +913,14 @@
       "published_sha256": "7ef3644622adba0313b5823db71f496c54e2c5f596182522b3bfb22f36e45047",
       "source_bytes": 70901,
       "published_bytes": 70901,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/C_seed_2026.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/D_test_mean_confusion.csv",
@@ -883,7 +947,14 @@
       "published_sha256": "8bfb9607503e10fa18f993d18af09e9da485d7bc9cbc77374405631925b24d7f",
       "source_bytes": 71891,
       "published_bytes": 71891,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/D_seed_42.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/D_seed_123.pt",
@@ -892,7 +963,14 @@
       "published_sha256": "cf74b1246170e0b8037169a49f5efabe84eace198a84854fff76a3a57a0539aa",
       "source_bytes": 71905,
       "published_bytes": 71905,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/D_seed_123.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/selected/D_seed_2026.pt",
@@ -901,7 +979,14 @@
       "published_sha256": "829645addf564892f49a158fd0c916d82fdbd2ab2acff727e2ef1590a85ce229",
       "source_bytes": 71919,
       "published_bytes": 71919,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/D_seed_2026.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_controlled_ablation_v1/figures/macro_f1_comparison.pdf",
@@ -1171,7 +1256,14 @@
       "published_sha256": "f04fda63736234a7e9970700df17c30a7dab1d21187af9746247da8db39086f7",
       "source_bytes": 1384025,
       "published_bytes": 1384025,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/lora_seed_42.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/lora_seed_123.pt",
@@ -1180,7 +1272,14 @@
       "published_sha256": "1a5bf2b8e51267df96770d79230c1e1b387cfac8e14c8067efc9edd08908cbea",
       "source_bytes": 1384045,
       "published_bytes": 1384045,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/lora_seed_123.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/lora_seed_2026.pt",
@@ -1189,7 +1288,14 @@
       "published_sha256": "6d869f3cd6ca7467a1c72d4a4eff3f83beda7a2641f73a9e7eece0219eac960d",
       "source_bytes": 1384065,
       "published_bytes": 1384065,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/lora_seed_2026.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/guided_seed_42.pt",
@@ -1198,7 +1304,14 @@
       "published_sha256": "4e4bad8d703f04b42caf10d6428bd0695633661087c838bcad052bb353cd6a5b",
       "source_bytes": 487681,
       "published_bytes": 487681,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/guided_seed_42.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/guided_seed_123.pt",
@@ -1207,7 +1320,14 @@
       "published_sha256": "ff561e05f15e79a33e9057ab0ca58fa0d70765f4f1d2b69e8808806d6504e2cf",
       "source_bytes": 487701,
       "published_bytes": 487701,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/guided_seed_123.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/guided_seed_2026.pt",
@@ -1216,7 +1336,14 @@
       "published_sha256": "7cd3ccf922d436a5cbc44f16e3dd04a8fd52837b9e3761f26734695ab0794e73",
       "source_bytes": 487721,
       "published_bytes": 487721,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/guided_seed_2026.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/random_seed_42.pt",
@@ -1225,7 +1352,14 @@
       "published_sha256": "ecafe779957d69f6817126d47a7b016572e4e4dbe70a38e2a112c38ade73bdaf",
       "source_bytes": 487681,
       "published_bytes": 487681,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/random_seed_42.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/random_seed_123.pt",
@@ -1234,7 +1368,14 @@
       "published_sha256": "af068641211cf6aaf4cf42a5fd916f0598e9cba9e076dd18adbdd1a1cf24f9d3",
       "source_bytes": 487701,
       "published_bytes": 487701,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/random_seed_123.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/selected/random_seed_2026.pt",
@@ -1243,7 +1384,14 @@
       "published_sha256": "b0c73a06594dc9167a37c83f9c038d153fe2779ac86fc7b21e9c8da1743a8c6e",
       "source_bytes": 487721,
       "published_bytes": 487721,
-      "text_normalized": false
+      "text_normalized": false,
+      "distribution": "private_huggingface",
+      "storage": {
+        "repo_id": "meural-operator/xai-weights",
+        "repo_type": "model",
+        "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+        "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/random_seed_2026.pt"
+      }
     },
     {
       "source": "movinet_evaluation/kard_a0_projection_adapter_v1/figures/adapter_comparison.pdf",

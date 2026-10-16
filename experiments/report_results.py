@@ -31,15 +31,35 @@ def aggregate(values):
     return {'mean': statistics.mean(values), 'sample_sd': statistics.stdev(values)}
 
 
-def verify():
+def verify(require_private=False):
     publication = read('docs/research/publication_manifest.json')
+    private = read('models/private_artifacts.json')
+    private_entries = {entry['path']: entry for entry in private['files']}
+    assert len(private_entries) == 26 and private['visibility_requirement'] == 'private'
+    verified_private = 0
+    if require_private:
+        for entry in private_entries.values():
+            path = (ROOT / entry['path']).resolve()
+            assert path.is_relative_to(ROOT), entry['path']
+            content = path.read_bytes()
+            assert len(content) == entry['bytes'] and hashlib.sha256(content).hexdigest() == entry['sha256'], entry['path']
+            verified_private += 1
+    public_count = private_record_count = 0
     for record in publication['records']:
+        if record.get('distribution') == 'private_huggingface':
+            entry = private_entries[record['published']]
+            assert record['published_sha256'] == entry['sha256']
+            assert record['published_bytes'] == entry['bytes']
+            assert record['storage'] == {k: private[k] for k in ('repo_id', 'repo_type', 'revision')} | {'hf_path': entry['hf_path']}
+            private_record_count += 1
+            continue
         path = (ROOT / record['published']).resolve()
         if not path.is_relative_to(ROOT):
             raise ValueError('Published artifact escapes repository')
         content = path.read_bytes()
         if len(content) != record['published_bytes'] or hashlib.sha256(content).hexdigest() != record['published_sha256']:
             raise ValueError(f'Published artifact changed: {record["published"]}')
+        public_count += 1
 
     sampling = read('docs/research/sampling/summary.json')
     runs = csv_rows('docs/research/sampling/run_results.csv')
@@ -83,7 +103,10 @@ def verify():
             for seed in (42, 123, 2026):
                 item = gate['selections'][f'{variant}_seed_{seed}']
                 checkpoint = ROOT / 'docs/research' / study / item['checkpoint']
-                assert hashlib.sha256(checkpoint.read_bytes()).hexdigest() == item['checkpoint_sha256']
+                relative = checkpoint.relative_to(ROOT).as_posix()
+                assert private_entries[relative]['sha256'] == item['checkpoint_sha256']
+                if require_private:
+                    assert hashlib.sha256(checkpoint.read_bytes()).hexdigest() == item['checkpoint_sha256']
 
     checked_timings = 0
     for session in ('latency_benchmark', 'latency_benchmark_fp16'):
@@ -104,9 +127,12 @@ def verify():
     identity = read('models/kard/provenance.json')
     assert identity['source_head_sha256'] == 'e2e3bb899d133b1290a891ad0d82e1a6d8205ffb94c2799e6115bb0c99c63a70'
     assert identity['validation_correct'] == 96 and identity['test_correct'] == 94
-    result = {'published_files_verified': len(publication['records']), 'sampling_runs': 30,
+    result = {'published_files_verified': public_count, 'private_publication_records_checked': private_record_count,
+              'private_artifact_records_checked': len(private_entries), 'private_files_verified': verified_private,
+              'sampling_runs': 30,
               'ablation_selected_runs': 12, 'adapter_rows_including_baselines': 12,
-              'serialized_selected_checkpoints_verified': 21,
+              'selected_checkpoint_hash_records_checked': 21,
+              'serialized_selected_checkpoints_verified': 21 if require_private else 0,
               'raw_vit_timing_calls_verified_including_superseded_gpu_session': checked_timings,
               'size_latency_forms': 31, 'serialized_inference_artifact_sizes': 26,
               'training_or_camera_executed': False}
@@ -119,7 +145,9 @@ def summary_document(result, sampling, ablation, adapters):
         return f"{factor * stats['mean']:.2f} ± {factor * stats['sample_sd']:.2f}"
     lines = ['# Independently recomputed study summary', '',
              'Generated with `python experiments/report_results.py --output docs/research/VERIFIED_SUMMARY.md`.',
-             'This verifies archived results and hashes; it does not retrain models or test a camera.', '',
+             'This verifies public archived results and hash records; it does not retrain models or test a camera.',
+             'Private checkpoints are excluded from the default offline verification. Use `--require-private` '
+             'after authenticated setup to verify their actual bytes; otherwise their manifest identities alone are checked.', '',
              '## Temporal sampling', '',
              'Five fold means; three seeds averaged within each fold. Percentages, mean ± fold SD.', '',
              '| FPS | Test accuracy | Test macro F1 |', '|---|---:|---:|']
@@ -144,8 +172,9 @@ def summary_document(result, sampling, ablation, adapters):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, help='Optional generated Markdown summary; relative to repository root')
+    parser.add_argument('--require-private', action='store_true', help='Also require and hash all 26 authenticated local weight artifacts')
     args = parser.parse_args()
-    result, sampling, ablation, adapters = verify()
+    result, sampling, ablation, adapters = verify(args.require_private)
     if args.output:
         target = args.output if args.output.is_absolute() else ROOT / args.output
         target.parent.mkdir(parents=True, exist_ok=True)

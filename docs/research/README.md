@@ -77,6 +77,9 @@ checks consistency rather than human concept validity.
   Original hashes embedded in normalized text still refer to the historical
   workspace files, not necessarily the normalized copies.
 
-Large ViT binaries, datasets, raw frame illustrations and activation caches are
-not part of this research publication. Numeric plot inputs, protocols, selected
-compact experimental heads and vector/raster article figures are included.
+Learned files are now in [private Hugging Face storage](../private-weights.md).
+Public Git contains numeric plot inputs, protocols, checkpoint/hash metadata and
+vector/raster article figures. The selected compact heads/adapters require
+authenticated setup; default offline verification checks their identity records,
+not unavailable private bytes. Large ViT binaries, datasets, raw frame
+illustrations and activation caches are not part of this public publication.

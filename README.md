@@ -10,11 +10,12 @@ Python 3.11–3.13. Run commands from the repository root. A new environment is 
 
 ```sh
 python -m pip install -e ".[movinet,dev]"
+hf auth login
 python scripts/setup_models.py
 kinetic-lens --config configs/movinet_kard.json serve
 ```
 
-Open **http://127.0.0.1:8765**, choose **Start camera**, and allow browser camera access. The first prediction appears after a four-second window is collected. Stop releases the camera and clears the session. The setup script downloads and verifies the exact official backbone; the compact trained head, labels, concept proxies and channel selections are already versioned in `models/kard/`.
+Open **http://127.0.0.1:8765**, choose **Start camera**, and allow browser camera access. The first prediction appears after a four-second window is collected. Stop releases the camera and clears the session. Setup downloads the exact official backbone and retrieves the trained head and model-specific XAI assets from **private Hugging Face storage**, using an authenticated account with access. GitHub contains code, labels, manifests and research results; learned artifacts are downloaded locally and ignored by Git. See [private weights and access](docs/private-weights.md).
 
 In the Explanation Lab, choose a **Technique** and either **Explain latest window** once or enable **Automatically explain new windows**. Automatic mode is optional, off by default, and waits 5, 10 or 30 seconds after each completed explanation. Spatial attribution displays an animated replay of the matching original sampled window with an adjustable heatmap; its age is shown separately from the live camera. **Show heatmap** toggles the overlay. Other techniques display their measurements below. Explanations can pause inference, and automatic mode stops on errors. See [runtime explanations](docs/runtime-xai.md) for what each display means.
 
@@ -23,6 +24,7 @@ Windows PowerShell with your Miniconda environment:
 ```powershell
 conda activate xai
 python -m pip install -e ".[movinet,dev]"
+hf auth login
 python scripts/setup_models.py
 kinetic-lens --config configs/movinet_kard.json serve
 ```
@@ -42,9 +44,11 @@ For a dependency-light UI smoke test, install `.[dev]` and use `configs/demo.jso
 
 ## CUDA inference and the original desktop camera UI
 
-The selected MoViNet/KARD model also has checked **ONNX CUDA FP16 and FP32** exports, included in `models/kard/onnx/`. Install `.[cuda]` with compatible CUDA/cuDNN libraries, then use:
+The selected MoViNet/KARD model also has checked **ONNX CUDA FP16 and FP32** exports in private Hugging Face storage. Install `.[cuda]` with compatible CUDA/cuDNN libraries, authenticate, and retrieve them into the ignored local `models/kard/onnx/` folder:
 
 ```sh
+hf auth login
+python scripts/setup_models.py --group cuda --skip-backbone
 python scripts/desktop/realtime_kard.py --config configs/movinet_kard_cuda_fp16.json
 kinetic-lens --config configs/movinet_kard_cuda_fp16.json serve
 ```
@@ -139,17 +143,22 @@ deployed dashboard/XAI checkpoint**. Their seed-averaged scores must not be
 paired with the deployed model's latency as one model result. See the
 [study index](docs/research/README.md), [article-ready tables](docs/benchmarks/size-latency/article_tables.tex)
 and [reproduction guide](experiments/README.md). Protocols, per-run CSVs,
-selection records, selected compact experimental heads, negative results and
-PDF/SVG/PNG figures are included. Recompute the bundled aggregate tables and
-verify artifact hashes without videos or a GPU:
+selection records, negative results and PDF/SVG/PNG figures are public. Selected
+experimental heads/adapters are private; their pinned identities remain in the
+public manifests. Recompute the bundled aggregate tables and verify public
+artifact hashes without videos, credentials or a GPU:
 
 ```sh
 python experiments/report_results.py
 ```
 
+To verify the private learned files as well, an authorized user can run
+`python scripts/setup_models.py --all --skip-backbone` followed by
+`python experiments/report_results.py --require-private`.
+
 The KARD model has **no trained idle/unknown class**, and displayed softmax scores are uncalibrated. Clip-level KARD accuracy does not establish accuracy on continuous webcam actions. The live window is four seconds by default, while offline inference can use up to ten seconds. This repository provides HAR/XAI tooling; it does not claim differential privacy, encrypted inference, federated training or certified privacy protection.
 
-The server binds to loopback. Camera frames stay in memory and are sent only to this local server. Explanation JSON is saved only when requested through the CLI or dashboard download. Datasets, recordings, original TensorFlow backbone downloads and generated outputs are excluded from Git. The checked combined MoViNet/KARD ONNX exports and archived numerical evidence are versioned explicitly.
+The server binds to loopback. Camera frames stay in memory and are sent only to this local server. Explanation JSON is saved only when requested through the CLI or dashboard download. Datasets, recordings, original TensorFlow backbone downloads, learned files and generated outputs are excluded from Git. Checked ONNX/head/adapter identities are pinned in the public private-artifact manifest; the bytes are stored in the private model repository. Earlier public Git history contained weights; see the migration status in [private-weights.md](docs/private-weights.md).
 
 ## Testing and devices
 

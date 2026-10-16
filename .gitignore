@@ -19,3 +19,15 @@ configs/local*.json
 *.zip
 *.tar.gz
 *.partial
+# Learned artifacts are stored in a private Hugging Face model repository.
+*.pt
+*.pth
+*.onnx
+*.npz
+*.safetensors
+*.keras
+*.h5
+*.ckpt
+*.bin
+models/kard/channel_groups.json
+models/.hub-cache/

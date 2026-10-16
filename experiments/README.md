@@ -14,11 +14,12 @@ python experiments/report_results.py
 python experiments/report_results.py --output docs/research/VERIFIED_SUMMARY.md
 ```
 
-This uses only the standard library. It verifies every imported artifact against
-the publication manifest; recomputes sampling fold means/SDs from all 30 run
-rows; recomputes ablation and adapter seed statistics; verifies all 21 selected
-experimental checkpoints against their selection records; and checks the
-recorded raw ViT latency means/SDs and decimal model sizes. It does not claim
+This uses only the standard library. It verifies imported public artifacts
+against the publication manifest; recomputes sampling fold means/SDs from all 30
+run rows; recomputes ablation and adapter seed statistics; checks all 21 selected
+checkpoint identities against the private-artifact manifest; and checks recorded
+raw ViT latency means/SDs and decimal model sizes. It does not read private
+weight bytes by default. It does not claim
 to reproduce training, recognition accuracy, hardware timings or camera behavior.
 
 The [study index](../docs/research/README.md) links protocols, per-run results,
@@ -97,13 +98,17 @@ reproducibility limitation.
 
 ## Models and data
 
-Selected compact experimental `.pt` checkpoints are bundled under each study's
-`selected/` directory with recorded hashes. They require the corresponding
+Selected compact experimental `.pt` checkpoints are stored privately on Hugging
+Face and retrieved into each study's ignored local `selected/` directory with
+recorded hashes. They require the corresponding
 archived model definitions and official backbone; they are not self-contained
 video inference models. PyTorch serialization should be loaded with
 `weights_only=True` where supported, as the archived inference paths do.
-Optimizer/resume checkpoints, videos, raw frames, activation/feature caches,
-large ViT exports and installed packages are excluded.
+Use [authenticated setup](../docs/private-weights.md), then
+`python experiments/report_results.py --require-private` to verify the actual
+learned bytes. Standard public CI checks metadata and aggregate results without
+weights. Optimizer/resume checkpoints, videos, raw frames, activation/feature
+caches, large ViT exports and installed packages are excluded.
 
 Dataset and pretrained-weight terms continue to apply. See
 [third-party notices](../THIRD_PARTY_NOTICES.md). A hash proves identity of an

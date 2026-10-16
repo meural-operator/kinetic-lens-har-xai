@@ -20,6 +20,9 @@ research models and have not replaced these deployed weights.
 backbone hashes and model-specific XAI assets. The portable head is a lossless
 serialization change, not retraining. The original Kinetics classifier is
 bypassed. The combined ONNX exports are tied to this same historical source.
+Learned head/ONNX/XAI files are obtained from
+[private Hugging Face storage](../../docs/private-weights.md), with exact
+revision and file hashes in [the artifact manifest](../private_artifacts.json).
 
 ## Evaluation limits
 

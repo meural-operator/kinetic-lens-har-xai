@@ -1,0 +1,191 @@
+{
+  "schema_version": 1,
+  "repo_id": "meural-operator/xai-weights",
+  "repo_type": "model",
+  "revision": "4f14ddf40127177ae61ef15b826eee5b3e611b9c",
+  "visibility_requirement": "private",
+  "files": [
+    {
+      "path": "docs/research/architecture-ablations/selected/A_seed_123.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/A_seed_123.pt",
+      "group": "research",
+      "bytes": 41305,
+      "sha256": "1f51b9b61f3ea08a0accf1e98217c98a9b3f76441263e52e00e31b085c34040a"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/A_seed_2026.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/A_seed_2026.pt",
+      "group": "research",
+      "bytes": 41315,
+      "sha256": "f9fadc0ec1396d5c937685a54ada217e868a9478c64c942b596180d61074f644"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/A_seed_42.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/A_seed_42.pt",
+      "group": "research",
+      "bytes": 41295,
+      "sha256": "13c5b2ce10e3865a14e757a6f7edbd6343413adfab727336e4766889002ed3da"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/B_seed_123.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/B_seed_123.pt",
+      "group": "research",
+      "bytes": 68705,
+      "sha256": "8ada79dff83abeeed2688ab8a5737127740fd5854b1288069f419ae71a9c543a"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/B_seed_2026.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/B_seed_2026.pt",
+      "group": "research",
+      "bytes": 68719,
+      "sha256": "a07e54b014e2f89c3a982a0366cc125efb87e793067031816590b78ef7985339"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/B_seed_42.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/B_seed_42.pt",
+      "group": "research",
+      "bytes": 68691,
+      "sha256": "95aa8109c88309553db2f07200b86edf8ccf93d47c36a8a99d636b33c31b1987"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/C_seed_123.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/C_seed_123.pt",
+      "group": "research",
+      "bytes": 70885,
+      "sha256": "700075092327f9ee4b946e245300afeae56ec168ec55be69cb3bd3a5c1d566f5"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/C_seed_2026.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/C_seed_2026.pt",
+      "group": "research",
+      "bytes": 70901,
+      "sha256": "7ef3644622adba0313b5823db71f496c54e2c5f596182522b3bfb22f36e45047"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/C_seed_42.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/C_seed_42.pt",
+      "group": "research",
+      "bytes": 70869,
+      "sha256": "a7de690ff8ff03a303fd5f3cf2f853b626ff9408a71264dc6ad01bf7e0a344e3"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/D_seed_123.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/D_seed_123.pt",
+      "group": "research",
+      "bytes": 71905,
+      "sha256": "cf74b1246170e0b8037169a49f5efabe84eace198a84854fff76a3a57a0539aa"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/D_seed_2026.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/D_seed_2026.pt",
+      "group": "research",
+      "bytes": 71919,
+      "sha256": "829645addf564892f49a158fd0c916d82fdbd2ab2acff727e2ef1590a85ce229"
+    },
+    {
+      "path": "docs/research/architecture-ablations/selected/D_seed_42.pt",
+      "hf_path": "kinetic-lens/docs/research/architecture-ablations/selected/D_seed_42.pt",
+      "group": "research",
+      "bytes": 71891,
+      "sha256": "8bfb9607503e10fa18f993d18af09e9da485d7bc9cbc77374405631925b24d7f"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/guided_seed_123.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/guided_seed_123.pt",
+      "group": "research",
+      "bytes": 487701,
+      "sha256": "ff561e05f15e79a33e9057ab0ca58fa0d70765f4f1d2b69e8808806d6504e2cf"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/guided_seed_2026.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/guided_seed_2026.pt",
+      "group": "research",
+      "bytes": 487721,
+      "sha256": "7cd3ccf922d436a5cbc44f16e3dd04a8fd52837b9e3761f26734695ab0794e73"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/guided_seed_42.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/guided_seed_42.pt",
+      "group": "research",
+      "bytes": 487681,
+      "sha256": "4e4bad8d703f04b42caf10d6428bd0695633661087c838bcad052bb353cd6a5b"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/lora_seed_123.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/lora_seed_123.pt",
+      "group": "research",
+      "bytes": 1384045,
+      "sha256": "1a5bf2b8e51267df96770d79230c1e1b387cfac8e14c8067efc9edd08908cbea"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/lora_seed_2026.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/lora_seed_2026.pt",
+      "group": "research",
+      "bytes": 1384065,
+      "sha256": "6d869f3cd6ca7467a1c72d4a4eff3f83beda7a2641f73a9e7eece0219eac960d"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/lora_seed_42.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/lora_seed_42.pt",
+      "group": "research",
+      "bytes": 1384025,
+      "sha256": "f04fda63736234a7e9970700df17c30a7dab1d21187af9746247da8db39086f7"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/random_seed_123.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/random_seed_123.pt",
+      "group": "research",
+      "bytes": 487701,
+      "sha256": "af068641211cf6aaf4cf42a5fd916f0598e9cba9e076dd18adbdd1a1cf24f9d3"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/random_seed_2026.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/random_seed_2026.pt",
+      "group": "research",
+      "bytes": 487721,
+      "sha256": "b0c73a06594dc9167a37c83f9c038d153fe2779ac86fc7b21e9c8da1743a8c6e"
+    },
+    {
+      "path": "docs/research/projection-adapters/selected/random_seed_42.pt",
+      "hf_path": "kinetic-lens/docs/research/projection-adapters/selected/random_seed_42.pt",
+      "group": "research",
+      "bytes": 487681,
+      "sha256": "ecafe779957d69f6817126d47a7b016572e4e4dbe70a38e2a112c38ade73bdaf"
+    },
+    {
+      "path": "models/kard/concept_probes.npz",
+      "hf_path": "kinetic-lens/models/kard/concept_probes.npz",
+      "group": "default",
+      "bytes": 15508,
+      "sha256": "4b187c0a553006a3e5cec4ad7fce4a9de024edddade5844522861a63e054d8a1"
+    },
+    {
+      "path": "models/kard/linear_head.npz",
+      "hf_path": "kinetic-lens/models/kard/linear_head.npz",
+      "group": "default",
+      "bytes": 36409,
+      "sha256": "0e16e03289e5466984922b6f91a89b3ecfd6bc98ee5d01db182f82e0e4017098"
+    },
+    {
+      "path": "models/kard/onnx/movinet-kard-20f-fp16.onnx",
+      "hf_path": "kinetic-lens/models/kard/onnx/movinet-kard-20f-fp16.onnx",
+      "group": "cuda",
+      "bytes": 4996744,
+      "sha256": "524addea69fe13abce9feca96bef4be3758e27a0d417af383cbc7c0419e2e9bb"
+    },
+    {
+      "path": "models/kard/onnx/movinet-kard-20f-fp32.onnx",
+      "hf_path": "kinetic-lens/models/kard/onnx/movinet-kard-20f-fp32.onnx",
+      "group": "cuda",
+      "bytes": 8430343,
+      "sha256": "1c9e528dea00a24eae144d90c141a99f1de72346cda32350ade92aabe70b1998"
+    },
+    {
+      "path": "models/kard/channel_groups.json",
+      "hf_path": "kinetic-lens/models/kard/channel_groups.json",
+      "group": "default",
+      "bytes": 43039,
+      "sha256": "0daa476fb99b079d2d745f57bc33093a4c04c495a3d0e88064cb92f1b39601d3"
+    }
+  ]
+}

@@ -1,7 +1,8 @@
 # Independently recomputed study summary
 
 Generated with `python experiments/report_results.py --output docs/research/VERIFIED_SUMMARY.md`.
-This verifies archived results and hashes; it does not retrain models or test a camera.
+This verifies public archived results and hash records; it does not retrain models or test a camera.
+Private checkpoints are excluded from the default offline verification. Use `--require-private` after authenticated setup to verify their actual bytes; otherwise their manifest identities alone are checked.
 
 ## Temporal sampling
 
@@ -38,11 +39,15 @@ Verification counts:
 
 ```json
 {
-  "published_files_verified": 252,
+  "published_files_verified": 231,
+  "private_publication_records_checked": 21,
+  "private_artifact_records_checked": 26,
+  "private_files_verified": 0,
   "sampling_runs": 30,
   "ablation_selected_runs": 12,
   "adapter_rows_including_baselines": 12,
-  "serialized_selected_checkpoints_verified": 21,
+  "selected_checkpoint_hash_records_checked": 21,
+  "serialized_selected_checkpoints_verified": 0,
   "raw_vit_timing_calls_verified_including_superseded_gpu_session": 2025,
   "size_latency_forms": 31,
   "serialized_inference_artifact_sizes": 26,

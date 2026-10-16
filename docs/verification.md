@@ -30,14 +30,26 @@ retrain, replace the deployed weights, rerun camera capture or establish fresh
 hardware timings. [The study index](research/README.md) separates those model
 identities and protocols.
 
-`python experiments/report_results.py` verifies the imported publication-file
-hashes and all 21 selected experimental-head hashes, recomputes fold/seed
-aggregates from the per-run CSVs, and checks raw ViT timing means/SDs and model
-byte-to-MB conversion. [The generated summary](research/VERIFIED_SUMMARY.md)
-records those checks. This is evidence reconciliation, not independent
+`python experiments/report_results.py` verifies the imported public-file hashes,
+checks all 21 selected experimental-head identity records against the private
+manifest, recomputes fold/seed aggregates from per-run CSVs, and checks raw ViT
+timing means/SDs and model byte-to-MB conversion. Use authenticated setup and
+`--require-private` to hash actual private model bytes. [The generated summary](research/VERIFIED_SUMMARY.md)
+records which checks ran. This is evidence reconciliation, not independent
 reproduction of training or new scientific validation.
 
 [The reproduction guide](../experiments/README.md) explicitly separates
 self-contained report reproduction from historical training snapshots that
 need an external dataset and the original workspace artifacts. Original
 source hashes and normalized-publication hashes are recorded separately.
+
+## Private-storage migration
+
+The head, model-specific XAI assets, complete ONNX graphs and selected research
+checkpoints are now retrieved from private Hugging Face storage. A pinned
+manifest replaces bundled learned files. Current public CI checks metadata and
+aggregates without tokens; authenticated users can verify the actual weights.
+The [migration receipt](private_weight_migration.json) documents the verified
+upload and access checks. The earlier publication-verification record describes
+its original stage, before the storage migration. Historical public Git copies
+require a separate owner-approved history cleanup; see [private weights](private-weights.md).

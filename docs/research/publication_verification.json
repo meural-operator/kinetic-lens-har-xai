@@ -27,5 +27,6 @@
     "git_line_endings": "Published text is canonical LF; historical source snapshots preserve original bytes.",
     "staged_artifact_hashes": "All 252 imported files were verified against their actual staged Git blob bytes.",
     "deployed_code_config_and_weights": "No runtime source, model configuration or deployed weight changes."
-  }
+  },
+  "record_stage": "Original research publication before private-weight migration; actual model files are now private. See docs/private_weight_migration.json and the current report verifier."
 }

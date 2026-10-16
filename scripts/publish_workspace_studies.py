@@ -12,6 +12,7 @@ import re
 
 REPO = Path(__file__).resolve().parents[1]
 TEXT = {'.py', '.ps1', '.md', '.json', '.csv', '.tex', '.svg'}
+PRIVATE_SUFFIXES = {'.pt', '.pth', '.onnx', '.npz', '.safetensors', '.bin', '.keras', '.h5', '.ckpt'}
 
 
 def digest(content):
@@ -25,6 +26,8 @@ def main():
     workspace = args.workspace.resolve()
     mov = workspace / 'movinet_evaluation'
     published = []
+    private_manifest = json.loads((REPO / 'models/private_artifacts.json').read_text(encoding='utf-8'))
+    private_entries = {entry['path']: entry for entry in private_manifest['files']}
 
     def clean(text):
         for prefix in (str(workspace), workspace.as_posix()):
@@ -41,6 +44,18 @@ def main():
     def copy(source, destination, *, unchanged=False):
         source, destination = Path(source), REPO / destination
         original = source.read_bytes()
+        relative = destination.relative_to(REPO).as_posix()
+        if source.suffix.lower() in PRIVATE_SUFFIXES or relative in private_entries:
+            if relative not in private_entries:
+                raise ValueError(f'Learned artifact has no private manifest entry: {relative}')
+            entry = private_entries[relative]
+            assert len(original) == entry['bytes'] and digest(original) == entry['sha256']
+            published.append({'source': source.relative_to(workspace).as_posix(), 'published': relative,
+                'source_sha256': digest(original), 'published_sha256': digest(original),
+                'source_bytes': len(original), 'published_bytes': len(original), 'text_normalized': False,
+                'distribution': 'private_huggingface',
+                'storage': {k: private_manifest[k] for k in ('repo_id', 'repo_type', 'revision')} | {'hf_path': entry['hf_path']}})
+            return
         if source.suffix.lower() in TEXT and not unchanged:
             # Canonical LF matches repository attributes on Windows and Linux.
             # Exact archival source snapshots use unchanged=True instead.
@@ -207,15 +222,18 @@ def main():
             copy(source, Path('experiments/archive/mindgraph_audit') / name, unchanged=True)
     publication = {
         'schema_version': 1,
-        'purpose': 'Completed studies and source snapshots; no model retraining or deployment change.',
+        'purpose': 'Public completed studies and source snapshots; learned files are metadata-only references to private Hugging Face storage.',
         'normalization': 'Published text substitutes local workspace/showcase paths and uses LF. Generated SVG trailing spaces are trimmed without geometry changes. Exact source archive bytes are retained.',
         'historical_hashes': 'Hashes inside copied reports/protocols identify original workspace artifacts, not necessarily normalized published text. Entries below preserve both hashes.',
         'excluded': ['datasets/videos/images', 'activation/feature caches', 'installed packages',
-                     'launch/status logs', 'large ViT weights', 'training optimizer checkpoints'],
+                     'launch/status logs', 'all learned weight binaries and model-specific channel groups',
+                     'large ViT weights', 'training optimizer checkpoints'],
         'records': published}
     manifest = REPO / 'docs/research/publication_manifest.json'
     manifest.write_text(json.dumps(publication, indent=2) + '\n', encoding='utf-8', newline='\n')
-    print(json.dumps({'published_files': len(published), 'total_bytes': sum(r['published_bytes'] for r in published),
+    print(json.dumps({'public_files': sum(r.get('distribution') != 'private_huggingface' for r in published),
+                      'private_references': sum(r.get('distribution') == 'private_huggingface' for r in published),
+                      'total_bytes': sum(r['published_bytes'] for r in published),
                       'manifest': str(manifest)}, indent=2))
 
 

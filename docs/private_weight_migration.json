@@ -7,7 +7,7 @@
   "existing_remote_files_preserved": true,
   "local_originals_and_backups_preserved": true,
   "migration_date": "2026-10-16",
-  "github_history_cleanup": "Pending explicit owner approval; ordinary file removal does not purge history.",
+  "github_history_cleanup": "Completed after explicit owner approval, using force-with-lease; current code/results preserved.",
   "learned_files_in_current_git_source": "Removed from tracking; local verified copies preserved.",
   "setup_client_smoke": {
     "authenticated_default_files_downloaded_and_verified": 3,
@@ -25,5 +25,25 @@
     "aggregate_verifier": "passed without credentials or model bytes",
     "dashboard_javascript": "passed",
     "pytest": "28 passed, 3 expected skips (two private ONNX artifacts and one optional ONNX runtime)"
+  },
+  "history_cleanup_verification": {
+    "rewritten_history_head": "50087aaeba71e740ad10f5427abc072f2044f4ba",
+    "historical_commits_checked": 7,
+    "learned_paths_removed": 26,
+    "old_weight_blob_versions_reachable_in_fresh_clone": 0,
+    "fresh_github_clone_verified": true,
+    "local_checkout_aligned": true,
+    "local_private_files_verified": 26,
+    "untracked_diagrams_preserved": true,
+    "private_git_bundle_backup_preserved": true
+  },
+  "github_retained_object_cache_status": {
+    "completed": false,
+    "historical_raw_url_head_status": 200,
+    "payload_downloaded_for_check": false,
+    "exact_old_urls_kept_private": true,
+    "support_draft_prepared_locally": true,
+    "support_request_submitted": false,
+    "note": "GitHub Support reviews eligibility for server-side cache/object removal; external copies cannot be revoked."
   }
 }

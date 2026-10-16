@@ -51,5 +51,9 @@ manifest replaces bundled learned files. Current public CI checks metadata and
 aggregates without tokens; authenticated users can verify the actual weights.
 The [migration receipt](private_weight_migration.json) documents the verified
 upload and access checks. The earlier publication-verification record describes
-its original stage, before the storage migration. Historical public Git copies
-require a separate owner-approved history cleanup; see [private weights](private-weights.md).
+its original stage, before the storage migration. The owner-approved history
+cleanup subsequently removed the 26 learned paths from all seven existing
+commits. A fresh GitHub clone verified that the old weight blobs are not
+reachable. An old raw URL still returned HTTP 200, so GitHub retained-object
+or cache purging remains a separate provider-side issue; see
+[private weights](private-weights.md).

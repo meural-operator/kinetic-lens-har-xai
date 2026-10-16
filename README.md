@@ -158,7 +158,7 @@ To verify the private learned files as well, an authorized user can run
 
 The KARD model has **no trained idle/unknown class**, and displayed softmax scores are uncalibrated. Clip-level KARD accuracy does not establish accuracy on continuous webcam actions. The live window is four seconds by default, while offline inference can use up to ten seconds. This repository provides HAR/XAI tooling; it does not claim differential privacy, encrypted inference, federated training or certified privacy protection.
 
-The server binds to loopback. Camera frames stay in memory and are sent only to this local server. Explanation JSON is saved only when requested through the CLI or dashboard download. Datasets, recordings, original TensorFlow backbone downloads, learned files and generated outputs are excluded from Git. Checked ONNX/head/adapter identities are pinned in the public private-artifact manifest; the bytes are stored in the private model repository. Earlier public Git history contained weights; see the migration status in [private-weights.md](docs/private-weights.md).
+The server binds to loopback. Camera frames stay in memory and are sent only to this local server. Explanation JSON is saved only when requested through the CLI or dashboard download. Datasets, recordings, original TensorFlow backbone downloads, learned files and generated outputs are excluded from Git. Checked ONNX/head/adapter identities are pinned in the public private-artifact manifest; the bytes are stored in the private model repository. Published `main` history has been cleaned of the learned files. GitHub retained-object/cache removal remains outstanding; see [private-weights.md](docs/private-weights.md).
 
 ## Testing and devices
 

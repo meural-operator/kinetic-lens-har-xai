@@ -66,13 +66,29 @@ an independent backup were preserved. The original five Hugging Face files
 were retained. [Migration receipt](private_weight_migration.json) records the
 non-secret verification facts.
 
-**Current GitHub source excludes learned files. Earlier public commits contained
-them.** A normal deletion commit does not erase those historical blobs.
-Rewriting Git history and force-updating published references is a separate
-cleanup step that requires owner approval because it changes existing commit
-identities and affects clones. Previously downloaded copies cannot be revoked.
-Until that cleanup is approved and performed, this repository must not be
-described as historically free of public weight files.
+**The owner-approved history cleanup is complete for the published `main`
+history.** All seven existing commits were rewritten to remove the 26 learned
+artifact paths. A fresh clone from GitHub verified that none of the former
+weight-blob versions is reachable. The current code/results tree was identical
+before and after the rewrite. A private local Git bundle and the learned-file
+backups were preserved.
+
+Existing clones made before the cleanup should be replaced with a fresh clone
+or carefully aligned with the cleaned history; merging an old branch can
+reintroduce removed history. The research machine's main checkout was aligned
+without changing its working files or private weights.
+
+**GitHub retained-object/cache removal is not complete.** A header-only check
+of one old raw-file URL still returned HTTP 200 after the rewrite; no weight
+payload was downloaded for that check. Exact historical URLs are kept in the
+owner's local cleanup records rather than republished here. GitHub can retain
+access through unreferenced commit IDs/cached views, and ordinary Git pushes
+cannot purge those server-side copies. A Support request draft has been prepared
+locally for the owner; it has not been submitted. GitHub reviews eligibility and
+does not promise removal of non-sensitive data. See its
+[history and cached-data removal guidance](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository).
+Previously downloaded copies cannot be revoked. Do not describe this cleanup as
+proof that every historical public copy has disappeared.
 
 The private model repository's owner must keep its visibility private. Never
 publish a public Space route that serves these files or a write-capable token.
